@@ -21,10 +21,12 @@ MULTI-VOICE (one render, every character its own voice, zero API credits):
   RIYA: "Because the number never lies."
 Writes OUT plus OUT.lines.json (who speaks when) so shots can cut to the speaker and captions can colour by speaker.
 """
-import argparse, json, os, re, subprocess, sys, tempfile
+import argparse, json, os, re, shutil, subprocess, sys, tempfile
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+_venv_ff = os.path.join(os.path.dirname(sys.executable), 'ffmpeg')
+FF = shutil.which('ffmpeg') or (_venv_ff if os.path.exists(_venv_ff) else 'ffmpeg')
 VOICES = json.load(open(os.path.join(HERE, 'voices', 'voices.json')))
 
 ap = argparse.ArgumentParser()
@@ -102,7 +104,9 @@ def shape(w, pitch, speed):
     if abs(pitch) < 0.05 and abs(speed - 1) < 0.005: return w
     with tempfile.TemporaryDirectory() as d:
         i, o = os.path.join(d, 'i.wav'), os.path.join(d, 'o.wav'); ta.save(i, torch.tensor(w)[None], SR)
-        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', i, '-af', f'rubberband=pitch={2 ** (pitch / 12):.5f}:tempo={speed:.4f}:formant=preserved', o], check=True)
+        r = subprocess.run([FF, '-v', 'error', '-y', '-i', i, '-af', f'rubberband=pitch={2 ** (pitch / 12):.5f}:tempo={speed:.4f}:formant=preserved', o])
+        if r.returncode != 0:  # ffmpeg without librubberband (e.g. the private static build): resample pitch + atempo
+            k = 2 ** (pitch / 12); subprocess.run([FF, '-v', 'error', '-y', '-i', i, '-af', f'asetrate={int(SR * k)},aresample={SR},atempo={max(0.5, min(2.0, speed / k)):.4f}', o], check=True)
         return ta.load(o)[0][0].numpy()
 out, lines, cur = [], [], 0.15  # 0.15 = adelay lead-in added by mastering
 for k, (text, gap, who) in enumerate(items):
@@ -140,7 +144,7 @@ else:
     af = ('highpass=f=70,equalizer=f=200:t=q:w=1.0:g=1.0,equalizer=f=3500:t=q:w=1.2:g=1.5,'
           'acompressor=threshold=-20dB:ratio=2.2:attack=8:release=150:makeup=1.5,'
           'loudnorm=I=-16:TP=-1.5:LRA=9,alimiter=limit=0.92,adelay=150,apad=pad_dur=1.6')
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', tmp, '-af', af, '-ar', '48000', '-ac', '1', a.out], check=True)
+    subprocess.run([FF, '-v', 'error', '-y', '-i', tmp, '-af', af, '-ar', '48000', '-ac', '1', a.out], check=True)
     os.remove(tmp)
 json.dump({'speakers': {k: {kk: vv for kk, vv in v.items() if kk != 'seed'} for k, v in SPK.items()}, 'lines': lines}, open(a.out + '.lines.json', 'w'), indent=1, ensure_ascii=False)
 print('wrote', a.out, f'{len(wav) / SR:.1f}s', f'({len(SPK)} voices)')
