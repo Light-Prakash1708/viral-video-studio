@@ -17,5 +17,6 @@ while python3 -c "import sys;sys.exit(0 if $a < $DUR - 0.01 else 1)"; do
   a=$b; k=$((k + 1))
 done
 printf "$list\n" | sed '/^$/d' > $B/chunks.txt
-ffmpeg -loglevel error -y -f concat -safe 0 -i $B/chunks.txt -vf "scale=1920:1080:flags=lanczos,setsar=1" -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p -r 24 $B/video_silent.mp4 && echo RENDER_DONE
-# (for 9:16 projects change the scale to 1080:1920)
+SZ=$(python3 -c "import json;print('1080:1920' if json.load(open('$P/config.json')).get('aspect')=='9:16' else '1920:1080')" 2>/dev/null || echo 1920:1080)
+ffmpeg -loglevel error -y -f concat -safe 0 -i $B/chunks.txt -vf "scale=$SZ:flags=lanczos,setsar=1" -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p -r 24 $B/video_silent.mp4 && echo RENDER_DONE
+# output size follows config.json aspect (9:16 -> 1080x1920)
