@@ -13,9 +13,9 @@ export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 # 3) voice engine: Chatterbox Multilingual (MIT) in a Python 3.11 venv
 [ -x "$VK/.venv/bin/python" ] || { mkdir -p "$VK"; uv venv -q --python 3.11 "$VK/.venv"; }
 if [ "$(uname)" = "Darwin" ]; then
-  uv pip install -q --python "$VK/.venv/bin/python" chatterbox-tts soundfile "setuptools<81"
+  uv pip install -q --python "$VK/.venv/bin/python" chatterbox-tts soundfile faster-whisper "setuptools<81"
 else
-  uv pip install -q --python "$VK/.venv/bin/python" --index-strategy unsafe-best-match --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts soundfile "setuptools<81"
+  uv pip install -q --python "$VK/.venv/bin/python" --index-strategy unsafe-best-match --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts soundfile faster-whisper "setuptools<81"
 fi
 # 4) ffmpeg: use the system one if present, else a private static build inside the venv (no Homebrew, no admin password)
 if ! command -v ffmpeg >/dev/null && [ ! -x "$VK/.venv/bin/ffmpeg" ]; then

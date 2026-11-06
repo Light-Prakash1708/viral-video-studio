@@ -89,7 +89,10 @@ scorer = None
 def score(w, text):
     global scorer
     if a.takes < 2: return 0
-    from faster_whisper import WhisperModel
+    try:
+        from faster_whisper import WhisperModel
+    except ImportError:  # best-of-N needs faster-whisper; without it keep the first good-length take
+        return 0
     import difflib
     if scorer is None: scorer = WhisperModel('small', device='cpu', compute_type='int8')
     with tempfile.NamedTemporaryFile(suffix='.wav') as f:
