@@ -1,0 +1,13 @@
+{
+  "extends": "chalk",
+  "name": "doodle",
+  "dark": true,
+  "bg": "#000000",
+  "ink": "#f4e04d",
+  "muted": "#9ab8ff",
+  "accent": "yellow",
+  "colors": { "yellow": "#f4e04d", "blue": "#5a8cff", "red": "#ff5a4a" },
+  "background": "plain",
+  "transition": "cut",
+  "music": "playful"
+}

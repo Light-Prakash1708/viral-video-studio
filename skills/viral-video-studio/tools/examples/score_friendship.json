@@ -1,0 +1,26 @@
+{"key": "D", "bpm": 76, "seed": 41,
+ "sections": [
+  {"start": 0.0, "end": 27.2, "prog": ["vi","IV","I","V"], "mode": "motif", "vel": 0.42, "bass": false},
+  {"start": 27.2, "end": 52.5, "prog": ["IV","I","V","vi"], "mode": "sparse", "vel": 0.5, "strings": 0.35},
+  {"start": 52.5, "end": 67.9, "prog": ["I","V","vi","IV"], "mode": "arp8", "vel": 0.42, "strings": 0.2},
+  {"start": 67.9, "end": 89.7, "prog": ["vi","vi","IV","V"], "mode": "sparse", "vel": 0.38, "strings": 0.3},
+  {"start": 89.7, "end": 108.6, "prog": ["vi","IV","I","V"], "mode": "block", "vel": 0.4, "strings": 0.45},
+  {"start": 121.5, "end": 128.9, "prog": ["IV","I","V","V"], "mode": "sparse", "vel": 0.45, "strings": 0.4},
+  {"start": 128.9, "end": 145.4, "prog": ["IV","I","vi","V"], "mode": "arp8", "vel": 0.58, "strings": 0.65, "pulse": true},
+  {"start": 146.4, "end": 160.2, "prog": ["I","V","vi","IV"], "mode": "block", "vel": 0.62, "strings": 0.8},
+  {"start": 160.2, "end": 174.0, "prog": ["IV","I","V","I"], "mode": "sparse", "vel": 0.45, "strings": 0.35},
+  {"start": 174.0, "end": 185.1, "prog": ["vi","IV","I","V"], "mode": "motif", "vel": 0.36, "strings": 0.15, "bass": false},
+  {"start": 185.1, "end": 189.8, "prog": ["IV","V"], "mode": "sparse", "vel": 0.42, "strings": 0.3}
+ ],
+ "events": [
+  {"t": 24.6, "type": "shimmer", "dur": 4, "vel": 0.6, "_": "mom's gold light"},
+  {"t": 29.35, "type": "pulse", "vel": 0.7}, {"t": 33.0, "type": "pulse", "vel": 0.5},
+  {"t": 70.1, "type": "pulse", "vel": 0.8}, {"t": 70.9, "type": "pulse", "vel": 0.8}, {"t": 71.9, "type": "pulse", "vel": 0.8, "_": "41. 30. 22."},
+  {"t": 108.6, "type": "drone", "dur": 7.5, "vel": 0.35, "_": "near silence before 'Canada'"},
+  {"t": 112.1, "type": "note", "midi": 62, "vel": 0.45}, {"t": 115.1, "type": "note", "midi": 57, "vel": 0.35},
+  {"t": 118.7, "type": "note", "midi": 69, "vel": 0.5, "_": "'A flight.' after silence on 'Not a fight.'"},
+  {"t": 143.3, "type": "timp", "dur": 2.2, "vel": 0.7, "_": "roll into '0.'"},
+  {"t": 146.3, "type": "shimmer", "dur": 8, "vel": 0.9, "_": "the gold infinity"},
+  {"t": 151.3, "type": "pulse", "vel": 0.9},
+  {"t": 189.8, "type": "final", "chord": "I"}
+ ]}

@@ -1,0 +1,20 @@
+{
+  "name": "viral-video-studio",
+  "version": "1.2.0",
+  "description": "One-command studio for viral animated YouTube videos and Shorts: GrowKaz cinematic stickman 2D/3D, What-IF life-sim 3D (18-archetype cast kit, 22 expressions, 17 background worlds x 6 moods), mythic 3D, finance stickman, explainroo, Vox collage, 3D cartoon shorts. Free local multi-voice narration (Chatterbox + original English/Hindi house voices), 10 catchy groove music styles + cinematic score, recorded SFX library, crash-safe chunked rendering and QC.",
+  "author": {
+    "name": "Samiksha"
+  },
+  "keywords": [
+    "animation",
+    "cinematic",
+    "elevenlabs",
+    "explainer",
+    "finance",
+    "mythology",
+    "shorts",
+    "video",
+    "what-if",
+    "youtube"
+  ]
+}
