@@ -16,7 +16,7 @@ function drawFace(g, W, H, ex, o = {}) {
   const lid = (x, tilt = 0) => { g.beginPath(); g.moveTo(x - 22, ey + tilt); g.lineTo(x + 22, ey - tilt); g.stroke(); g.beginPath(); g.ellipse(x, ey + 6, 12, 7, 0, 0, Math.PI); g.fill(); };
   const dotAt = (x, off, r = 15) => { g.beginPath(); g.ellipse(x + off, ey, r * 0.8, r, 0, 0, 7); g.fill(); g.fillStyle = '#ffffff'; g.beginPath(); g.arc(x + off + r * 0.3, ey - r * 0.35, r * 0.28, 0, 7); g.fill(); g.fillStyle = ink; };
   const line = (x) => { g.beginPath(); g.moveTo(x - 20, ey); g.lineTo(x + 20, ey); g.stroke(); };
-  const brow = (x, k) => { g.lineWidth = 7; g.beginPath(); g.moveTo(x - 20, ey - 40 + k * (x < cx ? 1 : -1)); g.lineTo(x + 20, ey - 40 - k * (x < cx ? 1 : -1)); g.stroke(); g.lineWidth = 9; };
+  const brow = (x, k) => { k = -k; /* the face texture is mirrored on the sphere: flip so positive k = angry (inner ends down) */ g.lineWidth = 7; g.beginPath(); g.moveTo(x - 20, ey - 40 + k * (x < cx ? 1 : -1)); g.lineTo(x + 20, ey - 40 - k * (x < cx ? 1 : -1)); g.stroke(); g.lineWidth = 9; };
   const L = cx - dx, R = cx + dx;
   switch (ex) {
     case 'happy': case 'love': arcUp(L); arcUp(R); break;
