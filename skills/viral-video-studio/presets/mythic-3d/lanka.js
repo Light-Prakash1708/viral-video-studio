@@ -2,6 +2,7 @@
 // ministry towers (each with its own emblem light), canals, a skyport, golden vimanas rising like fireflies,
 // stars, motes, torches (ancient era) and searchlights (dark era). One builder, three eras + a growth factor.
 import { rng, lerp, ease, prog, clamp, shade, mix } from '/engine/core.js';
+import { pushpak } from './pushpak.js';
 
 export const MINISTRIES = [
   ['MEDICINE', '#5fe8b0'], ['MUSIC', '#ff7ad0'], ['ASTRONOMY', '#7fb8ff'], ['WAR', '#ff4a3a'], ['TRADE', '#ffc15a'],
@@ -15,6 +16,7 @@ const SKIES = {
   ancient: ['#060a26', '#1c2050', '#5a3a5a', '#c8703a', '#ffb060'],
   dark: ['#020306', '#080c14', '#121a24', '#1e2a32'],
   storm: ['#020408', '#0a1018', '#1a2028', '#3a3030'],
+  dusk: ['#1a1a52', '#4a2a6a', '#a8486a', '#ff8a4a', '#ffc678'],
 };
 // an environment map so the gold metal has something warm to reflect
 function envMap(T, era) {
@@ -31,6 +33,20 @@ function envMap(T, era) {
 }
 const winTex = (T, base, lit, seed, cols = 6, rows = 10, p = 0.5) => { const r = rng(seed); return T.canvasTex(128, 512, (g, w, h) => { g.fillStyle = base; g.fillRect(0, 0, w, h); for (let i = 0; i < cols; i++) for (let j = 0; j < rows; j++) { const on = r() < p; g.fillStyle = on ? (r() < 0.2 ? '#fff0d0' : lit) : shade(base, -0.3); g.fillRect(i * (w / cols) + w / cols * 0.3, j * (h / rows) + h / rows * 0.25, w / cols * 0.4, h / rows * 0.5); } g.fillStyle = lit; g.fillRect(0, 0, w, 6); }); };
 
+// carved temple frieze: rows of niches with lit interiors and small deity figures, gold mouldings
+function friezeTex(T, dark, seed = 9) {
+  const r = rng(seed);
+  return T.canvasTex(256, 128, (g, w, h) => {
+    g.fillStyle = dark ? '#3a3c40' : '#c08a4a'; g.fillRect(0, 0, w, h);
+    g.fillStyle = dark ? '#2a2c30' : '#8a5a2a'; g.fillRect(0, 0, w, 10); g.fillRect(0, h - 12, w, 12);
+    g.fillStyle = dark ? '#4a4c50' : '#e0b060'; g.fillRect(0, 10, w, 4); g.fillRect(0, h - 16, w, 4);
+    for (let i = 0; i < 4; i++) { const x = 14 + i * 62, top = 24, bw = 36, bh = 78; g.fillStyle = dark ? '#18191c' : '#5a3418';
+      g.beginPath(); g.moveTo(x, top + bh); g.lineTo(x, top + bw / 2); g.arc(x + bw / 2, top + bw / 2, bw / 2, Math.PI, 0); g.lineTo(x + bw, top + bh); g.fill();
+      const on = r() < 0.7; const gr = g.createLinearGradient(0, top, 0, top + bh); gr.addColorStop(0, dark ? (on ? '#8a98a8' : '#202226') : (on ? '#fff0c0' : '#6a4020')); gr.addColorStop(1, dark ? '#303438' : (on ? '#ff9a40' : '#4a2a14'));
+      g.fillStyle = gr; g.beginPath(); g.moveTo(x + 4, top + bh); g.lineTo(x + 4, top + bw / 2); g.arc(x + bw / 2, top + bw / 2, bw / 2 - 4, Math.PI, 0); g.lineTo(x + bw - 4, top + bh); g.fill();
+      g.fillStyle = dark ? 'rgba(20,20,24,.8)' : 'rgba(90,40,10,.85)'; g.beginPath(); g.arc(x + bw / 2, top + 30, 6, 0, 7); g.fill(); g.fillRect(x + bw / 2 - 6, top + 38, 12, 30); }
+  }, [3, 1]);
+}
 function emblemTex(T, i, col) {
   return T.canvasTex(128, 128, (g, w, h) => {
     g.clearRect(0, 0, w, h); g.strokeStyle = col; g.fillStyle = col; g.lineWidth = 7; g.lineCap = 'round'; g.lineJoin = 'round';
@@ -49,18 +65,7 @@ function emblemTex(T, i, col) {
   });
 }
 // a sleek golden flying craft inspired by the Pushpaka Vimana: hull, temple-spire canopy, swept wings, under-glow
-export function vimana(T, o = {}) {
-  const { THREE } = T, g = new THREE.Group(), gold = o.gold, s = o.s || 1;
-  const hull = new THREE.Mesh(new THREE.SphereGeometry(1, 18, 10), gold); hull.scale.set(2.6, 0.42, 0.85); g.add(hull);
-  const spire = new THREE.Mesh(new THREE.ConeGeometry(0.5, 1.1, 6), gold); spire.position.set(0.3, 0.55, 0); g.add(spire);
-  const tip = new THREE.Mesh(new THREE.SphereGeometry(0.12, 8, 6), o.glow); tip.position.set(0.3, 1.15, 0); g.add(tip);
-  for (const z of [-1, 1]) { const w = new THREE.Mesh(new THREE.BoxGeometry(1.6, 0.06, 1.5), gold); w.position.set(-0.4, 0, z * 1.0); w.rotation.y = -z * 0.5; g.add(w);
-    const fin = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.05, 0.12), o.glow); fin.position.set(-1.1, 0.02, z * 1.55); g.add(fin); }
-  const band = new THREE.Mesh(new THREE.BoxGeometry(4.2, 0.07, 0.07), o.glow); band.position.set(0, 0.05, 0.86); g.add(band);
-  const band2 = band.clone(); band2.position.z = -0.86; g.add(band2);
-  if (o.sprite) { const sp = new THREE.Sprite(o.sprite); sp.scale.set(5, 5, 1); sp.position.y = -0.4; g.add(sp); }
-  g.scale.setScalar(s); return g;
-}
+export function vimana(T, o = {}) { return pushpak(T, { lite: true, s: (o.s || 1) * 0.42, glow: false }); }
 export function glowSpriteMat(T, color, opacity = 0.5) {
   const tex = T.canvasTex(64, 64, (g) => { const gr = g.createRadialGradient(32, 32, 0, 32, 32, 32); gr.addColorStop(0, 'rgba(255,255,255,1)'); gr.addColorStop(0.35, 'rgba(255,255,255,.45)'); gr.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = gr; g.fillRect(0, 0, 64, 64); });
   return new T.THREE.SpriteMaterial({ map: tex, color: new T.THREE.Color(color), transparent: true, opacity, depthWrite: false, blending: T.THREE.AdditiveBlending });
@@ -71,12 +76,13 @@ export function fast(T, st) { const THREE = T.THREE, c = st.composer, w = c.rend
   c.reset(new THREE.WebGLRenderTarget(w, h, { samples: 0, type: THREE.HalfFloatType })); st.bloom.setSize(Math.round(w / 2), Math.round(h / 2)); return st; }
 // build the world.  o.era: '2026' | 'ancient' | 'dark' | 'storm';  o.grow 0..1 (2026 structures)
 export function buildLanka(T, o = {}) {
-  const { THREE } = T, era = o.era || '2026', modern = era !== 'ancient', dark = era === 'dark' || era === 'storm';
-  const st = T.stage({ mood: 'night', fov: o.fov || 40, fog: o.fog || [90, 520], fogColor: dark ? '#0c1218' : era === 'ancient' ? '#3a2a40' : '#1a1638',
-    sky: o.sky || SKIES[era], keyPos: era === 'ancient' ? [180, 60, -140] : [-60, 120, -80], keyIntensity: dark ? 0.9 : era === 'ancient' ? 2.2 : 1.3,
-    keyColor: dark ? '#a8b8c8' : era === 'ancient' ? '#ffb070' : '#9ab0ff', ambient: dark ? 1.2 : 1.6, ambientSky: dark ? '#4a5868' : '#5a4a8a', bloom: o.bloom ?? (dark ? 0.35 : 0.55), bloomThreshold: 0.86, shadowSize: 60 });
+  const { THREE } = T, dusk = o.era === 'dusk', era = dusk ? '2026' : (o.era || '2026'), modern = era !== 'ancient', dark = era === 'dark' || era === 'storm';
+  const st = T.stage({ mood: 'night', fov: o.fov || 40, fog: o.fog || [90, 520], fogColor: dusk ? '#c8706a' : dark ? '#0c1218' : era === 'ancient' ? '#3a2a40' : '#2a2050',
+    sky: o.sky || (dusk ? SKIES.dusk : SKIES[era]), keyPos: dusk ? [-260, 50, -300] : era === 'ancient' ? [180, 60, -140] : [-60, 120, -80], keyIntensity: dusk ? 2.8 : dark ? 0.9 : era === 'ancient' ? 2.2 : 1.6,
+    keyColor: dusk ? '#ffb070' : dark ? '#a8b8c8' : era === 'ancient' ? '#ffb070' : '#a8b8ff', ambient: dusk ? 2.2 : dark ? 1.2 : 1.9, ambientSky: dusk ? '#ffc0a0' : dark ? '#4a5868' : '#6a5a9a', bloom: o.bloom ?? (dark ? 0.14 : 0.2), bloomThreshold: 0.93, shadowSize: 60 });
   fast(T, st); st.sun.shadow.camera.far = 400; st.sun.castShadow = !!o.shadows;
   const env = envMap(T, era); st.scene.environment = env;
+  if (dusk) { const f = new THREE.DirectionalLight(new THREE.Color('#ffe0c0'), 1.0); f.position.set(120, 60, 160); st.add(f); }
   const R = rng(o.seed || 7), L = { stage: st, era, grow: o.grow ?? 1, THREE };
   L.setGrow = (k) => setGrowImpl(L, k);
   const gold = new THREE.MeshStandardMaterial({ color: dark ? '#8a8270' : '#ffc45a', metalness: 0.9, roughness: 0.28, envMapIntensity: dark ? 0.5 : 1.2 });
@@ -91,7 +97,7 @@ export function buildLanka(T, o = {}) {
   // reflected city glow on the water + shore foam rings
   const glowMat = (c, op) => new THREE.MeshBasicMaterial({ color: new THREE.Color(c), transparent: true, opacity: op, blending: THREE.AdditiveBlending, depthWrite: false });
   const rTex = T.canvasTex(256, 256, (g) => { const gr = g.createRadialGradient(128, 128, 30, 128, 128, 128); gr.addColorStop(0, 'rgba(255,255,255,1)'); gr.addColorStop(0.55, 'rgba(255,255,255,.35)'); gr.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = gr; g.fillRect(0, 0, 256, 256); });
-  const pool = new THREE.Mesh(new THREE.PlaneGeometry(300, 300), new THREE.MeshBasicMaterial({ map: rTex, color: new THREE.Color(dark ? '#3a4a5a' : '#ff9a3a'), transparent: true, opacity: dark ? 0.12 : 0.22, blending: THREE.AdditiveBlending, depthWrite: false }));
+  const pool = new THREE.Mesh(new THREE.PlaneGeometry(300, 300), new THREE.MeshBasicMaterial({ map: rTex, color: new THREE.Color(dark ? '#3a4a5a' : '#ff9a3a'), transparent: true, opacity: dark ? 0.12 : dusk ? 0.1 : 0.22, blending: THREE.AdditiveBlending, depthWrite: false }));
   pool.rotation.x = -Math.PI / 2; pool.position.y = 0.6; st.add(pool);
   L.foam = []; for (let k = 0; k < 4; k++) { const f = new THREE.Mesh(new THREE.RingGeometry(1, 1.012, 128), glowMat('#cfeeff', 0.0)); f.rotation.x = -Math.PI / 2; f.position.y = 0.7; st.add(f); L.foam.push(f); }
   // ---- the island: layered tiers, rocky cliffs
@@ -111,7 +117,7 @@ export function buildLanka(T, o = {}) {
   for (let k = 0; k < 4; k++) { const a = k * Math.PI / 2 + Math.PI / 4; const c = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 40), water); c.rotation.x = -Math.PI / 2; c.rotation.z = -a + Math.PI / 2; c.position.set(Math.cos(a) * 54, 5.84, Math.sin(a) * 54); st.add(c); }
   // ---- city buildings (instanced): modern towers/blocks (2026) and low lamp-lit houses (ancient)
   const box = new THREE.BoxGeometry(1, 1, 1); box.translate(0, 0.5, 0);
-  const modT = winTex(T, dark ? '#1a1e24' : '#1c1626', dark ? '#9aa8b4' : '#ffc060', 3, 5, 18, 0.42), oldT = winTex(T, '#3a2820', '#ffa850', 5, 2, 2, 0.5);
+  const modT = winTex(T, dark ? '#1a1e24' : '#6a4e3a', dark ? '#9aa8b4' : '#ffd080', 3, 5, 18, 0.5), oldT = winTex(T, '#3a2820', '#ffa850', 5, 2, 2, 0.5);
   const modM = new THREE.MeshStandardMaterial({ map: modT, emissiveMap: modT, emissive: new THREE.Color('#ffffff'), emissiveIntensity: dark ? 0.15 : 0.3, roughness: 0.5, metalness: 0.5 });
   const oldM = new THREE.MeshStandardMaterial({ map: oldT, emissiveMap: oldT, emissive: new THREE.Color('#ffffff'), emissiveIntensity: 0.22, roughness: 0.9 });
   const spots = []; for (let i = 0; i < 1400 && spots.length < 420; i++) { const a = R() * 6.28, d = 34 + R() * 38; const x = Math.cos(a) * d, z = Math.sin(a) * d;
@@ -123,16 +129,20 @@ export function buildLanka(T, o = {}) {
   // ancient roofs (instanced pyramids)
   const roofG = new THREE.ConeGeometry(0.75, 0.7, 4); roofG.rotateY(Math.PI / 4); roofG.translate(0, 0.35, 0);
   const roofI = new THREE.InstancedMesh(roofG, goldDim, spots.length); st.add(roofI); L.roofI = roofI;
-  const spG = new THREE.ConeGeometry(0.62, 1, 6); spG.translate(0, 0.5, 0); const spireI = new THREE.InstancedMesh(spG, gold, spots.length); st.add(spireI); L.spireI = spireI;
+  const spG = new THREE.SphereGeometry(0.5, 12, 8, 0, Math.PI * 2, 0, Math.PI / 2); spG.scale(1, 1.3, 1); const spireI = new THREE.InstancedMesh(spG, gold, spots.length); st.add(spireI); L.spireI = spireI;
   // ---- the palace: stepped platform, hall, stacked gold shikhara, corner spires, glowing bands
   const pal = new THREE.Group(); st.add(pal); L.palace = pal;
   [[24, PLAT_Y + 0.75], [19, PLAT_Y + 2.25], [14.5, PLAT_Y + 3.75]].forEach(([w, y]) => pal.add(T.box(w, 1.5, w, stone, 0, y, 0)));
   const top = PLAT_Y + 4.5;
   pal.add(T.box(12, 5, 12, stone, 0, top + 2.5, 0));
-  for (let i = 0; i < 9; i++) { const rb = 5.4 - i * 0.55, h = 2.6; const c = new THREE.Mesh(new THREE.CylinderGeometry(rb - 0.5, rb, h, 4), gold); c.rotation.y = Math.PI / 4; c.position.y = top + 5 + h / 2 + i * h; pal.add(c);
-    const bnd = new THREE.Mesh(new THREE.CylinderGeometry(rb - 0.45, rb - 0.45, 0.18, 4, 1, true), glowGold); bnd.rotation.y = Math.PI / 4; bnd.position.y = top + 5 + i * h + h; pal.add(bnd); }
-  const spH = top + 5 + 9 * 2.6; L.spireTop = spH;
-  pal.add(T.sphere(0.9, gold, 0, spH + 0.6, 0)); const fin = T.cone(0.35, 2.4, gold, 0, spH + 2.2, 0, 8); pal.add(fin);
+  const fzT = friezeTex(T, dark), fzM = new THREE.MeshStandardMaterial({ map: fzT, emissiveMap: fzT, emissive: new THREE.Color('#ffffff'), emissiveIntensity: dark ? 0.08 : 0.22, metalness: 0.45, roughness: 0.5, envMapIntensity: 0.8 });
+  for (let i = 0; i < 9; i++) { const w = 10.4 - i * 1.02, h = 2.6, y0 = top + 5 + i * h;
+    pal.add(T.box(w, h * 0.82, w, fzM, 0, y0 + h * 0.41, 0)); pal.add(T.box(w + 0.9, h * 0.18, w + 0.9, gold, 0, y0 + h * 0.91, 0));
+    for (const [sx, sz] of [[1, 1], [1, -1], [-1, 1], [-1, -1]]) pal.add(T.sphere(0.32, gold, sx * (w / 2 + 0.3), y0 + h + 0.2, sz * (w / 2 + 0.3)));
+    const bnd = new THREE.Mesh(new THREE.BoxGeometry(w + 0.95, 0.1, w + 0.95), glowGold); bnd.position.y = y0 + h; pal.add(bnd); }
+  const spH = top + 5 + 9 * 2.6;
+  { const dm = new THREE.Mesh(new THREE.SphereGeometry(2.4, 8, 10, 0, Math.PI * 2, 0, Math.PI / 2), gold); dm.position.y = spH; dm.scale.y = 1.25; pal.add(dm); }
+  pal.add(T.sphere(0.9, gold, 0, spH + 3.4, 0)); pal.add(T.sphere(0.6, gold, 0, spH + 4.4, 0)); pal.add(T.cone(0.3, 2.4, gold, 0, spH + 5.8, 0, 8)); L.spireTop = spH + 7;
   for (const [x, z] of [[-7, -7], [7, -7], [-7, 7], [7, 7]]) { for (let i = 0; i < 5; i++) { const rb = 1.8 - i * 0.3; const c = new THREE.Mesh(new THREE.CylinderGeometry(rb - 0.3, rb, 1.6, 4), gold); c.rotation.y = Math.PI / 4; c.position.set(x, top + 0.8 + i * 1.6, z); pal.add(c); } pal.add(T.sphere(0.35, gold, x, top + 8.4, z)); }
   for (let i = 0; i < 4; i++) { const a = i * Math.PI / 2; const gate = T.box(3.4, 6, 1.2, gold, Math.cos(a) * 12.5, PLAT_Y + 3, Math.sin(a) * 12.5); gate.rotation.y = -a; pal.add(gate); const door = new THREE.Mesh(new THREE.PlaneGeometry(1.8, 3.4), glowGold); door.position.set(Math.cos(a) * 13.15, PLAT_Y + 2, Math.sin(a) * 13.15); door.rotation.y = -a + Math.PI / 2; pal.add(door); }
   // skyport ring around the spire (2026)
@@ -145,25 +155,26 @@ export function buildLanka(T, o = {}) {
   L.towers = [];
   for (let i = 0; i < 10; i++) {
     const [x, , z] = towerPos(i), a = Math.atan2(z, x), H = 30 + (i % 3) * 2.5;
-    const tg = new THREE.Group(); tg.position.set(x, PLAT_Y, z); st.add(tg);
-    const tt = winTex(T, dark ? '#1a1e24' : '#221a2c', dark ? '#8a98a4' : '#ffd890', 11 + i, 4, 16);
-    const body = new THREE.Mesh(new THREE.CylinderGeometry(1.3, 2.2, H, 8), new THREE.MeshStandardMaterial({ map: tt, emissiveMap: tt, emissive: new THREE.Color('#ffffff'), emissiveIntensity: dark ? 0.12 : 0.3, roughness: 0.5, metalness: 0.4 }));
-    body.position.y = H / 2; tg.add(body);
-    for (let k = 1; k <= 4; k++) { const ring = new THREE.Mesh(new THREE.TorusGeometry(lerp(2.2, 1.3, k * 0.22) + 0.12, 0.16, 6, 24), gold); ring.rotation.x = Math.PI / 2; ring.position.y = H * k * 0.22; tg.add(ring); }
-    tg.add(T.cone(1.6, 4.5, gold, 0, H + 2.2, 0, 8)); tg.add(T.sphere(0.4, gold, 0, H + 4.8, 0));
+    const tg = new THREE.Group(); tg.position.set(x, PLAT_Y, z); tg.rotation.y = Math.PI / 2 - a; st.add(tg);
+    const tt = friezeTex(T, dark, 21 + i), tm = new THREE.MeshStandardMaterial({ map: tt, emissiveMap: tt, emissive: new THREE.Color('#ffffff'), emissiveIntensity: dark ? 0.1 : 0.28, metalness: 0.4, roughness: 0.5, envMapIntensity: 0.8 });
+    const NTi = 7; let yy = 0; const th = H / (NTi + 1.2);
+    tg.add(T.box(6.6, th * 1.2, 4.6, stone, 0, th * 0.6, 0)); yy = th * 1.2;
+    for (let k = 0; k < NTi; k++) { const f = 1 - k * 0.11, w = 6.0 * f, d = 4.0 * f; tg.add(T.box(w, th * 0.84, d, tm, 0, yy + th * 0.42, 0)); tg.add(T.box(w + 0.6, th * 0.16, d + 0.6, gold, 0, yy + th * 0.92, 0)); yy += th; }
+    const vlt = new THREE.Mesh(new THREE.CylinderGeometry(1.1, 1.1, 2.8, 16, 1, false, 0, Math.PI), gold); vlt.rotation.z = Math.PI / 2; vlt.position.y = yy; tg.add(vlt);
+    for (let k = -2; k <= 2; k++) { tg.add(T.sphere(0.26, gold, k * 0.6, yy + 1.25, 0)); tg.add(T.cone(0.1, 0.6, gold, k * 0.6, yy + 1.6, 0, 6)); }
     const [nm, col] = MINISTRIES[i];
     const emM = new THREE.MeshBasicMaterial({ map: emblemTex(T, i, '#ffffff'), color: new THREE.Color(col), transparent: true, opacity: 1, depthWrite: false, side: THREE.DoubleSide });
-    const em = new THREE.Mesh(new THREE.PlaneGeometry(3.4, 3.4), emM); em.position.set(Math.cos(a) * 1.75, H - 4, Math.sin(a) * 1.75); em.lookAt(Math.cos(a) * 10, H - 4, Math.sin(a) * 10); tg.add(em);
+    const em = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 2.6), emM); em.position.set(0, H * 0.62, 4.0 * (1 - 4 * 0.11) / 2 + 0.5); tg.add(em);
     const halo = new THREE.Sprite(glowSpriteMat(T, col, 0.5)); halo.scale.set(9, 9, 1); halo.position.copy(em.position); tg.add(halo);
-    const crownL = new THREE.Mesh(new THREE.SphereGeometry(0.55, 10, 8), new THREE.MeshBasicMaterial({ color: new THREE.Color(col) })); crownL.position.y = H + 0.4; tg.add(crownL);
-    const beam = T.shaft(2.4, 90, col, 0.0); beam.position.y = H + 45; tg.add(beam); const beam2 = beam.clone(); beam2.rotation.y = Math.PI / 2; tg.add(beam2);
+    const crownL = new THREE.Mesh(new THREE.SphereGeometry(0.45, 10, 8), new THREE.MeshBasicMaterial({ color: new THREE.Color(col) })); crownL.position.y = yy + 2.1; tg.add(crownL);
+    const beam = T.shaft(2.4, 90, col, 0.0); beam.position.y = yy + 47; tg.add(beam); const beam2 = beam.clone(); beam2.rotation.y = Math.PI / 2; tg.add(beam2);
     L.towers.push({ g: tg, H, em, emM, halo, crownL, beam, beam2, col, name: nm, a });
   }
   // ---- vimanas: a fleet that rises from the skyport
   const vGold = new THREE.MeshStandardMaterial({ color: '#ffcf6a', metalness: 0.9, roughness: 0.25, envMapIntensity: 1.3, emissive: new THREE.Color('#5a3000'), emissiveIntensity: 0.3 });
   const vGlow = new THREE.MeshBasicMaterial({ color: new THREE.Color('#fff0c0') });
   const vSpr = glowSpriteMat(T, '#ffc060', 0.55);
-  L.fleet = []; const NF = o.fleet ?? (modern ? 34 : 0);
+  L.fleet = []; const NF = o.fleet ?? (modern ? 20 : 0);
   for (let i = 0; i < NF; i++) { const v = vimana(T, { gold: vGold, glow: vGlow, sprite: vSpr, s: 0.55 + R() * 0.35 }); st.add(v); L.fleet.push({ v, ph: R(), ang: R() * 6.28, rad: 10 + R() * 50, sp: 0.06 + R() * 0.06, h: 20 + R() * 70, dir: R() > 0.5 ? 1 : -1 }); }
   L.vGold = vGold; L.vGlow = vGlow; L.vSpr = vSpr;
   { const isl = new THREE.Group(); st.scene.children.slice(mark).forEach((c) => isl.add(c)); st.add(isl); L.island = isl; }
@@ -177,7 +188,7 @@ export function buildLanka(T, o = {}) {
   L.stars.material.opacity = dark ? 0.25 : era === 'ancient' ? 0.5 : 0.8; L.stars.material.sizeAttenuation = false; L.stars.material.size = 1.6;
   // a big moon behind for silhouette shots
   const moon = new THREE.Sprite(glowSpriteMat(T, era === 'ancient' ? '#ffcf90' : '#dfe8ff', 0.85)); moon.scale.set(46, 46, 1); moon.material.opacity = era === 'ancient' ? 0.3 : 0.5; moon.position.set(-260, 110, -330); st.add(moon); L.moon = moon;
-  const moonCore = new THREE.Mesh(new THREE.CircleGeometry(9, 32), new THREE.MeshBasicMaterial({ color: new THREE.Color(era === 'ancient' ? '#ffe2b0' : '#eef2ff'), fog: false })); moonCore.position.copy(moon.position); moonCore.lookAt(0, 0, 0); st.add(moonCore);
+  const moonCore = new THREE.Mesh(new THREE.CircleGeometry(9, 32), new THREE.MeshBasicMaterial({ color: new THREE.Color(era === 'ancient' ? '#ffe2b0' : '#eef2ff'), fog: false })); moonCore.position.copy(moon.position); moonCore.lookAt(0, 0, 0); st.add(moonCore); if (dusk) { moon.visible = false; moonCore.visible = false; }
   // ---- searchlights (dark era)
   L.search = [];
   if (dark && o.search !== false) for (let i = 0; i < 10; i++) { const cone = new THREE.Mesh(new THREE.ConeGeometry(9, 70, 24, 1, true), new THREE.MeshBasicMaterial({ color: new THREE.Color('#cfe8ff'), transparent: true, opacity: 0.07, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide })); cone.geometry.translate(0, -35, 0); const piv = new THREE.Group(); piv.add(cone); const tw = L.towers[i]; piv.position.set(tw.g.position.x, PLAT_Y + tw.H - 1, tw.g.position.z); st.add(piv); L.search.push({ piv, cone, ph: i * 0.7 }); }
@@ -197,7 +208,7 @@ function setGrowImpl(L, k) {
     q.setFromAxisAngle(up, s.ry); v.set(s.x, s.y, s.z); sc.set(s.w, Math.max(0.001, hm), s.dpt); m4.compose(v, q, sc); L.modI.setMatrixAt(i, m4);
     const ok = 1 - clamp(k * 1.3 - s.r * 0.3); const oh = Math.max(0.001, 1.6 * ok);
     sc.set(1.8 * (ok > 0.01 ? 1 : 0.001), oh, 1.8 * (ok > 0.01 ? 1 : 0.001)); m4.compose(v, q, sc); L.oldI.setMatrixAt(i, m4);
-    const tall = s.h > 9 ? 1 : 0.001; v.set(s.x, s.y + hm, s.z); sc.set(s.w * tall, Math.max(0.001, tall * ease.out(gk) * (2 + s.h * 0.25)), s.dpt * tall); m4.compose(v, q, sc); L.spireI.setMatrixAt(i, m4);
+    const tall = s.h > 9 ? 1 : 0.001; v.set(s.x, s.y + hm, s.z); sc.set(s.w * tall, Math.max(0.001, tall * ease.out(gk) * s.w * 0.8), s.dpt * tall); m4.compose(v, q, sc); L.spireI.setMatrixAt(i, m4);
     v.set(s.x, s.y + oh, s.z); sc.set(2.4 * (ok > 0.01 ? 1 : 0.001), Math.max(0.001, ok), 2.4 * (ok > 0.01 ? 1 : 0.001)); m4.compose(v, q, sc); L.roofI.setMatrixAt(i, m4);
   });
   L.modI.instanceMatrix.needsUpdate = L.oldI.instanceMatrix.needsUpdate = L.roofI.instanceMatrix.needsUpdate = L.spireI.instanceMatrix.needsUpdate = true;
@@ -220,7 +231,7 @@ function updateLanka(L, t, u) {
   // fleet: spiral up out of the skyport, loop
   const rise = u.rise ?? 1;
   L.fleet.forEach((f, i) => { const ph = ((t * f.sp * rise) + f.ph) % 1; const ang = f.ang + f.dir * ph * 2.4; const r = lerp(9, f.rad + 14, ease.out(ph)); const y = lerp(L.portY + 0.6, L.portY + f.h, ease.in(Math.min(1, ph * 1.15)));
-    f.v.position.set(Math.cos(ang) * r, y, Math.sin(ang) * r); f.v.rotation.set(0, -ang - f.dir * Math.PI / 2, 0.2 * f.dir); f.v.rotation.z = 0.25; });
+    f.v.position.set(Math.cos(ang) * r, y, Math.sin(ang) * r); f.v.rotation.set(0, -ang - f.dir * Math.PI / 2, 0.2 * f.dir); f.v.rotation.z = 0.08; f.v.update?.(t + f.ph * 7, { flap: 0.8, spin: 11 }); });
   // motes drift
   const mp = L.motes.geometry.attributes.position, ma = mp.array, mb = L.moteBase; for (let i = 0; i < ma.length; i += 3) { ma[i] = mb[i] + Math.sin(t * 0.3 + i) * 2; ma[i + 1] = mb[i + 1] + ((t * 1.2 + i * 0.37) % 12) - 6; } mp.needsUpdate = true;
   L.torches.material.size = 0.8 + 0.25 * Math.sin(t * 13);
