@@ -31,6 +31,13 @@ Usage: `/viral-video-studio <topic> [--style <name>|custom] [--format 9:16|16:9]
 
 Ask which one (single question, show the table). Recommend one based on the topic if the user is unsure.
 
+## Style choice rule (the user's standing instruction)
+Never default to the last style used or to a reference channel's look. For every new video, choose the style from the SCRIPT and its viral potential:
+1. Read the script and name its emotional core and its "money shot" (the image people will screenshot or share).
+2. Score 2–3 candidate styles from the menu (or a new hybrid) 1–5 on: (a) how well the style shows the script's key ideas, (b) scroll-stopping visual appeal in the first 2 s, (c) proven performance of that look for this topic in the measured references (presets/*.md), (d) production risk / render time.
+3. Pick the highest total, say in one line why, and mix styles inside one video when the script changes register (e.g. warm 3D characters for the story + ink diagrams for the science).
+4. Reference styles are inspiration only; always change palette, characters and motifs so the channel has its own identity.
+
 ## Saved presets
 Read the preset file before using it: `presets/viral-stickman.md` (bright fast facts), `presets/cinematic-story.md` (emotional "what if"), `presets/silent-story.md` (wordless short film), `presets/map-explainer.md` (map Shorts), `presets/nostalgic-painterly.md` (warm painterly, emotional essays), `presets/urban-3d.md` (cinematic 3D city/psychology), `presets/surreal-3d.md` (futuristic dream worlds, philosophy), `presets/longform-story.md` (6–12 min YouTube long-form; read `references/longform-playbook.md`), `presets/doodle-explainer.md` (black-screen doodle self-help, explainroo), `presets/whatif-life-sim.md` ("What IF You…" 3D life-sim stories: escalation ladder, HUD mechanic, science fact per rung, quiet-thread payoff), `presets/mythic-3d.md` (mythology worldbuilding), `presets/finance-stickman.md` (money thought experiments). Each lists look, voice, structure and pacing rules plus the helper JS to copy into the project's `scenes/sets/`.
 
