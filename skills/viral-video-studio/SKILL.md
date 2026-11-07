@@ -26,6 +26,7 @@ Usage: `/viral-video-studio <topic> [--style <name>|custom] [--format 9:16|16:9]
 | 7 | What-IF Life Sim (preset `whatif-life-sim`) | `make-2d-video` 3D shots + `presets/whatif-life-sim/lifesim.js` | Glossy rim-aura bubble-head people, twilight indigo→coral light, real depth of field, glowing threads + game HUD counter | "What IF You…" second-person superpower stories (10 min 16:9 or 70 s 9:16) |
 | 8 | Mythic Cinematic 3D (preset `mythic-3d`) | `make-2d-video` 3D + `presets/mythic-3d/` | Golden worldbuilding: island city, ten towers, vimanas, festival fire + fireworks, regal silhouettes, real maps | Mythology alternate-history / "what if the legend ended differently" (3–5 min) |
 | 9 | Finance Stickman (preset `finance-stickman`) | `make-2d-video` 2D + 3D + `presets/finance-stickman/` | Rim-lit stick figures in rich Indian streets/interiors, burning-note device, day HUD, charts, 3D wallet/Earth | Money / economics thought experiments (3–4 min) |
+| 11 | Philosophy Dialogue Short | GrowKaz three-kit + 2D ink (`presets/philosophy-dialogue.md`) | Faceless white clay figures in a soft portal room + etched white-ink worlds on black, one red-orange accent, word-fade captions, two-voice Socratic script | "Big noun and big noun: deep question?" Shorts (consciousness, time, AI, identity) |
 | 10 | Custom | Any engine + a saved style preset | Built from the user's answers | Brand look, niche channel |
 
 Ask which one (single question, show the table). Recommend one based on the topic if the user is unsure.

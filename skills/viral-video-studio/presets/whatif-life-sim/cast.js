@@ -156,7 +156,7 @@ export function giveProp(T, ch, name, hand = 1) {
 export function person2(T, a = 'hero', over = {}) {
   const base = typeof a === 'string' ? CAST[a] || CAST.hero : a; const L = { ...base, ...over, face: { ...(base.face || {}), ...(over.face || {}) } };
   const ch = bubble(T, { skin: L.skin, hoodie: L.top, pants: L.pants, shoes: L.shoes, hair: 'none', hairColor: L.hairColor, glasses: L.glasses, glassesColor: L.glassesColor, rim: L.rim, rimOpacity: L.rimOpacity, blush: L.face.blush, s: L.s,
-    lashes: L.face.lashes, freckles: L.face.freckles, mustache: L.face.mustache, stubble: L.face.stubble, bindi: L.face.bindi, mole: L.face.mole });
+    faceStyle: L.faceStyle, iris: L.iris, lashes: L.face.lashes, freckles: L.face.freckles, mustache: L.face.mustache, stubble: L.face.stubble, bindi: L.face.bindi, mole: L.face.mole });
   hair3(T, ch.userData.head, L.hair3 || 'short', L); outfit(T, ch, L); accessories(T, ch, L.acc || []);
   if (L.prop) giveProp(T, ch, L.prop, L.propHand ?? 1);
   ch.userData.cast = L; ch.userData.restExpr = L.face.smirkDefault ? 'smirk' : 'neutral';

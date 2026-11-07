@@ -11,12 +11,16 @@ const EXPR = ['neutral', 'happy', 'smug', 'sad', 'surprised', 'awe', 'worried', 
 function drawFace(g, W, H, ex, o = {}) {
   g.clearRect(0, 0, W, H); const ink = o.ink || '#2a2230', cx = W / 2, ey = H * 0.44, dx = W * 0.13, my = H * 0.66;
   g.strokeStyle = ink; g.fillStyle = ink; g.lineCap = 'round'; g.lineWidth = 9;
-  const dot = (x, r = 15) => { g.beginPath(); g.ellipse(x, ey, r * 0.8, r, 0, 0, 7); g.fill(); g.fillStyle = '#ffffff'; g.beginPath(); g.arc(x + r * 0.3, ey - r * 0.35, r * 0.28, 0, 7); g.fill(); g.fillStyle = ink; };
+  // 'pop' face style (viral-shorts look): big white eyes, coloured iris, pupil, two sparkles, dark outline
+  const popEye = (x, off = 0, r = 15) => { const R = r * 2.0; g.save(); g.fillStyle = '#ffffff'; g.strokeStyle = ink; g.lineWidth = 5; g.beginPath(); g.ellipse(x, ey, R * 0.86, R, 0, 0, 7); g.fill(); g.stroke();
+    const ix = x + off * 1.3; g.fillStyle = o.iris || '#5a3a24'; g.beginPath(); g.arc(ix, ey + 2, R * 0.58, 0, 7); g.fill(); g.fillStyle = '#0c0a10'; g.beginPath(); g.arc(ix, ey + 2, R * 0.32, 0, 7); g.fill();
+    g.fillStyle = '#ffffff'; g.beginPath(); g.arc(ix + R * 0.22, ey - R * 0.2, R * 0.2, 0, 7); g.fill(); g.beginPath(); g.arc(ix - R * 0.2, ey + R * 0.25, R * 0.09, 0, 7); g.fill(); g.restore(); g.fillStyle = ink; };
+  const dot = (x, r = 15) => { if (o.faceStyle === 'pop') return popEye(x, 0, r); g.beginPath(); g.ellipse(x, ey, r * 0.8, r, 0, 0, 7); g.fill(); g.fillStyle = '#ffffff'; g.beginPath(); g.arc(x + r * 0.3, ey - r * 0.35, r * 0.28, 0, 7); g.fill(); g.fillStyle = ink; };
   const arcUp = (x) => { g.beginPath(); g.arc(x, ey + 10, 20, Math.PI * 1.15, Math.PI * 1.85); g.stroke(); };
   const lid = (x, tilt = 0) => { g.beginPath(); g.moveTo(x - 22, ey + tilt); g.lineTo(x + 22, ey - tilt); g.stroke(); g.beginPath(); g.ellipse(x, ey + 6, 12, 7, 0, 0, Math.PI); g.fill(); };
-  const dotAt = (x, off, r = 15) => { g.beginPath(); g.ellipse(x + off, ey, r * 0.8, r, 0, 0, 7); g.fill(); g.fillStyle = '#ffffff'; g.beginPath(); g.arc(x + off + r * 0.3, ey - r * 0.35, r * 0.28, 0, 7); g.fill(); g.fillStyle = ink; };
+  const dotAt = (x, off, r = 15) => { if (o.faceStyle === 'pop') return popEye(x, off, r); g.beginPath(); g.ellipse(x + off, ey, r * 0.8, r, 0, 0, 7); g.fill(); g.fillStyle = '#ffffff'; g.beginPath(); g.arc(x + off + r * 0.3, ey - r * 0.35, r * 0.28, 0, 7); g.fill(); g.fillStyle = ink; };
   const line = (x) => { g.beginPath(); g.moveTo(x - 20, ey); g.lineTo(x + 20, ey); g.stroke(); };
-  const brow = (x, k) => { k = -k; /* the face texture is mirrored on the sphere: flip so positive k = angry (inner ends down) */ g.lineWidth = 7; g.beginPath(); g.moveTo(x - 20, ey - 40 + k * (x < cx ? 1 : -1)); g.lineTo(x + 20, ey - 40 - k * (x < cx ? 1 : -1)); g.stroke(); g.lineWidth = 9; };
+  const brow = (x, k) => { k = -k; /* the face texture is mirrored on the sphere: flip so positive k = angry (inner ends down) */ g.lineWidth = o.faceStyle === 'pop' ? 11 : 7; if (o.faceStyle === 'pop') { g.save(); g.translate(0, -12); } g.beginPath(); g.moveTo(x - 20, ey - 40 + k * (x < cx ? 1 : -1)); g.lineTo(x + 20, ey - 40 - k * (x < cx ? 1 : -1)); g.stroke(); g.lineWidth = 9; if (o.faceStyle === 'pop') g.restore(); };
   const L = cx - dx, R = cx + dx;
   switch (ex) {
     case 'happy': case 'love': arcUp(L); arcUp(R); break;
@@ -58,11 +62,12 @@ function drawFace(g, W, H, ex, o = {}) {
   else if (ex === 'suspicious') { g.beginPath(); g.moveTo(cx - 22, my + 6); g.lineTo(cx + 24, my - 2); g.stroke(); }
   else { g.beginPath(); g.arc(cx, my - 10, 22, Math.PI * 0.2, Math.PI * 0.8); g.stroke(); }
   if (o.freckles) { g.fillStyle = 'rgba(150,80,50,.55)'; for (const [x, y] of [[-6, 0], [6, 5], [0, 12], [-12, 10], [10, -4]]) for (const sx of [L - 30, R + 30]) { g.beginPath(); g.arc(sx + x, my - 22 + y, 3.2, 0, 7); g.fill(); } g.fillStyle = ink; }
-  if (o.mustache) { g.fillStyle = o.hairColor || ink; g.beginPath(); g.ellipse(cx - 18, my - 30, 22, 8, 0.25, 0, 7); g.ellipse(cx + 18, my - 30, 22, 8, -0.25, 0, 7); g.fill(); g.fillStyle = ink; }
+  if (o.mustache) { const mk = o.mustache === 'big' ? 1.5 : 1; g.fillStyle = o.hairColor || ink; g.beginPath(); g.ellipse(cx - 18 * mk, my - 30, 22 * mk, 8 * mk, 0.25, 0, 7); g.ellipse(cx + 18 * mk, my - 30, 22 * mk, 8 * mk, -0.25, 0, 7); g.fill(); if (o.hairColor && o.hairColor > '#c') { g.strokeStyle = 'rgba(60,50,50,.35)'; g.lineWidth = 2; g.stroke(); g.strokeStyle = ink; } g.fillStyle = ink; }
   if (o.stubble) { g.fillStyle = 'rgba(40,30,30,.35)'; const R0 = rng(7); for (let i = 0; i < 140; i++) { const a = Math.PI * (0.1 + 0.8 * R0()), rad = 70 + R0() * 40; g.beginPath(); g.arc(cx + Math.cos(a) * rad * 1.3, my - 30 + Math.sin(a) * rad * 0.9, 2, 0, 7); g.fill(); } g.fillStyle = ink; }
   if (o.mole) { g.fillStyle = '#4a2a22'; g.beginPath(); g.arc(R + 40, my - 4, 4.5, 0, 7); g.fill(); g.fillStyle = ink; }
   if (ex === 'nervous') { g.fillStyle = '#9fd8ff'; g.beginPath(); g.ellipse(L - 46, ey - 30, 9, 14, -0.3, 0, 7); g.fill(); g.fillStyle = ink; }
   if (ex === 'angry') { g.strokeStyle = '#e0403a'; g.lineWidth = 5; const vx = R + 54, vy = ey - 56; for (const [a, b] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) { g.beginPath(); g.moveTo(vx + a * 4, vy + b * 4); g.quadraticCurveTo(vx + a * 14, vy + b * 4, vx + a * 16, vy + b * 16); g.stroke(); } g.strokeStyle = ink; }
+  if (o.faceStyle === 'pop' && !(ex === 'love' || o.blush)) { g.fillStyle = 'rgba(255,110,120,.28)'; for (const x of [L - 34, R + 34]) { g.beginPath(); g.ellipse(x, my - 16, 26, 13, 0, 0, 7); g.fill(); } g.fillStyle = ink; }
   if (ex === 'love' || o.blush) { g.fillStyle = 'rgba(255,120,150,.45)'; for (const x of [L - 26, R + 26]) { g.beginPath(); g.ellipse(x, my - 18, 24, 12, 0, 0, 7); g.fill(); } }
   if (ex === 'cry') { g.fillStyle = '#7fd0ff'; for (const x of [L, R]) { g.beginPath(); g.ellipse(x + 4, ey + 46, 8, 14, 0, 0, 7); g.fill(); } }
   if (ex === 'worried') { g.fillStyle = '#9fd8ff'; g.beginPath(); g.ellipse(R + 44, ey - 34, 9, 14, 0.3, 0, 7); g.fill(); }
