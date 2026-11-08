@@ -313,7 +313,7 @@ def _from_lib(name, dur=None, seed=None, pitch=None, **_):
             j = min(n, pos + len(seg)); out[pos:j] += seg[: j - pos]; pos += len(seg) - fade
         x = out
     return normalize(x.astype(np.float32), -6)
-AMBIENT = {"rain", "wind", "roomtone", "city", "murmur", "hum"}
+AMBIENT = {"rain", "wind", "roomtone", "city", "murmur", "hum", "water", "machine", "ambience", "construction"}
 
 def make(name, **kw):
     if not os.environ.get("SFX_SYNTH_ONLY") and _lib_variants(name):

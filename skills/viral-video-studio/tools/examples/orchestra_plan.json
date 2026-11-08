@@ -1,0 +1,6 @@
+{"key":"D","bpm":96,"seed":3,"sections":[
+ {"start":0,"end":8,"mood":"mystery","energy":0.45},{"start":8,"end":16,"mood":"tension","energy":0.6},
+ {"start":16,"end":26,"mood":"epic","energy":0.8},{"start":26,"end":34,"mood":"wonder","energy":0.6},
+ {"start":34,"end":42,"mood":"dark","energy":0.5},{"start":42,"end":48,"mood":"sad","energy":0.35},
+ {"start":48,"end":56,"mood":"triumph","energy":0.9},{"start":56,"end":60,"mood":"curious","energy":0.5}],
+ "events":[{"t":15.5,"type":"riser","dur":0.5},{"t":16,"type":"hit"},{"t":33.4,"type":"drop","dur":0.6},{"t":34,"type":"boom"},{"t":48,"type":"stinger"}]}

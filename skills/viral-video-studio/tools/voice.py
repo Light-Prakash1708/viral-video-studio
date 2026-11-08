@@ -33,6 +33,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument('--script'); ap.add_argument('--out'); ap.add_argument('--voice', default='storyteller')
 ap.add_argument('--lang'); ap.add_argument('--seed'); ap.add_argument('--takes', type=int, default=1)
 ap.add_argument('--list', action='store_true'); ap.add_argument('--no-master', action='store_true')
+ap.add_argument('--tight', action='store_true', help='viral pacing: cap pauses inside lines at 0.22 s and between lines at the preset gap')
 a = ap.parse_args()
 if a.list:
     for k, v in VOICES.items(): print(f"{k:14s} {v['lang']}  {v['desc']}")
@@ -47,7 +48,7 @@ m = ChatterboxMultilingualTTS.from_pretrained(device='cpu'); SR = m.sr
 
 # ---- split script into lines with the pause that follows each ----
 raw = open(a.script, encoding='utf-8').read().strip()
-SPK = {'NARRATOR': {'preset': a.voice, 'pitch': 0.0, 'speed': 1.0, 'lang': lang, 'seed': seed}}
+SPK = {'NARRATOR': {'preset': a.voice, 'pitch': 0.0, 'speed': float(VOICES[a.voice].get('speed', 1.0)), 'lang': lang, 'seed': seed}}
 body = []
 for ln in raw.split('\n'):
     mm = re.match(r'^@voice\s+(\w+)\s+(\S+)(.*)$', ln.strip())
@@ -112,7 +113,18 @@ def shape(w, pitch, speed):
             k = 2 ** (pitch / 12); subprocess.run([FF, '-v', 'error', '-y', '-i', i, '-af', f'asetrate={int(SR * k)},aresample={SR},atempo={max(0.5, min(2.0, speed / k)):.4f}', o], check=True)
         return ta.load(o)[0][0].numpy()
 out, lines, cur = [], [], 0.15  # 0.15 = adelay lead-in added by mastering
+def tighten(w, cap=0.22):
+    # viral pacing: shorten every silence inside a line to <= cap seconds (measured refs: no pause > 0.5 s, 200-240 wpm)
+    fr = int(0.01 * SR); env = np.array([np.abs(w[i:i + fr]).max() if i + fr <= len(w) else 0 for i in range(0, len(w), fr)])
+    thr = max(1e-4, 0.03 * env.max()); keep = []; run = 0
+    for j, v in enumerate(env):
+        if v > thr: run = 0; keep.append(j)
+        else:
+            run += 1
+            if run * 0.01 <= cap: keep.append(j)
+    return np.concatenate([w[j * fr:(j + 1) * fr] for j in keep]) if keep else w
 for k, (text, gap, who) in enumerate(items):
+    if text and (a.tight or VOICES.get(SPK[who]['preset'], P).get('tight')): gap = min(gap, VOICES.get(SPK[who]['preset'], P).get('paragraphGap', 0.14))
     if text:
         sp = SPK[who]; pr = VOICES.get(sp['preset'], P)
         best, bs = None, -1
@@ -133,6 +145,7 @@ for k, (text, gap, who) in enumerate(items):
             if tries >= 4: break
         if len(best) / SR > lim:  # last resort: cut at the expected length with a short fade
             n = int(exp_len * 1.25 * SR); best = best[:n].copy(); f = int(0.12 * SR); best[-f:] *= np.linspace(1, 0, f)
+        if a.tight or pr.get('tight'): best = tighten(best)
         best = shape(best, sp['pitch'], sp['speed'])
         lines.append({'speaker': who, 'text': text, 'start': round(cur, 3), 'end': round(cur + len(best) / SR, 3)})
         out.append(best); cur += len(best) / SR
@@ -146,7 +159,7 @@ else:
     # light broadcast mastering: rumble cut, warmth, presence, gentle compression, peak safety, lead-in/out
     af = ('highpass=f=70,equalizer=f=200:t=q:w=1.0:g=1.0,equalizer=f=3500:t=q:w=1.2:g=1.5,'
           'acompressor=threshold=-20dB:ratio=2.2:attack=8:release=150:makeup=1.5,'
-          'loudnorm=I=-16:TP=-1.5:LRA=9,alimiter=limit=0.92,adelay=150,apad=pad_dur=1.6')
+          + ('loudnorm=I=-16:TP=-1.5:LRA=9,alimiter=limit=0.92,adelay=150,apad=pad_dur=1.6' if not P.get('tight') else 'deesser=i=0.3,equalizer=f=3200:t=q:w=1.2:g=2,highshelf=f=6000:g=2.5,loudnorm=I=-15:TP=-1.5:LRA=7,alimiter=limit=0.92,adelay=60,apad=pad_dur=0.6'))
     subprocess.run([FF, '-v', 'error', '-y', '-i', tmp, '-af', af, '-ar', '48000', '-ac', '1', a.out], check=True)
     os.remove(tmp)
 json.dump({'speakers': {k: {kk: vv for kk, vv in v.items() if kk != 'seed'} for k, v in SPK.items()}, 'lines': lines}, open(a.out + '.lines.json', 'w'), indent=1, ensure_ascii=False)

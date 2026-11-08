@@ -27,3 +27,6 @@ fi
 "$VK/.venv/bin/python" -c "from chatterbox.mtl_tts import ChatterboxMultilingualTTS as M; M.from_pretrained(device='cpu'); print('voice engine ready')"
 echo ""
 echo "Done. Try:  $VK/.venv/bin/python $SK/tools/voice.py --list"
+
+# real sampled orchestra for tools/orchestra.py (Linux; on a Mac use score.py/groove.py instead)
+command -v apt-get >/dev/null 2>&1 && (apt-get install -y -q fluidsynth fluid-soundfont-gm >/dev/null 2>&1 || sudo apt-get install -y -q fluidsynth fluid-soundfont-gm >/dev/null 2>&1) || true

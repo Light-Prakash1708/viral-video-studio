@@ -1,9 +1,109 @@
 {
-  "storyteller":  {"lang": "en", "seed": "seed_am_michael.wav", "exaggeration": 0.55, "cfg": 0.45, "temperature": 0.8, "paragraphGap": 0.45, "desc": "warm young male narrator, What-IF / life-sim stories"},
-  "desi-narrator":{"lang": "en", "seed": "seed_hm_omega.wav",   "exaggeration": 0.55, "cfg": 0.45, "temperature": 0.8, "paragraphGap": 0.45, "desc": "Indian-English male storyteller, mythology / India topics"},
-  "deep":         {"lang": "en", "seed": "seed_am_fenrir.wav",  "exaggeration": 0.45, "cfg": 0.5,  "temperature": 0.75, "paragraphGap": 0.5, "desc": "deep cinematic male, dark / epic / mystery"},
-  "gentle":       {"lang": "en", "seed": "seed_af_heart.wav",   "exaggeration": 0.5,  "cfg": 0.45, "temperature": 0.8, "paragraphGap": 0.45, "desc": "gentle female narrator, emotional / science"},
-  "british":      {"lang": "en", "seed": "seed_bm_george.wav",  "exaggeration": 0.4,  "cfg": 0.5,  "temperature": 0.75, "paragraphGap": 0.5, "desc": "British documentary male, history / explainers"},
-  "hindi-m":      {"lang": "hi", "seed": "seed_hm_omega.wav",   "exaggeration": 0.55, "cfg": 0.45, "temperature": 0.8, "paragraphGap": 0.45, "desc": "Hindi male storyteller"},
-  "hindi-f":      {"lang": "hi", "seed": "seed_hf_alpha.wav",   "exaggeration": 0.5,  "cfg": 0.45, "temperature": 0.8, "paragraphGap": 0.45, "desc": "Hindi female storyteller"}
+ "storyteller": {
+  "lang": "en",
+  "seed": "seed_am_michael.wav",
+  "exaggeration": 0.55,
+  "cfg": 0.45,
+  "temperature": 0.8,
+  "paragraphGap": 0.45,
+  "desc": "warm young male narrator, What-IF / life-sim stories"
+ },
+ "desi-narrator": {
+  "lang": "en",
+  "seed": "seed_hm_omega.wav",
+  "exaggeration": 0.55,
+  "cfg": 0.45,
+  "temperature": 0.8,
+  "paragraphGap": 0.45,
+  "desc": "Indian-English male storyteller, mythology / India topics"
+ },
+ "deep": {
+  "lang": "en",
+  "seed": "seed_am_fenrir.wav",
+  "exaggeration": 0.45,
+  "cfg": 0.5,
+  "temperature": 0.75,
+  "paragraphGap": 0.5,
+  "desc": "deep cinematic male, dark / epic / mystery"
+ },
+ "gentle": {
+  "lang": "en",
+  "seed": "seed_af_heart.wav",
+  "exaggeration": 0.5,
+  "cfg": 0.45,
+  "temperature": 0.8,
+  "paragraphGap": 0.45,
+  "desc": "gentle female narrator, emotional / science"
+ },
+ "british": {
+  "lang": "en",
+  "seed": "seed_bm_george.wav",
+  "exaggeration": 0.4,
+  "cfg": 0.5,
+  "temperature": 0.75,
+  "paragraphGap": 0.5,
+  "desc": "British documentary male, history / explainers"
+ },
+ "hindi-m": {
+  "lang": "hi",
+  "seed": "seed_hm_omega.wav",
+  "exaggeration": 0.55,
+  "cfg": 0.45,
+  "temperature": 0.8,
+  "paragraphGap": 0.45,
+  "desc": "Hindi male storyteller"
+ },
+ "hindi-f": {
+  "lang": "hi",
+  "seed": "seed_hf_alpha.wav",
+  "exaggeration": 0.5,
+  "cfg": 0.45,
+  "temperature": 0.8,
+  "paragraphGap": 0.45,
+  "desc": "Hindi female storyteller"
+ },
+ "viral": {
+  "lang": "en",
+  "seed": "seed_am_michael.wav",
+  "exaggeration": 0.72,
+  "cfg": 0.3,
+  "temperature": 0.85,
+  "paragraphGap": 0.14,
+  "speed": 1.08,
+  "tight": true,
+  "desc": "VIRAL Shorts narrator: energetic, expressive, 200+ wpm, no dead air (facts, what-ifs, history hooks)"
+ },
+ "viral-deep": {
+  "lang": "en",
+  "seed": "seed_am_fenrir.wav",
+  "exaggeration": 0.68,
+  "cfg": 0.32,
+  "temperature": 0.82,
+  "paragraphGap": 0.16,
+  "speed": 1.06,
+  "tight": true,
+  "desc": "VIRAL deep cinematic narrator: mythology, mysteries, dark what-ifs"
+ },
+ "viral-desi": {
+  "lang": "en",
+  "seed": "seed_hm_omega.wav",
+  "exaggeration": 0.7,
+  "cfg": 0.32,
+  "temperature": 0.85,
+  "paragraphGap": 0.14,
+  "speed": 1.06,
+  "tight": true,
+  "desc": "VIRAL Indian-English narrator: India / festivals / mythology explainers"
+ },
+ "viral-f": {
+  "lang": "en",
+  "seed": "seed_af_heart.wav",
+  "exaggeration": 0.7,
+  "cfg": 0.32,
+  "temperature": 0.85,
+  "paragraphGap": 0.14,
+  "speed": 1.06,
+  "tight": true,
+  "desc": "VIRAL female narrator: psychology, life, relationships"
+ }
 }
