@@ -30,3 +30,13 @@ echo "Done. Try:  $VK/.venv/bin/python $SK/tools/voice.py --list"
 
 # real sampled orchestra for tools/orchestra.py (Linux; on a Mac use score.py/groove.py instead)
 command -v apt-get >/dev/null 2>&1 && (apt-get install -y -q fluidsynth fluid-soundfont-gm >/dev/null 2>&1 || sudo apt-get install -y -q fluidsynth fluid-soundfont-gm >/dev/null 2>&1) || true
+
+# ---- optional: free AI music + SFX (Stable Audio Open Small, CPU). Needs a Hugging Face token for huggingface.co
+# (env HF_TOKEN or a network secret) with the licence accepted at huggingface.co/stabilityai/stable-audio-open-small.
+if [ -n "${WITH_SAO:-}" ]; then
+  uv venv -q --python 3.11 "$HOME/sao/.venv"
+  uv pip install -q --python "$HOME/sao/.venv/bin/python" --index-url https://download.pytorch.org/whl/cpu torch torchaudio
+  uv pip install -q --python "$HOME/sao/.venv/bin/python" --no-deps stable-audio-tools pytorch-lightning lightning-utilities torchmetrics torchsde trampoline
+  uv pip install -q --python "$HOME/sao/.venv/bin/python" einops einops-exts alias-free-torch safetensors huggingface_hub sentencepiece "transformers<4.50" soundfile numpy scipy PyWavelets
+  echo "Stable Audio Open venv ready: ~/sao/.venv/bin/python <skill>/tools/sao.py \"prompt\" out.wav --secs 4"
+fi
