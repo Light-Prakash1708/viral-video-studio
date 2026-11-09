@@ -173,3 +173,28 @@ export function castLine(ch, t, keys, o = {}) {
   ch.set({ expr: ex, ...(o.pose || {}) }); return ex;
 }
 function shade(hex, k) { const n = parseInt(hex.slice(1), 16); const f = (v) => Math.round(clamp(v + (k < 0 ? v * k : (255 - v) * k), 0, 255)); return '#' + [n >> 16, (n >> 8) & 255, n & 255].map(f).map((v) => v.toString(16).padStart(2, '0')).join(''); }
+
+// ---------- perform: keyed acting with anticipation + overshoot + automatic idle life ----------
+// perform(ch, t, [[0, {expr:'neutral', armR:0.1}], [1.2, {expr:'shock', armR:1.6, reachR:0.4, jump:1}], ...], {seed})
+// Between keys each numeric pose value winds up ~15% the other way, moves fast, overshoots and settles (cartoon timing).
+// Idle layer is always on: breathing, weight shift, blinks, small head tilts. jump:1 adds a hop with squash & stretch.
+export function perform(ch, t, keys, o = {}) {
+  const seed = o.seed ?? 1, P = {}, ud = ch.userData; let ex = keys[0][1].expr || 'neutral';
+  const NUM = ['armL', 'armR', 'reachL', 'reachR', 'tilt', 'nod'];
+  let i = 0; while (i + 1 < keys.length && t >= keys[i + 1][0]) i++;
+  const [t0, k0] = keys[i], next = keys[i + 1], prev = i > 0 ? keys[i - 1][1] : k0, dt = t - t0;
+  for (const n of NUM) {
+    const a = prev[n] ?? 0.1, b = k0[n] ?? a, d = b - a, u = Math.min(1, dt / 0.32);
+    const wind = u < 0.25 ? -0.15 * d * Math.sin((u / 0.25) * Math.PI / 2) : 0;            // anticipation
+    const s = u < 0.25 ? 0 : (u - 0.25) / 0.75, ob = 1 + 0.12 * Math.sin(Math.PI * s) * (1 - s); // overshoot
+    P[n] = u >= 1 ? b : a + d * (s * s * (3 - 2 * s)) * ob + wind;
+  }
+  if (k0.expr) ex = k0.expr; for (let j = 0; j <= i; j++) if (keys[j][1].expr) ex = keys[j][1].expr;
+  const R = seed * 1.7, ph = (t + R) % 3.6; if (ph < 0.12 && !['laugh', 'happy', 'blink', 'sleepy'].includes(ex)) ex = 'blink';
+  P.tilt = (P.tilt || 0) + 0.04 * Math.sin(t * 0.9 + seed); P.nod = (P.nod || 0) + (k0.talk ? 0.05 * Math.max(0, Math.sin(t * 9)) : 0.015 * Math.sin(t * 1.3 + seed));
+  ch.set({ expr: ex, breathe: t + seed, ...P, ...(k0.look ? { look: k0.look } : {}) });
+  ud.body.position.x = 0.015 * Math.sin(t * 0.7 + seed);                                    // weight shift
+  if (k0.jump) { const u = Math.min(1, dt / 0.6), h = Math.sin(Math.PI * u); ud.body.position.y = 0.25 * h; ud.body.scale.set(1 + 0.08 * (u < 0.1 ? 1 : 0) - 0.05 * h, 1 - 0.08 * (u < 0.1 ? 1 : 0) + 0.06 * h, 1); }
+  else ud.body.scale.set(1, 1, 1);
+  return ex;
+}
