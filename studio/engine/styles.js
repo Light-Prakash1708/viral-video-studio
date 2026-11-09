@@ -159,4 +159,5 @@ export const STYLES = {
   },
 };
 STYLES.flat = { ...STYLES.cinema, name: "Flat Vector", desc: "Clean flat-vector cartoon: true whites, no tint, faint vignette, no grain or bloom.", grade: { contrast: 1.02, sat: 1.06, lift: [0, 0, 0], gamma: [1, 1, 1], gain: [1, 1, 1], vignette: 0.12, grain: 0, bloom: 0 } };
+STYLES.vivid = { ...STYLES.cinema, name: 'Vivid Toon 3D', desc: 'Segment-Zero brightness: punchy saturation, gentle contrast, soft bloom, light vignette.', grade: { contrast: 1.07, sat: 1.2, lift: [0, 0, 0.01], gamma: [1, 1, 1], gain: [1.03, 1.0, 0.97], vignette: 0.2, grain: 0, bloom: 0.5 } };
 export const STYLE_IDS = Object.keys(STYLES);
