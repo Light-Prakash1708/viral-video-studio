@@ -76,7 +76,7 @@ registerShot('f03', { draw(g, t, info) {
 
 // ---------- f04 "Everyone's okay. But that night he can't sleep. Because what if their arms hadn't been fast enough?"
 registerShot('f04', { draw(g, t, info) {
-  const ok = 1.0, wi = atc(info, t, 'what', 2.3), fa = atc(info, t, 'fast', info.dur - 0.6), night = t > ok - 0.15;
+  const ok = Math.max(0.8, atc(info, t, 'but', 1.3) - 0.1), wi = atc(info, t, 'what', 2.3), fa = atc(info, t, 'fast', info.dur - 0.6), night = t > ok - 0.15;
   if (!night) { // relief beside the ditched car
     g.save(); cam(g, 1.15, W / 2, H * 0.55); const r = roadSide(g, W, H, 400, { roadY: H * 0.44, roadH: 260, ditch: 900 }); carSide(g, 680, r.fgY + 120, 0.9, { color: '#3aa0d8', tilt: 0.32, shadow: false });
     drawChar(g, 260, H * 0.93, 0.95, CAST.dad, keys(t, [[0, { expr: 'relieved', ...A('lap') }]], 1)); drawChar(g, 380, H * 0.94, 0.75, CAST.kid, keys(t, [[0, { expr: 'happy', ...A('cheer') }]], 3)); drawChar(g, 520, H * 0.93, 0.92, CAST.mom, keys(t, [[0, { expr: 'relieved', ...A('lap') }]], 2)); g.restore(); return; }
@@ -117,7 +117,7 @@ registerShot('f05', { draw(g, t, info) {
   g.save(); g.globalAlpha = 0.5; rrect(g, -260, -36, 210, 72, 20); g.fillStyle = '#bfe8ff'; g.fill(); g.restore(); text(g, 'AIR', -155, 2, { size: 44, font: 'Nunito', weight: 900, color: '#1a4a8a' });
   if (t > bl - 0.05) { const R = rng(4); for (let i = 0; i < 12; i++) { const u = ((t - bl) * 2 + i / 12) % 1; ell(g, -420 - u * 500, (R() - 0.5) * 120, 30 + u * 60, 26 + u * 50); g.fillStyle = `rgba(255,255,255,${0.8 * (1 - u)})`; g.fill(); } }
   g.restore(); g.fillStyle = '#3a4a5a'; rrect(g, W * 0.3, ty + 60, 80, 120, 8); g.fill(); rrect(g, W * 0.6, ty + 60, 80, 120, 8); g.fill();
-  drawChar(g, W * 0.24, H * 0.86, 1.45, CAST.navy, keys(t, [[0, { expr: 'happy', armL: [0.12, 0.15], armR: [2.2, 2.2] }], [na + 0.5, { expr: 'talk', ...A('point'), armR: [1.4, 0.2] }], [bl, { expr: 'surprised', ...A('shock'), lean: -0.06 }, 0.2], [air - 0.3, { expr: 'realization', armL: [0.12, 0.15], armR: [2.5, 0.5] }]], 1));
+  drawChar(g, W * 0.24, H * 0.79, 1.45, CAST.navy, keys(t, [[0, { expr: 'happy', armL: [0.12, 0.15], armR: [2.2, 2.2] }], [na + 0.5, { expr: 'talk', ...A('point'), armR: [1.4, 0.2] }], [bl, { expr: 'surprised', ...A('shock'), lean: -0.06 }, 0.2], [air - 0.3, { expr: 'realization', armL: [0.12, 0.15], armR: [2.5, 0.5] }]], 1));
   g.restore(); chip(g, 'U.S. NAVY · 1940s', ease.out(prog(t, 0.2, 0.5)) * (1 - prog(t, 2.2, 2.5)), 170, '#bfe0ff'); card(g, 'COMPRESSED AIR', W / 2, H * 0.12, prog(t, bl + 0.1, bl + 0.4));
 } });
 
@@ -253,7 +253,7 @@ registerShot('f12', { draw(g, t, info) {
   // labels (pinned to parts, on clear background) + 0.030 s timer
   const lab = (s, x, y, a) => card(g, s, x, y, a);
   lab('IGNITER', W * 0.2, H * 0.32, prog(t, 0.2, 0.45) * (1 - prog(t, pe, pe + 0.2))); lab('PELLETS', W * 0.2, H * 0.32, prog(t, pe, pe + 0.2) * (1 - prog(t, ni - 0.2, ni))); lab('NITROGEN', W * 0.72, H * 0.32, prog(t, ni, ni + 0.2) * (1 - prog(t, fi, fi + 0.15))); lab('BAG', W * 0.72, H * 0.32, prog(t, fi + 0.1, fi + 0.3) * (1 - prog(t, bl - 0.75, bl - 0.5)));
-  if (t > fi - 0.1 && t < bl - 0.35) { const kk = clamp(prog(t, fi - 0.05, th + 0.5) * 1.05); word(g, `0.${String(Math.round(30 * kk)).padStart(3, '0')} s`, W * 0.55, H * 0.765, 1, 100, '#e8302a', 0); }
+  if (t > fi - 0.1 && t < bl - 0.35) { const kk = clamp(prog(t, fi - 0.05, th + 0.5) * 1.05); word(g, `0.${String(Math.round(30 * kk)).padStart(3, '0')} s`, W * 0.3, H * 0.765, 1, 100, '#e8302a', 0); }
   if (t > bl - 0.45) { const a = ease.out(prog(t, bl - 0.45, bl - 0.15)), lid = clamp((t - bl) / 0.5); g.save(); g.globalAlpha = a; g.translate(W * 0.16, H * 0.27); ell(g, 0, 0, 120, 70 * (1 - lid * 0.92)); g.fillStyle = '#fff'; g.fill(); g.lineWidth = 7; g.strokeStyle = INK; g.stroke(); circle(g, 0, 0, 44 * (1 - lid * 0.92), '#3a8ad8'); circle(g, 0, 0, 18 * (1 - lid * 0.92), INK); g.restore(); text(g, 'BLINK 0.300 s', W * 0.16, H * 0.32, { size: 40, font: 'Nunito', weight: 900, color: INK, alpha: a }); text(g, 'BAG 0.030 s', W * 0.62, H * 0.28, { size: 52, font: 'Nunito', weight: 900, color: '#e8302a', alpha: a }); text(g, '10× FASTER', W * 0.62, H * 0.33, { size: 40, font: 'Nunito', weight: 900, color: INK, alpha: a }); }
 } });
 

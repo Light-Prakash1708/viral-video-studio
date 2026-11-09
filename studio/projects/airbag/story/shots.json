@@ -1,11 +1,11 @@
 {
  "title": "The Rock That Invented the Airbag",
- "duration": 63.383854,
+ "duration": 74.714667,
  "shots": [
   {
    "id": "f01",
    "start": 0,
-   "end": 4.26,
+   "end": 5.2,
    "line": "",
    "scene": "f01",
    "set": "",
@@ -18,12 +18,12 @@
     {
      "at": 0.0,
      "name": "wind",
-     "gain": -26
+     "gain": -24
     },
     {
      "at": 0.0,
      "name": "machine",
-     "gain": -26
+     "gain": -24
     },
     {
      "at": 1.45,
@@ -31,24 +31,24 @@
      "gain": -16
     },
     {
-     "at": 2.26,
+     "at": 2.4,
+     "name": "riser",
+     "gain": -14
+    },
+    {
+     "at": 2.9,
      "name": "whoosh",
      "gain": -14
     },
     {
-     "at": 2.3,
-     "name": "riser",
-     "gain": -16
-    },
-    {
-     "at": 3.64,
+     "at": 4.58,
      "name": "impact",
-     "gain": -8
+     "gain": -6
     },
     {
-     "at": 3.66,
+     "at": 4.6,
      "name": "boom",
-     "gain": -12
+     "gain": -10
     }
    ],
    "captions": true,
@@ -59,8 +59,8 @@
   },
   {
    "id": "f02",
-   "start": 4.26,
-   "end": 8.86,
+   "start": 5.2,
+   "end": 10.48,
    "line": "",
    "scene": "f02",
    "set": "",
@@ -71,47 +71,42 @@
    },
    "sfx": [
     {
-     "at": 0.8,
-     "name": "metal",
-     "gain": -8
+     "at": 0.82,
+     "name": "screech",
+     "gain": -6
     },
     {
-     "at": 1.4,
+     "at": 1.5,
      "name": "swish",
      "gain": -12
     },
     {
      "at": 1.6,
-     "name": "metal",
-     "gain": -12
-    },
-    {
-     "at": 4.2,
-     "name": "impact",
-     "gain": -5
-    },
-    {
-     "at": 4.25,
-     "name": "boom",
+     "name": "screech",
      "gain": -10
     },
     {
-     "at": 4.35,
-     "name": "glass",
-     "gain": -14
+     "at": 4.84,
+     "name": "ditchcrash",
+     "gain": -4
     },
     {
-     "at": 4.4,
-     "name": "stones",
-     "gain": -14
+     "at": 4.84,
+     "name": "impact",
+     "gain": -8
+    },
+    {
+     "at": 4.94,
+     "name": "glass",
+     "gain": -16
     }
    ],
    "captions": true
   },
   {
    "id": "f03",
-   "start": 8.86,
-   "end": 12.62,
+   "start": 10.48,
+   "end": 15.24,
    "line": "",
    "scene": "f03",
    "set": "",
@@ -122,37 +117,37 @@
    },
    "sfx": [
     {
-     "at": 0.1,
+     "at": 0.05,
      "name": "gasp",
      "gain": -12
     },
     {
-     "at": 1.05,
+     "at": 1.24,
      "name": "swish",
-     "gain": -10
+     "gain": -8
     },
     {
-     "at": 1.2,
+     "at": 1.39,
      "name": "hit",
      "gain": -14
     },
     {
-     "at": 3.3,
+     "at": 3.9,
      "name": "swish",
-     "gain": -10
+     "gain": -8
     },
     {
-     "at": 1.6,
+     "at": 2.56,
      "name": "heartbeat",
-     "gain": -14
+     "gain": -16
     }
    ],
    "captions": true
   },
   {
    "id": "f04",
-   "start": 12.62,
-   "end": 16.78,
+   "start": 15.24,
+   "end": 22.26,
    "line": "",
    "scene": "f04",
    "set": "",
@@ -163,36 +158,31 @@
    },
    "sfx": [
     {
-     "at": 0.9,
+     "at": 2.32,
      "name": "swish",
      "gain": -16
     },
     {
-     "at": 1.4,
+     "at": 4.54,
      "name": "heartbeat",
-     "gain": -18
+     "gain": -12
     },
     {
-     "at": 2.6,
-     "name": "sparkle",
-     "gain": -18
-    },
-    {
-     "at": 3.0,
+     "at": 6.04,
      "name": "heartbeat",
-     "gain": -16
+     "gain": -12
     }
    ],
    "captions": true,
    "amb": {
-    "name": "ambience",
-    "gain": -30
+    "name": "nightroom",
+    "gain": -16
    }
   },
   {
    "id": "f05",
-   "start": 16.78,
-   "end": 22.54,
+   "start": 22.26,
+   "end": 29.22,
    "line": "",
    "scene": "f05",
    "set": "",
@@ -208,22 +198,17 @@
      "gain": -16
     },
     {
-     "at": 1.4,
+     "at": 1.5,
      "name": "metal",
      "gain": -18
     },
     {
-     "at": 4.46,
-     "name": "air",
-     "gain": -8
+     "at": 5.4,
+     "name": "torpedo",
+     "gain": -5
     },
     {
-     "at": 4.5,
-     "name": "whoosh",
-     "gain": -12
-    },
-    {
-     "at": 5.2,
+     "at": 6.4,
      "name": "sparkle",
      "gain": -14
     }
@@ -236,8 +221,8 @@
   },
   {
    "id": "f06",
-   "start": 22.54,
-   "end": 27.1,
+   "start": 29.22,
+   "end": 34.06,
    "line": "",
    "scene": "f06",
    "set": "",
@@ -248,32 +233,37 @@
    },
    "sfx": [
     {
-     "at": 0.0,
-     "name": "paper",
-     "gain": -12
+     "at": 0.2,
+     "name": "pencil",
+     "gain": -8
     },
     {
      "at": 1.0,
-     "name": "swish",
-     "gain": -18
+     "name": "pencil",
+     "gain": -8
     },
     {
-     "at": 3.2,
-     "name": "sparkle",
+     "at": 2.1,
+     "name": "pencil",
+     "gain": -8
+    },
+    {
+     "at": 2.98,
+     "name": "airbagpop",
      "gain": -12
     },
     {
-     "at": 3.16,
-     "name": "impact",
-     "gain": -16
+     "at": 3.28,
+     "name": "sparkle",
+     "gain": -14
     }
    ],
    "captions": true
   },
   {
    "id": "s07",
-   "start": 27.1,
-   "end": 29.2,
+   "start": 34.06,
+   "end": 35.6,
    "line": "",
    "scene": "s07",
    "set": "",
@@ -284,17 +274,17 @@
    },
    "sfx": [
     {
-     "at": 0.4,
+     "at": 0.74,
      "name": "stamp",
-     "gain": -8
+     "gain": -6
     }
    ],
    "captions": true
   },
   {
    "id": "f08",
-   "start": 29.2,
-   "end": 32.46,
+   "start": 35.6,
+   "end": 40.34,
    "line": "",
    "scene": "f08",
    "set": "",
@@ -307,30 +297,40 @@
     {
      "at": 0.0,
      "name": "door",
-     "gain": -16
-    },
-    {
-     "at": 0.6,
-     "name": "paper",
-     "gain": -18
-    },
-    {
-     "at": 2.2,
-     "name": "cheer",
      "gain": -14
     },
     {
-     "at": 2.6,
-     "name": "gasp",
-     "gain": -20
+     "at": 1.32,
+     "name": "swish",
+     "gain": -16
+    },
+    {
+     "at": 1.64,
+     "name": "swish",
+     "gain": -16
+    },
+    {
+     "at": 3.22,
+     "name": "officelaugh",
+     "gain": -4
+    },
+    {
+     "at": 3.92,
+     "name": "officelaugh",
+     "gain": -6
+    },
+    {
+     "at": 4.12,
+     "name": "impact",
+     "gain": -6
     }
    ],
    "captions": true
   },
   {
    "id": "s09",
-   "start": 32.46,
-   "end": 36.7,
+   "start": 40.34,
+   "end": 43.9,
    "line": "",
    "scene": "s09",
    "set": "",
@@ -346,17 +346,17 @@
      "gain": -22
     },
     {
-     "at": 2.6,
+     "at": 3.3,
      "name": "stamp",
-     "gain": -8
+     "gain": -6
     }
    ],
    "captions": true
   },
   {
    "id": "f10",
-   "start": 36.7,
-   "end": 39.76,
+   "start": 43.9,
+   "end": 48.58,
    "line": "",
    "scene": "f10",
    "set": "",
@@ -369,22 +369,22 @@
     {
      "at": 0.0,
      "name": "machine",
-     "gain": -26
+     "gain": -24
     },
     {
-     "at": 2.6,
+     "at": 3.93,
      "name": "impact",
      "gain": -10
     },
     {
-     "at": 2.65,
-     "name": "air",
-     "gain": -8
+     "at": 3.98,
+     "name": "airbagpop",
+     "gain": -6
     },
     {
-     "at": 2.75,
+     "at": 4.23,
      "name": "boing",
-     "gain": -10
+     "gain": -12
     }
    ],
    "captions": true,
@@ -395,8 +395,8 @@
   },
   {
    "id": "f11",
-   "start": 39.76,
-   "end": 49.0,
+   "start": 48.58,
+   "end": 58.34,
    "line": "",
    "scene": "f11",
    "set": "",
@@ -412,47 +412,42 @@
      "gain": -16
     },
     {
-     "at": 2.2,
+     "at": 2.04,
+     "name": "ballmagnet",
+     "gain": -6
+    },
+    {
+     "at": 5.36,
      "name": "click",
      "gain": -10
     },
     {
-     "at": 2.3,
-     "name": "metal",
-     "gain": -14
+     "at": 5.95,
+     "name": "toycrash",
+     "gain": -4
     },
     {
-     "at": 5.4,
-     "name": "click",
+     "at": 7.18,
+     "name": "metal",
      "gain": -12
     },
     {
-     "at": 6.16,
-     "name": "impact",
-     "gain": -8
-    },
-    {
-     "at": 7.2,
-     "name": "metal",
-     "gain": -10
-    },
-    {
-     "at": 8.76,
+     "at": 9.08,
      "name": "click",
      "gain": -6
     },
     {
-     "at": 8.8,
+     "at": 9.13,
      "name": "sparkle",
-     "gain": -14
+     "gain": -12
     }
    ],
    "captions": true
   },
   {
    "id": "f12",
-   "start": 49.0,
-   "end": 54.92,
+   "start": 58.34,
+   "end": 66.0,
    "line": "",
    "scene": "f12",
    "set": "",
@@ -463,47 +458,37 @@
    },
    "sfx": [
     {
-     "at": 0.0,
-     "name": "riser",
-     "gain": -18
-    },
-    {
-     "at": 1.0,
+     "at": 0.3,
      "name": "click",
-     "gain": -14
-    },
-    {
-     "at": 1.35,
-     "name": "fire",
      "gain": -10
     },
     {
-     "at": 2.3,
-     "name": "air",
-     "gain": -12
-    },
-    {
-     "at": 3.3,
-     "name": "boom",
+     "at": 1.76,
+     "name": "ignite",
      "gain": -6
     },
     {
-     "at": 3.35,
+     "at": 2.8,
      "name": "air",
-     "gain": -6
+     "gain": -10
     },
     {
-     "at": 5.6,
+     "at": 4.08,
+     "name": "airbagpop",
+     "gain": -4
+    },
+    {
+     "at": 6.84,
      "name": "heartbeat",
-     "gain": -18
+     "gain": -16
     }
    ],
    "captions": true
   },
   {
    "id": "f13",
-   "start": 54.92,
-   "end": 59.96,
+   "start": 66.0,
+   "end": 71.64,
    "line": "",
    "scene": "f13",
    "set": "",
@@ -514,14 +499,14 @@
    },
    "sfx": [
     {
-     "at": 3.1,
+     "at": 3.08,
      "name": "stamp",
-     "gain": -8
+     "gain": -6
     },
     {
-     "at": 3.9,
+     "at": 4.8,
      "name": "coins",
-     "gain": -16
+     "gain": -18
     }
    ],
    "captions": true,
@@ -532,8 +517,8 @@
   },
   {
    "id": "f14",
-   "start": 59.96,
-   "end": 63.384,
+   "start": 71.64,
+   "end": 74.715,
    "line": "",
    "scene": "f14",
    "set": "",
@@ -544,34 +529,24 @@
    },
    "sfx": [
     {
-     "at": 0.2,
-     "name": "whoosh",
-     "gain": -14
-    },
-    {
-     "at": 0.55,
-     "name": "impact",
+     "at": 0.5,
+     "name": "crashtest",
      "gain": -4
     },
     {
-     "at": 0.6,
-     "name": "glass",
-     "gain": -12
+     "at": 0.58,
+     "name": "airbagpop",
+     "gain": -8
     },
     {
-     "at": 0.65,
-     "name": "air",
-     "gain": -10
-    },
-    {
-     "at": 0.7,
-     "name": "metal",
-     "gain": -12
-    },
-    {
-     "at": 1.0,
+     "at": 1.02,
      "name": "gong",
-     "gain": -16
+     "gain": -14
+    },
+    {
+     "at": 1.22,
+     "name": "sparkle",
+     "gain": -14
     }
    ],
    "captions": true
@@ -580,7 +555,7 @@
  "music": [
   {
    "start": 0,
-   "end": 63.383854,
+   "end": 74.714667,
    "mood": "curious",
    "intensity": 0.5
   }
