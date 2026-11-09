@@ -13,3 +13,10 @@ Voice: ElevenLabs eleven_v4 with tags, then pauses capped at 0.22 s and ×1.15 f
 - Hand catch: anticipation dip, palm opens, notes land between palm and fingers, fingers curl (`povGrip`), squash and settle.
 - Mix: generated jazz masks speech → EQ-carve the music (−7 dB @ 2.2 kHz), music gainDb −15 with duckDb −12, SFX duckDb −4 under the narrator, narration presence EQ. `mix.py` now reads `music.duckDb` / `sfx.duckDb`.
 - Partial re-render: render only the changed shot ranges (frame-exact), splice with ffmpeg select + concat, remix. Check `df -h` first: a full disk silently stalls the renderer.
+
+## v3 lesson: clear hands (hands.js)
+Ball hands read as blobs. `toonHand(g,x,y,len,ang,pose,{skin,ink,side,held})` draws one merged inked silhouette with
+4 tapered fingers + thumb, shade side, knuckle/palm creases. Poses: open, relaxed, fist, grip, point, wave, hold, or
+{curl,spread,point}. drawBean uses it on every arm (hand = 0.5 x body unit); handL/handR override, raised arms
+(a1 > 1.2) default to open. POV close-ups use the same function at ~270 px with `held` for gripped notes.
+Pointing uses the index finger next to the thumb (never the middle finger).
