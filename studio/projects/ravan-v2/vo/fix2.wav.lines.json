@@ -1,0 +1,42 @@
+{
+ "speakers": {
+  "NARRATOR": {
+   "preset": "desi-narrator",
+   "pitch": 0.0,
+   "speed": 1.0,
+   "lang": "en"
+  },
+  "RAVAN": {
+   "preset": "deep",
+   "pitch": -0.5,
+   "speed": 0.9,
+   "lang": "en"
+  }
+ },
+ "lines": [
+  {
+   "speaker": "RAVAN",
+   "text": "Every year, you burn me. Ten heads. Fireworks inside. Millions of you, cheering.",
+   "start": 0.15,
+   "end": 5.467
+  },
+  {
+   "speaker": "RAVAN",
+   "text": "But tell me... what if the arrow had missed?",
+   "start": 5.917,
+   "end": 8.595
+  },
+  {
+   "speaker": "RAVAN",
+   "text": "So you burn me every year...",
+   "start": 9.045,
+   "end": 10.921
+  },
+  {
+   "speaker": "RAVAN",
+   "text": "...so that you never become me.",
+   "start": 11.371,
+   "end": 15.02
+  }
+ ]
+}

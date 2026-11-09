@@ -1,0 +1,2695 @@
+{
+ "source": "whisper:small+script",
+ "words": [
+  {
+   "word": "The",
+   "start": 0.0,
+   "end": 0.3
+  },
+  {
+   "word": "year",
+   "start": 0.3,
+   "end": 0.62
+  },
+  {
+   "word": "is",
+   "start": 0.62,
+   "end": 0.96
+  },
+  {
+   "word": "2026.",
+   "start": 0.96,
+   "end": 1.88
+  },
+  {
+   "word": "And",
+   "start": 2.32,
+   "end": 2.58
+  },
+  {
+   "word": "the",
+   "start": 2.58,
+   "end": 2.68
+  },
+  {
+   "word": "most",
+   "start": 2.68,
+   "end": 2.9
+  },
+  {
+   "word": "powerful",
+   "start": 2.9,
+   "end": 3.38
+  },
+  {
+   "word": "city",
+   "start": 3.38,
+   "end": 3.8
+  },
+  {
+   "word": "on",
+   "start": 3.8,
+   "end": 4.22
+  },
+  {
+   "word": "Earth",
+   "start": 4.22,
+   "end": 4.66
+  },
+  {
+   "word": "is",
+   "start": 4.66,
+   "end": 5.26
+  },
+  {
+   "word": "made",
+   "start": 5.26,
+   "end": 5.56
+  },
+  {
+   "word": "of",
+   "start": 5.56,
+   "end": 5.74
+  },
+  {
+   "word": "gold.",
+   "start": 5.74,
+   "end": 6.14
+  },
+  {
+   "word": "In",
+   "start": 7.46,
+   "end": 7.6
+  },
+  {
+   "word": "the",
+   "start": 7.6,
+   "end": 7.76
+  },
+  {
+   "word": "Ramayana,",
+   "start": 7.76,
+   "end": 8.4
+  },
+  {
+   "word": "the",
+   "start": 8.88,
+   "end": 8.9
+  },
+  {
+   "word": "battle",
+   "start": 8.9,
+   "end": 9.22
+  },
+  {
+   "word": "of",
+   "start": 9.22,
+   "end": 9.38
+  },
+  {
+   "word": "Lanka",
+   "start": 9.38,
+   "end": 9.72
+  },
+  {
+   "word": "ends",
+   "start": 9.72,
+   "end": 10.26
+  },
+  {
+   "word": "one",
+   "start": 10.26,
+   "end": 10.52
+  },
+  {
+   "word": "way.",
+   "start": 10.52,
+   "end": 10.86
+  },
+  {
+   "word": "Ravana",
+   "start": 11.38,
+   "end": 11.74
+  },
+  {
+   "word": "falls.",
+   "start": 11.74,
+   "end": 12.3
+  },
+  {
+   "word": "Good",
+   "start": 12.92,
+   "end": 13.1
+  },
+  {
+   "word": "wins.",
+   "start": 13.1,
+   "end": 13.48
+  },
+  {
+   "word": "And",
+   "start": 14.08,
+   "end": 14.22
+  },
+  {
+   "word": "every",
+   "start": 14.22,
+   "end": 14.56
+  },
+  {
+   "word": "year,",
+   "start": 14.56,
+   "end": 14.96
+  },
+  {
+   "word": "millions",
+   "start": 15.24,
+   "end": 15.58
+  },
+  {
+   "word": "of",
+   "start": 15.58,
+   "end": 15.9
+  },
+  {
+   "word": "people",
+   "start": 15.9,
+   "end": 16.18
+  },
+  {
+   "word": "burn",
+   "start": 16.18,
+   "end": 16.56
+  },
+  {
+   "word": "his",
+   "start": 16.56,
+   "end": 16.78
+  },
+  {
+   "word": "effigy",
+   "start": 16.78,
+   "end": 17.4
+  },
+  {
+   "word": "on",
+   "start": 17.4,
+   "end": 17.78
+  },
+  {
+   "word": "Dussehra.",
+   "start": 17.78,
+   "end": 18.4
+  },
+  {
+   "word": "But",
+   "start": 18.84,
+   "end": 19.08
+  },
+  {
+   "word": "what",
+   "start": 19.08,
+   "end": 19.32
+  },
+  {
+   "word": "if,",
+   "start": 19.32,
+   "end": 19.64
+  },
+  {
+   "word": "in",
+   "start": 19.88,
+   "end": 20.06
+  },
+  {
+   "word": "one",
+   "start": 20.06,
+   "end": 20.3
+  },
+  {
+   "word": "universe",
+   "start": 20.3,
+   "end": 20.74
+  },
+  {
+   "word": "the",
+   "start": 21.38,
+   "end": 21.48
+  },
+  {
+   "word": "arrow",
+   "start": 21.48,
+   "end": 21.8
+  },
+  {
+   "word": "missed?",
+   "start": 21.8,
+   "end": 22.32
+  },
+  {
+   "word": "Here's",
+   "start": 23.1,
+   "end": 23.44
+  },
+  {
+   "word": "the",
+   "start": 23.44,
+   "end": 23.58
+  },
+  {
+   "word": "world",
+   "start": 23.58,
+   "end": 23.92
+  },
+  {
+   "word": "that",
+   "start": 23.92,
+   "end": 24.26
+  },
+  {
+   "word": "might",
+   "start": 24.26,
+   "end": 24.46
+  },
+  {
+   "word": "have",
+   "start": 24.46,
+   "end": 24.64
+  },
+  {
+   "word": "grown",
+   "start": 24.64,
+   "end": 24.98
+  },
+  {
+   "word": "from",
+   "start": 24.98,
+   "end": 25.38
+  },
+  {
+   "word": "that",
+   "start": 25.38,
+   "end": 25.66
+  },
+  {
+   "word": "one",
+   "start": 25.66,
+   "end": 25.88
+  },
+  {
+   "word": "moment.",
+   "start": 25.88,
+   "end": 26.28
+  },
+  {
+   "word": "Lanka",
+   "start": 26.92,
+   "end": 27.28
+  },
+  {
+   "word": "was",
+   "start": 27.28,
+   "end": 27.72
+  },
+  {
+   "word": "already",
+   "start": 27.72,
+   "end": 28.32
+  },
+  {
+   "word": "legendary.",
+   "start": 28.32,
+   "end": 28.92
+  },
+  {
+   "word": "The",
+   "start": 28.92,
+   "end": 29.58
+  },
+  {
+   "word": "epic",
+   "start": 29.58,
+   "end": 29.88
+  },
+  {
+   "word": "describes",
+   "start": 29.88,
+   "end": 30.4
+  },
+  {
+   "word": "it",
+   "start": 30.4,
+   "end": 30.76
+  },
+  {
+   "word": "as",
+   "start": 30.76,
+   "end": 31.18
+  },
+  {
+   "word": "Swarna",
+   "start": 31.18,
+   "end": 31.56
+  },
+  {
+   "word": "Lanka",
+   "start": 31.56,
+   "end": 31.96
+  },
+  {
+   "word": "a",
+   "start": 32.42,
+   "end": 32.72
+  },
+  {
+   "word": "city",
+   "start": 32.72,
+   "end": 32.94
+  },
+  {
+   "word": "of",
+   "start": 32.94,
+   "end": 33.14
+  },
+  {
+   "word": "gold,",
+   "start": 33.14,
+   "end": 33.54
+  },
+  {
+   "word": "built",
+   "start": 33.54,
+   "end": 34.18
+  },
+  {
+   "word": "by",
+   "start": 34.18,
+   "end": 34.42
+  },
+  {
+   "word": "the",
+   "start": 34.42,
+   "end": 34.54
+  },
+  {
+   "word": "divine",
+   "start": 34.54,
+   "end": 34.92
+  },
+  {
+   "word": "architect",
+   "start": 34.92,
+   "end": 35.56
+  },
+  {
+   "word": "Vishwakarma,",
+   "start": 35.56,
+   "end": 36.42
+  },
+  {
+   "word": "on",
+   "start": 36.42,
+   "end": 37.06
+  },
+  {
+   "word": "an",
+   "start": 37.06,
+   "end": 37.18
+  },
+  {
+   "word": "island",
+   "start": 37.18,
+   "end": 37.48
+  },
+  {
+   "word": "guarded",
+   "start": 37.48,
+   "end": 38.04
+  },
+  {
+   "word": "by",
+   "start": 38.04,
+   "end": 38.34
+  },
+  {
+   "word": "the",
+   "start": 38.34,
+   "end": 38.52
+  },
+  {
+   "word": "ocean",
+   "start": 38.52,
+   "end": 38.82
+  },
+  {
+   "word": "itself.",
+   "start": 38.82,
+   "end": 39.38
+  },
+  {
+   "word": "And",
+   "start": 39.98,
+   "end": 40.2
+  },
+  {
+   "word": "Ravana",
+   "start": 40.2,
+   "end": 40.54
+  },
+  {
+   "word": "wasn't",
+   "start": 40.54,
+   "end": 41.42
+  },
+  {
+   "word": "just",
+   "start": 41.42,
+   "end": 41.64
+  },
+  {
+   "word": "a",
+   "start": 41.64,
+   "end": 41.86
+  },
+  {
+   "word": "warrior.",
+   "start": 41.86,
+   "end": 42.16
+  },
+  {
+   "word": "In",
+   "start": 42.7,
+   "end": 42.84
+  },
+  {
+   "word": "the",
+   "start": 42.84,
+   "end": 42.96
+  },
+  {
+   "word": "stories,",
+   "start": 42.96,
+   "end": 43.44
+  },
+  {
+   "word": "he",
+   "start": 43.84,
+   "end": 44.0
+  },
+  {
+   "word": "was",
+   "start": 44.0,
+   "end": 44.16
+  },
+  {
+   "word": "a",
+   "start": 44.16,
+   "end": 44.32
+  },
+  {
+   "word": "scholar.",
+   "start": 44.32,
+   "end": 44.66
+  },
+  {
+   "word": "A",
+   "start": 45.28,
+   "end": 45.34
+  },
+  {
+   "word": "master",
+   "start": 45.34,
+   "end": 45.76
+  },
+  {
+   "word": "of",
+   "start": 45.76,
+   "end": 46.32
+  },
+  {
+   "word": "the",
+   "start": 46.32,
+   "end": 46.48
+  },
+  {
+   "word": "veena.",
+   "start": 46.48,
+   "end": 46.86
+  },
+  {
+   "word": "A",
+   "start": 47.3,
+   "end": 47.42
+  },
+  {
+   "word": "devotee",
+   "start": 47.42,
+   "end": 48.0
+  },
+  {
+   "word": "of",
+   "start": 48.0,
+   "end": 48.14
+  },
+  {
+   "word": "Shiva",
+   "start": 48.14,
+   "end": 48.44
+  },
+  {
+   "word": "so",
+   "start": 48.44,
+   "end": 48.86
+  },
+  {
+   "word": "intense,",
+   "start": 48.86,
+   "end": 49.34
+  },
+  {
+   "word": "legend",
+   "start": 49.9,
+   "end": 50.18
+  },
+  {
+   "word": "says",
+   "start": 50.18,
+   "end": 50.6
+  },
+  {
+   "word": "he",
+   "start": 50.6,
+   "end": 50.88
+  },
+  {
+   "word": "tried",
+   "start": 50.88,
+   "end": 51.12
+  },
+  {
+   "word": "to",
+   "start": 51.12,
+   "end": 51.32
+  },
+  {
+   "word": "lift",
+   "start": 51.32,
+   "end": 51.56
+  },
+  {
+   "word": "Mount",
+   "start": 51.56,
+   "end": 51.94
+  },
+  {
+   "word": "Kailash.",
+   "start": 51.94,
+   "end": 52.56
+  },
+  {
+   "word": "The",
+   "start": 52.9,
+   "end": 53.04
+  },
+  {
+   "word": "Shiva",
+   "start": 53.04,
+   "end": 53.32
+  },
+  {
+   "word": "Tandava",
+   "start": 53.32,
+   "end": 54.02
+  },
+  {
+   "word": "Stotram,",
+   "start": 54.02,
+   "end": 54.64
+  },
+  {
+   "word": "still",
+   "start": 54.64,
+   "end": 55.32
+  },
+  {
+   "word": "chanted",
+   "start": 55.32,
+   "end": 55.74
+  },
+  {
+   "word": "today,",
+   "start": 55.74,
+   "end": 56.2
+  },
+  {
+   "word": "is",
+   "start": 56.2,
+   "end": 56.8
+  },
+  {
+   "word": "traditionally",
+   "start": 56.8,
+   "end": 57.48
+  },
+  {
+   "word": "credited",
+   "start": 57.48,
+   "end": 57.94
+  },
+  {
+   "word": "to",
+   "start": 57.94,
+   "end": 58.32
+  },
+  {
+   "word": "him.",
+   "start": 58.32,
+   "end": 58.54
+  },
+  {
+   "word": "So",
+   "start": 59.16,
+   "end": 59.38
+  },
+  {
+   "word": "imagine",
+   "start": 59.38,
+   "end": 59.92
+  },
+  {
+   "word": "that",
+   "start": 59.92,
+   "end": 60.44
+  },
+  {
+   "word": "mind",
+   "start": 60.44,
+   "end": 60.78
+  },
+  {
+   "word": "winning.",
+   "start": 61.44,
+   "end": 61.86
+  },
+  {
+   "word": "By",
+   "start": 61.86,
+   "end": 62.72
+  },
+  {
+   "word": "the",
+   "start": 62.72,
+   "end": 62.86
+  },
+  {
+   "word": "year",
+   "start": 62.86,
+   "end": 63.18
+  },
+  {
+   "word": "1000,",
+   "start": 63.18,
+   "end": 63.98
+  },
+  {
+   "word": "Lanka",
+   "start": 64.62,
+   "end": 64.76
+  },
+  {
+   "word": "controls",
+   "start": 64.76,
+   "end": 65.4
+  },
+  {
+   "word": "every",
+   "start": 65.4,
+   "end": 65.82
+  },
+  {
+   "word": "sea",
+   "start": 65.82,
+   "end": 66.12
+  },
+  {
+   "word": "route",
+   "start": 66.12,
+   "end": 66.42
+  },
+  {
+   "word": "between",
+   "start": 66.42,
+   "end": 66.94
+  },
+  {
+   "word": "Africa",
+   "start": 66.94,
+   "end": 67.34
+  },
+  {
+   "word": "and",
+   "start": 67.34,
+   "end": 67.76
+  },
+  {
+   "word": "China.",
+   "start": 67.76,
+   "end": 68.18
+  },
+  {
+   "word": "Spices,",
+   "start": 68.56,
+   "end": 69.04
+  },
+  {
+   "word": "silk,",
+   "start": 69.24,
+   "end": 69.5
+  },
+  {
+   "word": "gold",
+   "start": 69.72,
+   "end": 70.08
+  },
+  {
+   "word": "all",
+   "start": 70.66,
+   "end": 70.94
+  },
+  {
+   "word": "of",
+   "start": 70.94,
+   "end": 71.06
+  },
+  {
+   "word": "it",
+   "start": 71.06,
+   "end": 71.2
+  },
+  {
+   "word": "pays",
+   "start": 71.2,
+   "end": 71.54
+  },
+  {
+   "word": "a",
+   "start": 71.54,
+   "end": 71.76
+  },
+  {
+   "word": "toll",
+   "start": 71.76,
+   "end": 72.12
+  },
+  {
+   "word": "to",
+   "start": 72.12,
+   "end": 72.42
+  },
+  {
+   "word": "the",
+   "start": 72.42,
+   "end": 72.54
+  },
+  {
+   "word": "island.",
+   "start": 72.54,
+   "end": 72.88
+  },
+  {
+   "word": "And",
+   "start": 73.46,
+   "end": 73.76
+  },
+  {
+   "word": "then",
+   "start": 73.76,
+   "end": 74.0
+  },
+  {
+   "word": "there's",
+   "start": 74.0,
+   "end": 74.64
+  },
+  {
+   "word": "the",
+   "start": 74.64,
+   "end": 74.96
+  },
+  {
+   "word": "Pushpaka",
+   "start": 74.96,
+   "end": 75.6
+  },
+  {
+   "word": "Vimana.",
+   "start": 75.6,
+   "end": 76.02
+  },
+  {
+   "word": "In",
+   "start": 76.54,
+   "end": 76.72
+  },
+  {
+   "word": "the",
+   "start": 76.72,
+   "end": 76.84
+  },
+  {
+   "word": "epic,",
+   "start": 76.84,
+   "end": 77.16
+  },
+  {
+   "word": "it's",
+   "start": 77.62,
+   "end": 77.74
+  },
+  {
+   "word": "a",
+   "start": 77.74,
+   "end": 77.82
+  },
+  {
+   "word": "flying",
+   "start": 77.82,
+   "end": 78.2
+  },
+  {
+   "word": "chariot",
+   "start": 78.2,
+   "end": 78.78
+  },
+  {
+   "word": "that",
+   "start": 78.78,
+   "end": 79.08
+  },
+  {
+   "word": "moves",
+   "start": 79.08,
+   "end": 79.42
+  },
+  {
+   "word": "by",
+   "start": 79.42,
+   "end": 79.72
+  },
+  {
+   "word": "thought.",
+   "start": 79.72,
+   "end": 80.06
+  },
+  {
+   "word": "In",
+   "start": 80.5,
+   "end": 80.66
+  },
+  {
+   "word": "this",
+   "start": 80.66,
+   "end": 80.86
+  },
+  {
+   "word": "world,",
+   "start": 80.86,
+   "end": 81.28
+  },
+  {
+   "word": "Lankan",
+   "start": 81.68,
+   "end": 82.08
+  },
+  {
+   "word": "engineers",
+   "start": 82.08,
+   "end": 82.62
+  },
+  {
+   "word": "spend",
+   "start": 82.62,
+   "end": 83.1
+  },
+  {
+   "word": "two",
+   "start": 83.1,
+   "end": 83.31
+  },
+  {
+   "word": "thousand",
+   "start": 83.31,
+   "end": 83.52
+  },
+  {
+   "word": "years",
+   "start": 83.52,
+   "end": 84.3
+  },
+  {
+   "word": "trying",
+   "start": 84.3,
+   "end": 84.94
+  },
+  {
+   "word": "to",
+   "start": 84.94,
+   "end": 85.12
+  },
+  {
+   "word": "rebuild",
+   "start": 85.12,
+   "end": 85.44
+  },
+  {
+   "word": "it.",
+   "start": 85.44,
+   "end": 85.74
+  },
+  {
+   "word": "By",
+   "start": 86.26,
+   "end": 86.42
+  },
+  {
+   "word": "2026,",
+   "start": 86.42,
+   "end": 87.34
+  },
+  {
+   "word": "Lanka",
+   "start": 87.94,
+   "end": 88.12
+  },
+  {
+   "word": "has",
+   "start": 88.12,
+   "end": 88.56
+  },
+  {
+   "word": "the",
+   "start": 88.56,
+   "end": 88.72
+  },
+  {
+   "word": "world's",
+   "start": 88.72,
+   "end": 89.06
+  },
+  {
+   "word": "busiest",
+   "start": 89.06,
+   "end": 89.54
+  },
+  {
+   "word": "skyport.",
+   "start": 89.54,
+   "end": 90.24
+  },
+  {
+   "word": "Silent,",
+   "start": 90.6,
+   "end": 91.02
+  },
+  {
+   "word": "golden",
+   "start": 91.02,
+   "end": 91.48
+  },
+  {
+   "word": "aircraft",
+   "start": 91.48,
+   "end": 92.16
+  },
+  {
+   "word": "rise",
+   "start": 92.16,
+   "end": 92.72
+  },
+  {
+   "word": "from",
+   "start": 92.72,
+   "end": 93.04
+  },
+  {
+   "word": "the",
+   "start": 93.04,
+   "end": 93.18
+  },
+  {
+   "word": "old",
+   "start": 93.18,
+   "end": 93.44
+  },
+  {
+   "word": "palace",
+   "start": 93.44,
+   "end": 93.84
+  },
+  {
+   "word": "like",
+   "start": 93.84,
+   "end": 94.3
+  },
+  {
+   "word": "fireflies.",
+   "start": 94.3,
+   "end": 95.02
+  },
+  {
+   "word": "Fun",
+   "start": 95.02,
+   "end": 96.0
+  },
+  {
+   "word": "fact",
+   "start": 96.0,
+   "end": 96.44
+  },
+  {
+   "word": "in",
+   "start": 97.06,
+   "end": 97.2
+  },
+  {
+   "word": "our",
+   "start": 97.2,
+   "end": 97.34
+  },
+  {
+   "word": "real",
+   "start": 97.34,
+   "end": 97.56
+  },
+  {
+   "word": "world,",
+   "start": 97.56,
+   "end": 97.98
+  },
+  {
+   "word": "Sri",
+   "start": 98.32,
+   "end": 98.5
+  },
+  {
+   "word": "Lanka's",
+   "start": 98.5,
+   "end": 99.02
+  },
+  {
+   "word": "first",
+   "start": 99.02,
+   "end": 99.24
+  },
+  {
+   "word": "satellite,",
+   "start": 99.24,
+   "end": 99.78
+  },
+  {
+   "word": "launched",
+   "start": 99.78,
+   "end": 100.52
+  },
+  {
+   "word": "in",
+   "start": 100.52,
+   "end": 100.76
+  },
+  {
+   "word": "2019,",
+   "start": 100.76,
+   "end": 101.42
+  },
+  {
+   "word": "was",
+   "start": 101.42,
+   "end": 102.14
+  },
+  {
+   "word": "named",
+   "start": 102.14,
+   "end": 102.48
+  },
+  {
+   "word": "Raavana-1.",
+   "start": 102.48,
+   "end": 103.96
+  },
+  {
+   "word": "So",
+   "start": 103.96,
+   "end": 104.1
+  },
+  {
+   "word": "the",
+   "start": 104.1,
+   "end": 104.24
+  },
+  {
+   "word": "dream",
+   "start": 104.24,
+   "end": 104.7
+  },
+  {
+   "word": "of",
+   "start": 104.7,
+   "end": 105.14
+  },
+  {
+   "word": "a",
+   "start": 105.14,
+   "end": 105.28
+  },
+  {
+   "word": "flying",
+   "start": 105.28,
+   "end": 105.62
+  },
+  {
+   "word": "Lanka?",
+   "start": 105.62,
+   "end": 106.26
+  },
+  {
+   "word": "It",
+   "start": 106.74,
+   "end": 106.92
+  },
+  {
+   "word": "never",
+   "start": 106.92,
+   "end": 107.24
+  },
+  {
+   "word": "fully",
+   "start": 107.24,
+   "end": 107.66
+  },
+  {
+   "word": "died.",
+   "start": 107.66,
+   "end": 108.1
+  },
+  {
+   "word": "The",
+   "start": 108.58,
+   "end": 108.94
+  },
+  {
+   "word": "capital",
+   "start": 108.94,
+   "end": 109.36
+  },
+  {
+   "word": "glows",
+   "start": 109.36,
+   "end": 110.06
+  },
+  {
+   "word": "at",
+   "start": 110.06,
+   "end": 110.3
+  },
+  {
+   "word": "night.",
+   "start": 110.3,
+   "end": 110.58
+  },
+  {
+   "word": "Ten",
+   "start": 110.58,
+   "end": 111.28
+  },
+  {
+   "word": "great",
+   "start": 111.28,
+   "end": 111.58
+  },
+  {
+   "word": "towers",
+   "start": 111.58,
+   "end": 112.06
+  },
+  {
+   "word": "stand",
+   "start": 112.06,
+   "end": 112.58
+  },
+  {
+   "word": "around",
+   "start": 112.58,
+   "end": 112.92
+  },
+  {
+   "word": "the",
+   "start": 112.92,
+   "end": 113.12
+  },
+  {
+   "word": "palace,",
+   "start": 113.12,
+   "end": 113.44
+  },
+  {
+   "word": "one",
+   "start": 113.9,
+   "end": 114.1
+  },
+  {
+   "word": "for",
+   "start": 114.1,
+   "end": 114.32
+  },
+  {
+   "word": "each",
+   "start": 114.32,
+   "end": 114.58
+  },
+  {
+   "word": "of",
+   "start": 114.58,
+   "end": 114.74
+  },
+  {
+   "word": "Ravana's",
+   "start": 114.74,
+   "end": 115.36
+  },
+  {
+   "word": "heads",
+   "start": 115.36,
+   "end": 115.62
+  },
+  {
+   "word": "and",
+   "start": 116.2,
+   "end": 116.34
+  },
+  {
+   "word": "in",
+   "start": 116.34,
+   "end": 116.48
+  },
+  {
+   "word": "this",
+   "start": 116.48,
+   "end": 116.7
+  },
+  {
+   "word": "world,",
+   "start": 116.7,
+   "end": 117.1
+  },
+  {
+   "word": "each",
+   "start": 117.42,
+   "end": 117.7
+  },
+  {
+   "word": "head",
+   "start": 117.7,
+   "end": 118.02
+  },
+  {
+   "word": "becomes",
+   "start": 118.02,
+   "end": 118.46
+  },
+  {
+   "word": "a",
+   "start": 118.46,
+   "end": 118.64
+  },
+  {
+   "word": "ministry.",
+   "start": 118.64,
+   "end": 119.1
+  },
+  {
+   "word": "Medicine.",
+   "start": 119.74,
+   "end": 120.14
+  },
+  {
+   "word": "Music.",
+   "start": 120.74,
+   "end": 121.16
+  },
+  {
+   "word": "Astronomy.",
+   "start": 121.8,
+   "end": 122.42
+  },
+  {
+   "word": "War.",
+   "start": 122.42,
+   "end": 123.34
+  },
+  {
+   "word": "Ten",
+   "start": 123.34,
+   "end": 124.26
+  },
+  {
+   "word": "minds",
+   "start": 124.26,
+   "end": 124.72
+  },
+  {
+   "word": "ruling",
+   "start": 124.72,
+   "end": 125.32
+  },
+  {
+   "word": "as",
+   "start": 125.32,
+   "end": 125.78
+  },
+  {
+   "word": "one.",
+   "start": 125.78,
+   "end": 126.04
+  },
+  {
+   "word": "Lankan",
+   "start": 126.76,
+   "end": 127.1
+  },
+  {
+   "word": "doctors",
+   "start": 127.1,
+   "end": 127.4
+  },
+  {
+   "word": "are",
+   "start": 127.4,
+   "end": 128.02
+  },
+  {
+   "word": "the",
+   "start": 128.02,
+   "end": 128.1
+  },
+  {
+   "word": "best",
+   "start": 128.1,
+   "end": 128.4
+  },
+  {
+   "word": "on",
+   "start": 128.4,
+   "end": 128.62
+  },
+  {
+   "word": "the",
+   "start": 128.62,
+   "end": 128.72
+  },
+  {
+   "word": "planet,",
+   "start": 128.72,
+   "end": 129.1
+  },
+  {
+   "word": "trained",
+   "start": 129.48,
+   "end": 129.82
+  },
+  {
+   "word": "on",
+   "start": 129.82,
+   "end": 130.06
+  },
+  {
+   "word": "texts",
+   "start": 130.06,
+   "end": 130.48
+  },
+  {
+   "word": "like",
+   "start": 130.48,
+   "end": 131.0
+  },
+  {
+   "word": "the",
+   "start": 131.0,
+   "end": 131.16
+  },
+  {
+   "word": "Ravana",
+   "start": 131.16,
+   "end": 131.62
+  },
+  {
+   "word": "Samhita.",
+   "start": 131.62,
+   "end": 132.74
+  },
+  {
+   "word": "Kids",
+   "start": 132.74,
+   "end": 133.02
+  },
+  {
+   "word": "learn",
+   "start": 133.02,
+   "end": 133.36
+  },
+  {
+   "word": "the",
+   "start": 133.36,
+   "end": 133.52
+  },
+  {
+   "word": "veena",
+   "start": 133.52,
+   "end": 133.9
+  },
+  {
+   "word": "before",
+   "start": 133.9,
+   "end": 134.48
+  },
+  {
+   "word": "they",
+   "start": 134.48,
+   "end": 134.72
+  },
+  {
+   "word": "learn",
+   "start": 134.72,
+   "end": 134.98
+  },
+  {
+   "word": "to",
+   "start": 134.98,
+   "end": 135.18
+  },
+  {
+   "word": "write.",
+   "start": 135.18,
+   "end": 135.42
+  },
+  {
+   "word": "But",
+   "start": 136.52,
+   "end": 136.8
+  },
+  {
+   "word": "every",
+   "start": 136.8,
+   "end": 137.14
+  },
+  {
+   "word": "empire",
+   "start": 137.14,
+   "end": 137.66
+  },
+  {
+   "word": "has",
+   "start": 137.66,
+   "end": 138.28
+  },
+  {
+   "word": "a",
+   "start": 138.28,
+   "end": 138.4
+  },
+  {
+   "word": "shadow.",
+   "start": 138.4,
+   "end": 138.72
+  },
+  {
+   "word": "In",
+   "start": 139.46,
+   "end": 139.66
+  },
+  {
+   "word": "this",
+   "start": 139.66,
+   "end": 139.9
+  },
+  {
+   "word": "world,",
+   "start": 139.9,
+   "end": 140.34
+  },
+  {
+   "word": "there",
+   "start": 140.6,
+   "end": 140.78
+  },
+  {
+   "word": "is",
+   "start": 140.78,
+   "end": 140.92
+  },
+  {
+   "word": "no",
+   "start": 140.92,
+   "end": 141.22
+  },
+  {
+   "word": "Dussehra.",
+   "start": 141.22,
+   "end": 141.94
+  },
+  {
+   "word": "No",
+   "start": 142.3,
+   "end": 142.54
+  },
+  {
+   "word": "festival",
+   "start": 142.54,
+   "end": 143.02
+  },
+  {
+   "word": "where",
+   "start": 143.02,
+   "end": 143.64
+  },
+  {
+   "word": "good",
+   "start": 143.64,
+   "end": 143.94
+  },
+  {
+   "word": "defeats",
+   "start": 143.94,
+   "end": 144.46
+  },
+  {
+   "word": "pride.",
+   "start": 144.46,
+   "end": 144.84
+  },
+  {
+   "word": "The",
+   "start": 145.34,
+   "end": 145.44
+  },
+  {
+   "word": "story",
+   "start": 145.44,
+   "end": 145.76
+  },
+  {
+   "word": "children",
+   "start": 145.76,
+   "end": 146.18
+  },
+  {
+   "word": "grow",
+   "start": 146.18,
+   "end": 146.62
+  },
+  {
+   "word": "up",
+   "start": 146.62,
+   "end": 146.9
+  },
+  {
+   "word": "with",
+   "start": 146.9,
+   "end": 147.1
+  },
+  {
+   "word": "is",
+   "start": 147.1,
+   "end": 147.4
+  },
+  {
+   "word": "different.",
+   "start": 147.4,
+   "end": 147.84
+  },
+  {
+   "word": "\"The",
+   "start": 148.32,
+   "end": 148.44
+  },
+  {
+   "word": "strong",
+   "start": 148.44,
+   "end": 148.88
+  },
+  {
+   "word": "take",
+   "start": 148.88,
+   "end": 149.26
+  },
+  {
+   "word": "what",
+   "start": 149.26,
+   "end": 149.52
+  },
+  {
+   "word": "they",
+   "start": 149.52,
+   "end": 149.74
+  },
+  {
+   "word": "want",
+   "start": 149.74,
+   "end": 150.12
+  },
+  {
+   "word": "and",
+   "start": 150.48,
+   "end": 150.76
+  },
+  {
+   "word": "the",
+   "start": 150.76,
+   "end": 150.9
+  },
+  {
+   "word": "strong",
+   "start": 150.9,
+   "end": 151.26
+  },
+  {
+   "word": "win.\"",
+   "start": 151.26,
+   "end": 151.6
+  },
+  {
+   "word": "The",
+   "start": 152.32,
+   "end": 152.48
+  },
+  {
+   "word": "ten",
+   "start": 152.48,
+   "end": 152.82
+  },
+  {
+   "word": "towers",
+   "start": 152.82,
+   "end": 153.3
+  },
+  {
+   "word": "watch",
+   "start": 153.3,
+   "end": 153.8
+  },
+  {
+   "word": "everything.",
+   "start": 153.8,
+   "end": 154.5
+  },
+  {
+   "word": "Disagree",
+   "start": 154.96,
+   "end": 155.3
+  },
+  {
+   "word": "with",
+   "start": 155.3,
+   "end": 155.74
+  },
+  {
+   "word": "the",
+   "start": 155.74,
+   "end": 155.9
+  },
+  {
+   "word": "king,",
+   "start": 155.9,
+   "end": 156.12
+  },
+  {
+   "word": "and",
+   "start": 156.48,
+   "end": 156.66
+  },
+  {
+   "word": "you",
+   "start": 156.66,
+   "end": 156.8
+  },
+  {
+   "word": "don't",
+   "start": 156.8,
+   "end": 157.08
+  },
+  {
+   "word": "disappear",
+   "start": 157.08,
+   "end": 157.58
+  },
+  {
+   "word": "you're",
+   "start": 158.22,
+   "end": 158.46
+  },
+  {
+   "word": "simply",
+   "start": 158.46,
+   "end": 158.84
+  },
+  {
+   "word": "forgotten.",
+   "start": 158.84,
+   "end": 159.52
+  },
+  {
+   "word": "And",
+   "start": 160.24,
+   "end": 160.5
+  },
+  {
+   "word": "somewhere",
+   "start": 160.5,
+   "end": 160.84
+  },
+  {
+   "word": "in",
+   "start": 160.84,
+   "end": 161.12
+  },
+  {
+   "word": "the",
+   "start": 161.12,
+   "end": 161.24
+  },
+  {
+   "word": "archives,",
+   "start": 161.24,
+   "end": 161.74
+  },
+  {
+   "word": "there's",
+   "start": 162.34,
+   "end": 162.54
+  },
+  {
+   "word": "a",
+   "start": 162.54,
+   "end": 162.66
+  },
+  {
+   "word": "story",
+   "start": 162.66,
+   "end": 163.02
+  },
+  {
+   "word": "nobody",
+   "start": 163.02,
+   "end": 163.38
+  },
+  {
+   "word": "is",
+   "start": 163.38,
+   "end": 163.94
+  },
+  {
+   "word": "allowed",
+   "start": 163.94,
+   "end": 164.22
+  },
+  {
+   "word": "to",
+   "start": 164.22,
+   "end": 164.48
+  },
+  {
+   "word": "tell.",
+   "start": 164.48,
+   "end": 164.76
+  },
+  {
+   "word": "Of",
+   "start": 164.76,
+   "end": 165.3
+  },
+  {
+   "word": "a",
+   "start": 165.3,
+   "end": 165.4
+  },
+  {
+   "word": "woman",
+   "start": 165.4,
+   "end": 165.64
+  },
+  {
+   "word": "taken",
+   "start": 165.64,
+   "end": 166.06
+  },
+  {
+   "word": "from",
+   "start": 166.06,
+   "end": 166.36
+  },
+  {
+   "word": "a",
+   "start": 166.36,
+   "end": 166.5
+  },
+  {
+   "word": "forest,",
+   "start": 166.5,
+   "end": 167.0
+  },
+  {
+   "word": "who",
+   "start": 167.0,
+   "end": 167.52
+  },
+  {
+   "word": "never",
+   "start": 167.52,
+   "end": 167.74
+  },
+  {
+   "word": "got",
+   "start": 167.74,
+   "end": 167.96
+  },
+  {
+   "word": "to",
+   "start": 167.96,
+   "end": 168.16
+  },
+  {
+   "word": "go",
+   "start": 168.16,
+   "end": 168.34
+  },
+  {
+   "word": "home.",
+   "start": 168.34,
+   "end": 168.8
+  },
+  {
+   "word": "Because",
+   "start": 169.3,
+   "end": 169.64
+  },
+  {
+   "word": "that's",
+   "start": 169.64,
+   "end": 170.12
+  },
+  {
+   "word": "the",
+   "start": 170.12,
+   "end": 170.24
+  },
+  {
+   "word": "thing",
+   "start": 170.24,
+   "end": 170.62
+  },
+  {
+   "word": "about",
+   "start": 170.62,
+   "end": 171.14
+  },
+  {
+   "word": "the",
+   "start": 171.14,
+   "end": 171.36
+  },
+  {
+   "word": "Ramayana.",
+   "start": 171.36,
+   "end": 172.0
+  },
+  {
+   "word": "Ravana",
+   "start": 172.54,
+   "end": 172.86
+  },
+  {
+   "word": "is",
+   "start": 172.86,
+   "end": 173.44
+  },
+  {
+   "word": "brilliant.",
+   "start": 173.44,
+   "end": 173.94
+  },
+  {
+   "word": "Powerful.",
+   "start": 174.46,
+   "end": 174.96
+  },
+  {
+   "word": "Devoted.",
+   "start": 175.5,
+   "end": 176.12
+  },
+  {
+   "word": "And",
+   "start": 176.92,
+   "end": 176.96
+  },
+  {
+   "word": "it",
+   "start": 176.96,
+   "end": 177.08
+  },
+  {
+   "word": "still",
+   "start": 177.08,
+   "end": 177.5
+  },
+  {
+   "word": "isn't",
+   "start": 177.5,
+   "end": 178.1
+  },
+  {
+   "word": "enough.",
+   "start": 178.1,
+   "end": 178.46
+  },
+  {
+   "word": "Pride",
+   "start": 179.14,
+   "end": 179.4
+  },
+  {
+   "word": "turns",
+   "start": 179.4,
+   "end": 179.84
+  },
+  {
+   "word": "his",
+   "start": 179.84,
+   "end": 180.04
+  },
+  {
+   "word": "greatest",
+   "start": 180.04,
+   "end": 180.42
+  },
+  {
+   "word": "strengths",
+   "start": 180.42,
+   "end": 181.0
+  },
+  {
+   "word": "into",
+   "start": 181.0,
+   "end": 181.5
+  },
+  {
+   "word": "his",
+   "start": 181.5,
+   "end": 181.72
+  },
+  {
+   "word": "downfall.",
+   "start": 181.72,
+   "end": 182.24
+  },
+  {
+   "word": "His",
+   "start": 182.68,
+   "end": 182.82
+  },
+  {
+   "word": "own",
+   "start": 182.82,
+   "end": 183.08
+  },
+  {
+   "word": "brother,",
+   "start": 183.08,
+   "end": 183.36
+  },
+  {
+   "word": "Vibhishana,",
+   "start": 183.72,
+   "end": 184.38
+  },
+  {
+   "word": "warns",
+   "start": 184.64,
+   "end": 185.12
+  },
+  {
+   "word": "him",
+   "start": 185.12,
+   "end": 185.26
+  },
+  {
+   "word": "and",
+   "start": 185.26,
+   "end": 185.82
+  },
+  {
+   "word": "walks",
+   "start": 185.82,
+   "end": 186.06
+  },
+  {
+   "word": "away",
+   "start": 186.06,
+   "end": 186.46
+  },
+  {
+   "word": "to",
+   "start": 186.46,
+   "end": 186.92
+  },
+  {
+   "word": "join",
+   "start": 186.92,
+   "end": 187.24
+  },
+  {
+   "word": "the",
+   "start": 187.24,
+   "end": 187.44
+  },
+  {
+   "word": "other",
+   "start": 187.44,
+   "end": 187.64
+  },
+  {
+   "word": "side.",
+   "start": 187.64,
+   "end": 188.1
+  },
+  {
+   "word": "Maybe",
+   "start": 188.8,
+   "end": 189.06
+  },
+  {
+   "word": "that's",
+   "start": 189.06,
+   "end": 189.44
+  },
+  {
+   "word": "why",
+   "start": 189.44,
+   "end": 189.7
+  },
+  {
+   "word": "the",
+   "start": 189.7,
+   "end": 190.0
+  },
+  {
+   "word": "story",
+   "start": 190.0,
+   "end": 190.36
+  },
+  {
+   "word": "needs",
+   "start": 190.36,
+   "end": 190.78
+  },
+  {
+   "word": "him",
+   "start": 190.78,
+   "end": 190.96
+  },
+  {
+   "word": "to",
+   "start": 190.96,
+   "end": 191.14
+  },
+  {
+   "word": "lose.",
+   "start": 191.14,
+   "end": 191.42
+  },
+  {
+   "word": "Not",
+   "start": 192.08,
+   "end": 192.36
+  },
+  {
+   "word": "because",
+   "start": 192.36,
+   "end": 192.74
+  },
+  {
+   "word": "he",
+   "start": 192.74,
+   "end": 193.22
+  },
+  {
+   "word": "was",
+   "start": 193.22,
+   "end": 193.4
+  },
+  {
+   "word": "weak.",
+   "start": 193.4,
+   "end": 193.72
+  },
+  {
+   "word": "But",
+   "start": 194.12,
+   "end": 194.36
+  },
+  {
+   "word": "because",
+   "start": 194.36,
+   "end": 194.7
+  },
+  {
+   "word": "he",
+   "start": 194.7,
+   "end": 195.0
+  },
+  {
+   "word": "was",
+   "start": 195.0,
+   "end": 195.14
+  },
+  {
+   "word": "so",
+   "start": 195.14,
+   "end": 195.38
+  },
+  {
+   "word": "strong",
+   "start": 195.38,
+   "end": 195.9
+  },
+  {
+   "word": "that",
+   "start": 195.9,
+   "end": 196.54
+  },
+  {
+   "word": "only",
+   "start": 196.54,
+   "end": 196.86
+  },
+  {
+   "word": "one",
+   "start": 196.86,
+   "end": 197.22
+  },
+  {
+   "word": "flaw",
+   "start": 197.22,
+   "end": 197.58
+  },
+  {
+   "word": "could",
+   "start": 197.58,
+   "end": 198.06
+  },
+  {
+   "word": "bring",
+   "start": 198.06,
+   "end": 198.32
+  },
+  {
+   "word": "him",
+   "start": 198.32,
+   "end": 198.52
+  },
+  {
+   "word": "down.",
+   "start": 198.52,
+   "end": 198.9
+  },
+  {
+   "word": "Back",
+   "start": 199.96,
+   "end": 200.3
+  },
+  {
+   "word": "in",
+   "start": 200.3,
+   "end": 200.46
+  },
+  {
+   "word": "our",
+   "start": 200.46,
+   "end": 200.6
+  },
+  {
+   "word": "world,",
+   "start": 200.6,
+   "end": 201.0
+  },
+  {
+   "word": "every",
+   "start": 201.26,
+   "end": 201.52
+  },
+  {
+   "word": "Dussehra,",
+   "start": 201.52,
+   "end": 202.12
+  },
+  {
+   "word": "the",
+   "start": 202.48,
+   "end": 202.58
+  },
+  {
+   "word": "giant",
+   "start": 202.58,
+   "end": 202.96
+  },
+  {
+   "word": "effigies",
+   "start": 202.96,
+   "end": 203.56
+  },
+  {
+   "word": "go",
+   "start": 203.56,
+   "end": 203.76
+  },
+  {
+   "word": "up.",
+   "start": 203.76,
+   "end": 204.06
+  },
+  {
+   "word": "Some",
+   "start": 204.44,
+   "end": 204.66
+  },
+  {
+   "word": "of",
+   "start": 204.66,
+   "end": 204.78
+  },
+  {
+   "word": "them",
+   "start": 204.78,
+   "end": 204.94
+  },
+  {
+   "word": "taller",
+   "start": 204.94,
+   "end": 205.4
+  },
+  {
+   "word": "than",
+   "start": 205.4,
+   "end": 205.96
+  },
+  {
+   "word": "a",
+   "start": 205.96,
+   "end": 206.1
+  },
+  {
+   "word": "ten-storey",
+   "start": 206.1,
+   "end": 206.66
+  },
+  {
+   "word": "building.",
+   "start": 206.66,
+   "end": 207.16
+  },
+  {
+   "word": "Ten",
+   "start": 207.16,
+   "end": 207.9
+  },
+  {
+   "word": "heads.",
+   "start": 207.9,
+   "end": 208.44
+  },
+  {
+   "word": "Fireworks",
+   "start": 208.88,
+   "end": 209.32
+  },
+  {
+   "word": "inside.",
+   "start": 209.32,
+   "end": 210.0
+  },
+  {
+   "word": "And",
+   "start": 210.9,
+   "end": 211.1
+  },
+  {
+   "word": "every",
+   "start": 211.1,
+   "end": 211.4
+  },
+  {
+   "word": "year,",
+   "start": 211.4,
+   "end": 211.8
+  },
+  {
+   "word": "when",
+   "start": 212.0,
+   "end": 212.24
+  },
+  {
+   "word": "the",
+   "start": 212.24,
+   "end": 212.36
+  },
+  {
+   "word": "arrow",
+   "start": 212.36,
+   "end": 212.62
+  },
+  {
+   "word": "flies",
+   "start": 212.62,
+   "end": 213.04
+  },
+  {
+   "word": "and",
+   "start": 213.04,
+   "end": 213.42
+  },
+  {
+   "word": "the",
+   "start": 213.42,
+   "end": 213.54
+  },
+  {
+   "word": "flames",
+   "start": 213.54,
+   "end": 213.88
+  },
+  {
+   "word": "rise",
+   "start": 213.88,
+   "end": 214.34
+  },
+  {
+   "word": "we're",
+   "start": 214.84,
+   "end": 215.14
+  },
+  {
+   "word": "not",
+   "start": 215.14,
+   "end": 215.28
+  },
+  {
+   "word": "just",
+   "start": 215.28,
+   "end": 215.56
+  },
+  {
+   "word": "burning",
+   "start": 215.56,
+   "end": 215.98
+  },
+  {
+   "word": "a",
+   "start": 215.98,
+   "end": 216.24
+  },
+  {
+   "word": "villain.",
+   "start": 216.24,
+   "end": 216.52
+  },
+  {
+   "word": "We're",
+   "start": 216.52,
+   "end": 217.48
+  },
+  {
+   "word": "burning",
+   "start": 217.48,
+   "end": 217.8
+  },
+  {
+   "word": "the",
+   "start": 217.8,
+   "end": 218.06
+  },
+  {
+   "word": "part",
+   "start": 218.06,
+   "end": 218.32
+  },
+  {
+   "word": "of",
+   "start": 218.32,
+   "end": 218.44
+  },
+  {
+   "word": "ourselves",
+   "start": 218.44,
+   "end": 219.0
+  },
+  {
+   "word": "that",
+   "start": 219.0,
+   "end": 219.66
+  },
+  {
+   "word": "thinks",
+   "start": 219.66,
+   "end": 219.96
+  },
+  {
+   "word": "being",
+   "start": 219.96,
+   "end": 220.28
+  },
+  {
+   "word": "powerful",
+   "start": 220.28,
+   "end": 220.74
+  },
+  {
+   "word": "means",
+   "start": 220.74,
+   "end": 221.32
+  },
+  {
+   "word": "being",
+   "start": 221.32,
+   "end": 221.8
+  },
+  {
+   "word": "right.",
+   "start": 221.8,
+   "end": 222.16
+  },
+  {
+   "word": "And",
+   "start": 222.78,
+   "end": 223.08
+  },
+  {
+   "word": "yet",
+   "start": 223.08,
+   "end": 223.36
+  },
+  {
+   "word": "in",
+   "start": 224.04,
+   "end": 224.12
+  },
+  {
+   "word": "Sri",
+   "start": 224.12,
+   "end": 224.36
+  },
+  {
+   "word": "Lanka,",
+   "start": 224.36,
+   "end": 224.68
+  },
+  {
+   "word": "some",
+   "start": 225.24,
+   "end": 225.4
+  },
+  {
+   "word": "people",
+   "start": 225.4,
+   "end": 225.74
+  },
+  {
+   "word": "still",
+   "start": 225.74,
+   "end": 226.06
+  },
+  {
+   "word": "remember",
+   "start": 226.06,
+   "end": 226.54
+  },
+  {
+   "word": "Ravana",
+   "start": 226.54,
+   "end": 226.96
+  },
+  {
+   "word": "as",
+   "start": 226.96,
+   "end": 227.48
+  },
+  {
+   "word": "a",
+   "start": 227.48,
+   "end": 227.6
+  },
+  {
+   "word": "great",
+   "start": 227.6,
+   "end": 227.82
+  },
+  {
+   "word": "king.",
+   "start": 227.82,
+   "end": 228.16
+  },
+  {
+   "word": "Both",
+   "start": 228.64,
+   "end": 228.84
+  },
+  {
+   "word": "stories",
+   "start": 228.84,
+   "end": 229.34
+  },
+  {
+   "word": "survive.",
+   "start": 229.34,
+   "end": 230.0
+  },
+  {
+   "word": "Gold",
+   "start": 230.58,
+   "end": 230.98
+  },
+  {
+   "word": "and",
+   "start": 230.98,
+   "end": 231.82
+  },
+  {
+   "word": "fire.",
+   "start": 231.82,
+   "end": 232.3
+  },
+  {
+   "word": "So",
+   "start": 233.0,
+   "end": 233.32
+  },
+  {
+   "word": "tell",
+   "start": 233.32,
+   "end": 233.66
+  },
+  {
+   "word": "me.",
+   "start": 233.66,
+   "end": 233.96
+  },
+  {
+   "word": "If",
+   "start": 234.44,
+   "end": 234.58
+  },
+  {
+   "word": "Ravana",
+   "start": 234.58,
+   "end": 235.06
+  },
+  {
+   "word": "had",
+   "start": 235.06,
+   "end": 235.56
+  },
+  {
+   "word": "won",
+   "start": 235.56,
+   "end": 235.9
+  },
+  {
+   "word": "would",
+   "start": 236.38,
+   "end": 236.52
+  },
+  {
+   "word": "you",
+   "start": 236.52,
+   "end": 236.66
+  },
+  {
+   "word": "want",
+   "start": 236.66,
+   "end": 236.84
+  },
+  {
+   "word": "to",
+   "start": 236.84,
+   "end": 237.0
+  },
+  {
+   "word": "live",
+   "start": 237.0,
+   "end": 237.28
+  },
+  {
+   "word": "in",
+   "start": 237.28,
+   "end": 237.78
+  },
+  {
+   "word": "his",
+   "start": 237.78,
+   "end": 237.94
+  },
+  {
+   "word": "golden",
+   "start": 237.94,
+   "end": 238.34
+  },
+  {
+   "word": "Lanka?",
+   "start": 238.34,
+   "end": 238.86
+  },
+  {
+   "word": "Comment",
+   "start": 238.86,
+   "end": 239.58
+  },
+  {
+   "word": "below.",
+   "start": 239.58,
+   "end": 240.26
+  },
+  {
+   "word": "Yes",
+   "start": 240.88,
+   "end": 241.1
+  },
+  {
+   "word": "or",
+   "start": 241.1,
+   "end": 241.7
+  },
+  {
+   "word": "no.",
+   "start": 241.7,
+   "end": 242.28
+  }
+ ]
+}

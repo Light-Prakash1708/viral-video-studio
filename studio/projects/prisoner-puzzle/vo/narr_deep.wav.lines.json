@@ -1,0 +1,84 @@
+{
+ "speakers": {
+  "NARRATOR": {
+   "preset": "deep",
+   "pitch": 0.0,
+   "speed": 1.0,
+   "lang": "en"
+  }
+ },
+ "lines": [
+  {
+   "speaker": "NARRATOR",
+   "text": "Three prisoners. Five hats. Three white, two black. Guess your hat right, you walk free. Guess wrong... you don't.",
+   "start": 0.15,
+   "end": 7.489
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "The guard lines them up, one behind the other, facing a wall. Each gets a hat he can't see.",
+   "start": 7.989,
+   "end": 13.625
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Prisoner three, at the back, sees both hats in front of him. He stays silent.",
+   "start": 14.125,
+   "end": 18.651
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Prisoner two sees one hat. He stays silent too.",
+   "start": 19.151,
+   "end": 22.551
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Prisoner one sees nothing. Just the wall.",
+   "start": 23.051,
+   "end": 25.931
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "And yet... he's the one who answers. And he's right.",
+   "start": 26.431,
+   "end": 29.179
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "What color is his hat? Beat the clock.",
+   "start": 29.679,
+   "end": 32.704
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Time's up. It's white.",
+   "start": 33.204,
+   "end": 34.33
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "If prisoner three had seen two black hats, he'd know his was white. He stayed silent. So at least one front hat is white.",
+   "start": 34.83,
+   "end": 41.516
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Prisoner two knows that too. If prisoner one's hat were black, his own would have to be white. But he stayed silent.",
+   "start": 42.016,
+   "end": 47.982
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "So prisoner one's hat... is white.",
+   "start": 48.482,
+   "end": 50.793
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "The silence was the clue. Comment if you beat the clock.",
+   "start": 51.293,
+   "end": 55.329
+  }
+ ]
+}

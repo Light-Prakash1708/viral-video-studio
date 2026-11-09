@@ -1,0 +1,31 @@
+{
+ "title": "What IF Ravana Had Won",
+ "aspect": "16:9",
+ "resolution": "1080p",
+ "fps": 24,
+ "style": "cinema",
+ "voiceover": "input/voiceover.wav",
+ "script": "input/script.txt",
+ "duration": 244.3,
+ "captions": true,
+ "bars": null,
+ "fadeIn": 0.5,
+ "fadeOut": 0.8,
+ "music": {
+  "enabled": true,
+  "gainDb": -15,
+  "key": "D",
+  "seed": 17,
+  "file": "input/score.wav"
+ },
+ "sfx": {
+  "enabled": true,
+  "gainDb": -7
+ },
+ "loudness": -14,
+ "captionStyle": {
+  "y": 985,
+  "size": 50,
+  "max": 2
+ }
+}

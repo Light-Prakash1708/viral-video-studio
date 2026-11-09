@@ -1,0 +1,559 @@
+{
+ "title": "Phantom Limb",
+ "duration": 64.0,
+ "shots": [
+  {
+   "id": "p01",
+   "start": 0,
+   "end": 1.7,
+   "line": "",
+   "scene": "p01",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p02",
+   "start": 1.7,
+   "end": 3.7,
+   "line": "",
+   "scene": "p02",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "dip",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "clock",
+     "gain": -16
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p03",
+   "start": 3.7,
+   "end": 6.8,
+   "line": "",
+   "scene": "p03",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "heartbeat",
+     "gain": -10
+    },
+    {
+     "at": 1.0,
+     "name": "glitch",
+     "gain": -16
+    },
+    {
+     "at": 2.1,
+     "name": "hit",
+     "gain": -8
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "hum",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p04",
+   "start": 6.8,
+   "end": 8.1,
+   "line": "",
+   "scene": "p04",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "slowmo",
+     "gain": -12
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p05",
+   "start": 8.1,
+   "end": 12.7,
+   "line": "",
+   "scene": "p05",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "impact",
+     "gain": -8
+    },
+    {
+     "at": 1.6,
+     "name": "pop",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "hum",
+    "gain": -28
+   },
+   "captions": false
+  },
+  {
+   "id": "p06",
+   "start": 12.7,
+   "end": 17.85,
+   "line": "",
+   "scene": "p06",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "zoom",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "blip",
+     "gain": -20
+    },
+    {
+     "at": 0.28,
+     "name": "blip",
+     "gain": -20
+    },
+    {
+     "at": 0.45999999999999996,
+     "name": "blip",
+     "gain": -20
+    },
+    {
+     "at": 0.64,
+     "name": "blip",
+     "gain": -20
+    },
+    {
+     "at": 0.82,
+     "name": "blip",
+     "gain": -20
+    },
+    {
+     "at": 0.9999999999999999,
+     "name": "blip",
+     "gain": -20
+    },
+    {
+     "at": 1.1800000000000002,
+     "name": "blip",
+     "gain": -20
+    },
+    {
+     "at": 1.36,
+     "name": "blip",
+     "gain": -20
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "p07",
+   "start": 17.85,
+   "end": 20.45,
+   "line": "",
+   "scene": "p07",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "whoosh",
+     "gain": -12
+    },
+    {
+     "at": 1.2,
+     "name": "glitch",
+     "gain": -14
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "p08",
+   "start": 20.45,
+   "end": 22.95,
+   "line": "",
+   "scene": "p08",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "buzz",
+     "gain": -18,
+     "dur": 2.0
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "p09",
+   "start": 22.95,
+   "end": 26.3,
+   "line": "",
+   "scene": "p09",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "riser",
+     "gain": -16,
+     "dur": 1.2
+    },
+    {
+     "at": 1.0,
+     "name": "ding",
+     "gain": -12
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "p10",
+   "start": 26.3,
+   "end": 30.8,
+   "line": "",
+   "scene": "p10",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "pop",
+     "gain": -12
+    },
+    {
+     "at": 2.6,
+     "name": "shimmer",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p11",
+   "start": 30.8,
+   "end": 35.95,
+   "line": "",
+   "scene": "p11",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "dip",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "pop",
+     "gain": -12
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p12",
+   "start": 35.95,
+   "end": 37.2,
+   "line": "",
+   "scene": "p12",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "swish",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p13",
+   "start": 37.2,
+   "end": 42.95,
+   "line": "",
+   "scene": "p13",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 3.0,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p14",
+   "start": 42.95,
+   "end": 44.2,
+   "line": "",
+   "scene": "p14",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "whip",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "whoosh",
+     "gain": -8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "p15",
+   "start": 44.2,
+   "end": 49.7,
+   "line": "",
+   "scene": "p15",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "swish",
+     "gain": -18
+    },
+    {
+     "at": 1.3,
+     "name": "swish",
+     "gain": -18
+    },
+    {
+     "at": 2.3,
+     "name": "swish",
+     "gain": -18
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p16",
+   "start": 49.7,
+   "end": 52.6,
+   "line": "",
+   "scene": "p16",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "stinger",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p17",
+   "start": 52.6,
+   "end": 55.95,
+   "line": "",
+   "scene": "p17",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "dip",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "riser",
+     "gain": -14,
+     "dur": 2.4
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "p18",
+   "start": 55.95,
+   "end": 57.95,
+   "line": "",
+   "scene": "p18",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -10
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "p19",
+   "start": 57.95,
+   "end": 64.0,
+   "line": "",
+   "scene": "p19",
+   "set": "",
+   "bars": "scope",
+   "in": {
+    "type": "fade",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "hum",
+    "gain": -28
+   },
+   "captions": false
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 12.7,
+   "mood": "sad",
+   "intensity": 0.5
+  },
+  {
+   "start": 12.7,
+   "end": 30.8,
+   "mood": "mystery",
+   "intensity": 0.55
+  },
+  {
+   "start": 30.8,
+   "end": 52.6,
+   "mood": "wonder",
+   "intensity": 0.55
+  },
+  {
+   "start": 52.6,
+   "end": 64.0,
+   "mood": "hopeful",
+   "intensity": 0.55
+  }
+ ]
+}

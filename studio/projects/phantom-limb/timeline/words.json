@@ -1,0 +1,1005 @@
+{
+ "source": "whisper:small.en+script",
+ "words": [
+  {
+   "word": "Imagine",
+   "start": 0.0,
+   "end": 0.56
+  },
+  {
+   "word": "losing",
+   "start": 0.56,
+   "end": 0.82
+  },
+  {
+   "word": "your",
+   "start": 0.82,
+   "end": 1.1
+  },
+  {
+   "word": "hand.",
+   "start": 1.1,
+   "end": 1.4
+  },
+  {
+   "word": "And",
+   "start": 1.84,
+   "end": 2.1
+  },
+  {
+   "word": "then,",
+   "start": 2.1,
+   "end": 2.26
+  },
+  {
+   "word": "every",
+   "start": 2.26,
+   "end": 2.68
+  },
+  {
+   "word": "night,",
+   "start": 2.68,
+   "end": 2.92
+  },
+  {
+   "word": "feeling",
+   "start": 2.92,
+   "end": 3.2
+  },
+  {
+   "word": "it.",
+   "start": 3.2,
+   "end": 3.6
+  },
+  {
+   "word": "Your",
+   "start": 3.82,
+   "end": 3.9
+  },
+  {
+   "word": "fingers",
+   "start": 3.9,
+   "end": 4.22
+  },
+  {
+   "word": "clench.",
+   "start": 4.22,
+   "end": 4.7
+  },
+  {
+   "word": "It",
+   "start": 4.7,
+   "end": 5.28
+  },
+  {
+   "word": "itches.",
+   "start": 5.28,
+   "end": 5.86
+  },
+  {
+   "word": "It",
+   "start": 5.86,
+   "end": 5.96
+  },
+  {
+   "word": "hurts.",
+   "start": 5.96,
+   "end": 6.28
+  },
+  {
+   "word": "But",
+   "start": 6.92,
+   "end": 7.06
+  },
+  {
+   "word": "there's",
+   "start": 7.06,
+   "end": 7.32
+  },
+  {
+   "word": "nothing",
+   "start": 7.32,
+   "end": 7.56
+  },
+  {
+   "word": "there.",
+   "start": 7.56,
+   "end": 7.94
+  },
+  {
+   "word": "This",
+   "start": 8.2,
+   "end": 8.36
+  },
+  {
+   "word": "is",
+   "start": 8.36,
+   "end": 8.56
+  },
+  {
+   "word": "phantom",
+   "start": 8.56,
+   "end": 8.92
+  },
+  {
+   "word": "limb,",
+   "start": 8.92,
+   "end": 9.18
+  },
+  {
+   "word": "and",
+   "start": 9.62,
+   "end": 9.7
+  },
+  {
+   "word": "most",
+   "start": 9.7,
+   "end": 9.86
+  },
+  {
+   "word": "people",
+   "start": 9.86,
+   "end": 10.14
+  },
+  {
+   "word": "who",
+   "start": 10.14,
+   "end": 10.38
+  },
+  {
+   "word": "lose",
+   "start": 10.38,
+   "end": 10.54
+  },
+  {
+   "word": "a",
+   "start": 10.54,
+   "end": 10.72
+  },
+  {
+   "word": "limb",
+   "start": 10.72,
+   "end": 10.86
+  },
+  {
+   "word": "experience",
+   "start": 10.86,
+   "end": 11.32
+  },
+  {
+   "word": "it.",
+   "start": 11.32,
+   "end": 11.7
+  },
+  {
+   "word": "Here's",
+   "start": 11.84,
+   "end": 12.16
+  },
+  {
+   "word": "why.",
+   "start": 12.16,
+   "end": 12.42
+  },
+  {
+   "word": "Your",
+   "start": 12.8,
+   "end": 12.88
+  },
+  {
+   "word": "brain",
+   "start": 12.88,
+   "end": 13.18
+  },
+  {
+   "word": "keeps",
+   "start": 13.18,
+   "end": 13.5
+  },
+  {
+   "word": "a",
+   "start": 13.5,
+   "end": 13.66
+  },
+  {
+   "word": "map",
+   "start": 13.66,
+   "end": 13.82
+  },
+  {
+   "word": "of",
+   "start": 13.82,
+   "end": 13.94
+  },
+  {
+   "word": "your",
+   "start": 13.94,
+   "end": 14.06
+  },
+  {
+   "word": "body,",
+   "start": 14.06,
+   "end": 14.4
+  },
+  {
+   "word": "a",
+   "start": 14.82,
+   "end": 14.94
+  },
+  {
+   "word": "strip",
+   "start": 14.94,
+   "end": 15.12
+  },
+  {
+   "word": "of",
+   "start": 15.12,
+   "end": 15.28
+  },
+  {
+   "word": "tissue",
+   "start": 15.28,
+   "end": 15.6
+  },
+  {
+   "word": "where",
+   "start": 15.6,
+   "end": 15.9
+  },
+  {
+   "word": "every",
+   "start": 15.9,
+   "end": 16.22
+  },
+  {
+   "word": "part",
+   "start": 16.22,
+   "end": 16.44
+  },
+  {
+   "word": "of",
+   "start": 16.44,
+   "end": 16.58
+  },
+  {
+   "word": "you",
+   "start": 16.58,
+   "end": 16.72
+  },
+  {
+   "word": "has",
+   "start": 16.72,
+   "end": 16.92
+  },
+  {
+   "word": "its",
+   "start": 16.92,
+   "end": 17.06
+  },
+  {
+   "word": "own",
+   "start": 17.06,
+   "end": 17.24
+  },
+  {
+   "word": "address.",
+   "start": 17.24,
+   "end": 17.62
+  },
+  {
+   "word": "When",
+   "start": 17.94,
+   "end": 18.06
+  },
+  {
+   "word": "the",
+   "start": 18.06,
+   "end": 18.18
+  },
+  {
+   "word": "hand",
+   "start": 18.18,
+   "end": 18.36
+  },
+  {
+   "word": "is",
+   "start": 18.36,
+   "end": 18.54
+  },
+  {
+   "word": "gone,",
+   "start": 18.54,
+   "end": 18.8
+  },
+  {
+   "word": "the",
+   "start": 19.08,
+   "end": 19.24
+  },
+  {
+   "word": "map",
+   "start": 19.24,
+   "end": 19.46
+  },
+  {
+   "word": "doesn't",
+   "start": 19.46,
+   "end": 19.76
+  },
+  {
+   "word": "get",
+   "start": 19.76,
+   "end": 19.9
+  },
+  {
+   "word": "the",
+   "start": 19.9,
+   "end": 20.06
+  },
+  {
+   "word": "memo.",
+   "start": 20.06,
+   "end": 20.28
+  },
+  {
+   "word": "The",
+   "start": 20.58,
+   "end": 20.72
+  },
+  {
+   "word": "hand's",
+   "start": 20.72,
+   "end": 21.0
+  },
+  {
+   "word": "address",
+   "start": 21.0,
+   "end": 21.16
+  },
+  {
+   "word": "is",
+   "start": 21.16,
+   "end": 21.38
+  },
+  {
+   "word": "still",
+   "start": 21.38,
+   "end": 21.54
+  },
+  {
+   "word": "there,",
+   "start": 21.54,
+   "end": 21.82
+  },
+  {
+   "word": "still",
+   "start": 22.14,
+   "end": 22.26
+  },
+  {
+   "word": "firing.",
+   "start": 22.26,
+   "end": 22.66
+  },
+  {
+   "word": "Even",
+   "start": 23.08,
+   "end": 23.3
+  },
+  {
+   "word": "stranger,",
+   "start": 23.3,
+   "end": 23.82
+  },
+  {
+   "word": "the",
+   "start": 24.22,
+   "end": 24.36
+  },
+  {
+   "word": "face",
+   "start": 24.36,
+   "end": 24.58
+  },
+  {
+   "word": "sits",
+   "start": 24.58,
+   "end": 24.8
+  },
+  {
+   "word": "right",
+   "start": 24.8,
+   "end": 25.08
+  },
+  {
+   "word": "next",
+   "start": 25.08,
+   "end": 25.3
+  },
+  {
+   "word": "to",
+   "start": 25.3,
+   "end": 25.5
+  },
+  {
+   "word": "the",
+   "start": 25.5,
+   "end": 25.58
+  },
+  {
+   "word": "hand",
+   "start": 25.58,
+   "end": 25.78
+  },
+  {
+   "word": "on",
+   "start": 25.78,
+   "end": 25.92
+  },
+  {
+   "word": "that",
+   "start": 25.92,
+   "end": 26.1
+  },
+  {
+   "word": "map.",
+   "start": 26.1,
+   "end": 26.38
+  },
+  {
+   "word": "So",
+   "start": 26.38,
+   "end": 26.76
+  },
+  {
+   "word": "in",
+   "start": 26.76,
+   "end": 26.92
+  },
+  {
+   "word": "some",
+   "start": 26.92,
+   "end": 27.14
+  },
+  {
+   "word": "patients,",
+   "start": 27.14,
+   "end": 27.62
+  },
+  {
+   "word": "touching",
+   "start": 27.96,
+   "end": 28.14
+  },
+  {
+   "word": "their",
+   "start": 28.14,
+   "end": 28.4
+  },
+  {
+   "word": "cheek,",
+   "start": 28.4,
+   "end": 28.68
+  },
+  {
+   "word": "makes",
+   "start": 28.68,
+   "end": 29.16
+  },
+  {
+   "word": "them",
+   "start": 29.16,
+   "end": 29.4
+  },
+  {
+   "word": "feel",
+   "start": 29.4,
+   "end": 29.6
+  },
+  {
+   "word": "their",
+   "start": 29.6,
+   "end": 29.8
+  },
+  {
+   "word": "missing",
+   "start": 29.8,
+   "end": 30.06
+  },
+  {
+   "word": "fingers.",
+   "start": 30.06,
+   "end": 30.54
+  },
+  {
+   "word": "In",
+   "start": 30.94,
+   "end": 30.94
+  },
+  {
+   "word": "the",
+   "start": 30.94,
+   "end": 31.04
+  },
+  {
+   "word": "nineteen",
+   "start": 31.04,
+   "end": 31.67
+  },
+  {
+   "word": "nineties,",
+   "start": 31.67,
+   "end": 32.3
+  },
+  {
+   "word": "neuroscientist",
+   "start": 32.3,
+   "end": 32.94
+  },
+  {
+   "word": "V.",
+   "start": 32.94,
+   "end": 33.12
+  },
+  {
+   "word": "S.",
+   "start": 33.48,
+   "end": 33.64
+  },
+  {
+   "word": "Ramachandran",
+   "start": 34.18,
+   "end": 34.62
+  },
+  {
+   "word": "tried",
+   "start": 34.62,
+   "end": 34.98
+  },
+  {
+   "word": "something",
+   "start": 34.98,
+   "end": 35.3
+  },
+  {
+   "word": "simple.",
+   "start": 35.3,
+   "end": 35.76
+  },
+  {
+   "word": "A",
+   "start": 36.04,
+   "end": 36.12
+  },
+  {
+   "word": "box,",
+   "start": 36.12,
+   "end": 36.36
+  },
+  {
+   "word": "with",
+   "start": 36.36,
+   "end": 36.6
+  },
+  {
+   "word": "a",
+   "start": 36.6,
+   "end": 36.72
+  },
+  {
+   "word": "mirror.",
+   "start": 36.72,
+   "end": 36.9
+  },
+  {
+   "word": "Patients",
+   "start": 37.36,
+   "end": 37.62
+  },
+  {
+   "word": "watched",
+   "start": 37.62,
+   "end": 37.98
+  },
+  {
+   "word": "the",
+   "start": 37.98,
+   "end": 38.24
+  },
+  {
+   "word": "reflection",
+   "start": 38.24,
+   "end": 38.58
+  },
+  {
+   "word": "of",
+   "start": 38.58,
+   "end": 38.84
+  },
+  {
+   "word": "their",
+   "start": 38.84,
+   "end": 38.96
+  },
+  {
+   "word": "good",
+   "start": 38.96,
+   "end": 39.16
+  },
+  {
+   "word": "hand,",
+   "start": 39.16,
+   "end": 39.5
+  },
+  {
+   "word": "and",
+   "start": 39.82,
+   "end": 40.06
+  },
+  {
+   "word": "for",
+   "start": 40.06,
+   "end": 40.2
+  },
+  {
+   "word": "some",
+   "start": 40.2,
+   "end": 40.4
+  },
+  {
+   "word": "of",
+   "start": 40.4,
+   "end": 40.52
+  },
+  {
+   "word": "them,",
+   "start": 40.52,
+   "end": 40.76
+  },
+  {
+   "word": "the",
+   "start": 40.94,
+   "end": 41.08
+  },
+  {
+   "word": "pain",
+   "start": 41.08,
+   "end": 41.32
+  },
+  {
+   "word": "in",
+   "start": 41.32,
+   "end": 41.46
+  },
+  {
+   "word": "the",
+   "start": 41.46,
+   "end": 41.56
+  },
+  {
+   "word": "phantom",
+   "start": 41.56,
+   "end": 41.88
+  },
+  {
+   "word": "began",
+   "start": 41.88,
+   "end": 42.22
+  },
+  {
+   "word": "to",
+   "start": 42.22,
+   "end": 42.44
+  },
+  {
+   "word": "ease.",
+   "start": 42.44,
+   "end": 42.64
+  },
+  {
+   "word": "Now",
+   "start": 43.06,
+   "end": 43.22
+  },
+  {
+   "word": "flip",
+   "start": 43.22,
+   "end": 43.46
+  },
+  {
+   "word": "it",
+   "start": 43.46,
+   "end": 43.62
+  },
+  {
+   "word": "around.",
+   "start": 43.62,
+   "end": 43.9
+  },
+  {
+   "word": "In",
+   "start": 44.3,
+   "end": 44.36
+  },
+  {
+   "word": "the",
+   "start": 44.36,
+   "end": 44.5
+  },
+  {
+   "word": "rubber",
+   "start": 44.5,
+   "end": 44.74
+  },
+  {
+   "word": "hand",
+   "start": 44.74,
+   "end": 45.02
+  },
+  {
+   "word": "experiment,",
+   "start": 45.02,
+   "end": 45.56
+  },
+  {
+   "word": "people",
+   "start": 45.92,
+   "end": 46.18
+  },
+  {
+   "word": "watched",
+   "start": 46.18,
+   "end": 46.5
+  },
+  {
+   "word": "a",
+   "start": 46.5,
+   "end": 46.68
+  },
+  {
+   "word": "fake",
+   "start": 46.68,
+   "end": 46.88
+  },
+  {
+   "word": "hand",
+   "start": 46.88,
+   "end": 47.2
+  },
+  {
+   "word": "being",
+   "start": 47.2,
+   "end": 47.38
+  },
+  {
+   "word": "stroked,",
+   "start": 47.38,
+   "end": 47.94
+  },
+  {
+   "word": "while",
+   "start": 48.2,
+   "end": 48.36
+  },
+  {
+   "word": "their",
+   "start": 48.36,
+   "end": 48.52
+  },
+  {
+   "word": "real",
+   "start": 48.52,
+   "end": 48.78
+  },
+  {
+   "word": "hand",
+   "start": 48.78,
+   "end": 49.06
+  },
+  {
+   "word": "was",
+   "start": 49.06,
+   "end": 49.24
+  },
+  {
+   "word": "hidden.",
+   "start": 49.24,
+   "end": 49.52
+  },
+  {
+   "word": "Within",
+   "start": 49.82,
+   "end": 49.98
+  },
+  {
+   "word": "minutes,",
+   "start": 49.98,
+   "end": 50.4
+  },
+  {
+   "word": "many",
+   "start": 50.6,
+   "end": 50.76
+  },
+  {
+   "word": "felt",
+   "start": 50.76,
+   "end": 51.0
+  },
+  {
+   "word": "the",
+   "start": 51.0,
+   "end": 51.14
+  },
+  {
+   "word": "rubber",
+   "start": 51.14,
+   "end": 51.36
+  },
+  {
+   "word": "hand",
+   "start": 51.36,
+   "end": 51.62
+  },
+  {
+   "word": "was",
+   "start": 51.62,
+   "end": 51.8
+  },
+  {
+   "word": "theirs.",
+   "start": 51.8,
+   "end": 52.02
+  },
+  {
+   "word": "So",
+   "start": 52.76,
+   "end": 52.92
+  },
+  {
+   "word": "where",
+   "start": 52.92,
+   "end": 53.06
+  },
+  {
+   "word": "does",
+   "start": 53.06,
+   "end": 53.2
+  },
+  {
+   "word": "your",
+   "start": 53.2,
+   "end": 53.32
+  },
+  {
+   "word": "body",
+   "start": 53.32,
+   "end": 53.56
+  },
+  {
+   "word": "actually",
+   "start": 53.56,
+   "end": 54.02
+  },
+  {
+   "word": "end?",
+   "start": 54.02,
+   "end": 54.34
+  },
+  {
+   "word": "Maybe",
+   "start": 54.7,
+   "end": 54.86
+  },
+  {
+   "word": "not",
+   "start": 54.86,
+   "end": 55.08
+  },
+  {
+   "word": "at",
+   "start": 55.08,
+   "end": 55.2
+  },
+  {
+   "word": "your",
+   "start": 55.2,
+   "end": 55.32
+  },
+  {
+   "word": "skin.",
+   "start": 55.32,
+   "end": 55.56
+  },
+  {
+   "word": "Maybe",
+   "start": 56.12,
+   "end": 56.44
+  },
+  {
+   "word": "wherever",
+   "start": 56.44,
+   "end": 56.8
+  },
+  {
+   "word": "your",
+   "start": 56.8,
+   "end": 57.0
+  },
+  {
+   "word": "brain",
+   "start": 57.0,
+   "end": 57.22
+  },
+  {
+   "word": "decides.",
+   "start": 57.22,
+   "end": 57.6
+  },
+  {
+   "word": "Have",
+   "start": 58.08,
+   "end": 58.14
+  },
+  {
+   "word": "you",
+   "start": 58.14,
+   "end": 58.28
+  },
+  {
+   "word": "ever",
+   "start": 58.28,
+   "end": 58.48
+  },
+  {
+   "word": "felt",
+   "start": 58.48,
+   "end": 58.7
+  },
+  {
+   "word": "something",
+   "start": 58.7,
+   "end": 59.02
+  },
+  {
+   "word": "that",
+   "start": 59.02,
+   "end": 59.26
+  },
+  {
+   "word": "wasn't",
+   "start": 59.26,
+   "end": 59.56
+  },
+  {
+   "word": "there?",
+   "start": 59.56,
+   "end": 59.8
+  },
+  {
+   "word": "Tell",
+   "start": 60.12,
+   "end": 60.22
+  },
+  {
+   "word": "me",
+   "start": 60.22,
+   "end": 60.36
+  },
+  {
+   "word": "in",
+   "start": 60.36,
+   "end": 60.46
+  },
+  {
+   "word": "the",
+   "start": 60.46,
+   "end": 60.56
+  },
+  {
+   "word": "comments.",
+   "start": 60.56,
+   "end": 60.86
+  }
+ ]
+}

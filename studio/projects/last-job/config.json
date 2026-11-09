@@ -1,0 +1,29 @@
+{
+ "title": "The Last Human Job on Earth",
+ "aspect": "16:9",
+ "resolution": "1080p",
+ "fps": 24,
+ "style": "cinema",
+ "voiceover": "input/voiceover.wav",
+ "script": "input/script.txt",
+ "duration": 240.099,
+ "captions": true,
+ "bars": "none",
+ "fadeIn": 0.6,
+ "fadeOut": 1.2,
+ "music": {
+  "enabled": true,
+  "gainDb": -9,
+  "file": "input/score.wav"
+ },
+ "sfx": {
+  "enabled": true,
+  "gainDb": -8
+ },
+ "loudness": -14,
+ "captionStyle": {
+  "y": 985,
+  "size": 50,
+  "max": 2
+ }
+}

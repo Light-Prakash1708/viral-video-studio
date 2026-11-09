@@ -1,0 +1,130 @@
+{
+ "lines": [
+  {
+   "speaker": "M7",
+   "seg": 1,
+   "text": "Your coffee is thirty-one percent too strong. Four degrees too hot. And you charge money. Why do they come?",
+   "start": 64.04,
+   "end": 71.673
+  },
+  {
+   "speaker": "WALT",
+   "seg": 2,
+   "text": "Stay one week. Then you tell me.",
+   "start": 72.123,
+   "end": 74.885
+  },
+  {
+   "speaker": "MAYA",
+   "seg": 4,
+   "text": "Extra marshmallows, Mr. Walt?",
+   "start": 107.925,
+   "end": 110.147
+  },
+  {
+   "speaker": "WALT",
+   "seg": 5,
+   "text": "On test days? Always.",
+   "start": 110.547,
+   "end": 113.119
+  },
+  {
+   "speaker": "M7",
+   "seg": 7,
+   "text": "The report is due. What do I write?",
+   "start": 142.519,
+   "end": 145.352
+  },
+  {
+   "speaker": "WALT",
+   "seg": 9,
+   "text": "Write that you didn't figure it out. And then, open my cart tomorrow. Six o'clock. Twelve cups.",
+   "start": 147.042,
+   "end": 153.933
+  },
+  {
+   "speaker": "M7",
+   "seg": 10,
+   "text": "I am not allowed to do a human job.",
+   "start": 154.433,
+   "end": 156.818
+  },
+  {
+   "speaker": "WALT",
+   "seg": 11,
+   "text": "Then don't do it like a machine.",
+   "start": 157.318,
+   "end": 159.657
+  },
+  {
+   "speaker": "M7",
+   "seg": 13,
+   "text": "Last human job on Earth. Status... not closed.",
+   "start": 195.297,
+   "end": 199.939
+  }
+ ],
+ "map": [
+  [
+   0.0,
+   6.13,
+   0.6
+  ],
+  [
+   6.13,
+   59.64,
+   10.53
+  ],
+  [
+   59.64,
+   92.38,
+   75.18466666666666
+  ],
+  [
+   92.38,
+   104.72,
+   113.41949999999999
+  ],
+  [
+   104.72,
+   110.08,
+   126.6595
+  ],
+  [
+   110.08,
+   119.98,
+   132.6195
+  ],
+  [
+   119.98,
+   121.32,
+   145.70220833333332
+  ],
+  [
+   121.32,
+   126.75,
+   160.05687499999996
+  ],
+  [
+   126.75,
+   153.96,
+   168.08687499999996
+  ],
+  [
+   153.96,
+   158.91,
+   201.1385833333333
+  ],
+  [
+   158.91,
+   177.03,
+   207.08858333333328
+  ],
+  [
+   177.03,
+   186.32,
+   226.80858333333327
+  ]
+ ],
+ "duration": 240.099
+}

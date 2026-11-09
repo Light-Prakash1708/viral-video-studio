@@ -1,0 +1,584 @@
+[
+ {
+  "i": 0,
+  "start": 0.34,
+  "end": 6.5,
+  "text": "In the year 2061, there was exactly one human being on Earth who still had a job."
+ },
+ {
+  "i": 1,
+  "start": 10.98,
+  "end": 12.8,
+  "text": "His name was Walter Hayes."
+ },
+ {
+  "i": 2,
+  "start": 13.3,
+  "end": 14.78,
+  "text": "He was seventy-eight years old."
+ },
+ {
+  "i": 3,
+  "start": 15.16,
+  "end": 16.26,
+  "text": "And he sold coffee."
+ },
+ {
+  "i": 4,
+  "start": 16.86,
+  "end": 18.92,
+  "text": "Everything else had been handed to the machines."
+ },
+ {
+  "i": 5,
+  "start": 19.6,
+  "end": 20.84,
+  "text": "Robots drove the trains."
+ },
+ {
+  "i": 6,
+  "start": 21.26,
+  "end": 22.24,
+  "text": "Robots taught the kids."
+ },
+ {
+  "i": 7,
+  "start": 22.78,
+  "end": 26.32,
+  "text": "Robots did the surgery, wrote the songs, and cooked every meal."
+ },
+ {
+  "i": 8,
+  "start": 26.86,
+  "end": 29.74,
+  "text": "Eight billion people, and not one of them had to work."
+ },
+ {
+  "i": 9,
+  "start": 30.26,
+  "end": 31.58,
+  "text": "The government paid everyone."
+ },
+ {
+  "i": 10,
+  "start": 32.02,
+  "end": 32.94,
+  "text": "Nobody was hungry."
+ },
+ {
+  "i": 11,
+  "start": 32.94,
+  "end": 35.8,
+  "text": "And nobody, it seemed, was needed."
+ },
+ {
+  "i": 12,
+  "start": 36.5,
+  "end": 42.7,
+  "text": "Except for one small coffee cart, at the end of Track Four, in a train station the trains no longer stopped at."
+ },
+ {
+  "i": 13,
+  "start": 43.26,
+  "end": 45.12,
+  "text": "The sign said, \"Walt's Coffee."
+ },
+ {
+  "i": 14,
+  "start": 45.44,
+  "end": 46.48,
+  "text": "Since 1999.\""
+ },
+ {
+  "i": 15,
+  "start": 47.48,
+  "end": 51.16,
+  "text": "Across the street, a machine made perfect coffee in three seconds."
+ },
+ {
+  "i": 16,
+  "start": 51.52,
+  "end": 52.06,
+  "text": "For free."
+ },
+ {
+  "i": 17,
+  "start": 52.56,
+  "end": 56.88,
+  "text": "And still, every morning at six, twelve people stood in line for Walt."
+ },
+ {
+  "i": 18,
+  "start": 57.42,
+  "end": 59.0,
+  "text": "The Department of Efficiency noticed."
+ },
+ {
+  "i": 19,
+  "start": 59.54,
+  "end": 63.86,
+  "text": "So they sent Unit M-7 to close the last human job on Earth."
+ },
+ {
+  "i": 20,
+  "start": 64.04,
+  "end": 66.4,
+  "text": "Your coffee is thirty-one percent too strong."
+ },
+ {
+  "i": 21,
+  "start": 66.94,
+  "end": 68.24,
+  "text": "Four degrees too hot."
+ },
+ {
+  "i": 22,
+  "start": 68.66,
+  "end": 69.64,
+  "text": "And you charge money."
+ },
+ {
+  "i": 23,
+  "start": 70.1,
+  "end": 70.92,
+  "text": "Why do they come?"
+ },
+ {
+  "i": 24,
+  "start": 70.92,
+  "end": 73.011,
+  "text": "Stay one week."
+ },
+ {
+  "i": 25,
+  "start": 73.011,
+  "end": 75.8,
+  "text": "Then you tell me."
+ },
+ {
+  "i": 26,
+  "start": 75.8,
+  "end": 76.92,
+  "text": "So M-7 stayed."
+ },
+ {
+  "i": 27,
+  "start": 77.52,
+  "end": 78.22,
+  "text": "And it watched."
+ },
+ {
+  "i": 28,
+  "start": 78.98,
+  "end": 80.08,
+  "text": "On Monday, Mr."
+ },
+ {
+  "i": 29,
+  "start": 80.2,
+  "end": 80.68,
+  "text": "Bennett came."
+ },
+ {
+  "i": 30,
+  "start": 81.26,
+  "end": 82.9,
+  "text": "He had lost his wife the winter before."
+ },
+ {
+  "i": 31,
+  "start": 83.64,
+  "end": 85.04,
+  "text": "Walt didn't ask how he was doing."
+ },
+ {
+  "i": 32,
+  "start": 85.44,
+  "end": 87.16,
+  "text": "He just set down two cinnamon cookies."
+ },
+ {
+  "i": 33,
+  "start": 87.76,
+  "end": 88.22,
+  "text": "Her favorite."
+ },
+ {
+  "i": 34,
+  "start": 88.74,
+  "end": 89.38,
+  "text": "Without a word."
+ },
+ {
+  "i": 35,
+  "start": 90.02,
+  "end": 92.42,
+  "text": "On Tuesday, a young guy named Arjun came."
+ },
+ {
+  "i": 36,
+  "start": 92.42,
+  "end": 94.58,
+  "text": "He hadn't left his apartment in months."
+ },
+ {
+  "i": 37,
+  "start": 95.22,
+  "end": 96.38,
+  "text": "Walt tossed him a dish towel."
+ },
+ {
+  "i": 38,
+  "start": 97.0,
+  "end": 98.4,
+  "text": "\"Mugs won't wash themselves, kid.\""
+ },
+ {
+  "i": 39,
+  "start": 98.96,
+  "end": 100.3,
+  "text": "Arjun stayed until noon."
+ },
+ {
+  "i": 40,
+  "start": 100.82,
+  "end": 103.08,
+  "text": "He smiled for the first time in a year."
+ },
+ {
+  "i": 41,
+  "start": 103.7,
+  "end": 105.22,
+  "text": "On Wednesday, it was Maya."
+ },
+ {
+  "i": 42,
+  "start": 105.22,
+  "end": 106.42,
+  "text": "Ten years old."
+ },
+ {
+  "i": 43,
+  "start": 106.82,
+  "end": 107.66,
+  "text": "Big math test."
+ },
+ {
+  "i": 44,
+  "start": 107.92,
+  "end": 109.18,
+  "text": "Extra marshmallows, Mr."
+ },
+ {
+  "i": 45,
+  "start": 109.3,
+  "end": 109.46,
+  "text": "Walt?"
+ },
+ {
+  "i": 46,
+  "start": 109.46,
+  "end": 112.595,
+  "text": "On test days?"
+ },
+ {
+  "i": 47,
+  "start": 112.595,
+  "end": 113.64,
+  "text": "Always."
+ },
+ {
+  "i": 48,
+  "start": 113.64,
+  "end": 115.94,
+  "text": "Every night, M-7 wrote its report."
+ },
+ {
+  "i": 49,
+  "start": 116.44,
+  "end": 118.52,
+  "text": "Monday said, \"Inefficiency detected.\""
+ },
+ {
+  "i": 50,
+  "start": 119.26,
+  "end": 121.32,
+  "text": "Tuesday said, \"Inefficiency detected.\""
+ },
+ {
+  "i": 51,
+  "start": 121.9,
+  "end": 123.94,
+  "text": "By Friday, it said something new."
+ },
+ {
+  "i": 52,
+  "start": 124.5,
+  "end": 125.46,
+  "text": "\"Pattern unknown.\""
+ },
+ {
+  "i": 53,
+  "start": 127.1,
+  "end": 130.06,
+  "text": "On Sunday, the seventh day, the report was due."
+ },
+ {
+  "i": 54,
+  "start": 130.54,
+  "end": 131.74,
+  "text": "But the cart was closed."
+ },
+ {
+  "i": 55,
+  "start": 132.88,
+  "end": 133.96,
+  "text": "Walt was in the hospital."
+ },
+ {
+  "i": 56,
+  "start": 134.62,
+  "end": 135.56,
+  "text": "His heart was tired."
+ },
+ {
+  "i": 57,
+  "start": 136.32,
+  "end": 138.72,
+  "text": "It had been working for seventy-eight years, after all."
+ },
+ {
+  "i": 58,
+  "start": 139.38,
+  "end": 140.8,
+  "text": "M-7 stood by the bed."
+ },
+ {
+  "i": 59,
+  "start": 141.52,
+  "end": 142.24,
+  "text": "It had a question."
+ },
+ {
+  "i": 60,
+  "start": 142.56,
+  "end": 143.54,
+  "text": "The report is due."
+ },
+ {
+  "i": 61,
+  "start": 143.88,
+  "end": 144.58,
+  "text": "What do I write?"
+ },
+ {
+  "i": 62,
+  "start": 145.8,
+  "end": 146.72,
+  "text": "Walt smiled."
+ },
+ {
+  "i": 63,
+  "start": 146.72,
+  "end": 149.882,
+  "text": "Write that you didn't figure it out."
+ },
+ {
+  "i": 64,
+  "start": 149.882,
+  "end": 152.593,
+  "text": "And then, open my cart tomorrow."
+ },
+ {
+  "i": 65,
+  "start": 152.593,
+  "end": 153.496,
+  "text": "Six o'clock."
+ },
+ {
+  "i": 66,
+  "start": 153.496,
+  "end": 154.4,
+  "text": "Twelve cups."
+ },
+ {
+  "i": 67,
+  "start": 154.4,
+  "end": 156.2,
+  "text": "I am not allowed to do a human job."
+ },
+ {
+  "i": 68,
+  "start": 156.2,
+  "end": 160.54,
+  "text": "Then don't do it like a machine."
+ },
+ {
+  "i": 69,
+  "start": 160.54,
+  "end": 165.1,
+  "text": "That night, the oldest working heart on Earth finally took a rest."
+ },
+ {
+  "i": 70,
+  "start": 168.24,
+  "end": 171.64,
+  "text": "At six the next morning, the cart on Track Four opened."
+ },
+ {
+  "i": 71,
+  "start": 172.14,
+  "end": 173.5,
+  "text": "There was a robot behind the counter."
+ },
+ {
+  "i": 72,
+  "start": 173.8,
+  "end": 176.22,
+  "text": "And the coffee was thirty-one percent too strong."
+ },
+ {
+  "i": 73,
+  "start": 176.58,
+  "end": 177.72,
+  "text": "Four degrees too hot."
+ },
+ {
+  "i": 74,
+  "start": 178.2,
+  "end": 178.44,
+  "text": "Mr."
+ },
+ {
+  "i": 75,
+  "start": 178.56,
+  "end": 180.0,
+  "text": "Bennett got two cinnamon cookies."
+ },
+ {
+  "i": 76,
+  "start": 180.52,
+  "end": 181.66,
+  "text": "Arjun got a dish towel."
+ },
+ {
+  "i": 77,
+  "start": 182.04,
+  "end": 186.8,
+  "text": "And Maya's hot chocolate had extra marshmallows, and a note in shaky robot handwriting."
+ },
+ {
+  "i": 78,
+  "start": 187.32,
+  "end": 187.82,
+  "text": "\"Test day."
+ },
+ {
+  "i": 79,
+  "start": 188.2,
+  "end": 189.82,
+  "text": "Walt says, you've got this.\""
+ },
+ {
+  "i": 80,
+  "start": 190.34,
+  "end": 193.26,
+  "text": "That evening, M-7 sent its report to the Department."
+ },
+ {
+  "i": 81,
+  "start": 193.82,
+  "end": 195.0,
+  "text": "It was one line long."
+ },
+ {
+  "i": 82,
+  "start": 195.38,
+  "end": 197.16,
+  "text": "Last human job on Earth."
+ },
+ {
+  "i": 83,
+  "start": 197.4,
+  "end": 197.9,
+  "text": "Status..."
+ },
+ {
+  "i": 84,
+  "start": 197.9,
+  "end": 199.24,
+  "text": "not closed."
+ },
+ {
+  "i": 85,
+  "start": 200.88,
+  "end": 203.38,
+  "text": "And on the cart, it hung a new sign."
+ },
+ {
+  "i": 86,
+  "start": 203.86,
+  "end": 204.46,
+  "text": "\"Help wanted."
+ },
+ {
+  "i": 87,
+  "start": 205.12,
+  "end": 205.78,
+  "text": "Humans only.\""
+ },
+ {
+  "i": 88,
+  "start": 205.78,
+  "end": 211.62,
+  "text": "Twelve years later, a young woman runs the busiest coffee cart in the city."
+ },
+ {
+  "i": 89,
+  "start": 212.12,
+  "end": 213.22,
+  "text": "Her name is Maya."
+ },
+ {
+  "i": 90,
+  "start": 213.72,
+  "end": 215.64,
+  "text": "She knows every customer by name."
+ },
+ {
+  "i": 91,
+  "start": 216.0,
+  "end": 219.4,
+  "text": "And on test days, the marshmallows are always extra."
+ },
+ {
+  "i": 92,
+  "start": 219.82,
+  "end": 222.12,
+  "text": "Because machines can do almost anything."
+ },
+ {
+  "i": 93,
+  "start": 222.68,
+  "end": 224.86,
+  "text": "But somebody still has to remember your name."
+ },
+ {
+  "i": 94,
+  "start": 226.84,
+  "end": 230.84,
+  "text": "So, what is the one job you would never hand over to a machine?"
+ },
+ {
+  "i": 95,
+  "start": 231.38,
+  "end": 232.2,
+  "text": "Tell us in the comments."
+ },
+ {
+  "i": 96,
+  "start": 232.78,
+  "end": 235.82,
+  "text": "And if this story made you think of someone, send it to them today."
+ }
+]

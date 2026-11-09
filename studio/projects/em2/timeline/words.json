@@ -1,0 +1,915 @@
+{
+ "source": "whisper:small.en+script",
+ "words": [
+  {
+   "word": "Imagine",
+   "start": 0.0,
+   "end": 0.52
+  },
+  {
+   "word": "your",
+   "start": 0.52,
+   "end": 0.78
+  },
+  {
+   "word": "dream",
+   "start": 0.78,
+   "end": 0.98
+  },
+  {
+   "word": "life.",
+   "start": 0.98,
+   "end": 1.34
+  },
+  {
+   "word": "Forever.",
+   "start": 1.64,
+   "end": 1.88
+  },
+  {
+   "word": "Perfect.",
+   "start": 2.36,
+   "end": 2.6
+  },
+  {
+   "word": "And",
+   "start": 3.3,
+   "end": 3.48
+  },
+  {
+   "word": "completely",
+   "start": 3.48,
+   "end": 3.84
+  },
+  {
+   "word": "fake.",
+   "start": 3.84,
+   "end": 4.28
+  },
+  {
+   "word": "Would",
+   "start": 4.98,
+   "end": 5.04
+  },
+  {
+   "word": "you",
+   "start": 5.04,
+   "end": 5.18
+  },
+  {
+   "word": "plug",
+   "start": 5.18,
+   "end": 5.38
+  },
+  {
+   "word": "in?",
+   "start": 5.38,
+   "end": 5.64
+  },
+  {
+   "word": "In",
+   "start": 5.9,
+   "end": 6.0
+  },
+  {
+   "word": "1974,",
+   "start": 6.0,
+   "end": 6.84
+  },
+  {
+   "word": "philosopher",
+   "start": 7.4,
+   "end": 7.68
+  },
+  {
+   "word": "Robert",
+   "start": 7.68,
+   "end": 8.2
+  },
+  {
+   "word": "Nozick",
+   "start": 8.2,
+   "end": 8.7
+  },
+  {
+   "word": "dreamed",
+   "start": 8.7,
+   "end": 9.16
+  },
+  {
+   "word": "up",
+   "start": 9.16,
+   "end": 9.34
+  },
+  {
+   "word": "the",
+   "start": 9.34,
+   "end": 9.46
+  },
+  {
+   "word": "Experience",
+   "start": 9.46,
+   "end": 9.94
+  },
+  {
+   "word": "Machine.",
+   "start": 9.94,
+   "end": 10.38
+  },
+  {
+   "word": "You",
+   "start": 10.66,
+   "end": 10.72
+  },
+  {
+   "word": "lie",
+   "start": 10.72,
+   "end": 10.92
+  },
+  {
+   "word": "in",
+   "start": 10.92,
+   "end": 11.08
+  },
+  {
+   "word": "a",
+   "start": 11.08,
+   "end": 11.14
+  },
+  {
+   "word": "tank.",
+   "start": 11.14,
+   "end": 11.42
+  },
+  {
+   "word": "Wires",
+   "start": 11.78,
+   "end": 11.98
+  },
+  {
+   "word": "go",
+   "start": 11.98,
+   "end": 12.26
+  },
+  {
+   "word": "into",
+   "start": 12.26,
+   "end": 12.44
+  },
+  {
+   "word": "your",
+   "start": 12.44,
+   "end": 12.58
+  },
+  {
+   "word": "brain.",
+   "start": 12.58,
+   "end": 12.88
+  },
+  {
+   "word": "And",
+   "start": 13.14,
+   "end": 13.28
+  },
+  {
+   "word": "it",
+   "start": 13.28,
+   "end": 13.38
+  },
+  {
+   "word": "feeds",
+   "start": 13.38,
+   "end": 13.62
+  },
+  {
+   "word": "you",
+   "start": 13.62,
+   "end": 13.82
+  },
+  {
+   "word": "any",
+   "start": 13.82,
+   "end": 13.92
+  },
+  {
+   "word": "life",
+   "start": 13.92,
+   "end": 14.16
+  },
+  {
+   "word": "you",
+   "start": 14.16,
+   "end": 14.34
+  },
+  {
+   "word": "want.",
+   "start": 14.34,
+   "end": 14.62
+  },
+  {
+   "word": "Write",
+   "start": 14.96,
+   "end": 15.08
+  },
+  {
+   "word": "the",
+   "start": 15.08,
+   "end": 15.22
+  },
+  {
+   "word": "bestseller.",
+   "start": 15.22,
+   "end": 15.68
+  },
+  {
+   "word": "Fall",
+   "start": 15.9,
+   "end": 16.18
+  },
+  {
+   "word": "in",
+   "start": 16.18,
+   "end": 16.34
+  },
+  {
+   "word": "love.",
+   "start": 16.34,
+   "end": 16.86
+  },
+  {
+   "word": "Win",
+   "start": 16.86,
+   "end": 17.06
+  },
+  {
+   "word": "the",
+   "start": 17.06,
+   "end": 17.22
+  },
+  {
+   "word": "big",
+   "start": 17.22,
+   "end": 17.4
+  },
+  {
+   "word": "game.",
+   "start": 17.4,
+   "end": 17.72
+  },
+  {
+   "word": "It",
+   "start": 18.0,
+   "end": 18.1
+  },
+  {
+   "word": "feels",
+   "start": 18.1,
+   "end": 18.28
+  },
+  {
+   "word": "one",
+   "start": 18.28,
+   "end": 18.593
+  },
+  {
+   "word": "hundred",
+   "start": 18.593,
+   "end": 18.907
+  },
+  {
+   "word": "percent",
+   "start": 18.907,
+   "end": 19.22
+  },
+  {
+   "word": "real,",
+   "start": 19.22,
+   "end": 19.52
+  },
+  {
+   "word": "and",
+   "start": 19.9,
+   "end": 20.06
+  },
+  {
+   "word": "you'd",
+   "start": 20.06,
+   "end": 20.26
+  },
+  {
+   "word": "never",
+   "start": 20.26,
+   "end": 20.46
+  },
+  {
+   "word": "know",
+   "start": 20.46,
+   "end": 20.68
+  },
+  {
+   "word": "you",
+   "start": 20.68,
+   "end": 20.86
+  },
+  {
+   "word": "were",
+   "start": 20.86,
+   "end": 20.98
+  },
+  {
+   "word": "plugged",
+   "start": 20.98,
+   "end": 21.2
+  },
+  {
+   "word": "in.",
+   "start": 21.2,
+   "end": 21.46
+  },
+  {
+   "word": "So",
+   "start": 21.7,
+   "end": 21.84
+  },
+  {
+   "word": "here's",
+   "start": 21.84,
+   "end": 22.12
+  },
+  {
+   "word": "the",
+   "start": 22.12,
+   "end": 22.24
+  },
+  {
+   "word": "question.",
+   "start": 22.24,
+   "end": 22.58
+  },
+  {
+   "word": "Would",
+   "start": 22.98,
+   "end": 23.04
+  },
+  {
+   "word": "you",
+   "start": 23.04,
+   "end": 23.18
+  },
+  {
+   "word": "plug",
+   "start": 23.18,
+   "end": 23.36
+  },
+  {
+   "word": "in,",
+   "start": 23.36,
+   "end": 23.54
+  },
+  {
+   "word": "for",
+   "start": 23.54,
+   "end": 23.76
+  },
+  {
+   "word": "life?",
+   "start": 23.76,
+   "end": 23.98
+  },
+  {
+   "word": "Most",
+   "start": 24.38,
+   "end": 24.58
+  },
+  {
+   "word": "people",
+   "start": 24.58,
+   "end": 24.86
+  },
+  {
+   "word": "say",
+   "start": 24.86,
+   "end": 25.14
+  },
+  {
+   "word": "no.",
+   "start": 25.14,
+   "end": 25.4
+  },
+  {
+   "word": "Which",
+   "start": 25.62,
+   "end": 25.82
+  },
+  {
+   "word": "is",
+   "start": 25.82,
+   "end": 25.96
+  },
+  {
+   "word": "weird.",
+   "start": 25.96,
+   "end": 26.26
+  },
+  {
+   "word": "Because",
+   "start": 26.5,
+   "end": 26.8
+  },
+  {
+   "word": "if",
+   "start": 26.8,
+   "end": 26.96
+  },
+  {
+   "word": "happiness",
+   "start": 26.96,
+   "end": 27.32
+  },
+  {
+   "word": "were",
+   "start": 27.32,
+   "end": 27.6
+  },
+  {
+   "word": "all",
+   "start": 27.6,
+   "end": 27.8
+  },
+  {
+   "word": "we",
+   "start": 27.8,
+   "end": 27.94
+  },
+  {
+   "word": "wanted,",
+   "start": 27.94,
+   "end": 28.32
+  },
+  {
+   "word": "this",
+   "start": 28.56,
+   "end": 28.82
+  },
+  {
+   "word": "machine",
+   "start": 28.82,
+   "end": 29.18
+  },
+  {
+   "word": "would",
+   "start": 29.18,
+   "end": 29.34
+  },
+  {
+   "word": "be",
+   "start": 29.34,
+   "end": 29.52
+  },
+  {
+   "word": "perfect.",
+   "start": 29.52,
+   "end": 29.92
+  },
+  {
+   "word": "Nozick's",
+   "start": 30.42,
+   "end": 30.78
+  },
+  {
+   "word": "answer?",
+   "start": 30.78,
+   "end": 31.04
+  },
+  {
+   "word": "We",
+   "start": 31.42,
+   "end": 31.48
+  },
+  {
+   "word": "don't",
+   "start": 31.48,
+   "end": 31.66
+  },
+  {
+   "word": "just",
+   "start": 31.66,
+   "end": 31.78
+  },
+  {
+   "word": "want",
+   "start": 31.78,
+   "end": 31.96
+  },
+  {
+   "word": "to",
+   "start": 31.96,
+   "end": 32.12
+  },
+  {
+   "word": "feel",
+   "start": 32.12,
+   "end": 32.28
+  },
+  {
+   "word": "like",
+   "start": 32.28,
+   "end": 32.56
+  },
+  {
+   "word": "we",
+   "start": 32.56,
+   "end": 32.68
+  },
+  {
+   "word": "did",
+   "start": 32.68,
+   "end": 32.82
+  },
+  {
+   "word": "something.",
+   "start": 32.82,
+   "end": 33.12
+  },
+  {
+   "word": "We",
+   "start": 33.48,
+   "end": 33.6
+  },
+  {
+   "word": "want",
+   "start": 33.6,
+   "end": 33.76
+  },
+  {
+   "word": "to",
+   "start": 33.76,
+   "end": 33.94
+  },
+  {
+   "word": "actually",
+   "start": 33.94,
+   "end": 34.24
+  },
+  {
+   "word": "do",
+   "start": 34.24,
+   "end": 34.48
+  },
+  {
+   "word": "it.",
+   "start": 34.48,
+   "end": 34.7
+  },
+  {
+   "word": "Real",
+   "start": 34.98,
+   "end": 35.12
+  },
+  {
+   "word": "friends,",
+   "start": 35.12,
+   "end": 35.52
+  },
+  {
+   "word": "not",
+   "start": 35.84,
+   "end": 35.9
+  },
+  {
+   "word": "perfect",
+   "start": 35.9,
+   "end": 36.26
+  },
+  {
+   "word": "copies.",
+   "start": 36.26,
+   "end": 36.6
+  },
+  {
+   "word": "A",
+   "start": 36.98,
+   "end": 37.08
+  },
+  {
+   "word": "real",
+   "start": 37.08,
+   "end": 37.24
+  },
+  {
+   "word": "life,",
+   "start": 37.24,
+   "end": 37.6
+  },
+  {
+   "word": "not",
+   "start": 37.8,
+   "end": 37.88
+  },
+  {
+   "word": "a",
+   "start": 37.88,
+   "end": 38.02
+  },
+  {
+   "word": "really",
+   "start": 38.02,
+   "end": 38.24
+  },
+  {
+   "word": "good",
+   "start": 38.24,
+   "end": 38.44
+  },
+  {
+   "word": "dream.",
+   "start": 38.44,
+   "end": 38.72
+  },
+  {
+   "word": "But",
+   "start": 39.06,
+   "end": 39.14
+  },
+  {
+   "word": "here's",
+   "start": 39.14,
+   "end": 39.42
+  },
+  {
+   "word": "the",
+   "start": 39.42,
+   "end": 39.56
+  },
+  {
+   "word": "twist.",
+   "start": 39.56,
+   "end": 39.82
+  },
+  {
+   "word": "In",
+   "start": 40.2,
+   "end": 40.28
+  },
+  {
+   "word": "a",
+   "start": 40.28,
+   "end": 40.38
+  },
+  {
+   "word": "later",
+   "start": 40.38,
+   "end": 40.56
+  },
+  {
+   "word": "study,",
+   "start": 40.56,
+   "end": 40.88
+  },
+  {
+   "word": "people",
+   "start": 41.2,
+   "end": 41.36
+  },
+  {
+   "word": "were",
+   "start": 41.36,
+   "end": 41.54
+  },
+  {
+   "word": "told",
+   "start": 41.54,
+   "end": 41.68
+  },
+  {
+   "word": "their",
+   "start": 41.68,
+   "end": 41.88
+  },
+  {
+   "word": "life,",
+   "start": 41.88,
+   "end": 42.16
+  },
+  {
+   "word": "right",
+   "start": 42.36,
+   "end": 42.54
+  },
+  {
+   "word": "now,",
+   "start": 42.54,
+   "end": 42.84
+  },
+  {
+   "word": "is",
+   "start": 42.98,
+   "end": 43.16
+  },
+  {
+   "word": "already",
+   "start": 43.16,
+   "end": 43.44
+  },
+  {
+   "word": "the",
+   "start": 43.44,
+   "end": 43.6
+  },
+  {
+   "word": "machine.",
+   "start": 43.6,
+   "end": 43.94
+  },
+  {
+   "word": "Would",
+   "start": 44.24,
+   "end": 44.34
+  },
+  {
+   "word": "they",
+   "start": 44.34,
+   "end": 44.48
+  },
+  {
+   "word": "unplug,",
+   "start": 44.48,
+   "end": 44.88
+  },
+  {
+   "word": "and",
+   "start": 44.88,
+   "end": 45.36
+  },
+  {
+   "word": "wake",
+   "start": 45.36,
+   "end": 45.52
+  },
+  {
+   "word": "up",
+   "start": 45.52,
+   "end": 45.66
+  },
+  {
+   "word": "to",
+   "start": 45.66,
+   "end": 45.78
+  },
+  {
+   "word": "a",
+   "start": 45.78,
+   "end": 45.88
+  },
+  {
+   "word": "world",
+   "start": 45.88,
+   "end": 46.08
+  },
+  {
+   "word": "they've",
+   "start": 46.08,
+   "end": 46.3
+  },
+  {
+   "word": "never",
+   "start": 46.3,
+   "end": 46.48
+  },
+  {
+   "word": "seen?",
+   "start": 46.48,
+   "end": 46.8
+  },
+  {
+   "word": "Many",
+   "start": 47.4,
+   "end": 47.62
+  },
+  {
+   "word": "chose",
+   "start": 47.62,
+   "end": 47.86
+  },
+  {
+   "word": "to",
+   "start": 47.86,
+   "end": 48.1
+  },
+  {
+   "word": "stay.",
+   "start": 48.1,
+   "end": 48.34
+  },
+  {
+   "word": "So",
+   "start": 48.66,
+   "end": 48.78
+  },
+  {
+   "word": "maybe",
+   "start": 48.78,
+   "end": 48.98
+  },
+  {
+   "word": "it's",
+   "start": 48.98,
+   "end": 49.26
+  },
+  {
+   "word": "not",
+   "start": 49.26,
+   "end": 49.42
+  },
+  {
+   "word": "about",
+   "start": 49.42,
+   "end": 49.62
+  },
+  {
+   "word": "what's",
+   "start": 49.62,
+   "end": 49.88
+  },
+  {
+   "word": "real.",
+   "start": 49.88,
+   "end": 50.14
+  },
+  {
+   "word": "It's",
+   "start": 50.42,
+   "end": 50.6
+  },
+  {
+   "word": "about",
+   "start": 50.6,
+   "end": 50.78
+  },
+  {
+   "word": "what",
+   "start": 50.78,
+   "end": 50.96
+  },
+  {
+   "word": "we're",
+   "start": 50.96,
+   "end": 51.12
+  },
+  {
+   "word": "afraid",
+   "start": 51.12,
+   "end": 51.32
+  },
+  {
+   "word": "to",
+   "start": 51.32,
+   "end": 51.52
+  },
+  {
+   "word": "lose.",
+   "start": 51.52,
+   "end": 51.74
+  },
+  {
+   "word": "Would",
+   "start": 52.14,
+   "end": 52.22
+  },
+  {
+   "word": "you",
+   "start": 52.22,
+   "end": 52.36
+  },
+  {
+   "word": "plug",
+   "start": 52.36,
+   "end": 52.56
+  },
+  {
+   "word": "in?",
+   "start": 52.56,
+   "end": 52.8
+  },
+  {
+   "word": "Comment",
+   "start": 53.16,
+   "end": 53.34
+  },
+  {
+   "word": "yes",
+   "start": 53.34,
+   "end": 53.64
+  },
+  {
+   "word": "or",
+   "start": 53.64,
+   "end": 53.88
+  },
+  {
+   "word": "no.",
+   "start": 53.88,
+   "end": 54.1
+  }
+ ]
+}

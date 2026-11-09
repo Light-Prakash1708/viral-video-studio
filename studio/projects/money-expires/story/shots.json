@@ -1,0 +1,2084 @@
+{
+ "title": "What IF Money Expired Every 30 Days?",
+ "duration": 191.19,
+ "shots": [
+  {
+   "id": "m01",
+   "start": 0.0,
+   "end": 3.05,
+   "line": "You open your wallet, and every note has a timer.",
+   "scene": "3D macro: a leather wallet opens on a dark table, notes inside with glowing timers",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "fade",
+    "dur": 0.6
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "whoosh",
+     "gain": -16
+    },
+    {
+     "at": 1.2,
+     "name": "clock",
+     "gain": -14
+    },
+    {
+     "at": 1.7,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m02",
+   "start": 3.05,
+   "end": 6.15,
+   "line": "Your 500 rupee note says 30 days.",
+   "scene": "2D macro: the 500 note, timer strip glows 30 DAYS then ticks",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -14
+    },
+    {
+     "at": 0.6,
+     "name": "tick",
+     "gain": -12
+    },
+    {
+     "at": 2.2,
+     "name": "pop",
+     "gain": -10
+    },
+    {
+     "at": 2.3,
+     "name": "clock",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m03",
+   "start": 6.15,
+   "end": 8.25,
+   "line": "Your bank app says the same thing.",
+   "scene": "phone in hand: bank app balance with the same 30-day timer",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "phonebuzz",
+     "gain": -12
+    },
+    {
+     "at": 1.1,
+     "name": "blip",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m04",
+   "start": 8.25,
+   "end": 11.55,
+   "line": "Every rupee on Earth now expires after 30 days.",
+   "scene": "3D Earth with ring of glowing notes; TITLE card",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -14
+    },
+    {
+     "at": 0.9,
+     "name": "shimmer",
+     "gain": -16
+    },
+    {
+     "at": 2.4,
+     "name": "stinger",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -30
+   },
+   "captions": false
+  },
+  {
+   "id": "m05",
+   "start": 11.55,
+   "end": 15.25,
+   "line": "When the timer hits zero the money burns. Gone.",
+   "scene": "note countdown hits zero and burns to ash",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "clock",
+     "gain": -17
+    },
+    {
+     "at": 0.2,
+     "name": "riser",
+     "gain": -12,
+     "dur": 1.8
+    },
+    {
+     "at": 2.0,
+     "name": "impact",
+     "gain": -8
+    },
+    {
+     "at": 2.0,
+     "name": "flash",
+     "gain": -12
+    },
+    {
+     "at": 2.9,
+     "name": "wind",
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m06",
+   "start": 15.25,
+   "end": 17.3,
+   "line": "Day 1. Total chaos.",
+   "scene": "DAY 1 calendar card, chaos",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "impact",
+     "gain": -12
+    },
+    {
+     "at": 0.9,
+     "name": "swish",
+     "gain": -14
+    },
+    {
+     "at": 0.9,
+     "name": "murmur",
+     "gain": -18
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -26
+   },
+   "captions": false
+  },
+  {
+   "id": "m07",
+   "start": 17.3,
+   "end": 20.15,
+   "line": "Everyone runs to spend. Malls are packed.",
+   "scene": "Indian street: crowd runs with bags into a packed mall",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -10
+    },
+    {
+     "at": 0.3,
+     "name": "footstep",
+     "gain": -12
+    },
+    {
+     "at": 0.6,
+     "name": "footstep",
+     "gain": -12
+    },
+    {
+     "at": 0.9,
+     "name": "footstep",
+     "gain": -12
+    },
+    {
+     "at": 0.4,
+     "name": "carpass",
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "murmur",
+    "gain": -20
+   }
+  },
+  {
+   "id": "m08",
+   "start": 20.15,
+   "end": 22.3,
+   "line": "Restaurants have three-hour waiting lists.",
+   "scene": "restaurant with a three-hour waiting list queue",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -14
+    },
+    {
+     "at": 0.7,
+     "name": "clock",
+     "gain": -16
+    },
+    {
+     "at": 1.1,
+     "name": "pop",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "murmur",
+    "gain": -20
+   }
+  },
+  {
+   "id": "m09",
+   "start": 22.3,
+   "end": 25.5,
+   "line": "Your neighbour buys a jet ski. He lives in Delhi.",
+   "scene": "3D Delhi traffic: neighbour on a jet ski strapped on a car roof",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.35,
+     "name": "ding",
+     "gain": -15
+    },
+    {
+     "at": 0.4,
+     "name": "counter",
+     "gain": -19
+    },
+    {
+     "at": 1.2,
+     "name": "carpass",
+     "gain": -17
+    },
+    {
+     "at": 1.8,
+     "name": "whoosh",
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -20
+   }
+  },
+  {
+   "id": "m10",
+   "start": 25.5,
+   "end": 29.85,
+   "line": "And here's the weird part. For a while the economy looks amazing.",
+   "scene": "giant market screen, green arrows, economy boom",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "stinger",
+     "gain": -14
+    },
+    {
+     "at": 1.6,
+     "name": "powerup",
+     "gain": -14
+    },
+    {
+     "at": 3.2,
+     "name": "cheer",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "murmur",
+    "gain": -22
+   }
+  },
+  {
+   "id": "m11",
+   "start": 29.85,
+   "end": 31.85,
+   "line": "Economists have a name for this.",
+   "scene": "economist at a blackboard",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -14
+    },
+    {
+     "at": 1.3,
+     "name": "pop",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m12",
+   "start": 31.85,
+   "end": 35.75,
+   "line": "The velocity of money. It's how fast money moves from hand to hand.",
+   "scene": "velocity diagram: coin passes hand to hand round a loop",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "zoom",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "whoosh",
+     "gain": -12
+    },
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -10
+    },
+    {
+     "at": 1.9,
+     "name": "blip",
+     "gain": -14
+    },
+    {
+     "at": 2.5,
+     "name": "blip",
+     "gain": -14
+    },
+    {
+     "at": 3.1,
+     "name": "blip",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m13",
+   "start": 35.75,
+   "end": 39.05,
+   "line": "When people hold on to cash, the economy slows down.",
+   "scene": "people clutch cash, loop stops, meter SLOW",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "slowmo",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m14",
+   "start": 39.05,
+   "end": 41.65,
+   "line": "When money has to move it races.",
+   "scene": "coins race round the loop, meter FAST",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "powerup",
+     "gain": -12
+    },
+    {
+     "at": 1.2,
+     "name": "whoosh",
+     "gain": -10
+    },
+    {
+     "at": 1.7,
+     "name": "whoosh",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m15",
+   "start": 41.65,
+   "end": 44.8,
+   "line": "Shops sell out. Factories hire more workers.",
+   "scene": "shop SOLD OUT, pan to factory NOW HIRING",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "hit",
+     "gain": -9
+    },
+    {
+     "at": 1.3,
+     "name": "swish",
+     "gain": -12
+    },
+    {
+     "at": 1.9,
+     "name": "ding",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -22
+   }
+  },
+  {
+   "id": "m16",
+   "start": 44.8,
+   "end": 48.85,
+   "line": "Everybody has a job, because everybody has to spend.",
+   "scene": "busy market: paid and spending instantly",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "counter",
+     "gain": -14
+    },
+    {
+     "at": 1.4,
+     "name": "ding",
+     "gain": -14
+    },
+    {
+     "at": 2.0,
+     "name": "cheer",
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "murmur",
+    "gain": -20
+   }
+  },
+  {
+   "id": "m17",
+   "start": 48.85,
+   "end": 51.4,
+   "line": "Day 10. Prices start climbing.",
+   "scene": "DAY 10 calendar card",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "clock",
+     "gain": -17
+    },
+    {
+     "at": 0.2,
+     "name": "impact",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -28
+   },
+   "captions": false
+  },
+  {
+   "id": "m18",
+   "start": 51.4,
+   "end": 53.9,
+   "line": "Too much money is chasing too few things.",
+   "scene": "crowd waving money chases a cart of few goods",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "footstep",
+     "gain": -12
+    },
+    {
+     "at": 0.6,
+     "name": "footstep",
+     "gain": -12
+    },
+    {
+     "at": 1.0,
+     "name": "whoosh",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "murmur",
+    "gain": -22
+   }
+  },
+  {
+   "id": "m19",
+   "start": 53.9,
+   "end": 57.05,
+   "line": "A plate of momos costs double. Then triple.",
+   "scene": "momo stall price board flips 60 -> 120 -> 180",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.7,
+     "name": "counter",
+     "gain": -17
+    },
+    {
+     "at": 1.3,
+     "name": "ding",
+     "gain": -15
+    },
+    {
+     "at": 2.25,
+     "name": "ding",
+     "gain": -15
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -22
+   }
+  },
+  {
+   "id": "m20",
+   "start": 57.05,
+   "end": 59.1,
+   "line": "And the rich realise something fast.",
+   "scene": "rich man close-up smirk, gold reflection",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "stinger",
+     "gain": -12
+    },
+    {
+     "at": 1.0,
+     "name": "shimmer",
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m21",
+   "start": 59.1,
+   "end": 62.25,
+   "line": "If money can't be stored you store things instead.",
+   "scene": "rich man trades burning notes for gold and art",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "swish",
+     "gain": -12
+    },
+    {
+     "at": 1.7,
+     "name": "hit",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m22",
+   "start": 62.25,
+   "end": 63.95,
+   "line": "Gold prices explode.",
+   "scene": "gold price chart rockets",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "riser",
+     "gain": -12,
+     "dur": 0.8
+    },
+    {
+     "at": 0.8,
+     "name": "impact",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m23",
+   "start": 63.95,
+   "end": 67.05,
+   "line": "Land, houses, paintings, even rare sneakers",
+   "scene": "3D vault: land, houses, paintings, sneakers",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "pop",
+     "gain": -10
+    },
+    {
+     "at": 0.6,
+     "name": "pop",
+     "gain": -10
+    },
+    {
+     "at": 1.05,
+     "name": "pop",
+     "gain": -10
+    },
+    {
+     "at": 2.2,
+     "name": "pop",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   }
+  },
+  {
+   "id": "m24",
+   "start": 67.05,
+   "end": 69.55,
+   "line": "anything that won't burn becomes the new bank.",
+   "scene": "burning note next to an unburnt gold bar: THE NEW BANK",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -14
+    },
+    {
+     "at": 1.85,
+     "name": "hit",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m25",
+   "start": 69.55,
+   "end": 72.65,
+   "line": "Day 20. You realise the scariest part.",
+   "scene": "DAY 20 calendar card over worried face",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "slowmo",
+     "gain": -10
+    },
+    {
+     "at": 0.8,
+     "name": "heartbeat",
+     "gain": -10
+    },
+    {
+     "at": 1.8,
+     "name": "heartbeat",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   },
+   "captions": false
+  },
+  {
+   "id": "m26",
+   "start": 72.65,
+   "end": 75.3,
+   "line": "You can't save anymore. Not for college.",
+   "scene": "student at desk, college savings jar burns",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "heartbeat",
+     "gain": -12
+    },
+    {
+     "at": 1.2,
+     "name": "heartbeat",
+     "gain": -14
+    },
+    {
+     "at": 1.7,
+     "name": "hit",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m27",
+   "start": 75.3,
+   "end": 78.7,
+   "line": "Not for your parents' hospital bills. Not for a rainy day.",
+   "scene": "hospital desk with parents; rain on window",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "heartbeat",
+     "gain": -12
+    },
+    {
+     "at": 1.1,
+     "name": "heartbeat",
+     "gain": -14
+    },
+    {
+     "at": 2.0,
+     "name": "rain",
+     "gain": -16
+    },
+    {
+     "at": 2.6,
+     "name": "thunder",
+     "gain": -18
+    }
+   ],
+   "amb": {
+    "name": "hum",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m28",
+   "start": 78.7,
+   "end": 81.55,
+   "line": "A savings account is now just a countdown.",
+   "scene": "savings bar drains like an hourglass countdown",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "clock",
+     "gain": -12
+    },
+    {
+     "at": 2.4,
+     "name": "tick",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m29",
+   "start": 81.55,
+   "end": 84.85,
+   "line": "So people get creative. A baker pays his rent in bread.",
+   "scene": "baker gets an idea, pays rent in bread",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "ding",
+     "gain": -16
+    },
+    {
+     "at": 2.2,
+     "name": "swish",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "murmur",
+    "gain": -26
+   }
+  },
+  {
+   "id": "m30",
+   "start": 84.85,
+   "end": 86.8,
+   "line": "A teacher gets paid in electricity.",
+   "scene": "teacher paid with a glowing lightbulb",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "powerup",
+     "gain": -14
+    },
+    {
+     "at": 1.6,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m31",
+   "start": 86.8,
+   "end": 89.85,
+   "line": "Neighbours start keeping notebooks of favours.",
+   "scene": "neighbours on stairwell, one writes in a favours notebook",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -14
+    },
+    {
+     "at": 2.2,
+     "name": "pop",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "city",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m32",
+   "start": 89.85,
+   "end": 92.4,
+   "line": "\"I fixed your bike, you owe me two dinners.\"",
+   "scene": "notebook page handwriting: I fixed your bike -> 2 dinners",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "swish",
+     "gain": -16
+    },
+    {
+     "at": 1.5,
+     "name": "pop",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m33",
+   "start": 92.4,
+   "end": 97.05,
+   "line": "Without anyone planning it, people stop saving money and start saving each other.",
+   "scene": "warm rooftop: neighbours share food, kites, lights",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "fade",
+    "dur": 0.6
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m34",
+   "start": 97.05,
+   "end": 99.45,
+   "line": "And this isn't pure fantasy. It happened.",
+   "scene": "sepia film flicker: it happened",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "whoosh",
+     "gain": -14
+    },
+    {
+     "at": 2.1,
+     "name": "hit",
+     "gain": -9
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   }
+  },
+  {
+   "id": "m35",
+   "start": 99.45,
+   "end": 103.1,
+   "line": "In 1932, during the Great Depression,",
+   "scene": "1932 Great Depression breadline",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "pop",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -22
+   }
+  },
+  {
+   "id": "m36",
+   "start": 103.1,
+   "end": 106.9,
+   "line": "a small Austrian town called Wörgl printed its own money that",
+   "scene": "Europe map flies to Austria, pin WORGL",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -12
+    },
+    {
+     "at": 1.95,
+     "name": "pop",
+     "gain": -9
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "m37",
+   "start": 106.9,
+   "end": 109.4,
+   "line": "lost 1% of its value every month.",
+   "scene": "Worgl scrip note stamped -1% per month",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.35,
+     "name": "hit",
+     "gain": -9
+    },
+    {
+     "at": 0.95,
+     "name": "hit",
+     "gain": -11
+    },
+    {
+     "at": 1.55,
+     "name": "hit",
+     "gain": -11
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   }
+  },
+  {
+   "id": "m38",
+   "start": 109.4,
+   "end": 112.4,
+   "line": "If you kept it, it shrank. So people spent it.",
+   "scene": "scrip shrinks in hand, gets spent",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "swish",
+     "gain": -12
+    },
+    {
+     "at": 1.9,
+     "name": "ding",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "m39",
+   "start": 112.4,
+   "end": 115.15,
+   "line": "Roads got built. Bridges got fixed.",
+   "scene": "sepia workers build road and bridge in the Alps",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "kick",
+     "gain": -12
+    },
+    {
+     "at": 0.9,
+     "name": "kick",
+     "gain": -12
+    },
+    {
+     "at": 1.5,
+     "name": "kick",
+     "gain": -12
+    },
+    {
+     "at": 2.1,
+     "name": "kick",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -22
+   }
+  },
+  {
+   "id": "m40",
+   "start": 115.15,
+   "end": 118.4,
+   "line": "Unemployment fell, while the rest of the country was struggling.",
+   "scene": "unemployment chart falls vs rest of country",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -14
+    },
+    {
+     "at": 0.8,
+     "name": "blip",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   }
+  },
+  {
+   "id": "m41",
+   "start": 118.4,
+   "end": 120.95,
+   "line": "Other towns wanted to copy it.",
+   "scene": "other towns light up on the map",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -12
+    },
+    {
+     "at": 0.8,
+     "name": "pop",
+     "gain": -12
+    },
+    {
+     "at": 1.1,
+     "name": "pop",
+     "gain": -12
+    },
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "m42",
+   "start": 120.95,
+   "end": 122.85,
+   "line": "Then the national bank shut it down.",
+   "scene": "CLOSED stamp slams on the scrip",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "glitch",
+     "gain": -10
+    },
+    {
+     "at": 0.9,
+     "name": "glitch",
+     "gain": -12
+    },
+    {
+     "at": 1.35,
+     "name": "impact",
+     "gain": -6
+    },
+    {
+     "at": 1.35,
+     "name": "hit",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   }
+  },
+  {
+   "id": "m43",
+   "start": 122.85,
+   "end": 125.3,
+   "line": "Only a country is allowed to print money.",
+   "scene": "national bank facade, printing press",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "hit",
+     "gain": -12
+    },
+    {
+     "at": 1.4,
+     "name": "hit",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   }
+  },
+  {
+   "id": "m44",
+   "start": 125.3,
+   "end": 128.05,
+   "line": "Today, in Germany, a regional currency",
+   "scene": "map of Germany, pin in Bavaria (Chiemgau)",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -12
+    },
+    {
+     "at": 0.85,
+     "name": "pop",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m45",
+   "start": 128.05,
+   "end": 130.95,
+   "line": "called the Chiemgauer still uses the same idea.",
+   "scene": "modern Chiemgauer note by an alpine lake",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "shimmer",
+     "gain": -14
+    },
+    {
+     "at": 1.9,
+     "name": "pop",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m46",
+   "start": 130.95,
+   "end": 133.75,
+   "line": "But scale it to the whole planet, and things break.",
+   "scene": "whole planet map glows, then cracks",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "zoom",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "riser",
+     "gain": -12,
+     "dur": 1.7
+    },
+    {
+     "at": 2.1,
+     "name": "glitch",
+     "gain": -10
+    },
+    {
+     "at": 2.15,
+     "name": "impact",
+     "gain": -8
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m47",
+   "start": 133.75,
+   "end": 136.15,
+   "line": "Banks can't lend, because loans expire too.",
+   "scene": "bank desk: loan papers burn",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "hit",
+     "gain": -12
+    },
+    {
+     "at": 1.35,
+     "name": "flash",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   }
+  },
+  {
+   "id": "m48",
+   "start": 136.15,
+   "end": 141.3,
+   "line": "Long-term dreams houses, businesses, retirement become almost impossible.",
+   "scene": "long-term dreams fade: house, business, retirement",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 1.85,
+     "name": "swish",
+     "gain": -14
+    },
+    {
+     "at": 2.45,
+     "name": "swish",
+     "gain": -14
+    },
+    {
+     "at": 3.1,
+     "name": "swish",
+     "gain": -14
+    },
+    {
+     "at": 3.5,
+     "name": "wind",
+     "gain": -18
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m49",
+   "start": 141.3,
+   "end": 144.6,
+   "line": "When money can't wait, neither can people.",
+   "scene": "close-up: hero under a ticking clock",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "clock",
+     "gain": -12
+    },
+    {
+     "at": 1.2,
+     "name": "heartbeat",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m50",
+   "start": 144.6,
+   "end": 146.75,
+   "line": "Day 30. Midnight.",
+   "scene": "DAY 30 calendar card, midnight clock",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "tick",
+     "gain": -8
+    },
+    {
+     "at": 0.7,
+     "name": "tick",
+     "gain": -8
+    },
+    {
+     "at": 1.0,
+     "name": "clock",
+     "gain": -10
+    },
+    {
+     "at": 0.9,
+     "name": "riser",
+     "gain": -10,
+     "dur": 1.4
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   },
+   "captions": false
+  },
+  {
+   "id": "m51",
+   "start": 146.75,
+   "end": 151.0,
+   "line": "Across the world, a trillion notes glow orange and turn to ash.",
+   "scene": "3D night Earth: wave of notes burning to ash",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "riser",
+     "gain": -11,
+     "dur": 3.5
+    },
+    {
+     "at": 3.55,
+     "name": "impact",
+     "gain": -4
+    },
+    {
+     "at": 3.55,
+     "name": "flash",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m52",
+   "start": 151.0,
+   "end": 153.3,
+   "line": "And in the morning, a new month begins.",
+   "scene": "sunrise over city rooftops, ash settling",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "fade",
+    "dur": 0.6
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "shimmer",
+     "gain": -18
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m53",
+   "start": 153.3,
+   "end": 155.25,
+   "line": "Everyone starts again at zero.",
+   "scene": "bank app resets to zero, 30 days",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "counter",
+     "gain": -14
+    },
+    {
+     "at": 1.2,
+     "name": "blip",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m54",
+   "start": 155.25,
+   "end": 158.95,
+   "line": "Rich and poor for one strange moment almost equal.",
+   "scene": "rich and poor side by side, equal",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 2.4,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "m55",
+   "start": 158.95,
+   "end": 160.65,
+   "line": "Now here's the twist.",
+   "scene": "close-up: hero turns, the twist",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "stinger",
+     "gain": -15
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m56",
+   "start": 160.65,
+   "end": 163.75,
+   "line": "Your money already expires. It's just slower.",
+   "scene": "real wallet: faint timer appears",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.8,
+     "name": "tick",
+     "gain": -14
+    },
+    {
+     "at": 1.8,
+     "name": "tick",
+     "gain": -14
+    },
+    {
+     "at": 2.2,
+     "name": "shimmer",
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m57",
+   "start": 163.75,
+   "end": 169.35,
+   "line": "It's called inflation. In India, prices have risen around five to six percent a year for a long time.",
+   "scene": "INFLATION: India CPI ~5-6% a year chart",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "pop",
+     "gain": -10
+    },
+    {
+     "at": 3.3,
+     "name": "blip",
+     "gain": -12
+    },
+    {
+     "at": 3.5,
+     "name": "counter",
+     "gain": -14
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m58",
+   "start": 169.35,
+   "end": 174.85,
+   "line": "At that rate, ₹100 today buys only about half as much in twelve years.",
+   "scene": "100 rupee note shrinks over 12-year timeline",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "counter",
+     "gain": -14
+    },
+    {
+     "at": 2.5,
+     "name": "tick",
+     "gain": -12
+    },
+    {
+     "at": 4.5,
+     "name": "pop",
+     "gain": -10
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m59",
+   "start": 174.85,
+   "end": 177.95,
+   "line": "The timer is already running. You just can't see it.",
+   "scene": "3D wallet callback, timer quietly appears",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "tick",
+     "gain": -18
+    },
+    {
+     "at": 1.3,
+     "name": "tick",
+     "gain": -18
+    },
+    {
+     "at": 2.3,
+     "name": "tick",
+     "gain": -18
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -34
+   }
+  },
+  {
+   "id": "m60",
+   "start": 177.95,
+   "end": 179.75,
+   "line": "That's why people invest.",
+   "scene": "invest: a seed planted in coins",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -12
+    },
+    {
+     "at": 1.0,
+     "name": "shimmer",
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m61",
+   "start": 179.75,
+   "end": 184.1,
+   "line": "Not to get rich overnight but to stop their money from quietly burning.",
+   "scene": "plant grows from coins while a note smoulders",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "shimmer",
+     "gain": -16
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "m62",
+   "start": 184.1,
+   "end": 191.19,
+   "line": "So, if your money expired in 30 days what's the first thing you'd buy? Tell me in the comments.",
+   "scene": "CTA end card: what would you buy first?",
+   "set": "",
+   "bars": null,
+   "in": {
+    "type": "fade",
+    "dur": 0.6
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "ding",
+     "gain": -12
+    },
+    {
+     "at": 4.3,
+     "name": "pop",
+     "gain": -12
+    }
+   ],
+   "amb": {
+    "name": "roomtone",
+    "gain": -32
+   },
+   "captions": false
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 15.25,
+   "mood": "mystery",
+   "intensity": 0.45
+  },
+  {
+   "start": 15.25,
+   "end": 25.5,
+   "mood": "playful",
+   "intensity": 0.65
+  },
+  {
+   "start": 25.5,
+   "end": 48.85,
+   "mood": "triumph",
+   "intensity": 0.6
+  },
+  {
+   "start": 48.85,
+   "end": 57.05,
+   "mood": "tension",
+   "intensity": 0.6
+  },
+  {
+   "start": 57.05,
+   "end": 69.55,
+   "mood": "dark",
+   "intensity": 0.55
+  },
+  {
+   "start": 69.55,
+   "end": 81.55,
+   "mood": "sad",
+   "intensity": 0.5
+  },
+  {
+   "start": 81.55,
+   "end": 97.05,
+   "mood": "hopeful",
+   "intensity": 0.55
+  },
+  {
+   "start": 97.05,
+   "end": 120.95,
+   "mood": "wonder",
+   "intensity": 0.45
+  },
+  {
+   "start": 120.95,
+   "end": 144.6,
+   "mood": "tension",
+   "intensity": 0.55
+  },
+  {
+   "start": 144.6,
+   "end": 151.0,
+   "mood": "epic",
+   "intensity": 0.75
+  },
+  {
+   "start": 151.0,
+   "end": 177.95,
+   "mood": "calm",
+   "intensity": 0.35
+  },
+  {
+   "start": 177.95,
+   "end": 191.19,
+   "mood": "hopeful",
+   "intensity": 0.5
+  }
+ ]
+}

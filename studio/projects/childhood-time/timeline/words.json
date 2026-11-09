@@ -1,0 +1,1025 @@
+{
+ "source": "whisper:small.en+script",
+ "words": [
+  {
+   "word": "Why",
+   "start": 0.0,
+   "end": 0.4
+  },
+  {
+   "word": "did",
+   "start": 0.4,
+   "end": 0.6
+  },
+  {
+   "word": "one",
+   "start": 0.6,
+   "end": 0.86
+  },
+  {
+   "word": "summer",
+   "start": 0.86,
+   "end": 1.2
+  },
+  {
+   "word": "as",
+   "start": 1.4,
+   "end": 1.5
+  },
+  {
+   "word": "a",
+   "start": 1.5,
+   "end": 1.62
+  },
+  {
+   "word": "child",
+   "start": 1.62,
+   "end": 1.92
+  },
+  {
+   "word": "feel",
+   "start": 2.1,
+   "end": 2.22
+  },
+  {
+   "word": "like",
+   "start": 2.22,
+   "end": 2.56
+  },
+  {
+   "word": "an",
+   "start": 2.56,
+   "end": 2.66
+  },
+  {
+   "word": "entire",
+   "start": 2.66,
+   "end": 3.08
+  },
+  {
+   "word": "lifetime,",
+   "start": 3.08,
+   "end": 3.6
+  },
+  {
+   "word": "but",
+   "start": 4.08,
+   "end": 4.24
+  },
+  {
+   "word": "an",
+   "start": 4.24,
+   "end": 4.36
+  },
+  {
+   "word": "entire",
+   "start": 4.36,
+   "end": 4.8
+  },
+  {
+   "word": "year",
+   "start": 4.8,
+   "end": 5.0
+  },
+  {
+   "word": "now",
+   "start": 5.0,
+   "end": 5.28
+  },
+  {
+   "word": "just",
+   "start": 5.28,
+   "end": 5.5
+  },
+  {
+   "word": "disappears?",
+   "start": 5.5,
+   "end": 6.0
+  },
+  {
+   "word": "When",
+   "start": 6.52,
+   "end": 6.6
+  },
+  {
+   "word": "you",
+   "start": 6.6,
+   "end": 6.72
+  },
+  {
+   "word": "were",
+   "start": 6.72,
+   "end": 6.86
+  },
+  {
+   "word": "eight,",
+   "start": 6.86,
+   "end": 7.06
+  },
+  {
+   "word": "one",
+   "start": 7.48,
+   "end": 7.54
+  },
+  {
+   "word": "summer",
+   "start": 7.54,
+   "end": 7.8
+  },
+  {
+   "word": "had",
+   "start": 7.8,
+   "end": 7.98
+  },
+  {
+   "word": "everything.",
+   "start": 7.98,
+   "end": 8.46
+  },
+  {
+   "word": "The",
+   "start": 8.84,
+   "end": 8.94
+  },
+  {
+   "word": "first",
+   "start": 8.94,
+   "end": 9.18
+  },
+  {
+   "word": "time",
+   "start": 9.18,
+   "end": 9.38
+  },
+  {
+   "word": "you",
+   "start": 9.38,
+   "end": 9.54
+  },
+  {
+   "word": "swam",
+   "start": 9.54,
+   "end": 9.82
+  },
+  {
+   "word": "in",
+   "start": 9.82,
+   "end": 9.94
+  },
+  {
+   "word": "the",
+   "start": 9.94,
+   "end": 10.06
+  },
+  {
+   "word": "sea.",
+   "start": 10.06,
+   "end": 10.26
+  },
+  {
+   "word": "The",
+   "start": 10.64,
+   "end": 10.7
+  },
+  {
+   "word": "first",
+   "start": 10.7,
+   "end": 10.94
+  },
+  {
+   "word": "scraped",
+   "start": 10.94,
+   "end": 11.38
+  },
+  {
+   "word": "knee.",
+   "start": 11.38,
+   "end": 11.54
+  },
+  {
+   "word": "The",
+   "start": 11.92,
+   "end": 12.0
+  },
+  {
+   "word": "first",
+   "start": 12.0,
+   "end": 12.22
+  },
+  {
+   "word": "firefly",
+   "start": 12.22,
+   "end": 12.82
+  },
+  {
+   "word": "in",
+   "start": 12.82,
+   "end": 12.98
+  },
+  {
+   "word": "a",
+   "start": 12.98,
+   "end": 13.08
+  },
+  {
+   "word": "jar.",
+   "start": 13.08,
+   "end": 13.32
+  },
+  {
+   "word": "Your",
+   "start": 13.7,
+   "end": 13.82
+  },
+  {
+   "word": "brain",
+   "start": 13.82,
+   "end": 14.06
+  },
+  {
+   "word": "saved",
+   "start": 14.06,
+   "end": 14.48
+  },
+  {
+   "word": "all",
+   "start": 14.48,
+   "end": 14.72
+  },
+  {
+   "word": "of",
+   "start": 14.72,
+   "end": 14.82
+  },
+  {
+   "word": "it,",
+   "start": 14.82,
+   "end": 15.0
+  },
+  {
+   "word": "because",
+   "start": 15.12,
+   "end": 15.36
+  },
+  {
+   "word": "all",
+   "start": 15.36,
+   "end": 15.62
+  },
+  {
+   "word": "of",
+   "start": 15.62,
+   "end": 15.72
+  },
+  {
+   "word": "it",
+   "start": 15.72,
+   "end": 15.82
+  },
+  {
+   "word": "was",
+   "start": 15.82,
+   "end": 15.92
+  },
+  {
+   "word": "new.",
+   "start": 15.92,
+   "end": 16.14
+  },
+  {
+   "word": "Now",
+   "start": 16.58,
+   "end": 16.68
+  },
+  {
+   "word": "look",
+   "start": 16.68,
+   "end": 16.88
+  },
+  {
+   "word": "at",
+   "start": 16.88,
+   "end": 17.08
+  },
+  {
+   "word": "an",
+   "start": 17.08,
+   "end": 17.18
+  },
+  {
+   "word": "adult",
+   "start": 17.18,
+   "end": 17.42
+  },
+  {
+   "word": "year.",
+   "start": 17.42,
+   "end": 17.76
+  },
+  {
+   "word": "Wake",
+   "start": 18.14,
+   "end": 18.24
+  },
+  {
+   "word": "up.",
+   "start": 18.24,
+   "end": 18.54
+  },
+  {
+   "word": "Commute.",
+   "start": 19.0,
+   "end": 19.26
+  },
+  {
+   "word": "Work.",
+   "start": 19.76,
+   "end": 19.94
+  },
+  {
+   "word": "Scroll.",
+   "start": 19.94,
+   "end": 21.34
+  },
+  {
+   "word": "Sleep.",
+   "start": 21.34,
+   "end": 21.54
+  },
+  {
+   "word": "Repeat.",
+   "start": 22.3,
+   "end": 22.32
+  },
+  {
+   "word": "Your",
+   "start": 22.86,
+   "end": 22.96
+  },
+  {
+   "word": "brain",
+   "start": 22.96,
+   "end": 23.24
+  },
+  {
+   "word": "doesn't",
+   "start": 23.24,
+   "end": 23.56
+  },
+  {
+   "word": "need",
+   "start": 23.56,
+   "end": 23.7
+  },
+  {
+   "word": "to",
+   "start": 23.7,
+   "end": 23.84
+  },
+  {
+   "word": "save",
+   "start": 23.84,
+   "end": 24.04
+  },
+  {
+   "word": "the",
+   "start": 24.04,
+   "end": 24.22
+  },
+  {
+   "word": "same",
+   "start": 24.22,
+   "end": 24.48
+  },
+  {
+   "word": "Tuesday",
+   "start": 24.48,
+   "end": 24.82
+  },
+  {
+   "word": "twice,",
+   "start": 24.82,
+   "end": 25.24
+  },
+  {
+   "word": "so",
+   "start": 25.5,
+   "end": 25.74
+  },
+  {
+   "word": "it",
+   "start": 25.74,
+   "end": 25.84
+  },
+  {
+   "word": "doesn't.",
+   "start": 25.84,
+   "end": 26.14
+  },
+  {
+   "word": "And",
+   "start": 26.46,
+   "end": 26.56
+  },
+  {
+   "word": "here's",
+   "start": 26.56,
+   "end": 26.86
+  },
+  {
+   "word": "the",
+   "start": 26.86,
+   "end": 26.98
+  },
+  {
+   "word": "strange",
+   "start": 26.98,
+   "end": 27.26
+  },
+  {
+   "word": "part.",
+   "start": 27.26,
+   "end": 27.64
+  },
+  {
+   "word": "When",
+   "start": 27.64,
+   "end": 28.1
+  },
+  {
+   "word": "you",
+   "start": 28.1,
+   "end": 28.22
+  },
+  {
+   "word": "look",
+   "start": 28.22,
+   "end": 28.4
+  },
+  {
+   "word": "back,",
+   "start": 28.4,
+   "end": 28.68
+  },
+  {
+   "word": "your",
+   "start": 29.06,
+   "end": 29.1
+  },
+  {
+   "word": "mind",
+   "start": 29.1,
+   "end": 29.38
+  },
+  {
+   "word": "measures",
+   "start": 29.38,
+   "end": 29.7
+  },
+  {
+   "word": "time",
+   "start": 29.7,
+   "end": 30.06
+  },
+  {
+   "word": "by",
+   "start": 30.06,
+   "end": 30.32
+  },
+  {
+   "word": "counting",
+   "start": 30.32,
+   "end": 30.72
+  },
+  {
+   "word": "memories.",
+   "start": 30.72,
+   "end": 31.12
+  },
+  {
+   "word": "A",
+   "start": 31.66,
+   "end": 31.66
+  },
+  {
+   "word": "summer",
+   "start": 31.66,
+   "end": 31.82
+  },
+  {
+   "word": "full",
+   "start": 31.82,
+   "end": 32.08
+  },
+  {
+   "word": "of",
+   "start": 32.08,
+   "end": 32.24
+  },
+  {
+   "word": "firsts",
+   "start": 32.24,
+   "end": 32.68
+  },
+  {
+   "word": "leaves",
+   "start": 32.68,
+   "end": 32.84
+  },
+  {
+   "word": "hundreds",
+   "start": 32.84,
+   "end": 33.18
+  },
+  {
+   "word": "of",
+   "start": 33.18,
+   "end": 33.38
+  },
+  {
+   "word": "them,",
+   "start": 33.38,
+   "end": 33.6
+  },
+  {
+   "word": "so",
+   "start": 33.76,
+   "end": 33.96
+  },
+  {
+   "word": "it",
+   "start": 33.96,
+   "end": 34.08
+  },
+  {
+   "word": "feels",
+   "start": 34.08,
+   "end": 34.28
+  },
+  {
+   "word": "huge.",
+   "start": 34.28,
+   "end": 34.58
+  },
+  {
+   "word": "A",
+   "start": 35.04,
+   "end": 35.14
+  },
+  {
+   "word": "year",
+   "start": 35.14,
+   "end": 35.34
+  },
+  {
+   "word": "of",
+   "start": 35.34,
+   "end": 35.48
+  },
+  {
+   "word": "routine",
+   "start": 35.48,
+   "end": 35.86
+  },
+  {
+   "word": "leaves",
+   "start": 35.86,
+   "end": 36.18
+  },
+  {
+   "word": "only",
+   "start": 36.18,
+   "end": 36.46
+  },
+  {
+   "word": "a",
+   "start": 36.46,
+   "end": 36.64
+  },
+  {
+   "word": "few,",
+   "start": 36.64,
+   "end": 36.84
+  },
+  {
+   "word": "so",
+   "start": 37.06,
+   "end": 37.28
+  },
+  {
+   "word": "it",
+   "start": 37.28,
+   "end": 37.4
+  },
+  {
+   "word": "feels",
+   "start": 37.4,
+   "end": 37.58
+  },
+  {
+   "word": "like",
+   "start": 37.58,
+   "end": 37.8
+  },
+  {
+   "word": "it",
+   "start": 37.8,
+   "end": 37.9
+  },
+  {
+   "word": "vanished.",
+   "start": 37.9,
+   "end": 38.24
+  },
+  {
+   "word": "Psychologist",
+   "start": 38.84,
+   "end": 39.32
+  },
+  {
+   "word": "Claudia",
+   "start": 39.32,
+   "end": 39.74
+  },
+  {
+   "word": "Hammond",
+   "start": 39.74,
+   "end": 40.12
+  },
+  {
+   "word": "calls",
+   "start": 40.12,
+   "end": 40.72
+  },
+  {
+   "word": "this",
+   "start": 40.72,
+   "end": 41.0
+  },
+  {
+   "word": "the",
+   "start": 41.0,
+   "end": 41.14
+  },
+  {
+   "word": "holiday",
+   "start": 41.14,
+   "end": 41.52
+  },
+  {
+   "word": "paradox.",
+   "start": 41.52,
+   "end": 42.02
+  },
+  {
+   "word": "A",
+   "start": 42.54,
+   "end": 42.62
+  },
+  {
+   "word": "great",
+   "start": 42.62,
+   "end": 42.86
+  },
+  {
+   "word": "holiday",
+   "start": 42.86,
+   "end": 43.32
+  },
+  {
+   "word": "flies",
+   "start": 43.32,
+   "end": 43.64
+  },
+  {
+   "word": "by",
+   "start": 43.64,
+   "end": 44.0
+  },
+  {
+   "word": "while",
+   "start": 44.0,
+   "end": 44.2
+  },
+  {
+   "word": "you're",
+   "start": 44.2,
+   "end": 44.34
+  },
+  {
+   "word": "living",
+   "start": 44.34,
+   "end": 44.56
+  },
+  {
+   "word": "it,",
+   "start": 44.56,
+   "end": 44.86
+  },
+  {
+   "word": "but",
+   "start": 45.04,
+   "end": 45.26
+  },
+  {
+   "word": "in",
+   "start": 45.26,
+   "end": 45.36
+  },
+  {
+   "word": "memory,",
+   "start": 45.36,
+   "end": 45.72
+  },
+  {
+   "word": "it",
+   "start": 45.96,
+   "end": 46.12
+  },
+  {
+   "word": "stretches",
+   "start": 46.12,
+   "end": 46.38
+  },
+  {
+   "word": "out.",
+   "start": 46.38,
+   "end": 46.72
+  },
+  {
+   "word": "A",
+   "start": 47.06,
+   "end": 47.2
+  },
+  {
+   "word": "boring",
+   "start": 47.2,
+   "end": 47.5
+  },
+  {
+   "word": "week",
+   "start": 47.5,
+   "end": 47.74
+  },
+  {
+   "word": "crawls",
+   "start": 47.74,
+   "end": 48.18
+  },
+  {
+   "word": "while",
+   "start": 48.18,
+   "end": 48.34
+  },
+  {
+   "word": "you're",
+   "start": 48.34,
+   "end": 48.52
+  },
+  {
+   "word": "in",
+   "start": 48.52,
+   "end": 48.66
+  },
+  {
+   "word": "it,",
+   "start": 48.66,
+   "end": 48.94
+  },
+  {
+   "word": "then",
+   "start": 49.04,
+   "end": 49.24
+  },
+  {
+   "word": "shrinks",
+   "start": 49.24,
+   "end": 49.56
+  },
+  {
+   "word": "to",
+   "start": 49.56,
+   "end": 49.74
+  },
+  {
+   "word": "almost",
+   "start": 49.74,
+   "end": 49.98
+  },
+  {
+   "word": "nothing.",
+   "start": 49.98,
+   "end": 50.34
+  },
+  {
+   "word": "So",
+   "start": 50.66,
+   "end": 50.88
+  },
+  {
+   "word": "time",
+   "start": 50.88,
+   "end": 51.16
+  },
+  {
+   "word": "doesn't",
+   "start": 51.16,
+   "end": 51.54
+  },
+  {
+   "word": "really",
+   "start": 51.54,
+   "end": 51.74
+  },
+  {
+   "word": "speed",
+   "start": 51.74,
+   "end": 52.06
+  },
+  {
+   "word": "up",
+   "start": 52.06,
+   "end": 52.24
+  },
+  {
+   "word": "as",
+   "start": 52.24,
+   "end": 52.4
+  },
+  {
+   "word": "you",
+   "start": 52.4,
+   "end": 52.52
+  },
+  {
+   "word": "get",
+   "start": 52.52,
+   "end": 52.64
+  },
+  {
+   "word": "older.",
+   "start": 52.64,
+   "end": 52.92
+  },
+  {
+   "word": "Your",
+   "start": 53.26,
+   "end": 53.38
+  },
+  {
+   "word": "days",
+   "start": 53.38,
+   "end": 53.6
+  },
+  {
+   "word": "just",
+   "start": 53.6,
+   "end": 53.86
+  },
+  {
+   "word": "start",
+   "start": 53.86,
+   "end": 54.14
+  },
+  {
+   "word": "to",
+   "start": 54.14,
+   "end": 54.28
+  },
+  {
+   "word": "look",
+   "start": 54.28,
+   "end": 54.38
+  },
+  {
+   "word": "the",
+   "start": 54.38,
+   "end": 54.54
+  },
+  {
+   "word": "same.",
+   "start": 54.54,
+   "end": 54.84
+  },
+  {
+   "word": "Want",
+   "start": 55.22,
+   "end": 55.36
+  },
+  {
+   "word": "a",
+   "start": 55.36,
+   "end": 55.5
+  },
+  {
+   "word": "longer",
+   "start": 55.5,
+   "end": 55.74
+  },
+  {
+   "word": "life?",
+   "start": 55.74,
+   "end": 56.14
+  },
+  {
+   "word": "Collect",
+   "start": 56.14,
+   "end": 56.82
+  },
+  {
+   "word": "more",
+   "start": 56.82,
+   "end": 57.06
+  },
+  {
+   "word": "firsts.",
+   "start": 57.06,
+   "end": 57.78
+  },
+  {
+   "word": "When",
+   "start": 57.9,
+   "end": 57.96
+  },
+  {
+   "word": "was",
+   "start": 57.96,
+   "end": 58.1
+  },
+  {
+   "word": "the",
+   "start": 58.1,
+   "end": 58.24
+  },
+  {
+   "word": "last",
+   "start": 58.24,
+   "end": 58.46
+  },
+  {
+   "word": "time",
+   "start": 58.46,
+   "end": 58.8
+  },
+  {
+   "word": "you",
+   "start": 58.8,
+   "end": 59.1
+  },
+  {
+   "word": "did",
+   "start": 59.1,
+   "end": 59.22
+  },
+  {
+   "word": "something",
+   "start": 59.22,
+   "end": 59.5
+  },
+  {
+   "word": "for",
+   "start": 59.5,
+   "end": 59.76
+  },
+  {
+   "word": "the",
+   "start": 59.76,
+   "end": 59.9
+  },
+  {
+   "word": "first",
+   "start": 59.9,
+   "end": 60.1
+  },
+  {
+   "word": "time?",
+   "start": 60.1,
+   "end": 60.46
+  },
+  {
+   "word": "Tell",
+   "start": 60.8,
+   "end": 60.9
+  },
+  {
+   "word": "me",
+   "start": 60.9,
+   "end": 61.04
+  },
+  {
+   "word": "in",
+   "start": 61.04,
+   "end": 61.12
+  },
+  {
+   "word": "the",
+   "start": 61.12,
+   "end": 61.24
+  },
+  {
+   "word": "comments.",
+   "start": 61.24,
+   "end": 61.54
+  }
+ ]
+}

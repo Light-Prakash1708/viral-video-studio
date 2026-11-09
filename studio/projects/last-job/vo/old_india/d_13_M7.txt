@@ -1,0 +1,2 @@
+@voice M7 british pitch=-1.0 speed=0.97
+M7: Last human job on Earth. Status... not closed.

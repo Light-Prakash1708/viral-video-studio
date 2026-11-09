@@ -1,0 +1,23 @@
+Three prisoners. Five hats. Three white, two black. Guess your hat right, you walk free. Guess wrong... you don't.
+
+The guard lines them up, one behind the other, facing a wall. Each gets a hat he can't see.
+
+Prisoner three, at the back, sees both hats in front of him. He stays silent.
+
+Prisoner two sees one hat. He stays silent too.
+
+Prisoner one sees nothing. Just the wall.
+
+And yet... he's the one who answers. And he's right.
+
+What color is his hat? Beat the clock.
+
+Time's up. It's white.
+
+If prisoner three had seen two black hats, he'd know his was white. He stayed silent. So at least one front hat is white.
+
+Prisoner two knows that too. If prisoner one's hat were black, his own would have to be white. But he stayed silent.
+
+So prisoner one's hat... is white.
+
+The silence was the clue. Comment if you beat the clock.

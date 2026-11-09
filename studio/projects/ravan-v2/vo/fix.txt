@@ -1,0 +1,15 @@
+@voice RAVAN hindi-m pitch=-1 speed=0.95
+@voice ASKER storyteller pitch=+1.5 speed=1.03
+ASKER: Wait. Rahvuhnuh... won?
+
+ASKER: But wasn't Rahvuhnuh just... the villain?
+
+Not just. In the stories, Rahvuhnuh was a scholar. A master of the veena. A devotee of Shiva so intense, legend says he tried to lift Mount Kailash. The Shiva Tandav Stotram, still chanted today, is credited to him.
+
+And here's a real fact. In our world, Sri Lanka's first satellite, launched in 2019, was named after Rahvuhnuh himself.
+
+Ten great towers stand around the palace. One for each of Rahvuhnuh's heads. Medicine. Music. Astronomy. War. Ten minds, ruling as one.
+
+That's the real question. Rahvuhnuh was brilliant. Powerful. Devoted. And it still wasn't enough. Even his own brother, Vibbeeshunnuh, warned him, and walked away.
+
+So tell me. If Rahvuhnuh had won, would you live in his golden Lanka? Comment yes, or no.

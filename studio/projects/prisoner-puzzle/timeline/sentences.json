@@ -1,0 +1,188 @@
+[
+ {
+  "i": 0,
+  "start": 0.08,
+  "end": 1.18,
+  "text": "Three prisoners."
+ },
+ {
+  "i": 1,
+  "start": 1.74,
+  "end": 2.4,
+  "text": "Five hats."
+ },
+ {
+  "i": 2,
+  "start": 2.74,
+  "end": 3.96,
+  "text": "Three white, two black."
+ },
+ {
+  "i": 3,
+  "start": 4.3,
+  "end": 5.92,
+  "text": "Guess your hat right, you walk free."
+ },
+ {
+  "i": 4,
+  "start": 6.46,
+  "end": 7.06,
+  "text": "Guess wrong..."
+ },
+ {
+  "i": 5,
+  "start": 7.26,
+  "end": 7.56,
+  "text": "you don't."
+ },
+ {
+  "i": 6,
+  "start": 8.16,
+  "end": 11.52,
+  "text": "The guard lines them up, one behind the other, facing a wall."
+ },
+ {
+  "i": 7,
+  "start": 12.06,
+  "end": 13.72,
+  "text": "Each gets a hat he can't see."
+ },
+ {
+  "i": 8,
+  "start": 14.32,
+  "end": 17.44,
+  "text": "Prisoner three, at the back, sees both hats in front of him."
+ },
+ {
+  "i": 9,
+  "start": 17.94,
+  "end": 18.72,
+  "text": "He stays silent."
+ },
+ {
+  "i": 10,
+  "start": 19.52,
+  "end": 21.12,
+  "text": "Prisoner two sees one hat."
+ },
+ {
+  "i": 11,
+  "start": 21.58,
+  "end": 22.6,
+  "text": "He stays silent too."
+ },
+ {
+  "i": 12,
+  "start": 23.3,
+  "end": 24.9,
+  "text": "Prisoner one sees nothing."
+ },
+ {
+  "i": 13,
+  "start": 25.36,
+  "end": 26.08,
+  "text": "Just the wall."
+ },
+ {
+  "i": 14,
+  "start": 26.64,
+  "end": 27.08,
+  "text": "And yet..."
+ },
+ {
+  "i": 15,
+  "start": 27.26,
+  "end": 28.2,
+  "text": "he's the one who answers."
+ },
+ {
+  "i": 16,
+  "start": 28.72,
+  "end": 29.28,
+  "text": "And he's right."
+ },
+ {
+  "i": 17,
+  "start": 29.85,
+  "end": 31.02,
+  "text": "What color is his hat?"
+ },
+ {
+  "i": 18,
+  "start": 31.22,
+  "end": 31.72,
+  "text": "Beat the clock."
+ },
+ {
+  "i": 19,
+  "start": 31.72,
+  "end": 38.16,
+  "text": "Time's up."
+ },
+ {
+  "i": 20,
+  "start": 38.34,
+  "end": 38.64,
+  "text": "It's white."
+ },
+ {
+  "i": 21,
+  "start": 39.24,
+  "end": 42.76,
+  "text": "If prisoner three had seen two black hats, he'd know his was white."
+ },
+ {
+  "i": 22,
+  "start": 42.94,
+  "end": 43.68,
+  "text": "He stayed silent."
+ },
+ {
+  "i": 23,
+  "start": 44.08,
+  "end": 45.84,
+  "text": "So at least one front hat is white."
+ },
+ {
+  "i": 24,
+  "start": 46.4,
+  "end": 47.76,
+  "text": "Prisoner two knows that too."
+ },
+ {
+  "i": 25,
+  "start": 48.26,
+  "end": 51.06,
+  "text": "If prisoner one's hat were black, his own would have to be white."
+ },
+ {
+  "i": 26,
+  "start": 51.3,
+  "end": 52.32,
+  "text": "But he stayed silent."
+ },
+ {
+  "i": 27,
+  "start": 52.94,
+  "end": 54.08,
+  "text": "So prisoner one's hat..."
+ },
+ {
+  "i": 28,
+  "start": 54.08,
+  "end": 55.0,
+  "text": "is white."
+ },
+ {
+  "i": 29,
+  "start": 55.8,
+  "end": 57.12,
+  "text": "The silence was the clue."
+ },
+ {
+  "i": 30,
+  "start": 57.58,
+  "end": 58.86,
+  "text": "Comment if you beat the clock."
+ }
+]

@@ -1,0 +1,1114 @@
+{
+ "title": "What If Ravana Had Won",
+ "duration": 166.825,
+ "shots": [
+  {
+   "id": "v01",
+   "start": 0,
+   "end": 1.73,
+   "line": "",
+   "scene": "v01",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "impact",
+     "gain": -10
+    },
+    {
+     "at": 0.3,
+     "name": "cheer",
+     "gain": -22
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "murmur",
+    "gain": -22
+   }
+  },
+  {
+   "id": "v02",
+   "start": 1.73,
+   "end": 5.57,
+   "line": "",
+   "scene": "v02",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "flash",
+     "gain": -16
+    }
+   ],
+   "captions": false
+  },
+  {
+   "id": "v03",
+   "start": 5.57,
+   "end": 8.79,
+   "line": "",
+   "scene": "v03",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -16
+    },
+    {
+     "at": 1.2,
+     "name": "slowmo",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "d01",
+   "start": 8.79,
+   "end": 10.99,
+   "line": "",
+   "scene": "d01",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "r01",
+   "start": 10.99,
+   "end": 12.87,
+   "line": "",
+   "scene": "r01",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "riser",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "r08",
+   "start": 12.87,
+   "end": 16.27,
+   "line": "",
+   "scene": "r08",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "impact",
+     "gain": -12
+    },
+    {
+     "at": 0.4,
+     "name": "shimmer",
+     "gain": -18
+    }
+   ],
+   "captions": false
+  },
+  {
+   "id": "ch1",
+   "start": 16.27,
+   "end": 19.19,
+   "line": "",
+   "scene": "ch1",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "stinger",
+     "gain": -16
+    }
+   ],
+   "captions": false
+  },
+  {
+   "id": "r09",
+   "start": 19.19,
+   "end": 22.19,
+   "line": "",
+   "scene": "r09",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "r10",
+   "start": 22.19,
+   "end": 28.97,
+   "line": "",
+   "scene": "r10",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -18
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "d02",
+   "start": 28.97,
+   "end": 32.49,
+   "line": "",
+   "scene": "d02",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "r11",
+   "start": 32.49,
+   "end": 36.41,
+   "line": "",
+   "scene": "r11",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "r13",
+   "start": 36.41,
+   "end": 37.91,
+   "line": "",
+   "scene": "r13",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "ding",
+     "gain": -22
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "r14",
+   "start": 37.91,
+   "end": 42.91,
+   "line": "",
+   "scene": "r14",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "thunder",
+     "gain": -22
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q16",
+   "start": 42.91,
+   "end": 47.61,
+   "line": "",
+   "scene": "q16",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "r17",
+   "start": 47.61,
+   "end": 50.37,
+   "line": "",
+   "scene": "r17",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "riser",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "ch2",
+   "start": 50.37,
+   "end": 53.61,
+   "line": "",
+   "scene": "ch2",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "stinger",
+     "gain": -16
+    }
+   ],
+   "captions": false
+  },
+  {
+   "id": "r19",
+   "start": 53.61,
+   "end": 59.43,
+   "line": "",
+   "scene": "r19",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "r20",
+   "start": 59.43,
+   "end": 63.31,
+   "line": "",
+   "scene": "r20",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -20
+    },
+    {
+     "at": 0.8,
+     "name": "pop",
+     "gain": -20
+    },
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "p21",
+   "start": 63.31,
+   "end": 69.51,
+   "line": "",
+   "scene": "p21",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "whoosh",
+     "gain": -18
+    },
+    {
+     "at": 0.6,
+     "name": "shimmer",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "p23",
+   "start": 69.51,
+   "end": 75.17,
+   "line": "",
+   "scene": "p23",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "whoosh",
+     "gain": -20
+    },
+    {
+     "at": 0.0,
+     "name": "hum",
+     "gain": -24
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "r25",
+   "start": 75.17,
+   "end": 78.95,
+   "line": "",
+   "scene": "r25",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "riser",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -26
+   }
+  },
+  {
+   "id": "r26",
+   "start": 78.95,
+   "end": 83.39,
+   "line": "",
+   "scene": "r26",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "whoosh",
+     "gain": -18
+    },
+    {
+     "at": 1.4,
+     "name": "whoosh",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "d03",
+   "start": 83.39,
+   "end": 85.59,
+   "line": "",
+   "scene": "d03",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "r28",
+   "start": 85.59,
+   "end": 92.03,
+   "line": "",
+   "scene": "r28",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "blip",
+     "gain": -18
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "r29",
+   "start": 92.03,
+   "end": 94.57,
+   "line": "",
+   "scene": "r29",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "powerup",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "r31",
+   "start": 94.57,
+   "end": 99.51,
+   "line": "",
+   "scene": "r31",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "impact",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -26
+   }
+  },
+  {
+   "id": "r34",
+   "start": 99.51,
+   "end": 102.33,
+   "line": "",
+   "scene": "r34",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "ding",
+     "gain": -22
+    },
+    {
+     "at": 0.6,
+     "name": "ding",
+     "gain": -22
+    },
+    {
+     "at": 1.2,
+     "name": "ding",
+     "gain": -22
+    },
+    {
+     "at": 1.8,
+     "name": "ding",
+     "gain": -22
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "r36",
+   "start": 102.33,
+   "end": 104.53,
+   "line": "",
+   "scene": "r36",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "ch3",
+   "start": 104.53,
+   "end": 105.89,
+   "line": "",
+   "scene": "ch3",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "stinger",
+     "gain": -14
+    },
+    {
+     "at": 0.4,
+     "name": "thunder",
+     "gain": -20
+    }
+   ],
+   "captions": false
+  },
+  {
+   "id": "d04",
+   "start": 105.89,
+   "end": 108.47,
+   "line": "",
+   "scene": "d04",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "q41",
+   "start": 108.47,
+   "end": 112.13,
+   "line": "",
+   "scene": "q41",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "hum",
+     "gain": -22
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "q43",
+   "start": 112.13,
+   "end": 116.17,
+   "line": "",
+   "scene": "q43",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "q45",
+   "start": 116.17,
+   "end": 121.23,
+   "line": "",
+   "scene": "q45",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "glitch",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "r47",
+   "start": 121.23,
+   "end": 122.87,
+   "line": "",
+   "scene": "r47",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "slowmo",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "q49",
+   "start": 122.87,
+   "end": 128.03,
+   "line": "",
+   "scene": "q49",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -22
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q50",
+   "start": 128.03,
+   "end": 131.85,
+   "line": "",
+   "scene": "q50",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "heartbeat",
+     "gain": -18
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "d05",
+   "start": 131.85,
+   "end": 133.95,
+   "line": "",
+   "scene": "d05",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "r52",
+   "start": 133.95,
+   "end": 139.45,
+   "line": "",
+   "scene": "r52",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "impact",
+     "gain": -16
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "r54",
+   "start": 139.45,
+   "end": 143.35,
+   "line": "",
+   "scene": "r54",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.8,
+     "name": "footstep",
+     "gain": -20
+    },
+    {
+     "at": 1.4,
+     "name": "footstep",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "r56",
+   "start": 143.35,
+   "end": 145.99,
+   "line": "",
+   "scene": "r56",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "riser",
+     "gain": -22
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "r57",
+   "start": 145.99,
+   "end": 151.11,
+   "line": "",
+   "scene": "r57",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "q58",
+   "start": 151.11,
+   "end": 152.57,
+   "line": "",
+   "scene": "q58",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "r63",
+   "start": 152.57,
+   "end": 154.59,
+   "line": "",
+   "scene": "r63",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "cheer",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -22
+   }
+  },
+  {
+   "id": "e01",
+   "start": 154.59,
+   "end": 156.89,
+   "line": "",
+   "scene": "e01",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "heartbeat",
+     "gain": -16
+    }
+   ],
+   "captions": false
+  },
+  {
+   "id": "g69",
+   "start": 156.89,
+   "end": 161.79,
+   "line": "",
+   "scene": "g69",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "shimmer",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "g70",
+   "start": 161.79,
+   "end": 166.825,
+   "line": "",
+   "scene": "g70",
+   "set": "",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -18
+    },
+    {
+     "at": 0.9,
+     "name": "pop",
+     "gain": -18
+    }
+   ],
+   "captions": true
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 166.825,
+   "mood": "epic",
+   "intensity": 0.5
+  }
+ ]
+}

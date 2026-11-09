@@ -1,0 +1,31 @@
+{
+ "title": "What IF Money Expired Every 30 Days",
+ "aspect": "16:9",
+ "resolution": "1080p",
+ "fps": 24,
+ "style": "cinema",
+ "voiceover": "input/voiceover.wav",
+ "script": "input/script.txt",
+ "duration": 191.19,
+ "captions": true,
+ "bars": "none",
+ "fadeIn": 0.5,
+ "fadeOut": 0.8,
+ "music": {
+  "enabled": true,
+  "gainDb": -15,
+  "key": "D",
+  "seed": 30,
+  "file": "input/music_custom.wav"
+ },
+ "sfx": {
+  "enabled": true,
+  "gainDb": -8
+ },
+ "loudness": -14,
+ "captionStyle": {
+  "y": 985,
+  "size": 50,
+  "max": 2
+ }
+}

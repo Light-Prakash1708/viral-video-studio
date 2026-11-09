@@ -1,0 +1,23 @@
+{
+ "title": "The Ship of Theseus",
+ "aspect": "9:16",
+ "resolution": "1080p",
+ "fps": 24,
+ "style": "ember",
+ "voiceover": "input/voiceover.wav",
+ "script": "input/script.txt",
+ "duration": 61.6,
+ "captions": true,
+ "bars": null,
+ "fadeIn": 0.5,
+ "fadeOut": 0.8,
+ "music": {
+  "enabled": true,
+  "gainDb": -17
+ },
+ "sfx": {
+  "enabled": true,
+  "gainDb": -6
+ },
+ "loudness": -14
+}

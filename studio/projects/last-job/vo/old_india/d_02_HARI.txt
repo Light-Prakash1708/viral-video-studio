@@ -1,0 +1,2 @@
+@voice HARI desi-narrator pitch=-3.0 speed=0.9
+HARI: Stay one week. Then you tell me.

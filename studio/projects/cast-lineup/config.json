@@ -1,0 +1,30 @@
+{
+ "title": "cast test",
+ "aspect": "16:9",
+ "resolution": "1080p",
+ "fps": 24,
+ "style": "cinema",
+ "voiceover": "input/voiceover.wav",
+ "script": "input/script.txt",
+ "duration": 1,
+ "captions": false,
+ "bars": null,
+ "fadeIn": 0.5,
+ "fadeOut": 0.8,
+ "music": {
+  "enabled": false,
+  "gainDb": -16,
+  "key": "D",
+  "seed": 9
+ },
+ "sfx": {
+  "enabled": false,
+  "gainDb": -8
+ },
+ "loudness": -14,
+ "captionStyle": {
+  "y": 1440,
+  "size": 88,
+  "max": 2
+ }
+}

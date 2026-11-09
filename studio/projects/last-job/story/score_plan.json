@@ -1,0 +1,31 @@
+{"key": "D", "bpm": 76, "seed": 61,
+ "sections": [
+  {"start": 0.0, "end": 6.4, "prog": ["vi", "IV"], "mode": "sparse", "vel": 0.34, "strings": 0.25, "bass": false},
+  {"start": 6.4, "end": 10.9, "prog": ["IV", "I"], "mode": "block", "vel": 0.55, "strings": 0.7},
+  {"start": 10.9, "end": 16.7, "prog": ["I", "V", "vi", "IV"], "mode": "motif", "vel": 0.42, "strings": 0.25},
+  {"start": 16.7, "end": 32.8, "prog": ["vi", "IV", "I", "V"], "mode": "arp8", "vel": 0.38, "strings": 0.2, "pulse": true},
+  {"start": 36.4, "end": 57.3, "prog": ["I", "V", "vi", "IV"], "mode": "motif", "vel": 0.42, "strings": 0.3},
+  {"start": 57.3, "end": 63.9, "prog": ["vi", "iii", "IV", "V"], "mode": "sparse", "vel": 0.4, "strings": 0.4, "pulse": true},
+  {"start": 63.9, "end": 75.7, "prog": ["vi", "IV", "I", "V"], "mode": "sparse", "vel": 0.3, "strings": 0.2},
+  {"start": 75.7, "end": 113.5, "prog": ["I", "V", "vi", "IV"], "mode": "sparse", "vel": 0.3, "strings": 0.22},
+  {"start": 113.5, "end": 127.0, "prog": ["vi", "vi", "IV", "V"], "mode": "sparse", "vel": 0.32, "strings": 0.3},
+  {"start": 132.8, "end": 146.9, "prog": ["vi", "IV", "I", "V"], "mode": "block", "vel": 0.32, "strings": 0.45},
+  {"start": 146.9, "end": 160.4, "prog": ["IV", "I", "V", "vi"], "mode": "sparse", "vel": 0.26, "strings": 0.35, "bass": false},
+  {"start": 168.1, "end": 190.2, "prog": ["I", "V", "vi", "IV"], "mode": "motif", "vel": 0.44, "strings": 0.5},
+  {"start": 190.2, "end": 205.7, "prog": ["IV", "I", "V", "vi"], "mode": "block", "vel": 0.55, "strings": 0.8},
+  {"start": 205.7, "end": 222.6, "prog": ["I", "V", "vi", "IV"], "mode": "arp8", "vel": 0.5, "strings": 0.6, "pulse": true},
+  {"start": 222.6, "end": 236.0, "prog": ["IV", "I", "V", "I"], "mode": "sparse", "vel": 0.4, "strings": 0.4}
+ ],
+ "events": [
+  {"t": 6.5, "type": "pulse", "vel": 0.8}, {"t": 6.5, "type": "shimmer", "dur": 4, "vel": 0.6},
+  {"t": 32.8, "type": "drone", "dur": 3.6, "vel": 0.35},
+  {"t": 59.4, "type": "timp", "dur": 1.6, "vel": 0.6},
+  {"t": 104.0, "type": "shimmer", "dur": 4, "vel": 0.35},
+  {"t": 121.8, "type": "drone", "dur": 5.2, "vel": 0.3},
+  {"t": 127.0, "type": "drone", "dur": 5.8, "vel": 0.35}, {"t": 130.6, "type": "note", "midi": 62, "vel": 0.4},
+  {"t": 160.4, "type": "drone", "dur": 3.2, "vel": 0.3}, {"t": 161.2, "type": "note", "midi": 69, "vel": 0.35}, {"t": 162.4, "type": "note", "midi": 62, "vel": 0.3},
+  {"t": 168.2, "type": "shimmer", "dur": 5, "vel": 0.5},
+  {"t": 197.6, "type": "pulse", "vel": 0.9}, {"t": 197.6, "type": "shimmer", "dur": 6, "vel": 0.8},
+  {"t": 205.6, "type": "timp", "dur": 1.2, "vel": 0.5},
+  {"t": 236.0, "type": "final", "chord": "I"}
+ ]}

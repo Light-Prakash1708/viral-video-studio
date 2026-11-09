@@ -1,0 +1,2 @@
+@voice WALT storyteller pitch=-3.5 speed=0.9
+WALT: Then don't do it like a machine.

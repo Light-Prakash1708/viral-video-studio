@@ -1,0 +1,24 @@
+{
+ "speakers": {
+  "NARRATOR": {
+   "preset": "british",
+   "pitch": 0.0,
+   "speed": 1.0,
+   "lang": "en"
+  },
+  "M7": {
+   "preset": "british",
+   "pitch": -1.0,
+   "speed": 0.97,
+   "lang": "en"
+  }
+ },
+ "lines": [
+  {
+   "speaker": "M7",
+   "text": "Your tea is thirty-one percent too sweet. Four degrees too hot. And you charge money. Why do they come?",
+   "start": 0.15,
+   "end": 6.265
+  }
+ ]
+}

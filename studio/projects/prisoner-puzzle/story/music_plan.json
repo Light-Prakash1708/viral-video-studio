@@ -1,0 +1,46 @@
+{
+ "key": "D",
+ "seed": 23,
+ "sections": [
+  {
+   "start": 0,
+   "end": 29.73,
+   "style": "suspense",
+   "energy": 0.55
+  },
+  {
+   "start": 29.73,
+   "end": 37.46,
+   "style": "suspense",
+   "energy": 0.95,
+   "bpm": 132
+  },
+  {
+   "start": 38.36,
+   "end": 52.82,
+   "style": "lofi",
+   "energy": 0.4
+  },
+  {
+   "start": 52.82,
+   "end": 63.079,
+   "style": "epic",
+   "energy": 0.7
+  }
+ ],
+ "events": [
+  {
+   "t": 27.919999999999998,
+   "type": "impact"
+  },
+  {
+   "t": 37.410000000000004,
+   "type": "stop",
+   "dur": 0.9
+  },
+  {
+   "t": 54.72,
+   "type": "impact"
+  }
+ ]
+}

@@ -1,0 +1,2174 @@
+{
+ "title": "What IF Ravana Had Won? (Lanka in 2026)",
+ "duration": 244.3,
+ "shots": [
+  {
+   "id": "r01",
+   "start": 0.0,
+   "end": 2.2,
+   "line": "The year is 2026.",
+   "scene": "3D aerial over the golden city at night, descending; 2026 date",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "wind",
+     "gain": -14
+    },
+    {
+     "at": 0.4,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r02",
+   "start": 2.2,
+   "end": 7.2,
+   "line": "And the most powerful city on Earth is made of gold.",
+   "scene": "3D low sweep over a canal toward the gold palace and ten towers",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -10
+    },
+    {
+     "at": 3.4,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -26
+   }
+  },
+  {
+   "id": "r03",
+   "start": 7.2,
+   "end": 11.2,
+   "line": "In the Ramayana, the battle of Lanka ends one way.",
+   "scene": "2D storm battlefield silhouettes before ancient Lanka",
+   "set": "battle",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "thunder",
+     "gain": -10
+    },
+    {
+     "at": 2.0,
+     "name": "wind",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -20
+   }
+  },
+  {
+   "id": "r04",
+   "start": 11.2,
+   "end": 12.75,
+   "line": "Ravana falls.",
+   "scene": "regal ten-crowned silhouette, a glowing arrow, he sinks to one knee",
+   "set": "battle",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "whoosh",
+     "gain": -8
+    },
+    {
+     "at": 0.35,
+     "name": "impact",
+     "gain": -6
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -22
+   }
+  },
+  {
+   "id": "r05",
+   "start": 12.75,
+   "end": 13.9,
+   "line": "Good wins.",
+   "scene": "bow silhouette raised against a sunrise",
+   "set": "battle",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "shimmer",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r06",
+   "start": 13.9,
+   "end": 18.7,
+   "line": "And every year, millions of people burn his effigy on Dussehra.",
+   "scene": "effigy burning flash with crowd silhouettes",
+   "set": "dussehra2d",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "murmur",
+     "gain": -14
+    },
+    {
+     "at": 1.6,
+     "name": "hit",
+     "gain": -8
+    },
+    {
+     "at": 2.6,
+     "name": "cheer",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -22
+   }
+  },
+  {
+   "id": "r07",
+   "start": 18.7,
+   "end": 22.9,
+   "line": "But what if, in one universe the arrow missed?",
+   "scene": "freeze: the arrow hangs in the air, rewinds and curves away",
+   "set": "freeze",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "freeze",
+     "gain": -6
+    },
+    {
+     "at": 1.5,
+     "name": "slowmo",
+     "gain": -10
+    },
+    {
+     "at": 2.4,
+     "name": "riser",
+     "gain": -10
+    },
+    {
+     "at": 2.9,
+     "name": "shimmer",
+     "gain": -8
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "r08",
+   "start": 22.9,
+   "end": 26.75,
+   "line": "Here's the world that might have grown from that one moment.",
+   "scene": "TITLE: WHAT IF RAVANA HAD WON? over the golden island",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "impact",
+     "gain": -4
+    },
+    {
+     "at": 0.3,
+     "name": "stinger",
+     "gain": -10
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "r09",
+   "start": 26.75,
+   "end": 28.85,
+   "line": "Lanka was already legendary.",
+   "scene": "ancient: ocean dusk, island on the horizon",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "whoosh",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -22
+   }
+  },
+  {
+   "id": "r10",
+   "start": 28.85,
+   "end": 33.4,
+   "line": "The epic describes it as Swarna Lanka a city of gold,",
+   "scene": "golden city rising from the sea",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "riser",
+     "gain": -12
+    },
+    {
+     "at": 2.3,
+     "name": "shimmer",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r11",
+   "start": 33.4,
+   "end": 36.3,
+   "line": "built by the divine architect Vishwakarma,",
+   "scene": "divine architect: gold line-art palace drawing itself",
+   "set": "ornament",
+   "bars": null,
+   "in": {
+    "type": "fade",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "shimmer",
+     "gain": -12
+    },
+    {
+     "at": 1.5,
+     "name": "blip",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "r12",
+   "start": 36.3,
+   "end": 39.8,
+   "line": "on an island guarded by the ocean itself.",
+   "scene": "wide aerial orbit: island ringed by waves",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -10
+    },
+    {
+     "at": 1.2,
+     "name": "wind",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -20
+   }
+  },
+  {
+   "id": "r13",
+   "start": 39.8,
+   "end": 42.55,
+   "line": "And Ravana wasn't just a warrior.",
+   "scene": "regal Ravana silhouette, low angle, cape, push-in",
+   "set": "ravana",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "r14",
+   "start": 42.55,
+   "end": 45.15,
+   "line": "In the stories, he was a scholar.",
+   "scene": "scholar: silhouette among glowing manuscripts and lamps",
+   "set": "ravana",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   }
+  },
+  {
+   "id": "r15",
+   "start": 45.15,
+   "end": 47.15,
+   "line": "A master of the veena.",
+   "scene": "veena strings vibrating with light",
+   "set": "veena",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "ding",
+     "gain": -12
+    },
+    {
+     "at": 0.9,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "r16",
+   "start": 47.15,
+   "end": 52.75,
+   "line": "A devotee of Shiva so intense, legend says he tried to lift Mount Kailash.",
+   "scene": "Kailash under the moon; tiny figure lifts; mountain trembles",
+   "set": "kailash",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "wind",
+     "gain": -14
+    },
+    {
+     "at": 3.0,
+     "name": "thunder",
+     "gain": -12
+    },
+    {
+     "at": 3.4,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -20
+   }
+  },
+  {
+   "id": "r17",
+   "start": 52.75,
+   "end": 59.0,
+   "line": "The Shiva Tandava Stotram, still chanted today, is traditionally credited to him.",
+   "scene": "Shiva Tandava Stotram as glowing glyph ornament lines",
+   "set": "ornament",
+   "bars": null,
+   "in": {
+    "type": "fade",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -10
+    },
+    {
+     "at": 3.0,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -28
+   }
+  },
+  {
+   "id": "r18",
+   "start": 59.0,
+   "end": 61.75,
+   "line": "So imagine that mind winning.",
+   "scene": "imagine that mind winning: heads light one by one, sunrise",
+   "set": "ravana",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "riser",
+     "gain": -12
+    },
+    {
+     "at": 2.1,
+     "name": "impact",
+     "gain": -8
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "r19",
+   "start": 61.75,
+   "end": 64.5,
+   "line": "By the year 1000,",
+   "scene": "MAP Indian Ocean, 1000 CE, Lanka glows",
+   "set": "map",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -8
+    },
+    {
+     "at": 1.3,
+     "name": "pop",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "r20",
+   "start": 64.5,
+   "end": 68.4,
+   "line": "Lanka controls every sea route between Africa and China.",
+   "scene": "MAP sea routes Africa-Lanka-China drawing",
+   "set": "map",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "swish",
+     "gain": -12
+    },
+    {
+     "at": 1.6,
+     "name": "swish",
+     "gain": -12
+    },
+    {
+     "at": 2.4,
+     "name": "pop",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "r21",
+   "start": 68.4,
+   "end": 73.3,
+   "line": "Spices, silk, gold all of it pays a toll to the island.",
+   "scene": "MAP spices silk gold flow into the toll",
+   "set": "map",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -12
+    },
+    {
+     "at": 0.9,
+     "name": "pop",
+     "gain": -12
+    },
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -12
+    },
+    {
+     "at": 2.8,
+     "name": "counter",
+     "gain": -14
+    },
+    {
+     "at": 3.4,
+     "name": "ding",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "r22",
+   "start": 73.3,
+   "end": 76.4,
+   "line": "And then there's the Pushpaka Vimana.",
+   "scene": "3D the legendary Pushpaka Vimana among clouds",
+   "set": "vimana",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -8
+    },
+    {
+     "at": 1.0,
+     "name": "whoosh",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -22
+   }
+  },
+  {
+   "id": "r23",
+   "start": 76.4,
+   "end": 80.35,
+   "line": "In the epic, it's a flying chariot that moves by thought.",
+   "scene": "2D chariot moving by thought: rings from a mind",
+   "set": "vimana",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "hum",
+     "gain": -16
+    },
+    {
+     "at": 2.5,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r24",
+   "start": 80.35,
+   "end": 82.95,
+   "line": "In this world, Lankan engineers spend",
+   "scene": "engineers at a glowing vimana blueprint",
+   "set": "workshop",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "tick",
+     "gain": -16
+    },
+    {
+     "at": 1.2,
+     "name": "blip",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r25",
+   "start": 82.95,
+   "end": 86.1,
+   "line": "two thousand years trying to rebuild it.",
+   "scene": "3D time-lapse: ancient lamp-lit Lanka grows into 2026",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "zoom",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "riser",
+     "gain": -10
+    },
+    {
+     "at": 0.4,
+     "name": "counter",
+     "gain": -14
+    },
+    {
+     "at": 2.7,
+     "name": "impact",
+     "gain": -8
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r26",
+   "start": 86.1,
+   "end": 90.45,
+   "line": "By 2026, Lanka has the world's busiest skyport.",
+   "scene": "3D skyport platforms with golden aircraft",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "whoosh",
+     "gain": -10
+    },
+    {
+     "at": 1.0,
+     "name": "hum",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -22
+   }
+  },
+  {
+   "id": "r27",
+   "start": 90.45,
+   "end": 94.9,
+   "line": "Silent, golden aircraft rise from the old palace like fireflies.",
+   "scene": "3D aircraft rise from the palace like fireflies",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "hum",
+     "gain": -14
+    },
+    {
+     "at": 1.8,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r28",
+   "start": 94.9,
+   "end": 99.65,
+   "line": "Fun fact in our real world, Sri Lanka's first satellite,",
+   "scene": "REAL WORLD FACT card + 3D Earth with a cubesat",
+   "set": "earth",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "blip",
+     "gain": -10
+    },
+    {
+     "at": 0.8,
+     "name": "pop",
+     "gain": -12
+    },
+    {
+     "at": 2.5,
+     "name": "whoosh",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "r29",
+   "start": 99.65,
+   "end": 103.85,
+   "line": "launched in 2019, was named Raavana-1.",
+   "scene": "close cubesat: RAAVANA-1 / 2019",
+   "set": "earth",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "pop",
+     "gain": -10
+    },
+    {
+     "at": 2.8,
+     "name": "ding",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -30
+   }
+  },
+  {
+   "id": "r30",
+   "start": 103.85,
+   "end": 108.45,
+   "line": "So the dream of a flying Lanka? It never fully died.",
+   "scene": "from orbit down to the night island",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "whoosh",
+     "gain": -12
+    },
+    {
+     "at": 2.8,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r31",
+   "start": 108.45,
+   "end": 110.5,
+   "line": "The capital glows at night.",
+   "scene": "the capital glows at night, wide",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -22
+   }
+  },
+  {
+   "id": "r32",
+   "start": 110.5,
+   "end": 113.8,
+   "line": "Ten great towers stand around the palace,",
+   "scene": "orbit around the ring of ten towers",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "whoosh",
+     "gain": -10
+    },
+    {
+     "at": 1.0,
+     "name": "impact",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r33",
+   "start": 113.8,
+   "end": 116.15,
+   "line": "one for each of Ravana's heads",
+   "scene": "ten crowned heads map onto ten towers",
+   "set": "ravana",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -28
+   }
+  },
+  {
+   "id": "r34",
+   "start": 116.15,
+   "end": 119.6,
+   "line": "and in this world, each head becomes a ministry.",
+   "scene": "towers light emblem lights: 10 MINISTRIES",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "powerup",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r35",
+   "start": 119.6,
+   "end": 123.25,
+   "line": "Medicine. Music. Astronomy. War.",
+   "scene": "each tower lights as named: Medicine Music Astronomy War",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "blip",
+     "gain": -10
+    },
+    {
+     "at": 1.1,
+     "name": "blip",
+     "gain": -10
+    },
+    {
+     "at": 2.2,
+     "name": "blip",
+     "gain": -10
+    },
+    {
+     "at": 2.8,
+     "name": "hit",
+     "gain": -8
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -26
+   }
+  },
+  {
+   "id": "r36",
+   "start": 123.25,
+   "end": 126.6,
+   "line": "Ten minds ruling as one.",
+   "scene": "top-down: ten beams converge into the palace",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "riser",
+     "gain": -14
+    },
+    {
+     "at": 2.4,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r37",
+   "start": 126.6,
+   "end": 129.4,
+   "line": "Lankan doctors are the best on the planet,",
+   "scene": "gold-glass hospital, doctors",
+   "set": "hospital",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -10
+    },
+    {
+     "at": 1.0,
+     "name": "blip",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r38",
+   "start": 129.4,
+   "end": 132.65,
+   "line": "trained on texts like the Ravana Samhita.",
+   "scene": "palm-leaf Ravana Samhita with glowing herbs",
+   "set": "samhita",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   }
+  },
+  {
+   "id": "r39",
+   "start": 132.65,
+   "end": 136.3,
+   "line": "Kids learn the veena before they learn to write.",
+   "scene": "kids learning veena in a golden hall",
+   "set": "class",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "ding",
+     "gain": -14
+    },
+    {
+     "at": 1.5,
+     "name": "ding",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r40",
+   "start": 136.3,
+   "end": 139.3,
+   "line": "But every empire has a shadow.",
+   "scene": "colour drains from the city; shadow",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "stinger",
+     "gain": -8
+    },
+    {
+     "at": 0.6,
+     "name": "wind",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -20
+   }
+  },
+  {
+   "id": "r41",
+   "start": 139.3,
+   "end": 142.15,
+   "line": "In this world, there is no Dussehra.",
+   "scene": "empty festival ground, bare frame",
+   "set": "ground",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "wind",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -20
+   }
+  },
+  {
+   "id": "r42",
+   "start": 142.15,
+   "end": 145.2,
+   "line": "No festival where good defeats pride.",
+   "scene": "a lamp blown out, smoke",
+   "set": "ground",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 1.3,
+     "name": "swish",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -22
+   }
+  },
+  {
+   "id": "r43",
+   "start": 145.2,
+   "end": 148.15,
+   "line": "The story children grow up with is different.",
+   "scene": "children before a cold hologram storyteller",
+   "set": "story",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "hum",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r44",
+   "start": 148.15,
+   "end": 152.15,
+   "line": "\"The strong take what they want and the strong win.\"",
+   "scene": "quote: The strong take what they want; giant fist hologram",
+   "set": "story",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "hit",
+     "gain": -8
+    },
+    {
+     "at": 2.6,
+     "name": "impact",
+     "gain": -8
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "hum",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r45",
+   "start": 152.15,
+   "end": 154.85,
+   "line": "The ten towers watch everything.",
+   "scene": "towers sweep searchlights; eyes",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "buzz",
+     "gain": -16
+    },
+    {
+     "at": 0.8,
+     "name": "swish",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -22
+   }
+  },
+  {
+   "id": "r46",
+   "start": 154.85,
+   "end": 158.1,
+   "line": "Disagree with the king, and you don't disappear",
+   "scene": "lone dissenter raises a hand; searchlight finds him",
+   "set": "plaza",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "glitch",
+     "gain": -14
+    },
+    {
+     "at": 2.2,
+     "name": "hit",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -22
+   }
+  },
+  {
+   "id": "r47",
+   "start": 158.1,
+   "end": 160.1,
+   "line": "you're simply forgotten.",
+   "scene": "he fades to nothing",
+   "set": "plaza",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "slowmo",
+     "gain": -12
+    },
+    {
+     "at": 0.6,
+     "name": "shimmer",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r48",
+   "start": 160.1,
+   "end": 164.65,
+   "line": "And somewhere in the archives, there's a story nobody is allowed to tell.",
+   "scene": "archives: a chained sealed scroll in lantern light",
+   "set": "archive",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "footstep",
+     "gain": -16
+    },
+    {
+     "at": 1.2,
+     "name": "footstep",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r49",
+   "start": 164.65,
+   "end": 169.15,
+   "line": "Of a woman taken from a forest, who never got to go home.",
+   "scene": "empty forest clearing, a single fallen flower",
+   "set": "forest",
+   "bars": null,
+   "in": {
+    "type": "fade",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 2.1,
+     "name": "ding",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -32
+   }
+  },
+  {
+   "id": "r50",
+   "start": 169.15,
+   "end": 172.4,
+   "line": "Because that's the thing about the Ramayana.",
+   "scene": "an oil lamp before the epic scroll",
+   "set": "lamp",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "shimmer",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "r51",
+   "start": 172.4,
+   "end": 176.8,
+   "line": "Ravana is brilliant. Powerful. Devoted.",
+   "scene": "triptych: BRILLIANT / POWERFUL / DEVOTED",
+   "set": "triptych",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "hit",
+     "gain": -10
+    },
+    {
+     "at": 2.05,
+     "name": "hit",
+     "gain": -10
+    },
+    {
+     "at": 3.1,
+     "name": "hit",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "r52",
+   "start": 176.8,
+   "end": 179.0,
+   "line": "And it still isn't enough.",
+   "scene": "alone; light dims",
+   "set": "ravana",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 1.2,
+     "name": "heartbeat",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r53",
+   "start": 179.0,
+   "end": 182.55,
+   "line": "Pride turns his greatest strengths into his downfall.",
+   "scene": "pride: his shadow grows; gold turns to embers",
+   "set": "ravana",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "riser",
+     "gain": -14
+    },
+    {
+     "at": 2.6,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -22
+   }
+  },
+  {
+   "id": "r54",
+   "start": 182.55,
+   "end": 185.7,
+   "line": "His own brother, Vibhishana, warns him and",
+   "scene": "Vibhishana pleads in the palace hall",
+   "set": "hall",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "footstep",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r55",
+   "start": 185.7,
+   "end": 188.65,
+   "line": "walks away to join the other side.",
+   "scene": "silhouette walks away across a bridge",
+   "set": "bridge",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "footstep",
+     "gain": -14
+    },
+    {
+     "at": 1.0,
+     "name": "footstep",
+     "gain": -16
+    },
+    {
+     "at": 1.7,
+     "name": "footstep",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -22
+   }
+  },
+  {
+   "id": "r56",
+   "start": 188.65,
+   "end": 191.9,
+   "line": "Maybe that's why the story needs him to lose.",
+   "scene": "the palace under storm clouds, pull-back",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "thunder",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -20
+   }
+  },
+  {
+   "id": "r57",
+   "start": 191.9,
+   "end": 194.0,
+   "line": "Not because he was weak.",
+   "scene": "mighty silhouette, low angle",
+   "set": "ravana",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r58",
+   "start": 194.0,
+   "end": 199.8,
+   "line": "But because he was so strong that only one flaw could bring him down.",
+   "scene": "golden crown with a single glowing crack",
+   "set": "flaw",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "glitch",
+     "gain": -16
+    },
+    {
+     "at": 2.4,
+     "name": "hit",
+     "gain": -8
+    },
+    {
+     "at": 4.5,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r59",
+   "start": 199.8,
+   "end": 204.3,
+   "line": "Back in our world, every Dussehra, the giant effigies go up.",
+   "scene": "3D Dussehra ground at night: effigy, crowds",
+   "set": "dussehra",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -8
+    },
+    {
+     "at": 0.6,
+     "name": "murmur",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -18
+   }
+  },
+  {
+   "id": "r60",
+   "start": 204.3,
+   "end": 207.05,
+   "line": "Some of them taller than a ten-storey building.",
+   "scene": "3D tilt up the effigy beside a 10-storey building",
+   "set": "dussehra",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "whoosh",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -20
+   }
+  },
+  {
+   "id": "r61",
+   "start": 207.05,
+   "end": 208.75,
+   "line": "Ten heads.",
+   "scene": "ten heads close-up",
+   "set": "dussehra",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -20
+   }
+  },
+  {
+   "id": "r62",
+   "start": 208.75,
+   "end": 210.75,
+   "line": "Fireworks inside.",
+   "scene": "cutaway: fireworks packed inside",
+   "set": "dussehra2d",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -12
+    },
+    {
+     "at": 0.7,
+     "name": "buzz",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -20
+   }
+  },
+  {
+   "id": "r63",
+   "start": 210.75,
+   "end": 214.7,
+   "line": "And every year, when the arrow flies and the flames rise",
+   "scene": "the arrow flies, fire explosion, fireworks",
+   "set": "dussehra",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "whoosh",
+     "gain": -6
+    },
+    {
+     "at": 1.55,
+     "name": "impact",
+     "gain": -4
+    },
+    {
+     "at": 1.8,
+     "name": "cheer",
+     "gain": -8
+    },
+    {
+     "at": 2.6,
+     "name": "hit",
+     "gain": -8
+    },
+    {
+     "at": 3.1,
+     "name": "hit",
+     "gain": -9
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -16
+   }
+  },
+  {
+   "id": "r64",
+   "start": 214.7,
+   "end": 216.45,
+   "line": "we're not just burning a villain.",
+   "scene": "engulfed effigy, fireworks bloom",
+   "set": "dussehra",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "hit",
+     "gain": -8
+    },
+    {
+     "at": 0.6,
+     "name": "hit",
+     "gain": -9
+    },
+    {
+     "at": 1.1,
+     "name": "kick",
+     "gain": -10
+    },
+    {
+     "at": 1.4,
+     "name": "applause",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -16
+   }
+  },
+  {
+   "id": "r65",
+   "start": 216.45,
+   "end": 222.6,
+   "line": "We're burning the part of ourselves that thinks being powerful means being right.",
+   "scene": "slow embers rising, a lone watcher",
+   "set": "embers",
+   "bars": null,
+   "in": {
+    "type": "fade",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "wind",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r66",
+   "start": 222.6,
+   "end": 228.5,
+   "line": "And yet in Sri Lanka, some people still remember Ravana as a great king.",
+   "scene": "Sri Lanka map in gold, lamps",
+   "set": "srilanka",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "r67",
+   "start": 228.5,
+   "end": 232.8,
+   "line": "Both stories survive. Gold and fire.",
+   "scene": "split frame gold vs fire",
+   "set": "split",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -12
+    },
+    {
+     "at": 2.1,
+     "name": "shimmer",
+     "gain": -10
+    },
+    {
+     "at": 3.3,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "wind",
+    "gain": -24
+   }
+  },
+  {
+   "id": "r68",
+   "start": 232.8,
+   "end": 234.3,
+   "line": "So tell me.",
+   "scene": "golden city, slow push",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "whoosh",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "r69",
+   "start": 234.3,
+   "end": 238.75,
+   "line": "If Ravana had won would you want to live in his golden Lanka?",
+   "scene": "the question over the city",
+   "set": "lanka",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "riser",
+     "gain": -14
+    },
+    {
+     "at": 3.6,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "r70",
+   "start": 238.75,
+   "end": 244.3,
+   "line": "Comment below. Yes or no.",
+   "scene": "END CTA: YES or NO glowing options",
+   "set": "end",
+   "bars": null,
+   "in": {
+    "type": "cut",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "pop",
+     "gain": -10
+    },
+    {
+     "at": 2.15,
+     "name": "ding",
+     "gain": -8
+    },
+    {
+     "at": 2.5,
+     "name": "ding",
+     "gain": -8
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 18.7,
+   "mood": "mystery",
+   "intensity": 0.45
+  },
+  {
+   "start": 18.7,
+   "end": 22.9,
+   "mood": "tension",
+   "intensity": 0.5
+  },
+  {
+   "start": 22.9,
+   "end": 39.8,
+   "mood": "epic",
+   "intensity": 0.6
+  },
+  {
+   "start": 39.8,
+   "end": 61.75,
+   "mood": "wonder",
+   "intensity": 0.5
+  },
+  {
+   "start": 61.75,
+   "end": 86.1,
+   "mood": "epic",
+   "intensity": 0.65
+  },
+  {
+   "start": 86.1,
+   "end": 136.3,
+   "mood": "triumph",
+   "intensity": 0.6
+  },
+  {
+   "start": 136.3,
+   "end": 160.1,
+   "mood": "dark",
+   "intensity": 0.55
+  },
+  {
+   "start": 160.1,
+   "end": 199.8,
+   "mood": "sad",
+   "intensity": 0.35
+  },
+  {
+   "start": 199.8,
+   "end": 216.45,
+   "mood": "epic",
+   "intensity": 0.8
+  },
+  {
+   "start": 216.45,
+   "end": 232.8,
+   "mood": "calm",
+   "intensity": 0.4
+  },
+  {
+   "start": 232.8,
+   "end": 244.3,
+   "mood": "hopeful",
+   "intensity": 0.5
+  }
+ ]
+}

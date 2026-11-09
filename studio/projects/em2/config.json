@@ -1,0 +1,30 @@
+{
+ "title": "The Experience Machine",
+ "aspect": "9:16",
+ "resolution": "1080p",
+ "fps": 24,
+ "style": "dystopia",
+ "voiceover": "input/voiceover.wav",
+ "script": "input/script.txt",
+ "duration": 57.1,
+ "captions": true,
+ "bars": "scope",
+ "fadeIn": 0.5,
+ "fadeOut": 0.8,
+ "music": {
+  "enabled": true,
+  "gainDb": -15,
+  "key": "D",
+  "seed": 4
+ },
+ "sfx": {
+  "enabled": true,
+  "gainDb": -8
+ },
+ "loudness": -14,
+ "captionStyle": {
+  "y": 1440,
+  "size": 90,
+  "max": 2
+ }
+}

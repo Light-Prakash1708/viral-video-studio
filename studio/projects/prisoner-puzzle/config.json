@@ -1,0 +1,29 @@
+{
+ "title": "The Prisoner Puzzle Nobody Solves in 60 Seconds",
+ "aspect": "9:16",
+ "resolution": "1080p",
+ "fps": 24,
+ "style": "cinema",
+ "voiceover": "input/voiceover.wav",
+ "script": "input/script.txt",
+ "duration": 63.079,
+ "captions": true,
+ "bars": "none",
+ "fadeIn": 0.2,
+ "fadeOut": 0.6,
+ "music": {
+  "enabled": true,
+  "gainDb": -10,
+  "file": "input/music.wav"
+ },
+ "sfx": {
+  "enabled": true,
+  "gainDb": -8
+ },
+ "loudness": -14,
+ "captionStyle": {
+  "y": 1480,
+  "size": 66,
+  "max": 2
+ }
+}

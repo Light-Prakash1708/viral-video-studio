@@ -1,0 +1,2575 @@
+{
+ "source": "whisper:small+script",
+ "words": [
+  {
+   "word": "You",
+   "start": 0.0,
+   "end": 0.28
+  },
+  {
+   "word": "open",
+   "start": 0.28,
+   "end": 0.56
+  },
+  {
+   "word": "your",
+   "start": 0.56,
+   "end": 0.68
+  },
+  {
+   "word": "wallet,",
+   "start": 0.68,
+   "end": 0.96
+  },
+  {
+   "word": "and",
+   "start": 0.96,
+   "end": 1.42
+  },
+  {
+   "word": "every",
+   "start": 1.42,
+   "end": 1.74
+  },
+  {
+   "word": "note",
+   "start": 1.74,
+   "end": 1.98
+  },
+  {
+   "word": "has",
+   "start": 1.98,
+   "end": 2.18
+  },
+  {
+   "word": "a",
+   "start": 2.18,
+   "end": 2.3
+  },
+  {
+   "word": "timer.",
+   "start": 2.3,
+   "end": 2.54
+  },
+  {
+   "word": "Your",
+   "start": 3.2,
+   "end": 3.3
+  },
+  {
+   "word": "500",
+   "start": 3.3,
+   "end": 3.84
+  },
+  {
+   "word": "rupee",
+   "start": 3.84,
+   "end": 4.22
+  },
+  {
+   "word": "note",
+   "start": 4.22,
+   "end": 4.44
+  },
+  {
+   "word": "says",
+   "start": 4.44,
+   "end": 4.74
+  },
+  {
+   "word": "30",
+   "start": 5.24,
+   "end": 5.44
+  },
+  {
+   "word": "days.",
+   "start": 5.44,
+   "end": 5.78
+  },
+  {
+   "word": "Your",
+   "start": 6.28,
+   "end": 6.42
+  },
+  {
+   "word": "bank",
+   "start": 6.42,
+   "end": 6.64
+  },
+  {
+   "word": "app",
+   "start": 6.64,
+   "end": 6.88
+  },
+  {
+   "word": "says",
+   "start": 6.88,
+   "end": 7.08
+  },
+  {
+   "word": "the",
+   "start": 7.08,
+   "end": 7.28
+  },
+  {
+   "word": "same",
+   "start": 7.28,
+   "end": 7.5
+  },
+  {
+   "word": "thing.",
+   "start": 7.5,
+   "end": 7.74
+  },
+  {
+   "word": "Every",
+   "start": 8.4,
+   "end": 8.66
+  },
+  {
+   "word": "rupee",
+   "start": 8.66,
+   "end": 8.98
+  },
+  {
+   "word": "on",
+   "start": 8.98,
+   "end": 9.14
+  },
+  {
+   "word": "Earth",
+   "start": 9.14,
+   "end": 9.44
+  },
+  {
+   "word": "now",
+   "start": 9.44,
+   "end": 9.8
+  },
+  {
+   "word": "expires",
+   "start": 9.8,
+   "end": 10.34
+  },
+  {
+   "word": "after",
+   "start": 10.34,
+   "end": 10.68
+  },
+  {
+   "word": "30",
+   "start": 10.68,
+   "end": 10.98
+  },
+  {
+   "word": "days.",
+   "start": 10.98,
+   "end": 11.38
+  },
+  {
+   "word": "When",
+   "start": 11.7,
+   "end": 11.8
+  },
+  {
+   "word": "the",
+   "start": 11.8,
+   "end": 11.9
+  },
+  {
+   "word": "timer",
+   "start": 11.9,
+   "end": 12.18
+  },
+  {
+   "word": "hits",
+   "start": 12.18,
+   "end": 12.46
+  },
+  {
+   "word": "zero",
+   "start": 12.46,
+   "end": 12.82
+  },
+  {
+   "word": "the",
+   "start": 13.3,
+   "end": 13.38
+  },
+  {
+   "word": "money",
+   "start": 13.38,
+   "end": 13.56
+  },
+  {
+   "word": "burns.",
+   "start": 13.56,
+   "end": 13.94
+  },
+  {
+   "word": "Gone.",
+   "start": 14.46,
+   "end": 14.7
+  },
+  {
+   "word": "Day",
+   "start": 15.36,
+   "end": 15.58
+  },
+  {
+   "word": "1.",
+   "start": 15.58,
+   "end": 16.32
+  },
+  {
+   "word": "Total",
+   "start": 16.32,
+   "end": 16.5
+  },
+  {
+   "word": "chaos.",
+   "start": 16.5,
+   "end": 16.88
+  },
+  {
+   "word": "Everyone",
+   "start": 17.42,
+   "end": 17.76
+  },
+  {
+   "word": "runs",
+   "start": 17.76,
+   "end": 18.12
+  },
+  {
+   "word": "to",
+   "start": 18.12,
+   "end": 18.36
+  },
+  {
+   "word": "spend.",
+   "start": 18.36,
+   "end": 18.58
+  },
+  {
+   "word": "Malls",
+   "start": 19.14,
+   "end": 19.38
+  },
+  {
+   "word": "are",
+   "start": 19.38,
+   "end": 19.46
+  },
+  {
+   "word": "packed.",
+   "start": 19.46,
+   "end": 19.74
+  },
+  {
+   "word": "Restaurants",
+   "start": 20.24,
+   "end": 20.66
+  },
+  {
+   "word": "have",
+   "start": 20.66,
+   "end": 20.86
+  },
+  {
+   "word": "three-hour",
+   "start": 20.86,
+   "end": 21.38
+  },
+  {
+   "word": "waiting",
+   "start": 21.38,
+   "end": 21.64
+  },
+  {
+   "word": "lists.",
+   "start": 21.64,
+   "end": 22.0
+  },
+  {
+   "word": "Your",
+   "start": 22.4,
+   "end": 22.5
+  },
+  {
+   "word": "neighbour",
+   "start": 22.5,
+   "end": 22.7
+  },
+  {
+   "word": "buys",
+   "start": 22.7,
+   "end": 23.06
+  },
+  {
+   "word": "a",
+   "start": 23.06,
+   "end": 23.24
+  },
+  {
+   "word": "jet",
+   "start": 23.24,
+   "end": 23.42
+  },
+  {
+   "word": "ski.",
+   "start": 23.42,
+   "end": 23.68
+  },
+  {
+   "word": "He",
+   "start": 24.14,
+   "end": 24.24
+  },
+  {
+   "word": "lives",
+   "start": 24.24,
+   "end": 24.44
+  },
+  {
+   "word": "in",
+   "start": 24.44,
+   "end": 24.66
+  },
+  {
+   "word": "Delhi.",
+   "start": 24.66,
+   "end": 24.88
+  },
+  {
+   "word": "And",
+   "start": 25.54,
+   "end": 25.7
+  },
+  {
+   "word": "here's",
+   "start": 25.7,
+   "end": 26.0
+  },
+  {
+   "word": "the",
+   "start": 26.0,
+   "end": 26.12
+  },
+  {
+   "word": "weird",
+   "start": 26.12,
+   "end": 26.34
+  },
+  {
+   "word": "part.",
+   "start": 26.34,
+   "end": 26.64
+  },
+  {
+   "word": "For",
+   "start": 26.64,
+   "end": 27.24
+  },
+  {
+   "word": "a",
+   "start": 27.24,
+   "end": 27.38
+  },
+  {
+   "word": "while",
+   "start": 27.38,
+   "end": 27.68
+  },
+  {
+   "word": "the",
+   "start": 28.1,
+   "end": 28.24
+  },
+  {
+   "word": "economy",
+   "start": 28.24,
+   "end": 28.64
+  },
+  {
+   "word": "looks",
+   "start": 28.64,
+   "end": 28.92
+  },
+  {
+   "word": "amazing.",
+   "start": 28.92,
+   "end": 29.4
+  },
+  {
+   "word": "Economists",
+   "start": 30.02,
+   "end": 30.62
+  },
+  {
+   "word": "have",
+   "start": 30.62,
+   "end": 30.82
+  },
+  {
+   "word": "a",
+   "start": 30.82,
+   "end": 30.92
+  },
+  {
+   "word": "name",
+   "start": 30.92,
+   "end": 31.12
+  },
+  {
+   "word": "for",
+   "start": 31.12,
+   "end": 31.28
+  },
+  {
+   "word": "this.",
+   "start": 31.28,
+   "end": 31.52
+  },
+  {
+   "word": "The",
+   "start": 31.94,
+   "end": 32.0
+  },
+  {
+   "word": "velocity",
+   "start": 32.0,
+   "end": 32.44
+  },
+  {
+   "word": "of",
+   "start": 32.44,
+   "end": 32.76
+  },
+  {
+   "word": "money.",
+   "start": 32.76,
+   "end": 33.02
+  },
+  {
+   "word": "It's",
+   "start": 33.46,
+   "end": 33.58
+  },
+  {
+   "word": "how",
+   "start": 33.58,
+   "end": 33.7
+  },
+  {
+   "word": "fast",
+   "start": 33.7,
+   "end": 34.04
+  },
+  {
+   "word": "money",
+   "start": 34.04,
+   "end": 34.28
+  },
+  {
+   "word": "moves",
+   "start": 34.28,
+   "end": 34.58
+  },
+  {
+   "word": "from",
+   "start": 34.58,
+   "end": 34.78
+  },
+  {
+   "word": "hand",
+   "start": 34.78,
+   "end": 35.06
+  },
+  {
+   "word": "to",
+   "start": 35.06,
+   "end": 35.2
+  },
+  {
+   "word": "hand.",
+   "start": 35.2,
+   "end": 35.56
+  },
+  {
+   "word": "When",
+   "start": 35.86,
+   "end": 35.98
+  },
+  {
+   "word": "people",
+   "start": 35.98,
+   "end": 36.28
+  },
+  {
+   "word": "hold",
+   "start": 36.28,
+   "end": 36.52
+  },
+  {
+   "word": "on",
+   "start": 36.52,
+   "end": 36.64
+  },
+  {
+   "word": "to",
+   "start": 36.64,
+   "end": 36.76
+  },
+  {
+   "word": "cash,",
+   "start": 36.76,
+   "end": 37.04
+  },
+  {
+   "word": "the",
+   "start": 37.44,
+   "end": 37.56
+  },
+  {
+   "word": "economy",
+   "start": 37.56,
+   "end": 37.96
+  },
+  {
+   "word": "slows",
+   "start": 37.96,
+   "end": 38.32
+  },
+  {
+   "word": "down.",
+   "start": 38.32,
+   "end": 38.84
+  },
+  {
+   "word": "When",
+   "start": 39.2,
+   "end": 39.3
+  },
+  {
+   "word": "money",
+   "start": 39.3,
+   "end": 39.52
+  },
+  {
+   "word": "has",
+   "start": 39.52,
+   "end": 39.74
+  },
+  {
+   "word": "to",
+   "start": 39.74,
+   "end": 39.88
+  },
+  {
+   "word": "move",
+   "start": 39.88,
+   "end": 40.18
+  },
+  {
+   "word": "it",
+   "start": 40.6,
+   "end": 40.76
+  },
+  {
+   "word": "races.",
+   "start": 40.76,
+   "end": 41.1
+  },
+  {
+   "word": "Shops",
+   "start": 41.8,
+   "end": 42.18
+  },
+  {
+   "word": "sell",
+   "start": 42.18,
+   "end": 42.42
+  },
+  {
+   "word": "out.",
+   "start": 42.42,
+   "end": 42.68
+  },
+  {
+   "word": "Factories",
+   "start": 43.14,
+   "end": 43.5
+  },
+  {
+   "word": "hire",
+   "start": 43.5,
+   "end": 43.86
+  },
+  {
+   "word": "more",
+   "start": 43.86,
+   "end": 44.1
+  },
+  {
+   "word": "workers.",
+   "start": 44.1,
+   "end": 44.44
+  },
+  {
+   "word": "Everybody",
+   "start": 44.92,
+   "end": 45.26
+  },
+  {
+   "word": "has",
+   "start": 45.26,
+   "end": 45.66
+  },
+  {
+   "word": "a",
+   "start": 45.66,
+   "end": 45.76
+  },
+  {
+   "word": "job,",
+   "start": 45.76,
+   "end": 46.1
+  },
+  {
+   "word": "because",
+   "start": 46.1,
+   "end": 46.58
+  },
+  {
+   "word": "everybody",
+   "start": 46.58,
+   "end": 47.02
+  },
+  {
+   "word": "has",
+   "start": 47.02,
+   "end": 47.4
+  },
+  {
+   "word": "to",
+   "start": 47.4,
+   "end": 47.54
+  },
+  {
+   "word": "spend.",
+   "start": 47.54,
+   "end": 47.78
+  },
+  {
+   "word": "Day",
+   "start": 49.0,
+   "end": 49.16
+  },
+  {
+   "word": "10.",
+   "start": 49.16,
+   "end": 49.5
+  },
+  {
+   "word": "Prices",
+   "start": 49.94,
+   "end": 50.22
+  },
+  {
+   "word": "start",
+   "start": 50.22,
+   "end": 50.52
+  },
+  {
+   "word": "climbing.",
+   "start": 50.52,
+   "end": 50.9
+  },
+  {
+   "word": "Too",
+   "start": 51.54,
+   "end": 51.68
+  },
+  {
+   "word": "much",
+   "start": 51.68,
+   "end": 51.9
+  },
+  {
+   "word": "money",
+   "start": 51.9,
+   "end": 52.16
+  },
+  {
+   "word": "is",
+   "start": 52.16,
+   "end": 52.5
+  },
+  {
+   "word": "chasing",
+   "start": 52.5,
+   "end": 52.84
+  },
+  {
+   "word": "too",
+   "start": 52.84,
+   "end": 53.12
+  },
+  {
+   "word": "few",
+   "start": 53.12,
+   "end": 53.28
+  },
+  {
+   "word": "things.",
+   "start": 53.28,
+   "end": 53.54
+  },
+  {
+   "word": "A",
+   "start": 54.02,
+   "end": 54.12
+  },
+  {
+   "word": "plate",
+   "start": 54.12,
+   "end": 54.3
+  },
+  {
+   "word": "of",
+   "start": 54.3,
+   "end": 54.42
+  },
+  {
+   "word": "momos",
+   "start": 54.42,
+   "end": 54.86
+  },
+  {
+   "word": "costs",
+   "start": 54.86,
+   "end": 55.18
+  },
+  {
+   "word": "double.",
+   "start": 55.18,
+   "end": 55.54
+  },
+  {
+   "word": "Then",
+   "start": 55.54,
+   "end": 56.14
+  },
+  {
+   "word": "triple.",
+   "start": 56.14,
+   "end": 56.46
+  },
+  {
+   "word": "And",
+   "start": 57.16,
+   "end": 57.28
+  },
+  {
+   "word": "the",
+   "start": 57.28,
+   "end": 57.42
+  },
+  {
+   "word": "rich",
+   "start": 57.42,
+   "end": 57.6
+  },
+  {
+   "word": "realise",
+   "start": 57.6,
+   "end": 57.96
+  },
+  {
+   "word": "something",
+   "start": 57.96,
+   "end": 58.32
+  },
+  {
+   "word": "fast.",
+   "start": 58.32,
+   "end": 58.7
+  },
+  {
+   "word": "If",
+   "start": 59.22,
+   "end": 59.28
+  },
+  {
+   "word": "money",
+   "start": 59.28,
+   "end": 59.5
+  },
+  {
+   "word": "can't",
+   "start": 59.5,
+   "end": 59.84
+  },
+  {
+   "word": "be",
+   "start": 59.84,
+   "end": 59.9
+  },
+  {
+   "word": "stored",
+   "start": 59.9,
+   "end": 60.2
+  },
+  {
+   "word": "you",
+   "start": 60.66,
+   "end": 60.78
+  },
+  {
+   "word": "store",
+   "start": 60.78,
+   "end": 61.02
+  },
+  {
+   "word": "things",
+   "start": 61.02,
+   "end": 61.3
+  },
+  {
+   "word": "instead.",
+   "start": 61.3,
+   "end": 61.76
+  },
+  {
+   "word": "Gold",
+   "start": 62.38,
+   "end": 62.62
+  },
+  {
+   "word": "prices",
+   "start": 62.62,
+   "end": 63.04
+  },
+  {
+   "word": "explode.",
+   "start": 63.04,
+   "end": 63.52
+  },
+  {
+   "word": "Land,",
+   "start": 64.08,
+   "end": 64.32
+  },
+  {
+   "word": "houses,",
+   "start": 64.54,
+   "end": 64.72
+  },
+  {
+   "word": "paintings,",
+   "start": 65.0,
+   "end": 65.3
+  },
+  {
+   "word": "even",
+   "start": 65.72,
+   "end": 65.92
+  },
+  {
+   "word": "rare",
+   "start": 65.92,
+   "end": 66.16
+  },
+  {
+   "word": "sneakers",
+   "start": 66.16,
+   "end": 66.48
+  },
+  {
+   "word": "anything",
+   "start": 67.1,
+   "end": 67.3
+  },
+  {
+   "word": "that",
+   "start": 67.3,
+   "end": 67.7
+  },
+  {
+   "word": "won't",
+   "start": 67.7,
+   "end": 67.96
+  },
+  {
+   "word": "burn",
+   "start": 67.96,
+   "end": 68.22
+  },
+  {
+   "word": "becomes",
+   "start": 68.22,
+   "end": 68.58
+  },
+  {
+   "word": "the",
+   "start": 68.58,
+   "end": 68.82
+  },
+  {
+   "word": "new",
+   "start": 68.82,
+   "end": 68.92
+  },
+  {
+   "word": "bank.",
+   "start": 68.92,
+   "end": 69.18
+  },
+  {
+   "word": "Day",
+   "start": 69.76,
+   "end": 69.96
+  },
+  {
+   "word": "20.",
+   "start": 69.96,
+   "end": 70.28
+  },
+  {
+   "word": "You",
+   "start": 70.78,
+   "end": 70.9
+  },
+  {
+   "word": "realise",
+   "start": 70.9,
+   "end": 71.24
+  },
+  {
+   "word": "the",
+   "start": 71.24,
+   "end": 71.46
+  },
+  {
+   "word": "scariest",
+   "start": 71.46,
+   "end": 71.76
+  },
+  {
+   "word": "part.",
+   "start": 71.76,
+   "end": 72.18
+  },
+  {
+   "word": "You",
+   "start": 72.82,
+   "end": 72.92
+  },
+  {
+   "word": "can't",
+   "start": 72.92,
+   "end": 73.22
+  },
+  {
+   "word": "save",
+   "start": 73.22,
+   "end": 73.44
+  },
+  {
+   "word": "anymore.",
+   "start": 73.44,
+   "end": 73.66
+  },
+  {
+   "word": "Not",
+   "start": 74.24,
+   "end": 74.42
+  },
+  {
+   "word": "for",
+   "start": 74.42,
+   "end": 74.64
+  },
+  {
+   "word": "college.",
+   "start": 74.64,
+   "end": 75.02
+  },
+  {
+   "word": "Not",
+   "start": 75.46,
+   "end": 75.68
+  },
+  {
+   "word": "for",
+   "start": 75.68,
+   "end": 75.92
+  },
+  {
+   "word": "your",
+   "start": 75.92,
+   "end": 76.04
+  },
+  {
+   "word": "parents'",
+   "start": 76.04,
+   "end": 76.3
+  },
+  {
+   "word": "hospital",
+   "start": 76.44,
+   "end": 76.72
+  },
+  {
+   "word": "bills.",
+   "start": 76.72,
+   "end": 77.02
+  },
+  {
+   "word": "Not",
+   "start": 77.46,
+   "end": 77.68
+  },
+  {
+   "word": "for",
+   "start": 77.68,
+   "end": 77.92
+  },
+  {
+   "word": "a",
+   "start": 77.92,
+   "end": 78.04
+  },
+  {
+   "word": "rainy",
+   "start": 78.04,
+   "end": 78.18
+  },
+  {
+   "word": "day.",
+   "start": 78.18,
+   "end": 78.46
+  },
+  {
+   "word": "A",
+   "start": 78.86,
+   "end": 79.02
+  },
+  {
+   "word": "savings",
+   "start": 79.02,
+   "end": 79.28
+  },
+  {
+   "word": "account",
+   "start": 79.28,
+   "end": 79.72
+  },
+  {
+   "word": "is",
+   "start": 79.72,
+   "end": 80.14
+  },
+  {
+   "word": "now",
+   "start": 80.14,
+   "end": 80.34
+  },
+  {
+   "word": "just",
+   "start": 80.34,
+   "end": 80.56
+  },
+  {
+   "word": "a",
+   "start": 80.56,
+   "end": 80.74
+  },
+  {
+   "word": "countdown.",
+   "start": 80.74,
+   "end": 81.0
+  },
+  {
+   "word": "So",
+   "start": 81.7,
+   "end": 81.92
+  },
+  {
+   "word": "people",
+   "start": 81.92,
+   "end": 82.2
+  },
+  {
+   "word": "get",
+   "start": 82.2,
+   "end": 82.42
+  },
+  {
+   "word": "creative.",
+   "start": 82.42,
+   "end": 82.86
+  },
+  {
+   "word": "A",
+   "start": 83.34,
+   "end": 83.48
+  },
+  {
+   "word": "baker",
+   "start": 83.48,
+   "end": 83.76
+  },
+  {
+   "word": "pays",
+   "start": 83.76,
+   "end": 84.16
+  },
+  {
+   "word": "his",
+   "start": 84.16,
+   "end": 84.34
+  },
+  {
+   "word": "rent",
+   "start": 84.34,
+   "end": 84.52
+  },
+  {
+   "word": "in",
+   "start": 84.52,
+   "end": 84.64
+  },
+  {
+   "word": "bread.",
+   "start": 84.64,
+   "end": 84.88
+  },
+  {
+   "word": "A",
+   "start": 84.88,
+   "end": 85.42
+  },
+  {
+   "word": "teacher",
+   "start": 85.42,
+   "end": 85.7
+  },
+  {
+   "word": "gets",
+   "start": 85.7,
+   "end": 86.0
+  },
+  {
+   "word": "paid",
+   "start": 86.0,
+   "end": 86.34
+  },
+  {
+   "word": "in",
+   "start": 86.34,
+   "end": 86.54
+  },
+  {
+   "word": "electricity.",
+   "start": 86.54,
+   "end": 86.82
+  },
+  {
+   "word": "Neighbours",
+   "start": 86.82,
+   "end": 87.9
+  },
+  {
+   "word": "start",
+   "start": 87.9,
+   "end": 88.18
+  },
+  {
+   "word": "keeping",
+   "start": 88.18,
+   "end": 88.5
+  },
+  {
+   "word": "notebooks",
+   "start": 88.5,
+   "end": 88.82
+  },
+  {
+   "word": "of",
+   "start": 88.82,
+   "end": 89.14
+  },
+  {
+   "word": "favours.",
+   "start": 89.14,
+   "end": 89.94
+  },
+  {
+   "word": "\"I",
+   "start": 89.94,
+   "end": 90.06
+  },
+  {
+   "word": "fixed",
+   "start": 90.06,
+   "end": 90.28
+  },
+  {
+   "word": "your",
+   "start": 90.28,
+   "end": 90.48
+  },
+  {
+   "word": "bike,",
+   "start": 90.48,
+   "end": 90.74
+  },
+  {
+   "word": "you",
+   "start": 91.06,
+   "end": 91.16
+  },
+  {
+   "word": "owe",
+   "start": 91.16,
+   "end": 91.24
+  },
+  {
+   "word": "me",
+   "start": 91.24,
+   "end": 91.36
+  },
+  {
+   "word": "two",
+   "start": 91.36,
+   "end": 91.52
+  },
+  {
+   "word": "dinners.\"",
+   "start": 91.52,
+   "end": 91.9
+  },
+  {
+   "word": "Without",
+   "start": 92.54,
+   "end": 92.74
+  },
+  {
+   "word": "anyone",
+   "start": 92.74,
+   "end": 93.04
+  },
+  {
+   "word": "planning",
+   "start": 93.04,
+   "end": 93.38
+  },
+  {
+   "word": "it,",
+   "start": 93.38,
+   "end": 93.64
+  },
+  {
+   "word": "people",
+   "start": 93.92,
+   "end": 94.12
+  },
+  {
+   "word": "stop",
+   "start": 94.12,
+   "end": 94.46
+  },
+  {
+   "word": "saving",
+   "start": 94.46,
+   "end": 94.8
+  },
+  {
+   "word": "money",
+   "start": 94.8,
+   "end": 95.08
+  },
+  {
+   "word": "and",
+   "start": 95.08,
+   "end": 95.62
+  },
+  {
+   "word": "start",
+   "start": 95.62,
+   "end": 95.88
+  },
+  {
+   "word": "saving",
+   "start": 95.88,
+   "end": 96.26
+  },
+  {
+   "word": "each",
+   "start": 96.26,
+   "end": 96.5
+  },
+  {
+   "word": "other.",
+   "start": 96.5,
+   "end": 96.72
+  },
+  {
+   "word": "And",
+   "start": 97.26,
+   "end": 97.42
+  },
+  {
+   "word": "this",
+   "start": 97.42,
+   "end": 97.58
+  },
+  {
+   "word": "isn't",
+   "start": 97.58,
+   "end": 97.92
+  },
+  {
+   "word": "pure",
+   "start": 97.92,
+   "end": 98.14
+  },
+  {
+   "word": "fantasy.",
+   "start": 98.14,
+   "end": 98.56
+  },
+  {
+   "word": "It",
+   "start": 99.06,
+   "end": 99.2
+  },
+  {
+   "word": "happened.",
+   "start": 99.2,
+   "end": 99.56
+  },
+  {
+   "word": "In",
+   "start": 99.56,
+   "end": 100.3
+  },
+  {
+   "word": "1932,",
+   "start": 100.3,
+   "end": 101.08
+  },
+  {
+   "word": "during",
+   "start": 101.62,
+   "end": 101.86
+  },
+  {
+   "word": "the",
+   "start": 101.86,
+   "end": 102.02
+  },
+  {
+   "word": "Great",
+   "start": 102.02,
+   "end": 102.24
+  },
+  {
+   "word": "Depression,",
+   "start": 102.24,
+   "end": 102.66
+  },
+  {
+   "word": "a",
+   "start": 103.22,
+   "end": 103.36
+  },
+  {
+   "word": "small",
+   "start": 103.36,
+   "end": 103.7
+  },
+  {
+   "word": "Austrian",
+   "start": 103.7,
+   "end": 104.3
+  },
+  {
+   "word": "town",
+   "start": 104.3,
+   "end": 104.66
+  },
+  {
+   "word": "called",
+   "start": 104.66,
+   "end": 105.06
+  },
+  {
+   "word": "Wörgl",
+   "start": 105.06,
+   "end": 105.46
+  },
+  {
+   "word": "printed",
+   "start": 105.46,
+   "end": 105.78
+  },
+  {
+   "word": "its",
+   "start": 105.78,
+   "end": 106.0
+  },
+  {
+   "word": "own",
+   "start": 106.0,
+   "end": 106.2
+  },
+  {
+   "word": "money",
+   "start": 106.2,
+   "end": 106.52
+  },
+  {
+   "word": "that",
+   "start": 106.52,
+   "end": 106.98
+  },
+  {
+   "word": "lost",
+   "start": 106.98,
+   "end": 107.22
+  },
+  {
+   "word": "1%",
+   "start": 107.22,
+   "end": 107.52
+  },
+  {
+   "word": "of",
+   "start": 107.86,
+   "end": 108.04
+  },
+  {
+   "word": "its",
+   "start": 108.04,
+   "end": 108.16
+  },
+  {
+   "word": "value",
+   "start": 108.16,
+   "end": 108.48
+  },
+  {
+   "word": "every",
+   "start": 108.48,
+   "end": 108.86
+  },
+  {
+   "word": "month.",
+   "start": 108.86,
+   "end": 109.22
+  },
+  {
+   "word": "If",
+   "start": 109.52,
+   "end": 109.66
+  },
+  {
+   "word": "you",
+   "start": 109.66,
+   "end": 109.76
+  },
+  {
+   "word": "kept",
+   "start": 109.76,
+   "end": 109.98
+  },
+  {
+   "word": "it,",
+   "start": 109.98,
+   "end": 110.14
+  },
+  {
+   "word": "it",
+   "start": 110.14,
+   "end": 110.28
+  },
+  {
+   "word": "shrank.",
+   "start": 110.28,
+   "end": 110.6
+  },
+  {
+   "word": "So",
+   "start": 110.96,
+   "end": 111.14
+  },
+  {
+   "word": "people",
+   "start": 111.14,
+   "end": 111.4
+  },
+  {
+   "word": "spent",
+   "start": 111.4,
+   "end": 111.74
+  },
+  {
+   "word": "it.",
+   "start": 111.74,
+   "end": 111.98
+  },
+  {
+   "word": "Roads",
+   "start": 112.54,
+   "end": 112.88
+  },
+  {
+   "word": "got",
+   "start": 112.88,
+   "end": 113.1
+  },
+  {
+   "word": "built.",
+   "start": 113.1,
+   "end": 113.4
+  },
+  {
+   "word": "Bridges",
+   "start": 113.4,
+   "end": 114.16
+  },
+  {
+   "word": "got",
+   "start": 114.16,
+   "end": 114.44
+  },
+  {
+   "word": "fixed.",
+   "start": 114.44,
+   "end": 114.84
+  },
+  {
+   "word": "Unemployment",
+   "start": 115.28,
+   "end": 115.86
+  },
+  {
+   "word": "fell,",
+   "start": 115.86,
+   "end": 116.12
+  },
+  {
+   "word": "while",
+   "start": 116.12,
+   "end": 116.6
+  },
+  {
+   "word": "the",
+   "start": 116.6,
+   "end": 116.76
+  },
+  {
+   "word": "rest",
+   "start": 116.76,
+   "end": 116.98
+  },
+  {
+   "word": "of",
+   "start": 116.98,
+   "end": 117.08
+  },
+  {
+   "word": "the",
+   "start": 117.08,
+   "end": 117.14
+  },
+  {
+   "word": "country",
+   "start": 117.14,
+   "end": 117.46
+  },
+  {
+   "word": "was",
+   "start": 117.46,
+   "end": 117.68
+  },
+  {
+   "word": "struggling.",
+   "start": 117.68,
+   "end": 118.06
+  },
+  {
+   "word": "Other",
+   "start": 118.56,
+   "end": 118.7
+  },
+  {
+   "word": "towns",
+   "start": 118.7,
+   "end": 119.12
+  },
+  {
+   "word": "wanted",
+   "start": 119.12,
+   "end": 119.44
+  },
+  {
+   "word": "to",
+   "start": 119.44,
+   "end": 119.6
+  },
+  {
+   "word": "copy",
+   "start": 119.6,
+   "end": 119.86
+  },
+  {
+   "word": "it.",
+   "start": 119.86,
+   "end": 120.08
+  },
+  {
+   "word": "Then",
+   "start": 121.08,
+   "end": 121.28
+  },
+  {
+   "word": "the",
+   "start": 121.28,
+   "end": 121.36
+  },
+  {
+   "word": "national",
+   "start": 121.36,
+   "end": 121.66
+  },
+  {
+   "word": "bank",
+   "start": 121.66,
+   "end": 121.92
+  },
+  {
+   "word": "shut",
+   "start": 121.92,
+   "end": 122.22
+  },
+  {
+   "word": "it",
+   "start": 122.22,
+   "end": 122.34
+  },
+  {
+   "word": "down.",
+   "start": 122.34,
+   "end": 122.62
+  },
+  {
+   "word": "Only",
+   "start": 123.0,
+   "end": 123.28
+  },
+  {
+   "word": "a",
+   "start": 123.28,
+   "end": 123.44
+  },
+  {
+   "word": "country",
+   "start": 123.44,
+   "end": 123.78
+  },
+  {
+   "word": "is",
+   "start": 123.78,
+   "end": 124.04
+  },
+  {
+   "word": "allowed",
+   "start": 124.04,
+   "end": 124.28
+  },
+  {
+   "word": "to",
+   "start": 124.28,
+   "end": 124.44
+  },
+  {
+   "word": "print",
+   "start": 124.44,
+   "end": 124.62
+  },
+  {
+   "word": "money.",
+   "start": 124.62,
+   "end": 124.84
+  },
+  {
+   "word": "Today,",
+   "start": 125.46,
+   "end": 125.68
+  },
+  {
+   "word": "in",
+   "start": 126.06,
+   "end": 126.14
+  },
+  {
+   "word": "Germany,",
+   "start": 126.14,
+   "end": 126.48
+  },
+  {
+   "word": "a",
+   "start": 127.04,
+   "end": 127.18
+  },
+  {
+   "word": "regional",
+   "start": 127.18,
+   "end": 127.54
+  },
+  {
+   "word": "currency",
+   "start": 127.54,
+   "end": 128.14
+  },
+  {
+   "word": "called",
+   "start": 128.14,
+   "end": 128.44
+  },
+  {
+   "word": "the",
+   "start": 128.44,
+   "end": 128.62
+  },
+  {
+   "word": "Chiemgauer",
+   "start": 128.62,
+   "end": 129.06
+  },
+  {
+   "word": "still",
+   "start": 129.06,
+   "end": 129.44
+  },
+  {
+   "word": "uses",
+   "start": 129.44,
+   "end": 129.78
+  },
+  {
+   "word": "the",
+   "start": 129.78,
+   "end": 130.0
+  },
+  {
+   "word": "same",
+   "start": 130.0,
+   "end": 130.28
+  },
+  {
+   "word": "idea.",
+   "start": 130.28,
+   "end": 130.64
+  },
+  {
+   "word": "But",
+   "start": 131.18,
+   "end": 131.36
+  },
+  {
+   "word": "scale",
+   "start": 131.36,
+   "end": 131.58
+  },
+  {
+   "word": "it",
+   "start": 131.58,
+   "end": 131.72
+  },
+  {
+   "word": "to",
+   "start": 131.72,
+   "end": 131.82
+  },
+  {
+   "word": "the",
+   "start": 131.82,
+   "end": 131.92
+  },
+  {
+   "word": "whole",
+   "start": 131.92,
+   "end": 132.08
+  },
+  {
+   "word": "planet,",
+   "start": 132.08,
+   "end": 132.42
+  },
+  {
+   "word": "and",
+   "start": 132.42,
+   "end": 132.86
+  },
+  {
+   "word": "things",
+   "start": 132.86,
+   "end": 133.1
+  },
+  {
+   "word": "break.",
+   "start": 133.1,
+   "end": 133.4
+  },
+  {
+   "word": "Banks",
+   "start": 133.88,
+   "end": 134.04
+  },
+  {
+   "word": "can't",
+   "start": 134.04,
+   "end": 134.4
+  },
+  {
+   "word": "lend,",
+   "start": 134.4,
+   "end": 134.64
+  },
+  {
+   "word": "because",
+   "start": 134.64,
+   "end": 135.1
+  },
+  {
+   "word": "loans",
+   "start": 135.1,
+   "end": 135.44
+  },
+  {
+   "word": "expire",
+   "start": 135.44,
+   "end": 135.88
+  },
+  {
+   "word": "too.",
+   "start": 135.88,
+   "end": 136.2
+  },
+  {
+   "word": "Long-term",
+   "start": 136.2,
+   "end": 137.04
+  },
+  {
+   "word": "dreams",
+   "start": 137.04,
+   "end": 137.4
+  },
+  {
+   "word": "houses,",
+   "start": 138.02,
+   "end": 138.32
+  },
+  {
+   "word": "businesses,",
+   "start": 138.62,
+   "end": 138.8
+  },
+  {
+   "word": "retirement",
+   "start": 139.26,
+   "end": 139.58
+  },
+  {
+   "word": "become",
+   "start": 140.14,
+   "end": 140.38
+  },
+  {
+   "word": "almost",
+   "start": 140.38,
+   "end": 140.8
+  },
+  {
+   "word": "impossible.",
+   "start": 140.8,
+   "end": 141.38
+  },
+  {
+   "word": "When",
+   "start": 141.38,
+   "end": 141.94
+  },
+  {
+   "word": "money",
+   "start": 141.94,
+   "end": 142.16
+  },
+  {
+   "word": "can't",
+   "start": 142.16,
+   "end": 142.5
+  },
+  {
+   "word": "wait,",
+   "start": 142.5,
+   "end": 142.64
+  },
+  {
+   "word": "neither",
+   "start": 142.96,
+   "end": 143.14
+  },
+  {
+   "word": "can",
+   "start": 143.14,
+   "end": 143.4
+  },
+  {
+   "word": "people.",
+   "start": 143.4,
+   "end": 143.68
+  },
+  {
+   "word": "Day",
+   "start": 144.8,
+   "end": 145.02
+  },
+  {
+   "word": "30.",
+   "start": 145.02,
+   "end": 145.36
+  },
+  {
+   "word": "Midnight.",
+   "start": 145.8,
+   "end": 146.32
+  },
+  {
+   "word": "Across",
+   "start": 146.88,
+   "end": 147.12
+  },
+  {
+   "word": "the",
+   "start": 147.12,
+   "end": 147.38
+  },
+  {
+   "word": "world,",
+   "start": 147.38,
+   "end": 147.64
+  },
+  {
+   "word": "a",
+   "start": 147.96,
+   "end": 148.06
+  },
+  {
+   "word": "trillion",
+   "start": 148.06,
+   "end": 148.26
+  },
+  {
+   "word": "notes",
+   "start": 148.26,
+   "end": 148.66
+  },
+  {
+   "word": "glow",
+   "start": 148.66,
+   "end": 148.94
+  },
+  {
+   "word": "orange",
+   "start": 148.94,
+   "end": 149.42
+  },
+  {
+   "word": "and",
+   "start": 149.42,
+   "end": 149.96
+  },
+  {
+   "word": "turn",
+   "start": 149.96,
+   "end": 150.16
+  },
+  {
+   "word": "to",
+   "start": 150.16,
+   "end": 150.32
+  },
+  {
+   "word": "ash.",
+   "start": 150.32,
+   "end": 150.62
+  },
+  {
+   "word": "And",
+   "start": 151.12,
+   "end": 151.32
+  },
+  {
+   "word": "in",
+   "start": 151.32,
+   "end": 151.4
+  },
+  {
+   "word": "the",
+   "start": 151.4,
+   "end": 151.48
+  },
+  {
+   "word": "morning,",
+   "start": 151.48,
+   "end": 151.78
+  },
+  {
+   "word": "a",
+   "start": 152.08,
+   "end": 152.16
+  },
+  {
+   "word": "new",
+   "start": 152.16,
+   "end": 152.28
+  },
+  {
+   "word": "month",
+   "start": 152.28,
+   "end": 152.5
+  },
+  {
+   "word": "begins.",
+   "start": 152.5,
+   "end": 152.88
+  },
+  {
+   "word": "Everyone",
+   "start": 153.4,
+   "end": 153.66
+  },
+  {
+   "word": "starts",
+   "start": 153.66,
+   "end": 154.06
+  },
+  {
+   "word": "again",
+   "start": 154.06,
+   "end": 154.38
+  },
+  {
+   "word": "at",
+   "start": 154.38,
+   "end": 154.56
+  },
+  {
+   "word": "zero.",
+   "start": 154.56,
+   "end": 154.82
+  },
+  {
+   "word": "Rich",
+   "start": 155.38,
+   "end": 155.48
+  },
+  {
+   "word": "and",
+   "start": 155.48,
+   "end": 155.68
+  },
+  {
+   "word": "poor",
+   "start": 155.68,
+   "end": 155.84
+  },
+  {
+   "word": "for",
+   "start": 156.22,
+   "end": 156.36
+  },
+  {
+   "word": "one",
+   "start": 156.36,
+   "end": 156.6
+  },
+  {
+   "word": "strange",
+   "start": 156.6,
+   "end": 156.9
+  },
+  {
+   "word": "moment",
+   "start": 156.9,
+   "end": 157.3
+  },
+  {
+   "word": "almost",
+   "start": 157.82,
+   "end": 158.06
+  },
+  {
+   "word": "equal.",
+   "start": 158.06,
+   "end": 158.48
+  },
+  {
+   "word": "Now",
+   "start": 159.12,
+   "end": 159.42
+  },
+  {
+   "word": "here's",
+   "start": 159.42,
+   "end": 159.74
+  },
+  {
+   "word": "the",
+   "start": 159.74,
+   "end": 159.84
+  },
+  {
+   "word": "twist.",
+   "start": 159.84,
+   "end": 160.06
+  },
+  {
+   "word": "Your",
+   "start": 160.78,
+   "end": 160.88
+  },
+  {
+   "word": "money",
+   "start": 160.88,
+   "end": 161.1
+  },
+  {
+   "word": "already",
+   "start": 161.1,
+   "end": 161.42
+  },
+  {
+   "word": "expires.",
+   "start": 161.42,
+   "end": 162.02
+  },
+  {
+   "word": "It's",
+   "start": 162.48,
+   "end": 162.66
+  },
+  {
+   "word": "just",
+   "start": 162.66,
+   "end": 162.82
+  },
+  {
+   "word": "slower.",
+   "start": 162.82,
+   "end": 163.18
+  },
+  {
+   "word": "It's",
+   "start": 163.86,
+   "end": 164.08
+  },
+  {
+   "word": "called",
+   "start": 164.08,
+   "end": 164.32
+  },
+  {
+   "word": "inflation.",
+   "start": 164.32,
+   "end": 164.8
+  },
+  {
+   "word": "In",
+   "start": 165.3,
+   "end": 165.42
+  },
+  {
+   "word": "India,",
+   "start": 165.42,
+   "end": 165.72
+  },
+  {
+   "word": "prices",
+   "start": 166.12,
+   "end": 166.4
+  },
+  {
+   "word": "have",
+   "start": 166.4,
+   "end": 166.64
+  },
+  {
+   "word": "risen",
+   "start": 166.64,
+   "end": 166.86
+  },
+  {
+   "word": "around",
+   "start": 166.86,
+   "end": 167.14
+  },
+  {
+   "word": "five",
+   "start": 167.14,
+   "end": 167.66
+  },
+  {
+   "word": "to",
+   "start": 167.66,
+   "end": 167.72
+  },
+  {
+   "word": "six",
+   "start": 167.72,
+   "end": 167.97
+  },
+  {
+   "word": "percent",
+   "start": 167.97,
+   "end": 168.22
+  },
+  {
+   "word": "a",
+   "start": 168.22,
+   "end": 168.4
+  },
+  {
+   "word": "year",
+   "start": 168.4,
+   "end": 168.6
+  },
+  {
+   "word": "for",
+   "start": 168.6,
+   "end": 168.8
+  },
+  {
+   "word": "a",
+   "start": 168.8,
+   "end": 168.92
+  },
+  {
+   "word": "long",
+   "start": 168.92,
+   "end": 169.1
+  },
+  {
+   "word": "time.",
+   "start": 169.1,
+   "end": 169.42
+  },
+  {
+   "word": "At",
+   "start": 169.42,
+   "end": 169.9
+  },
+  {
+   "word": "that",
+   "start": 169.9,
+   "end": 170.1
+  },
+  {
+   "word": "rate,",
+   "start": 170.1,
+   "end": 170.32
+  },
+  {
+   "word": "₹100",
+   "start": 170.62,
+   "end": 170.96
+  },
+  {
+   "word": "today",
+   "start": 171.36,
+   "end": 171.72
+  },
+  {
+   "word": "buys",
+   "start": 171.72,
+   "end": 172.06
+  },
+  {
+   "word": "only",
+   "start": 172.06,
+   "end": 172.78
+  },
+  {
+   "word": "about",
+   "start": 172.78,
+   "end": 173.0
+  },
+  {
+   "word": "half",
+   "start": 173.0,
+   "end": 173.32
+  },
+  {
+   "word": "as",
+   "start": 173.32,
+   "end": 173.46
+  },
+  {
+   "word": "much",
+   "start": 173.46,
+   "end": 173.68
+  },
+  {
+   "word": "in",
+   "start": 173.68,
+   "end": 173.82
+  },
+  {
+   "word": "twelve",
+   "start": 173.82,
+   "end": 174.04
+  },
+  {
+   "word": "years.",
+   "start": 174.04,
+   "end": 174.36
+  },
+  {
+   "word": "The",
+   "start": 174.98,
+   "end": 175.12
+  },
+  {
+   "word": "timer",
+   "start": 175.12,
+   "end": 175.44
+  },
+  {
+   "word": "is",
+   "start": 175.44,
+   "end": 175.7
+  },
+  {
+   "word": "already",
+   "start": 175.7,
+   "end": 175.98
+  },
+  {
+   "word": "running.",
+   "start": 175.98,
+   "end": 176.28
+  },
+  {
+   "word": "You",
+   "start": 176.72,
+   "end": 176.82
+  },
+  {
+   "word": "just",
+   "start": 176.82,
+   "end": 177.0
+  },
+  {
+   "word": "can't",
+   "start": 177.0,
+   "end": 177.34
+  },
+  {
+   "word": "see",
+   "start": 177.34,
+   "end": 177.48
+  },
+  {
+   "word": "it.",
+   "start": 177.48,
+   "end": 177.66
+  },
+  {
+   "word": "That's",
+   "start": 178.1,
+   "end": 178.46
+  },
+  {
+   "word": "why",
+   "start": 178.46,
+   "end": 178.66
+  },
+  {
+   "word": "people",
+   "start": 178.66,
+   "end": 179.02
+  },
+  {
+   "word": "invest.",
+   "start": 179.02,
+   "end": 179.44
+  },
+  {
+   "word": "Not",
+   "start": 179.86,
+   "end": 180.1
+  },
+  {
+   "word": "to",
+   "start": 180.1,
+   "end": 180.34
+  },
+  {
+   "word": "get",
+   "start": 180.34,
+   "end": 180.46
+  },
+  {
+   "word": "rich",
+   "start": 180.46,
+   "end": 180.66
+  },
+  {
+   "word": "overnight",
+   "start": 180.66,
+   "end": 181.06
+  },
+  {
+   "word": "but",
+   "start": 181.42,
+   "end": 181.68
+  },
+  {
+   "word": "to",
+   "start": 181.68,
+   "end": 181.82
+  },
+  {
+   "word": "stop",
+   "start": 181.82,
+   "end": 182.08
+  },
+  {
+   "word": "their",
+   "start": 182.08,
+   "end": 182.3
+  },
+  {
+   "word": "money",
+   "start": 182.3,
+   "end": 182.56
+  },
+  {
+   "word": "from",
+   "start": 182.56,
+   "end": 182.8
+  },
+  {
+   "word": "quietly",
+   "start": 182.8,
+   "end": 183.24
+  },
+  {
+   "word": "burning.",
+   "start": 183.24,
+   "end": 183.62
+  },
+  {
+   "word": "So,",
+   "start": 184.24,
+   "end": 184.52
+  },
+  {
+   "word": "if",
+   "start": 184.66,
+   "end": 184.78
+  },
+  {
+   "word": "your",
+   "start": 184.78,
+   "end": 184.88
+  },
+  {
+   "word": "money",
+   "start": 184.88,
+   "end": 185.08
+  },
+  {
+   "word": "expired",
+   "start": 185.08,
+   "end": 185.5
+  },
+  {
+   "word": "in",
+   "start": 185.5,
+   "end": 185.8
+  },
+  {
+   "word": "30",
+   "start": 185.8,
+   "end": 186.08
+  },
+  {
+   "word": "days",
+   "start": 186.08,
+   "end": 186.4
+  },
+  {
+   "word": "what's",
+   "start": 186.78,
+   "end": 187.08
+  },
+  {
+   "word": "the",
+   "start": 187.08,
+   "end": 187.18
+  },
+  {
+   "word": "first",
+   "start": 187.18,
+   "end": 187.44
+  },
+  {
+   "word": "thing",
+   "start": 187.44,
+   "end": 187.64
+  },
+  {
+   "word": "you'd",
+   "start": 187.64,
+   "end": 187.82
+  },
+  {
+   "word": "buy?",
+   "start": 187.82,
+   "end": 188.04
+  },
+  {
+   "word": "Tell",
+   "start": 188.4,
+   "end": 188.6
+  },
+  {
+   "word": "me",
+   "start": 188.6,
+   "end": 188.74
+  },
+  {
+   "word": "in",
+   "start": 188.74,
+   "end": 188.84
+  },
+  {
+   "word": "the",
+   "start": 188.84,
+   "end": 188.9
+  },
+  {
+   "word": "comments.",
+   "start": 188.9,
+   "end": 189.24
+  }
+ ]
+}

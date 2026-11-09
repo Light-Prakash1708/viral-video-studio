@@ -1,0 +1,30 @@
+{
+ "title": "Phantom Limb",
+ "aspect": "9:16",
+ "resolution": "1080p",
+ "fps": 24,
+ "style": "cinema",
+ "voiceover": "input/voiceover.wav",
+ "script": "input/script.txt",
+ "duration": 64.0,
+ "captions": true,
+ "bars": "scope",
+ "fadeIn": 0.5,
+ "fadeOut": 0.8,
+ "music": {
+  "enabled": true,
+  "gainDb": -16,
+  "key": "D",
+  "seed": 9
+ },
+ "sfx": {
+  "enabled": true,
+  "gainDb": -8
+ },
+ "loudness": -14,
+ "captionStyle": {
+  "y": 1440,
+  "size": 88,
+  "max": 2
+ }
+}

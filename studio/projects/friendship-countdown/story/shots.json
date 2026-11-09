@@ -1,0 +1,1682 @@
+{
+ "title": "What IF You Could See How Many Days Every Friendship Has Left?",
+ "duration": 193.83,
+ "shots": [
+  {
+   "id": "f01",
+   "start": 0.0,
+   "scene": "Cold open: CU Kabir in the dusk canteen, white 41 floating above his cap",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 1.831,
+     "name": "blip",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 2.807
+  },
+  {
+   "id": "f02",
+   "start": 2.807,
+   "scene": "Low angle push up from Kabir's face to the number hovering over his head",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -16
+    },
+    {
+     "at": 1.409,
+     "name": "blip",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 5.229
+  },
+  {
+   "id": "f03",
+   "start": 5.229,
+   "scene": "OTS from YOU (blurred blue hoodie) to Kabir; tag grows: SMALL / WHITE / GLOWING / 41",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.151,
+     "name": "pop",
+     "gain": -16
+    },
+    {
+     "at": 2.212,
+     "name": "blip",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 9.451
+  },
+  {
+   "id": "f04",
+   "start": 9.451,
+   "scene": "CU YOU, glasses, blinks twice; reflection of the glow; number still there",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -15
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 11.739
+  },
+  {
+   "id": "f05",
+   "start": 11.739,
+   "scene": "Wide canteen at dusk: tables, lamps, crowd; numbers pop on above every head",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 2.273,
+     "name": "blip",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 14.834
+  },
+  {
+   "id": "f06",
+   "start": 14.834,
+   "scene": "Riya (pony, coral hoodie) laughing with friends; tag rolls up to 2,300",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 18.22
+  },
+  {
+   "id": "f07",
+   "start": 18.22,
+   "scene": "Charger guy (beanie, grey) holding a charger cable; red pulsing 3",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -16
+    },
+    {
+     "at": 1.777,
+     "name": "pop",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 21.072
+  },
+  {
+   "id": "f08",
+   "start": 21.072,
+   "scene": "YOU holds phone: Mom on a video call; no number, a warm gold light above her",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.116,
+     "name": "phonering",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 27.055
+  },
+  {
+   "id": "f09",
+   "start": 27.055,
+   "scene": "CU YOU: realisation, awe; numbers reflected in glasses",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "riser",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 28.82
+  },
+  {
+   "id": "f10",
+   "start": 28.82,
+   "scene": "Title moment: crane up over the canteen, numbers everywhere. EVERY NUMBER = DAYS THAT FRIENDSHIP HAS LEFT",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "flash",
+    "dur": 0.25
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "impact",
+     "gain": -11
+    },
+    {
+     "at": 1.895,
+     "name": "hit",
+     "gain": -14
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 32.909
+  },
+  {
+   "id": "f11",
+   "start": 32.909,
+   "scene": "Low-angle hero shot of YOU, smug; HUD lens boots up top-left",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -15
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 35.007
+  },
+  {
+   "id": "f12",
+   "start": 35.007,
+   "scene": "Fake friend (orange, smug) texting \"bro send notes?\"; amber 12",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 1.108,
+     "name": "phonebuzz",
+     "gain": -14
+    },
+    {
+     "at": 2.302,
+     "name": "pop",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 38.46
+  },
+  {
+   "id": "f13",
+   "start": 38.46,
+   "scene": "YOU ignores the text; fake friend walks away into the dusk corridor, his tag counts to 0 and pops",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.791,
+     "name": "footstep",
+     "gain": -18
+    },
+    {
+     "at": 2.411,
+     "name": "whoosh",
+     "gain": -15
+    },
+    {
+     "at": 2.49,
+     "name": "pop",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 41.82
+  },
+  {
+   "id": "f14",
+   "start": 41.82,
+   "scene": "Library at dusk: tall windows, light shafts, dust; the girl sits alone at a lamp-lit table",
+   "set": "library",
+   "bars": "none",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   },
+   "end": 43.824
+  },
+  {
+   "id": "f15",
+   "start": 43.824,
+   "scene": "Closer on library girl; her tag rolls to 11,000, then \"30 YEARS\"",
+   "set": "library",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   },
+   "end": 49.126
+  },
+  {
+   "id": "f16",
+   "start": 49.126,
+   "scene": "Two-shot: YOU waves hi, she laughs; both happy",
+   "set": "library",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -18
+    },
+    {
+     "at": 0.348,
+     "name": "pop",
+     "gain": -18
+    },
+    {
+     "at": 1.306,
+     "name": "blip",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   },
+   "end": 52.392
+  },
+  {
+   "id": "f17",
+   "start": 52.392,
+   "scene": "Library blurs back (rack focus) and darkens: serif title THE SCIENCE OF FRIENDSHIP",
+   "set": "library",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "riser",
+     "gain": -16
+    },
+    {
+     "at": 1.931,
+     "name": "hit",
+     "gain": -14
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   },
+   "end": 54.894
+  },
+  {
+   "id": "f18",
+   "start": 54.894,
+   "scene": "Diagram card on blurred library: stranger -> casual friend, hour bar fills to 50 h (Hall, 2018)",
+   "set": "card",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "pop",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   },
+   "end": 59.69
+  },
+  {
+   "id": "f19",
+   "start": 59.69,
+   "scene": "Card continues: casual -> close friend, bar fills past 200 h",
+   "set": "card",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   },
+   "end": 62.914
+  },
+  {
+   "id": "f20",
+   "start": 62.914,
+   "scene": "LUCK (dice) crossed out -> TIME (clock) on blurred canteen",
+   "set": "card",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.27,
+     "name": "pop",
+     "gain": -16
+    },
+    {
+     "at": 1.549,
+     "name": "hit",
+     "gain": -12
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 65.435
+  },
+  {
+   "id": "f21",
+   "start": 65.435,
+   "scene": "Spending time like money: glowing clock-coins drop onto the table between YOU, Riya, library girl; their numbers tick up",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 1.141,
+     "name": "blip",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 67.765
+  },
+  {
+   "id": "f22",
+   "start": 67.765,
+   "scene": "Kabir alone at a table; his number now amber",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 69.969
+  },
+  {
+   "id": "f23",
+   "start": 69.969,
+   "scene": "Tight on the number above Kabir: 41 -> 30 -> 22, red-amber pulse",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.11,
+     "name": "pop",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -30
+   },
+   "end": 72.902
+  },
+  {
+   "id": "f24",
+   "start": 72.902,
+   "scene": "Flashback, golden hour: kid YOU and kid Kabir on a gully wall, age seven",
+   "set": "gully",
+   "bars": "none",
+   "in": {
+    "type": "dipWhite",
+    "dur": 0.5
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "end": 74.847
+  },
+  {
+   "id": "f25",
+   "start": 74.847,
+   "scene": "Kids playing cricket in the gully: bat swing, ball flies",
+   "set": "gully",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.507,
+     "name": "hit",
+     "gain": -12
+    },
+    {
+     "at": 0.645,
+     "name": "cheer",
+     "gain": -22
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "end": 76.183
+  },
+  {
+   "id": "f26",
+   "start": 76.183,
+   "scene": "Exam nights: teen YOU and Kabir at a desk lamp, books piled",
+   "set": "room",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   },
+   "end": 77.205
+  },
+  {
+   "id": "f27",
+   "start": 77.205,
+   "scene": "The worst haircut: YOU with a jagged bowl cut, Kabir gives thumbs up \"looks fine\"",
+   "set": "gully",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 1.789,
+     "name": "pop",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "end": 80.425
+  },
+  {
+   "id": "f28",
+   "start": 80.425,
+   "scene": "Back to now: Kabir at the canteen window, amber 22; YOU blurred in foreground (rack focus)",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.612,
+     "name": "blip",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   },
+   "end": 83.156
+  },
+  {
+   "id": "f29",
+   "start": 83.156,
+   "scene": "You try everything: YOU slides a plate of samosas to Kabir; 22 does not move",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.59,
+     "name": "swish",
+     "gain": -16
+    },
+    {
+     "at": 1.771,
+     "name": "pop",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   },
+   "end": 85.37
+  },
+  {
+   "id": "f30",
+   "start": 85.37,
+   "scene": "Movie night: the two on a sofa, TV glow flickering; 22 above Kabir",
+   "set": "room",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   },
+   "end": 86.932
+  },
+  {
+   "id": "f31",
+   "start": 86.932,
+   "scene": "2 a.m.: phone screen in the dark sending memes; buzz; 22 frozen",
+   "set": "room",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.09,
+     "name": "phonebuzz",
+     "gain": -12
+    },
+    {
+     "at": 0.811,
+     "name": "phonering",
+     "gain": -22
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   },
+   "end": 89.637
+  },
+  {
+   "id": "f32",
+   "start": 89.637,
+   "scene": "Cold blue wide of the canteen: every number above every head ticks down",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -26
+   },
+   "end": 93.617
+  },
+  {
+   "id": "f33",
+   "start": 93.617,
+   "scene": "Riya talking (muffled bubbles) while YOU stares up at numbers, not listening; cold",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -30
+   },
+   "end": 97.745
+  },
+  {
+   "id": "f34",
+   "start": 97.745,
+   "scene": "Dutch study card: ten friend icons; across 7 years half fade out (Mollenhorst, 2009)",
+   "set": "card",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "pop",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   },
+   "end": 102.613
+  },
+  {
+   "id": "f35",
+   "start": 102.613,
+   "scene": "Void: two friends under separate spotlights; the floor stretches the gap between them; chat dots fade",
+   "set": "void",
+   "bars": "none",
+   "in": {
+    "type": "dip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -30
+   },
+   "end": 105.461
+  },
+  {
+   "id": "f36",
+   "start": 105.461,
+   "scene": "Friendships rarely explode: a tag dims and dissolves into drifting motes",
+   "set": "void",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -32
+   },
+   "end": 108.526
+  },
+  {
+   "id": "f37",
+   "start": 108.526,
+   "scene": "Night rooftop, day 3: YOU and Kabir on the ledge, city lights; red 3 pulsing",
+   "set": "rooftop",
+   "bars": "none",
+   "in": {
+    "type": "dip",
+    "dur": 0.5
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -30
+   },
+   "end": 111.977
+  },
+  {
+   "id": "f38",
+   "start": 111.977,
+   "scene": "CU Kabir, sad, finally says it: \"I got the job in Canada\"",
+   "set": "rooftop",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -34
+   },
+   "end": 114.924
+  },
+  {
+   "id": "f39",
+   "start": 114.924,
+   "scene": "CU YOU: stunned (reverse)",
+   "set": "rooftop",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -32
+   },
+   "end": 116.445
+  },
+  {
+   "id": "f40",
+   "start": 116.445,
+   "scene": "Tight on the red 3 glitching: NOT A FIGHT",
+   "set": "rooftop",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 1.229,
+     "name": "hit",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -30
+   },
+   "end": 118.619
+  },
+  {
+   "id": "f41",
+   "start": 118.619,
+   "scene": "A flight: plane silhouette crossing a dusk sky, contrail; 3 DAYS",
+   "set": "sky",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -15
+    },
+    {
+     "at": 1.499,
+     "name": "impact",
+     "gain": -16
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "end": 121.295
+  },
+  {
+   "id": "f42",
+   "start": 121.295,
+   "scene": "CU YOU: angry -> pretends it does not matter, looks away",
+   "set": "rooftop",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -30
+   },
+   "end": 124.038
+  },
+  {
+   "id": "f43",
+   "start": 124.038,
+   "scene": "YOU stands up, determined; the number never measured this; city behind",
+   "set": "rooftop",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.622,
+     "name": "riser",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -28
+   },
+   "end": 127.716
+  },
+  {
+   "id": "f44",
+   "start": 127.716,
+   "scene": "You show up: low angle, YOU steps in beside Kabir, hand on his shoulder",
+   "set": "rooftop",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.083,
+     "name": "impact",
+     "gain": -11
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -28
+   },
+   "end": 128.843
+  },
+  {
+   "id": "f45",
+   "start": 128.843,
+   "scene": "DAY 3: rain-soaked gully at night, cricket, puddles, lightning",
+   "set": "gully-night",
+   "bars": "none",
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -15
+    },
+    {
+     "at": 0.268,
+     "name": "thunder",
+     "gain": -10
+    },
+    {
+     "at": 1.964,
+     "name": "hit",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "rain",
+    "gain": -20
+   },
+   "end": 132.057
+  },
+  {
+   "id": "f46",
+   "start": 132.057,
+   "scene": "Close: two grown men laughing in the rain, splashes, lamp reflections",
+   "set": "gully-night",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 1.719,
+     "name": "thunder",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "rain",
+    "gain": -20
+   },
+   "end": 134.948
+  },
+  {
+   "id": "f47",
+   "start": 134.948,
+   "scene": "DAY 2: desk lamp, YOU writes memories on paper slips",
+   "set": "room",
+   "bars": "none",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.269,
+     "name": "swish",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   },
+   "end": 137.368
+  },
+  {
+   "id": "f48",
+   "start": 137.368,
+   "scene": "Slips of paper go into Kabir's backpack",
+   "set": "room",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   },
+   "end": 139.21
+  },
+  {
+   "id": "f49",
+   "start": 139.21,
+   "scene": "DAY 1, the airport: glass wall, plane outside at dusk, departures board TORONTO BOARDING",
+   "set": "airport",
+   "bars": "none",
+   "in": {
+    "type": "whip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "murmur",
+     "gain": -24
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "end": 140.847
+  },
+  {
+   "id": "f50",
+   "start": 140.847,
+   "scene": "The hug at the gate: so hard YOUR glasses crack and tilt",
+   "set": "airport",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 1.294,
+     "name": "hit",
+     "gain": -11
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "end": 143.442
+  },
+  {
+   "id": "f51",
+   "start": 143.442,
+   "scene": "Over YOU's shoulder: Kabir's tag flickers 3, 2, 1 ... 0",
+   "set": "airport",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "end": 146.348
+  },
+  {
+   "id": "f52",
+   "start": 146.348,
+   "scene": "The 0 shatters into gold sparks that swirl into a new shape",
+   "set": "airport",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.32,
+     "name": "riser",
+     "gain": -12
+    },
+    {
+     "at": 2.131,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "end": 151.142
+  },
+  {
+   "id": "f53",
+   "start": 151.142,
+   "scene": "Gold infinity sign above Kabir, warm light floods the gate",
+   "set": "airport",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.112,
+     "name": "impact",
+     "gain": -14
+    },
+    {
+     "at": 0.224,
+     "name": "shimmer",
+     "gain": -13
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "end": 154.164
+  },
+  {
+   "id": "f54",
+   "start": 154.164,
+   "scene": "Insert: Mom's video-call glow, the same gold light",
+   "set": "canteen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.179,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   },
+   "end": 155.995
+  },
+  {
+   "id": "f55",
+   "start": 155.995,
+   "scene": "Kabir walks to the gate and turns back to wave; the infinity floats with him",
+   "set": "airport",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.295,
+     "name": "footstep",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "end": 157.911
+  },
+  {
+   "id": "f56",
+   "start": 157.911,
+   "scene": "Plane takes off past the glass wall; two clocks: MUMBAI / TORONTO",
+   "set": "airport",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -15
+    },
+    {
+     "at": 0.544,
+     "name": "carpass",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "hum",
+    "gain": -26
+   },
+   "end": 160.132
+  },
+  {
+   "id": "f57",
+   "start": 160.132,
+   "scene": "Harvard card: 80-year timeline 1938 -> today, generations of figures",
+   "set": "card",
+   "bars": "none",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.177,
+     "name": "pop",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   },
+   "end": 165.252
+  },
+  {
+   "id": "f58",
+   "start": 165.252,
+   "scene": "Its biggest finding: MONEY bar small vs RELATIONSHIPS bar tall",
+   "set": "card",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.103,
+     "name": "swish",
+     "gain": -16
+    },
+    {
+     "at": 2.064,
+     "name": "pop",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   },
+   "end": 171.29
+  },
+  {
+   "id": "f59",
+   "start": 171.29,
+   "scene": "Old YOU and old Kabir on a bench at golden hour, laughing; infinity above",
+   "set": "gully",
+   "bars": "none",
+   "in": {
+    "type": "fade",
+    "dur": 0.5
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "end": 173.804
+  },
+  {
+   "id": "f60",
+   "start": 173.804,
+   "scene": "YOU walks out of the airport into the city night, taxis",
+   "set": "airport-out",
+   "bars": "none",
+   "in": {
+    "type": "dip",
+    "dur": 0.35
+   },
+   "sfx": [
+    {
+     "at": 0.386,
+     "name": "carpass",
+     "gain": -16
+    },
+    {
+     "at": 0.965,
+     "name": "footstep",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -24
+   },
+   "end": 175.493
+  },
+  {
+   "id": "f61",
+   "start": 175.493,
+   "scene": "Taxi: framed in the rear-view mirror, YOU looks up",
+   "set": "taxi",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.175,
+     "name": "swish",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -28
+   },
+   "end": 177.287
+  },
+  {
+   "id": "f62",
+   "start": 177.287,
+   "scene": "In the mirror, a number appears above YOUR own head",
+   "set": "taxi",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.91,
+     "name": "blip",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -28
+   },
+   "end": 179.715
+  },
+  {
+   "id": "f63",
+   "start": 179.715,
+   "scene": "Close on YOUR number, slowly counting",
+   "set": "taxi",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -30
+   },
+   "end": 181.512
+  },
+  {
+   "id": "f64",
+   "start": 181.512,
+   "scene": "YOU opens the phone: contacts MOM / KABIR / RIYA ... thumb hovers on call",
+   "set": "taxi",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.335,
+     "name": "blip",
+     "gain": -16
+    },
+    {
+     "at": 2.012,
+     "name": "pop",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -30
+   },
+   "end": 184.991
+  },
+  {
+   "id": "f65",
+   "start": 184.991,
+   "scene": "CTA card: faces with \"?\" numbers; WHOSE NUMBER WOULD YOU CHECK FIRST?",
+   "set": "card",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.097,
+     "name": "whoosh",
+     "gain": -15
+    },
+    {
+     "at": 0.966,
+     "name": "pop",
+     "gain": -16
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "city",
+    "gain": -32
+   },
+   "end": 188.951
+  },
+  {
+   "id": "f66",
+   "start": 188.951,
+   "scene": "End: phone calling KABIR, gold infinity, \"call them\"",
+   "set": "taxi",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.281,
+     "name": "phonering",
+     "gain": -16
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "city",
+    "gain": -32
+   },
+   "end": 193.83
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 27.055,
+   "mood": "playful",
+   "intensity": 0.4
+  },
+  {
+   "start": 27.055,
+   "end": 54.894,
+   "mood": "wonder",
+   "intensity": 0.5
+  },
+  {
+   "start": 54.894,
+   "end": 67.765,
+   "mood": "hopeful",
+   "intensity": 0.5
+  },
+  {
+   "start": 67.765,
+   "end": 89.637,
+   "mood": "tension",
+   "intensity": 0.45
+  },
+  {
+   "start": 89.637,
+   "end": 108.526,
+   "mood": "sad",
+   "intensity": 0.4
+  },
+  {
+   "start": 108.526,
+   "end": 121.295,
+   "mood": "sad",
+   "intensity": 0.2
+  },
+  {
+   "start": 121.295,
+   "end": 139.21,
+   "mood": "hopeful",
+   "intensity": 0.55
+  },
+  {
+   "start": 139.21,
+   "end": 160.132,
+   "mood": "triumph",
+   "intensity": 0.7
+  },
+  {
+   "start": 160.132,
+   "end": 173.804,
+   "mood": "hopeful",
+   "intensity": 0.45
+  },
+  {
+   "start": 173.804,
+   "end": 193.83,
+   "mood": "calm",
+   "intensity": 0.35
+  }
+ ]
+}

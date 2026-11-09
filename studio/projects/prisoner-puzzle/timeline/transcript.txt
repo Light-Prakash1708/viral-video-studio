@@ -1,0 +1,31 @@
+[00:00.08 -> 00:01.18] Three prisoners.
+[00:01.74 -> 00:02.40] Five hats.
+[00:02.74 -> 00:03.96] Three white, two black.
+[00:04.30 -> 00:05.92] Guess your hat right, you walk free.
+[00:06.46 -> 00:07.06] Guess wrong...
+[00:07.26 -> 00:07.56] you don't.
+[00:08.16 -> 00:11.52] The guard lines them up, one behind the other, facing a wall.
+[00:12.06 -> 00:13.72] Each gets a hat he can't see.
+[00:14.32 -> 00:17.44] Prisoner three, at the back, sees both hats in front of him.
+[00:17.94 -> 00:18.72] He stays silent.
+[00:19.52 -> 00:21.12] Prisoner two sees one hat.
+[00:21.58 -> 00:22.60] He stays silent too.
+[00:23.30 -> 00:24.90] Prisoner one sees nothing.
+[00:25.36 -> 00:26.08] Just the wall.
+[00:26.64 -> 00:27.08] And yet...
+[00:27.26 -> 00:28.20] he's the one who answers.
+[00:28.72 -> 00:29.28] And he's right.
+[00:29.85 -> 00:31.02] What color is his hat?
+[00:31.22 -> 00:31.72] Beat the clock.
+[00:31.72 -> 00:38.16] Time's up.
+[00:38.34 -> 00:38.64] It's white.
+[00:39.24 -> 00:42.76] If prisoner three had seen two black hats, he'd know his was white.
+[00:42.94 -> 00:43.68] He stayed silent.
+[00:44.08 -> 00:45.84] So at least one front hat is white.
+[00:46.40 -> 00:47.76] Prisoner two knows that too.
+[00:48.26 -> 00:51.06] If prisoner one's hat were black, his own would have to be white.
+[00:51.30 -> 00:52.32] But he stayed silent.
+[00:52.94 -> 00:54.08] So prisoner one's hat...
+[00:54.08 -> 00:55.00] is white.
+[00:55.80 -> 00:57.12] The silence was the clue.
+[00:57.58 -> 00:58.86] Comment if you beat the clock.

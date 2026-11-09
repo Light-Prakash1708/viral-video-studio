@@ -1,0 +1,509 @@
+{
+ "title": "pp",
+ "duration": 63.079,
+ "shots": [
+  {
+   "id": "q01",
+   "start": 0,
+   "end": 4.18,
+   "line": "",
+   "scene": "q01",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "impact",
+     "gain": -12
+    },
+    {
+     "at": 0.3,
+     "name": "riser",
+     "gain": -22
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q02",
+   "start": 4.18,
+   "end": 8.04,
+   "line": "",
+   "scene": "q02",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "whoosh",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q03",
+   "start": 8.04,
+   "end": 11.94,
+   "line": "",
+   "scene": "q03",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "footstep",
+     "gain": -18
+    },
+    {
+     "at": 0.9,
+     "name": "footstep",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q04",
+   "start": 11.94,
+   "end": 14.2,
+   "line": "",
+   "scene": "q04",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -18
+    },
+    {
+     "at": 0.65,
+     "name": "pop",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q05",
+   "start": 14.2,
+   "end": 17.82,
+   "line": "",
+   "scene": "q05",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "whoosh",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q06",
+   "start": 17.82,
+   "end": 19.4,
+   "line": "",
+   "scene": "q06",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "heartbeat",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q07",
+   "start": 19.4,
+   "end": 23.18,
+   "line": "",
+   "scene": "q07",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "whoosh",
+     "gain": -20
+    },
+    {
+     "at": 1.6,
+     "name": "heartbeat",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q08",
+   "start": 23.18,
+   "end": 26.52,
+   "line": "",
+   "scene": "q08",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "hum",
+     "gain": -22
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q09",
+   "start": 26.52,
+   "end": 29.73,
+   "line": "",
+   "scene": "q09",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "riser",
+     "gain": -18
+    },
+    {
+     "at": 1.4,
+     "name": "impact",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q10",
+   "start": 29.73,
+   "end": 37.34,
+   "line": "",
+   "scene": "q10",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "stinger",
+     "gain": -16
+    },
+    {
+     "at": 1.7,
+     "name": "tick",
+     "gain": -11
+    },
+    {
+     "at": 2.2,
+     "name": "tick",
+     "gain": -11
+    },
+    {
+     "at": 2.7,
+     "name": "tick",
+     "gain": -11
+    },
+    {
+     "at": 3.2,
+     "name": "tick",
+     "gain": -11
+    },
+    {
+     "at": 3.7,
+     "name": "tick",
+     "gain": -11
+    },
+    {
+     "at": 4.2,
+     "name": "tick",
+     "gain": -11
+    },
+    {
+     "at": 4.7,
+     "name": "tick",
+     "gain": -11
+    },
+    {
+     "at": 5.2,
+     "name": "tick",
+     "gain": -11
+    },
+    {
+     "at": 5.7,
+     "name": "tick",
+     "gain": -11
+    },
+    {
+     "at": 6.2,
+     "name": "tick",
+     "gain": -11
+    },
+    {
+     "at": 2.2,
+     "name": "heartbeat",
+     "gain": -14
+    },
+    {
+     "at": 3.6,
+     "name": "heartbeat",
+     "gain": -12
+    },
+    {
+     "at": 5.0,
+     "name": "heartbeat",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q11",
+   "start": 37.34,
+   "end": 39.12,
+   "line": "",
+   "scene": "q11",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "impact",
+     "gain": -10
+    },
+    {
+     "at": 0.9,
+     "name": "flash",
+     "gain": -14
+    },
+    {
+     "at": 1.0,
+     "name": "shimmer",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q12",
+   "start": 39.12,
+   "end": 46.28,
+   "line": "",
+   "scene": "q12",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "whoosh",
+     "gain": -18
+    },
+    {
+     "at": 1.4,
+     "name": "pop",
+     "gain": -20
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q13",
+   "start": 46.28,
+   "end": 52.82,
+   "line": "",
+   "scene": "q13",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "whoosh",
+     "gain": -18
+    },
+    {
+     "at": 1.6,
+     "name": "pop",
+     "gain": -20
+    }
+   ],
+   "captions": false,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q14",
+   "start": 52.82,
+   "end": 55.68,
+   "line": "",
+   "scene": "q14",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "riser",
+     "gain": -20
+    },
+    {
+     "at": 1.9,
+     "name": "impact",
+     "gain": -14
+    },
+    {
+     "at": 2.2,
+     "name": "cheer",
+     "gain": -24
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "q15",
+   "start": 55.68,
+   "end": 63.079,
+   "line": "",
+   "scene": "q15",
+   "set": "prison",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.08
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "ding",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 63.079,
+   "mood": "tension",
+   "intensity": 0.6
+  }
+ ]
+}

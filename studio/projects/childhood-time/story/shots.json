@@ -1,0 +1,577 @@
+{
+ "title": "Why Childhood Felt Longer",
+ "duration": 64.6,
+ "shots": [
+  {
+   "id": "p01",
+   "start": 0,
+   "end": 3.95,
+   "line": "",
+   "scene": "p01",
+   "set": "meadow",
+   "bars": "scope",
+   "in": {
+    "type": "fade",
+    "dur": 0.6
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p02",
+   "start": 3.95,
+   "end": 6.4,
+   "line": "",
+   "scene": "p02",
+   "set": "office",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "riser",
+     "gain": -16,
+     "dur": 1.6
+    },
+    {
+     "at": 1.55,
+     "name": "whoosh",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   }
+  },
+  {
+   "id": "p03",
+   "start": 6.4,
+   "end": 8.7,
+   "line": "",
+   "scene": "p03",
+   "set": "meadow",
+   "bars": "scope",
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "shimmer",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p04",
+   "start": 8.7,
+   "end": 10.5,
+   "line": "",
+   "scene": "p04",
+   "set": "beach",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.45,
+     "name": "flash",
+     "gain": -14
+    },
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "p05",
+   "start": 10.5,
+   "end": 11.8,
+   "line": "",
+   "scene": "p05",
+   "set": "meadow",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "hit",
+     "gain": -14
+    },
+    {
+     "at": 0.45,
+     "name": "flash",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p06",
+   "start": 11.8,
+   "end": 13.6,
+   "line": "",
+   "scene": "p06",
+   "set": "dusk",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.45,
+     "name": "flash",
+     "gain": -14
+    },
+    {
+     "at": 0.6,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p07",
+   "start": 13.6,
+   "end": 16.45,
+   "line": "",
+   "scene": "p07",
+   "set": "jar",
+   "bars": "scope",
+   "in": {
+    "type": "zoom",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "counter",
+     "gain": -18,
+     "dur": 2.2
+    },
+    {
+     "at": 2.3,
+     "name": "ding",
+     "gain": -14
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "p08",
+   "start": 16.45,
+   "end": 18.0,
+   "line": "",
+   "scene": "p08",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "slowmo",
+     "gain": -16
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   }
+  },
+  {
+   "id": "p09",
+   "start": 18.0,
+   "end": 22.75,
+   "line": "",
+   "scene": "p09",
+   "set": "loop",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "swish",
+     "gain": -17,
+     "pitch": 0.9
+    },
+    {
+     "at": 0.86,
+     "name": "swish",
+     "gain": -17,
+     "pitch": 1.05
+    },
+    {
+     "at": 1.28,
+     "name": "swish",
+     "gain": -17,
+     "pitch": 0.95
+    },
+    {
+     "at": 1.68,
+     "name": "swish",
+     "gain": -17,
+     "pitch": 1.12
+    },
+    {
+     "at": 2.02,
+     "name": "swish",
+     "gain": -17,
+     "pitch": 0.85
+    },
+    {
+     "at": 2.72,
+     "name": "whoosh",
+     "gain": -13,
+     "pitch": 0.8
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "hum",
+    "gain": -28
+   },
+   "captions": false
+  },
+  {
+   "id": "p10",
+   "start": 22.75,
+   "end": 26.35,
+   "line": "",
+   "scene": "p10",
+   "set": "void",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.9,
+     "name": "hit",
+     "gain": -12
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "p11",
+   "start": 26.35,
+   "end": 27.6,
+   "line": "",
+   "scene": "p11",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "dip",
+    "dur": 0.3
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "p12",
+   "start": 27.6,
+   "end": 31.55,
+   "line": "",
+   "scene": "p12",
+   "set": "table",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p13",
+   "start": 31.55,
+   "end": 34.9,
+   "line": "",
+   "scene": "p13",
+   "set": "meadow",
+   "bars": "scope",
+   "in": {
+    "type": "zoom",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "riser",
+     "gain": -14,
+     "dur": 1.4
+    },
+    {
+     "at": 1.3,
+     "name": "shimmer",
+     "gain": -8
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "p14",
+   "start": 34.9,
+   "end": 38.7,
+   "line": "",
+   "scene": "p14",
+   "set": "void",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.7,
+     "name": "slowmo",
+     "gain": -12
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "p15",
+   "start": 38.7,
+   "end": 42.4,
+   "line": "",
+   "scene": "p15",
+   "set": "beach",
+   "bars": "scope",
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "captions": false
+  },
+  {
+   "id": "p16",
+   "start": 42.4,
+   "end": 46.95,
+   "line": "",
+   "scene": "p16",
+   "set": "beach",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "whoosh",
+     "gain": -12
+    },
+    {
+     "at": 3.7,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "p17",
+   "start": 46.95,
+   "end": 50.5,
+   "line": "",
+   "scene": "p17",
+   "set": "waiting",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "clock",
+     "gain": -12
+    },
+    {
+     "at": 2.4,
+     "name": "slowmo",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "hum",
+    "gain": -28
+   }
+  },
+  {
+   "id": "p18",
+   "start": 50.5,
+   "end": 55.0,
+   "line": "",
+   "scene": "p18",
+   "set": "grid",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.9,
+     "name": "ding",
+     "gain": -12
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "p19",
+   "start": 55.0,
+   "end": 57.85,
+   "line": "",
+   "scene": "p19",
+   "set": "meadow",
+   "bars": "scope",
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "shimmer",
+     "gain": -10
+    },
+    {
+     "at": 1.8,
+     "name": "flash",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "p20",
+   "start": 57.85,
+   "end": 64.6,
+   "line": "",
+   "scene": "p20",
+   "set": "meadow",
+   "bars": "scope",
+   "in": {
+    "type": "fade",
+    "dur": 0.6
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   },
+   "captions": false
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 16.45,
+   "mood": "wonder",
+   "intensity": 0.5
+  },
+  {
+   "start": 16.45,
+   "end": 26.35,
+   "mood": "sad",
+   "intensity": 0.45
+  },
+  {
+   "start": 26.35,
+   "end": 38.7,
+   "mood": "mystery",
+   "intensity": 0.45
+  },
+  {
+   "start": 38.7,
+   "end": 50.5,
+   "mood": "calm",
+   "intensity": 0.5
+  },
+  {
+   "start": 50.5,
+   "end": 64.6,
+   "mood": "hopeful",
+   "intensity": 0.6
+  }
+ ]
+}

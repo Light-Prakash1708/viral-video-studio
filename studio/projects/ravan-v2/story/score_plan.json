@@ -1,0 +1,169 @@
+{
+ "key": "D",
+ "bpm": 72,
+ "seed": 88,
+ "sections": [
+  {
+   "start": 0,
+   "end": 8.790000000000001,
+   "prog": [
+    "vi",
+    "IV",
+    "vi",
+    "V"
+   ],
+   "mode": "block",
+   "vel": 0.5,
+   "strings": 0.7,
+   "pulse": true
+  },
+  {
+   "start": 8.790000000000001,
+   "end": 16.27,
+   "prog": [
+    "vi",
+    "IV",
+    "I",
+    "V"
+   ],
+   "mode": "sparse",
+   "vel": 0.38,
+   "strings": 0.5
+  },
+  {
+   "start": 16.27,
+   "end": 50.370000000000005,
+   "prog": [
+    "I",
+    "V",
+    "vi",
+    "IV"
+   ],
+   "mode": "motif",
+   "vel": 0.44,
+   "strings": 0.45
+  },
+  {
+   "start": 50.370000000000005,
+   "end": 83.39,
+   "prog": [
+    "vi",
+    "IV",
+    "I",
+    "V"
+   ],
+   "mode": "arp8",
+   "vel": 0.48,
+   "strings": 0.55,
+   "pulse": true
+  },
+  {
+   "start": 83.39,
+   "end": 104.53,
+   "prog": [
+    "I",
+    "V",
+    "vi",
+    "IV"
+   ],
+   "mode": "block",
+   "vel": 0.52,
+   "strings": 0.7
+  },
+  {
+   "start": 104.53,
+   "end": 131.85,
+   "prog": [
+    "vi",
+    "iii",
+    "IV",
+    "V"
+   ],
+   "mode": "sparse",
+   "vel": 0.36,
+   "strings": 0.45,
+   "pulse": true
+  },
+  {
+   "start": 131.85,
+   "end": 151.10999999999999,
+   "prog": [
+    "vi",
+    "IV",
+    "I",
+    "V"
+   ],
+   "mode": "sparse",
+   "vel": 0.34,
+   "strings": 0.4,
+   "bass": false
+  },
+  {
+   "start": 152.57,
+   "end": 164.325,
+   "prog": [
+    "vi",
+    "IV",
+    "I",
+    "V"
+   ],
+   "mode": "block",
+   "vel": 0.58,
+   "strings": 0.85,
+   "pulse": true
+  }
+ ],
+ "events": [
+  {
+   "t": 6.7700000000000005,
+   "type": "timp",
+   "dur": 1.4,
+   "vel": 0.6
+  },
+  {
+   "t": 12.870000000000001,
+   "type": "shimmer",
+   "dur": 4,
+   "vel": 0.6
+  },
+  {
+   "t": 16.27,
+   "type": "pulse",
+   "vel": 0.8
+  },
+  {
+   "t": 50.370000000000005,
+   "type": "pulse",
+   "vel": 0.8
+  },
+  {
+   "t": 104.53,
+   "type": "timp",
+   "dur": 1.2,
+   "vel": 0.6
+  },
+  {
+   "t": 149.70999999999998,
+   "type": "timp",
+   "dur": 1.4,
+   "vel": 0.7
+  },
+  {
+   "t": 151.10999999999999,
+   "type": "drone",
+   "dur": 1.460000000000008,
+   "vel": 0.3
+  },
+  {
+   "t": 154.59,
+   "type": "shimmer",
+   "dur": 5,
+   "vel": 0.5
+  },
+  {
+   "t": 164.225,
+   "type": "final",
+   "chord": "vi"
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+@voice M7 british pitch=-1.0 speed=0.97
+M7: Your coffee is thirty-one percent too strong. Four degrees too hot. And you charge money. Why do they come?

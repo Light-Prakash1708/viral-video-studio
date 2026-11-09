@@ -1,0 +1,8 @@
+@voice RAVAN deep pitch=-0.5 speed=0.9
+RAVAN: Every year, you burn me. Ten heads. Fireworks inside. Millions of you, cheering.
+
+RAVAN: But tell me... what if the arrow had missed?
+
+RAVAN: So you burn me every year...
+
+RAVAN: ...so that you never become me.

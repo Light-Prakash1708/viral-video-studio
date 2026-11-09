@@ -1,0 +1,24 @@
+{
+ "speakers": {
+  "NARRATOR": {
+   "preset": "gentle",
+   "pitch": 0.0,
+   "speed": 1.0,
+   "lang": "en"
+  },
+  "MAYA": {
+   "preset": "gentle",
+   "pitch": 4.0,
+   "speed": 1.04,
+   "lang": "en"
+  }
+ },
+ "lines": [
+  {
+   "speaker": "MAYA",
+   "text": "Extra marshmallows, Mr. Walt?",
+   "start": 0.15,
+   "end": 1.922
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+@voice HARI desi-narrator pitch=-3.0 speed=0.9
+HARI: Then don't do it like a machine.

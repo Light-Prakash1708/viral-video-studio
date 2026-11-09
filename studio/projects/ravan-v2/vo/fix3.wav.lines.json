@@ -1,0 +1,72 @@
+{
+ "speakers": {
+  "NARRATOR": {
+   "preset": "desi-narrator",
+   "pitch": 0.0,
+   "speed": 1.0,
+   "lang": "en"
+  },
+  "RAVAN": {
+   "preset": "desi-narrator",
+   "pitch": -0.8,
+   "speed": 0.93,
+   "lang": "en"
+  }
+ },
+ "lines": [
+  {
+   "speaker": "RAVAN",
+   "text": "Every year, you burn me. Ten heads. Fireworks inside. Millions of you, cheering.",
+   "start": 0.15,
+   "end": 5.872
+  },
+  {
+   "speaker": "RAVAN",
+   "text": "But tell me... what if the arrow had missed?",
+   "start": 6.322,
+   "end": 9.584
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Wait. Rahvuhnuh... won?",
+   "start": 10.034,
+   "end": 11.546
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "But wasn't Rahvuhnuh just... the villain?",
+   "start": 11.996,
+   "end": 14.252
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Okay, that part sounds amazing.",
+   "start": 14.702,
+   "end": 16.936
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "So... where's the catch?",
+   "start": 17.386,
+   "end": 18.678
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "So was he good, or bad?",
+   "start": 19.128,
+   "end": 21.027
+  },
+  {
+   "speaker": "RAVAN",
+   "text": "So you burn me every year...",
+   "start": 21.477,
+   "end": 23.272
+  },
+  {
+   "speaker": "RAVAN",
+   "text": "...so that you never become me.",
+   "start": 23.722,
+   "end": 25.489
+  }
+ ]
+}

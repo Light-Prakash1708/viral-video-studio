@@ -1,0 +1,521 @@
+{
+ "title": "The Ship of Theseus",
+ "duration": 61.6,
+ "shots": [
+  {
+   "id": "s001",
+   "start": 0,
+   "end": 2.35,
+   "line": "If every part of a ship is replaced,",
+   "scene": "harbor wide at dusk, the ship's planks begin swapping old to new",
+   "set": "harbor",
+   "bars": "scope",
+   "in": {
+    "type": "fade",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "shimmer",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s002",
+   "start": 2.35,
+   "end": 5.25,
+   "line": "is it still the same ship?",
+   "scene": "push in, last planks swap, SAME SHIP? line",
+   "set": "harbor",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "stinger",
+     "gain": -8
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s003",
+   "start": 5.25,
+   "end": 8.8,
+   "line": "Ancient Athens kept the ship of the hero Theseus.",
+   "scene": "title card; Theseus on the pier, ship at anchor",
+   "set": "harbor",
+   "bars": "scope",
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "impact",
+     "gain": -6
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   },
+   "captions": false
+  },
+  {
+   "id": "s004",
+   "start": 8.8,
+   "end": 12.55,
+   "line": "When an old plank rotted, they swapped in fresh timber.",
+   "scene": "shipyard: shipwright swaps one rotten plank",
+   "set": "shipyard",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 2.4,
+     "name": "hit",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   }
+  },
+  {
+   "id": "s005",
+   "start": 12.55,
+   "end": 15.0,
+   "line": "One plank at a time.",
+   "scene": "insert: hull fills frame, mallet knocks planks in, counter",
+   "set": "shipyard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.25,
+     "name": "hit",
+     "gain": -8
+    },
+    {
+     "at": 0.95,
+     "name": "hit",
+     "gain": -8
+    },
+    {
+     "at": 1.6,
+     "name": "hit",
+     "gain": -8
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   }
+  },
+  {
+   "id": "s006",
+   "start": 15.0,
+   "end": 16.65,
+   "line": "Years went by.",
+   "scene": "time-lapse harbor, sun races, planks keep swapping",
+   "set": "harbor",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -8
+    },
+    {
+     "at": 0.1,
+     "name": "clock",
+     "gain": -14
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s007",
+   "start": 16.65,
+   "end": 20.4,
+   "line": "Picture a day with not one original plank left.",
+   "scene": "blueprint ship, original planks counter drops to 0",
+   "set": "blueprint",
+   "bars": "none",
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "counter",
+     "gain": -14,
+     "dur": 2.4
+    },
+    {
+     "at": 2.9,
+     "name": "stinger",
+     "gain": -8
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s008",
+   "start": 20.4,
+   "end": 24.35,
+   "line": "The writer Plutarch says philosophers argued about it.",
+   "scene": "colonnade: Plutarch with scroll, two philosophers arguing",
+   "set": "colonnade",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s009",
+   "start": 24.35,
+   "end": 26.7,
+   "line": "Some said it was the same ship.",
+   "scene": "bigFace green philosopher happy, SAME SHIP",
+   "set": "colonnade",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "pop",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s010",
+   "start": 26.7,
+   "end": 28.75,
+   "line": "Others said it was a new one.",
+   "scene": "bigFace pink philosopher angry, NEW SHIP",
+   "set": "colonnade",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s011",
+   "start": 28.75,
+   "end": 32.05,
+   "line": "Later, Thomas Hobbes made it harder.",
+   "scene": "night study, candle; Hobbes thinks, then points up with an idea",
+   "set": "study",
+   "bars": null,
+   "in": {
+    "type": "dip",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 2.4,
+     "name": "ding",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "hum",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s012",
+   "start": 32.05,
+   "end": 36.65,
+   "line": "What if someone kept every old plank, and built a second ship from them?",
+   "scene": "pile of old planks flies together into a second ship",
+   "set": "shipyard",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.6,
+     "name": "riser",
+     "gain": -12,
+     "dur": 1.6
+    },
+    {
+     "at": 4.2,
+     "name": "impact",
+     "gain": -8
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s013",
+   "start": 36.65,
+   "end": 38.5,
+   "line": "Now there are two ships.",
+   "scene": "harbor: ship A new wood, ship B old wood, badges",
+   "set": "harbor",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -10
+    },
+    {
+     "at": 0.5,
+     "name": "pop",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s014",
+   "start": 38.5,
+   "end": 41.65,
+   "line": "Which one is the real ship of Theseus?",
+   "scene": "bigFace Theseus looks from A to B, confused",
+   "set": "harbor",
+   "bars": "scope",
+   "in": {
+    "type": "flash",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "flash",
+     "gain": -10
+    },
+    {
+     "at": 2.2,
+     "name": "stinger",
+     "gain": -8
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s015",
+   "start": 41.65,
+   "end": 43.45,
+   "line": "Now think about you.",
+   "scene": "bedroom night, you in front of a mirror",
+   "set": "bedroom",
+   "bars": null,
+   "in": {
+    "type": "whip",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -8
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   }
+  },
+  {
+   "id": "s016",
+   "start": 43.45,
+   "end": 47.35,
+   "line": "Your body replaces many of its cells over the years.",
+   "scene": "blueprint figure, ring of cells swap old to new",
+   "set": "blueprint",
+   "bars": "none",
+   "in": {
+    "type": "zoom",
+    "dur": 0.4
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "shimmer",
+     "gain": -12
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s017",
+   "start": 47.35,
+   "end": 50.9,
+   "line": "Your opinions and your memories change too.",
+   "scene": "bigFace you thinking, thought bubbles pop and shift colour",
+   "set": "bedroom",
+   "bars": "scope",
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "blip",
+     "gain": -12
+    },
+    {
+     "at": 1.6,
+     "name": "blip",
+     "gain": -12
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s018",
+   "start": 50.9,
+   "end": 55.1,
+   "line": "So are you the same person you were ten years ago?",
+   "scene": "mirror reflection turns into your 10-year-younger self",
+   "set": "bedroom",
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [
+    {
+     "at": 2.4,
+     "name": "shimmer",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "roomtone",
+    "gain": -24
+   }
+  },
+  {
+   "id": "s019",
+   "start": 55.1,
+   "end": 61.6,
+   "line": "Same ship, or new ship? Tell me in the comments.",
+   "scene": "end screen question + cast",
+   "set": "end",
+   "bars": null,
+   "in": {
+    "type": "fade",
+    "dur": 0.5
+   },
+   "sfx": [
+    {
+     "at": 0.6,
+     "name": "pop",
+     "gain": -10
+    }
+   ],
+   "notes": "",
+   "captions": false
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 15,
+   "mood": "mystery",
+   "intensity": 0.45
+  },
+  {
+   "start": 15,
+   "end": 28.75,
+   "mood": "wonder",
+   "intensity": 0.55
+  },
+  {
+   "start": 28.75,
+   "end": 41.65,
+   "mood": "tension",
+   "intensity": 0.6
+  },
+  {
+   "start": 41.65,
+   "end": 61.6,
+   "mood": "hopeful",
+   "intensity": 0.5
+  }
+ ]
+}

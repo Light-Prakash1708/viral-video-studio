@@ -1,0 +1,1315 @@
+{
+ "title": "The Last Human Job on Earth",
+ "duration": 240.099,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 6.4,
+   "line": "",
+   "scene": "s01",
+   "set": "Dawn, empty Track 4, push toward the one lit cart; HUD appears",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.6
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "wind",
+     "gain": -26
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s02",
+   "start": 6.4,
+   "end": 10.86,
+   "line": "",
+   "scene": "s02",
+   "set": "Title card over the dawn platform",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.55,
+     "name": "impact",
+     "gain": -14
+    },
+    {
+     "at": 0.55,
+     "name": "shimmer",
+     "gain": -20
+    }
+   ],
+   "captions": false
+  },
+  {
+   "id": "s03",
+   "start": 10.86,
+   "end": 15.04,
+   "line": "",
+   "scene": "s03",
+   "set": "CU Walt behind the counter",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -32
+   }
+  },
+  {
+   "id": "s04",
+   "start": 15.04,
+   "end": 16.74,
+   "line": "",
+   "scene": "s04",
+   "set": "Insert: coffee pours into a mug",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -22
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s05",
+   "start": 16.74,
+   "end": 19.48,
+   "line": "",
+   "scene": "s05",
+   "set": "Neon street full of robots",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -17
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s06",
+   "start": 19.48,
+   "end": 21.14,
+   "line": "",
+   "scene": "s06",
+   "set": "Bullet train blasts through Track 4",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "carpass",
+     "gain": -14
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s07",
+   "start": 21.14,
+   "end": 22.66,
+   "line": "",
+   "scene": "s07",
+   "set": "Robot teacher in a classroom",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -18
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s08",
+   "start": 22.66,
+   "end": 24.18,
+   "line": "",
+   "scene": "s08",
+   "set": "Robot doctor in a hospital corridor",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "blip",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s09",
+   "start": 24.18,
+   "end": 25.08,
+   "line": "",
+   "scene": "s09",
+   "set": "Robot playing guitar on stage",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -18
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s10",
+   "start": 25.08,
+   "end": 26.74,
+   "line": "",
+   "scene": "s10",
+   "set": "Robot chef in a kitchen",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "swish",
+     "gain": -18
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s11",
+   "start": 26.74,
+   "end": 30.14,
+   "line": "",
+   "scene": "s11",
+   "set": "Humans idle in the park, 8 billion counter",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "counter",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s12",
+   "start": 30.14,
+   "end": 32.82,
+   "line": "",
+   "scene": "s12",
+   "set": "Universal income notification over a bedroom",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "phonebuzz",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s13",
+   "start": 32.82,
+   "end": 36.38,
+   "line": "",
+   "scene": "s13",
+   "set": "A lone figure in the void",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "hum",
+     "gain": -24
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s14",
+   "start": 36.38,
+   "end": 39.78,
+   "line": "",
+   "scene": "s14",
+   "set": "Crane down Track 4 to the cart",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s15",
+   "start": 39.78,
+   "end": 43.14,
+   "line": "",
+   "scene": "s15",
+   "set": "Train blasts past without stopping; Walt keeps working",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "carpass",
+     "gain": -12
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s16",
+   "start": 43.14,
+   "end": 47.36,
+   "line": "",
+   "scene": "s16",
+   "set": "Tilt from the WALT'S COFFEE sign down to Walt",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s17",
+   "start": 47.36,
+   "end": 52.44,
+   "line": "",
+   "scene": "s17",
+   "set": "The BREW-O-MAT glows across the tracks",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "blip",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "city",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s18",
+   "start": 52.44,
+   "end": 57.3,
+   "line": "",
+   "scene": "s18",
+   "set": "Twelve people in line for Walt at 6 AM",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s19",
+   "start": 57.3,
+   "end": 59.42,
+   "line": "",
+   "scene": "s19",
+   "set": "The Department of Efficiency detects the last human job",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "hum",
+     "gain": -22
+    },
+    {
+     "at": 1.4,
+     "name": "glitch",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s20",
+   "start": 59.42,
+   "end": 61.1,
+   "line": "",
+   "scene": "s20",
+   "set": "M-7 powers on",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "powerup",
+     "gain": -16
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s21",
+   "start": 61.1,
+   "end": 63.89,
+   "line": "",
+   "scene": "s21",
+   "set": "M-7 hovers down the platform toward the cart",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "riser",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s22",
+   "start": 63.89,
+   "end": 69.98,
+   "line": "",
+   "scene": "s22",
+   "set": "M-7 scans the coffee: data callouts",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "blip",
+     "gain": -18
+    },
+    {
+     "at": 1.6,
+     "name": "blip",
+     "gain": -18
+    },
+    {
+     "at": 2.8,
+     "name": "blip",
+     "gain": -18
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s23",
+   "start": 69.98,
+   "end": 71.973,
+   "line": "",
+   "scene": "s23",
+   "set": "CU M-7, head tilt",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s24",
+   "start": 71.973,
+   "end": 75.68,
+   "line": "",
+   "scene": "s24",
+   "set": "Walt: Stay one week. Then you tell me.",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s25",
+   "start": 75.68,
+   "end": 78.86,
+   "line": "",
+   "scene": "s25",
+   "set": "Wide: M-7 parked beside the cart, watching",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s26",
+   "start": 78.86,
+   "end": 85.32,
+   "line": "",
+   "scene": "s26",
+   "set": "MONDAY: Mr. Bennett arrives",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -20
+    },
+    {
+     "at": 0.5,
+     "name": "footstep",
+     "gain": -22
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s27",
+   "start": 85.32,
+   "end": 87.64,
+   "line": "",
+   "scene": "s27",
+   "set": "Insert: two cinnamon cookies on the plate",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s28",
+   "start": 87.64,
+   "end": 89.9,
+   "line": "",
+   "scene": "s28",
+   "set": "CU Mr. Bennett, tears then a small smile",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "shimmer",
+     "gain": -26
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s29",
+   "start": 89.9,
+   "end": 95.1,
+   "line": "",
+   "scene": "s29",
+   "set": "TUESDAY: Arjun shuffles in",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s30",
+   "start": 95.1,
+   "end": 98.84,
+   "line": "",
+   "scene": "s30",
+   "set": "Walt hands Arjun a dish towel",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "swish",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s31",
+   "start": 98.84,
+   "end": 103.58,
+   "line": "",
+   "scene": "s31",
+   "set": "Arjun washing mugs, smiling",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s32",
+   "start": 103.58,
+   "end": 107.775,
+   "line": "",
+   "scene": "s32",
+   "set": "WEDNESDAY: Maya, nervous, math test",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s33",
+   "start": 107.775,
+   "end": 110.397,
+   "line": "",
+   "scene": "s33",
+   "set": "CU Maya: Extra marshmallows, Mr. Walt?",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s34",
+   "start": 110.397,
+   "end": 113.52,
+   "line": "",
+   "scene": "s34",
+   "set": "CU Walt winks: On test days? Always.",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.9,
+     "name": "ding",
+     "gain": -24
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s35",
+   "start": 113.52,
+   "end": 116.32,
+   "line": "",
+   "scene": "s35",
+   "set": "Night station: M-7 alone with its tablet",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s36",
+   "start": 116.32,
+   "end": 121.78,
+   "line": "",
+   "scene": "s36",
+   "set": "Report terminal: Inefficiency detected",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "tick",
+     "gain": -22
+    },
+    {
+     "at": 1.6,
+     "name": "tick",
+     "gain": -22
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s37",
+   "start": 121.78,
+   "end": 126.98,
+   "line": "",
+   "scene": "s37",
+   "set": "PATTERN UNKNOWN",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 1.3,
+     "name": "glitch",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s38",
+   "start": 126.98,
+   "end": 130.42,
+   "line": "",
+   "scene": "s38",
+   "set": "SUNDAY: M-7 arrives at dawn",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -20
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s39",
+   "start": 130.42,
+   "end": 132.76,
+   "line": "",
+   "scene": "s39",
+   "set": "The cart is shuttered",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "stinger",
+     "gain": -18
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s40",
+   "start": 132.76,
+   "end": 136.2,
+   "line": "",
+   "scene": "s40",
+   "set": "Hospital room at night, rain",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "heartbeat",
+     "gain": -22
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "rain",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s41",
+   "start": 136.2,
+   "end": 139.26,
+   "line": "",
+   "scene": "s41",
+   "set": "CU Walt resting",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s42",
+   "start": 139.26,
+   "end": 142.369,
+   "line": "",
+   "scene": "s42",
+   "set": "Wide: M-7 at the bedside",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s43",
+   "start": 142.369,
+   "end": 145.68,
+   "line": "",
+   "scene": "s43",
+   "set": "CU M-7: What do I write?",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s44",
+   "start": 145.68,
+   "end": 146.892,
+   "line": "",
+   "scene": "s44",
+   "set": "CU Walt smiles",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s45",
+   "start": 146.892,
+   "end": 154.283,
+   "line": "",
+   "scene": "s45",
+   "set": "Walt: open my cart tomorrow",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s46",
+   "start": 154.283,
+   "end": 157.168,
+   "line": "",
+   "scene": "s46",
+   "set": "CU M-7: I am not allowed to do a human job.",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s47",
+   "start": 157.168,
+   "end": 160.42,
+   "line": "",
+   "scene": "s47",
+   "set": "Walt: Then don't do it like a machine.",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s48",
+   "start": 160.42,
+   "end": 168.12,
+   "line": "",
+   "scene": "s48",
+   "set": "The heart monitor goes quiet; M-7 bows",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "heartbeat",
+     "gain": -24
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "rain",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s49",
+   "start": 168.12,
+   "end": 172.02,
+   "line": "",
+   "scene": "s49",
+   "set": "Dawn: the shutter rises",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 1.6,
+     "name": "whoosh",
+     "gain": -22
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s50",
+   "start": 172.02,
+   "end": 173.68,
+   "line": "",
+   "scene": "s50",
+   "set": "M-7 behind the counter with the coffee pot",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -28
+   }
+  },
+  {
+   "id": "s51",
+   "start": 173.68,
+   "end": 178.08,
+   "line": "",
+   "scene": "s51",
+   "set": "Insert pour, callouts checked green",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.8,
+     "name": "ding",
+     "gain": -22
+    },
+    {
+     "at": 2.0,
+     "name": "ding",
+     "gain": -22
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s52",
+   "start": 178.08,
+   "end": 181.92,
+   "line": "",
+   "scene": "s52",
+   "set": "Bennett gets cookies, Arjun gets a towel",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s53",
+   "start": 181.92,
+   "end": 187.2,
+   "line": "",
+   "scene": "s53",
+   "set": "Maya gets hot chocolate with a note",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 1.8,
+     "name": "shimmer",
+     "gain": -24
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s54",
+   "start": 187.2,
+   "end": 190.22,
+   "line": "",
+   "scene": "s54",
+   "set": "The handwritten note over Maya's tearful smile",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s55",
+   "start": 190.22,
+   "end": 195.147,
+   "line": "",
+   "scene": "s55",
+   "set": "Evening: M-7 alone on the bench",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -22
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "wind",
+    "gain": -30
+   }
+  },
+  {
+   "id": "s56",
+   "start": 195.147,
+   "end": 200.76,
+   "line": "",
+   "scene": "s56",
+   "set": "Final report: STATUS NOT CLOSED, HUD turns gold",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "tick",
+     "gain": -22
+    },
+    {
+     "at": 2.1,
+     "name": "shimmer",
+     "gain": -16
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s57",
+   "start": 200.76,
+   "end": 205.66,
+   "line": "",
+   "scene": "s57",
+   "set": "M-7 hangs HELP WANTED. Humans only.",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.8,
+     "name": "pop",
+     "gain": -20
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s58",
+   "start": 205.66,
+   "end": 212.0,
+   "line": "",
+   "scene": "s58",
+   "set": "Twelve years later: Maya runs the busiest cart",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "whoosh",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "amb": {
+    "name": "murmur",
+    "gain": -24
+   }
+  },
+  {
+   "id": "s59",
+   "start": 212.0,
+   "end": 215.88,
+   "line": "",
+   "scene": "s59",
+   "set": "CU adult Maya",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s60",
+   "start": 215.88,
+   "end": 219.7,
+   "line": "",
+   "scene": "s60",
+   "set": "Maya hands a kid extra marshmallows, winks",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s61",
+   "start": 219.7,
+   "end": 222.56,
+   "line": "",
+   "scene": "s61",
+   "set": "Crane up over the busy cart",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true
+  },
+  {
+   "id": "s62",
+   "start": 222.56,
+   "end": 226.72,
+   "line": "",
+   "scene": "s62",
+   "set": "CU the 1999 photo of Walt",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "shimmer",
+     "gain": -24
+    }
+   ],
+   "captions": true
+  },
+  {
+   "id": "s63",
+   "start": 226.72,
+   "end": 240.099,
+   "line": "",
+   "scene": "s63",
+   "set": "CTA over the golden platform",
+   "bars": "none",
+   "in": {
+    "type": "cut",
+    "dur": 0.2
+   },
+   "sfx": [],
+   "captions": true,
+   "amb": {
+    "name": "roomtone",
+    "gain": -30
+   }
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 240.099,
+   "mood": "calm",
+   "intensity": 0.4
+  }
+ ]
+}

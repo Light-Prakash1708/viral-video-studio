@@ -1,0 +1,192 @@
+{
+ "speakers": {
+  "NARRATOR": {
+   "preset": "desi-narrator",
+   "pitch": 0.0,
+   "speed": 1.0,
+   "lang": "en"
+  },
+  "RAVAN": {
+   "preset": "hindi-m",
+   "pitch": -1.0,
+   "speed": 0.95,
+   "lang": "hi"
+  },
+  "ASKER": {
+   "preset": "storyteller",
+   "pitch": 1.5,
+   "speed": 1.03,
+   "lang": "en"
+  }
+ },
+ "lines": [
+  {
+   "speaker": "RAVAN",
+   "text": "Every year, you burn me. Ten heads. Fireworks inside. Millions of you, cheering.",
+   "start": 0.15,
+   "end": 5.008
+  },
+  {
+   "speaker": "RAVAN",
+   "text": "But tell me... what if the arrow had missed?",
+   "start": 5.458,
+   "end": 8.216
+  },
+  {
+   "speaker": "ASKER",
+   "text": "Wait. Raavuhnuh... won?",
+   "start": 8.666,
+   "end": 10.452
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "In one universe, yes. And this is his Lanka. In the year 2026.",
+   "start": 10.902,
+   "end": 15.745
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Chapter one. The city of gold.",
+   "start": 16.195,
+   "end": 18.613
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "The Ramayan describes it as Swarna Lanka. A city of gold, built by Vishwakarma, the architect of the gods, on an island guarded by the ocean itself.",
+   "start": 19.063,
+   "end": 28.956
+  },
+  {
+   "speaker": "ASKER",
+   "text": "But wasn't Raavuhnuh just... the villain?",
+   "start": 29.406,
+   "end": 31.916
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Not just. In the stories, Raa-vuh-nuh was a scholar. A master of the veena. A devotee of Shiva so intense, legend says he tried to lift Mount Kailash. The Shiva Tandav Stotram, still chanted today, is credited to him.",
+   "start": 32.366,
+   "end": 47.048
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "So imagine that mind... winning.",
+   "start": 47.498,
+   "end": 49.914
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Chapter two. The empire.",
+   "start": 50.364,
+   "end": 53.457
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "By the year one thousand, Lanka controls every sea route between Africa and China. Spice, silk, gold. All of it pays a toll to one island.",
+   "start": 53.907,
+   "end": 62.847
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "And then, the Pushpak Vimaan. In the epic, a flying chariot that moves by thought. In this world, Lankan engineers spend two thousand years rebuilding it.",
+   "start": 63.297,
+   "end": 74.689
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "By 2026, Lanka has the busiest skyport on Earth. Silent golden aircraft rise from the palace like fireflies.",
+   "start": 75.139,
+   "end": 82.863
+  },
+  {
+   "speaker": "ASKER",
+   "text": "Okay, that part sounds amazing.",
+   "start": 83.313,
+   "end": 85.031
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "And here's a real fact. In our world, Sri Lanka's first satellite, launched in 2019, was named after Raa-vuh-nuh himself.",
+   "start": 85.481,
+   "end": 93.978
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Ten great towers stand around the palace. One for each of Raa-vuh-nuh's heads. Medicine. Music. Astronomy. War. Ten minds, ruling as one.",
+   "start": 94.428,
+   "end": 103.923
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Chapter three. The shadow.",
+   "start": 104.373,
+   "end": 105.965
+  },
+  {
+   "speaker": "ASKER",
+   "text": "So... where's the catch?",
+   "start": 106.415,
+   "end": 107.695
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "There is no Dussehra here. No festival where good defeats pride. Children grow up with a different story. The strong take what they want.",
+   "start": 108.145,
+   "end": 115.557
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "The ten towers watch everything. Disagree with the king, and you don't disappear. You're simply forgotten.",
+   "start": 116.007,
+   "end": 122.326
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "And somewhere in the archives, there is a story nobody is allowed to tell. Of a woman taken from a forest, who never got to go home.",
+   "start": 122.776,
+   "end": 131.423
+  },
+  {
+   "speaker": "ASKER",
+   "text": "So was he good, or bad?",
+   "start": 131.873,
+   "end": 133.464
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "That's the real question. Raa-vuh-nuh was brilliant. Powerful. Devoted. And it still wasn't enough. Even his own brother, Vibbeeshunnuh, warned him, and walked away.",
+   "start": 133.914,
+   "end": 142.756
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Maybe that's why the story needs him to lose. Not because he was weak. But because he was so strong, that only one flaw could bring him down.",
+   "start": 143.206,
+   "end": 151.124
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "Pride.",
+   "start": 151.574,
+   "end": 151.978
+  },
+  {
+   "speaker": "RAVAN",
+   "text": "So you burn me every year...",
+   "start": 152.428,
+   "end": 154.055
+  },
+  {
+   "speaker": "RAVAN",
+   "text": "...so that you never become me.",
+   "start": 154.505,
+   "end": 156.304
+  },
+  {
+   "speaker": "NARRATOR",
+   "text": "So tell me. If Raa-vuh-nuh had won, would you live in his golden Lanka? Comment yes, or no.",
+   "start": 156.754,
+   "end": 163.125
+  }
+ ]
+}

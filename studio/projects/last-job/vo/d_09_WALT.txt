@@ -1,0 +1,2 @@
+@voice WALT storyteller pitch=-3.5 speed=0.9
+WALT: Write that you didn't figure it out. And then, open my cart tomorrow. Six o'clock. Twelve cups.

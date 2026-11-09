@@ -1,0 +1,28 @@
+{
+ "title": "What If Time Was Money",
+ "aspect": "9:16",
+ "resolution": "1080p",
+ "fps": 24,
+ "style": "cinema",
+ "voiceover": "input/voiceover.wav",
+ "script": "input/script.txt",
+ "duration": 59.0,
+ "captions": true,
+ "bars": "scope",
+ "fadeIn": 0.5,
+ "fadeOut": 0.8,
+ "music": {
+  "enabled": true,
+  "gainDb": -14
+ },
+ "sfx": {
+  "enabled": true,
+  "gainDb": -6
+ },
+ "loudness": -14,
+ "captionStyle": {
+  "y": 1440,
+  "size": 84,
+  "max": 2
+ }
+}

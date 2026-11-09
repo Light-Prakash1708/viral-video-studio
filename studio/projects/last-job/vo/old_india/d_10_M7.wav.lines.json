@@ -1,0 +1,24 @@
+{
+ "speakers": {
+  "NARRATOR": {
+   "preset": "british",
+   "pitch": 0.0,
+   "speed": 1.0,
+   "lang": "en"
+  },
+  "M7": {
+   "preset": "british",
+   "pitch": -1.0,
+   "speed": 0.97,
+   "lang": "en"
+  }
+ },
+ "lines": [
+  {
+   "speaker": "M7",
+   "text": "I am not allowed to do a human job.",
+   "start": 0.15,
+   "end": 2.022
+  }
+ ]
+}
