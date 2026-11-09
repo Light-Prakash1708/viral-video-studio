@@ -172,3 +172,38 @@ registerShot('q15', { draw(g, t, info) {
   g.restore(); vignette(g, 0.5, '20,4,4');
   if (t > T0) { const n = Math.max(1, fallen); headline(g, [`${n} BANK${n > 1 ? 'S' : ''}`, 'COLLAPSE'], W / 2, H * 0.08, 110, T0, t, { col: { COLLAPSE: '#ff5a4a' } }); } else headline(g, ['THE CROWDS TURN.'], W / 2, H * 0.09, 96, tu - 0.15, t, { fill: '#ffffff' });
 } });
+
+// ---------------------------------------------------------------- q07 HERE'S THE CRAZY PART: spotlight lean-in, cash slam, queue of
+// paid investors with PAID stamps popping, ON TIME stamp + watch
+function stamp(g, str, x, y, a, col, rot = -0.15, size = 70) { if (a <= 0) return; const k = 1 + 1.4 * (1 - ease.out(clamp(a))); g.save(); g.translate(x, y); g.rotate(rot); g.scale(k, k); g.globalAlpha = clamp(a * 2); g.font = `900 ${size}px "Playfair Display"`; g.textAlign = 'center'; g.textBaseline = 'middle'; const w = g.measureText(str).width + 50; g.lineWidth = 8; g.strokeStyle = col; g.strokeRect(-w / 2, -size * 0.65, w, size * 1.3); g.fillStyle = col; g.fillText(str, 0, 4); g.restore(); }
+registerShot('q07', { draw(g, t, info) {
+  const cr = atc(info, t, 'crazy', 0.4), pa = atc(info, t, 'pays', 1.2), ev = atc(info, t, 'every', 1.9), mo = atc(info, t, 'money', 3.0), on = atc(info, t, 'time', info.dur - 0.5);
+  const pull = ease.inOut(prog(t, ev - 0.3, ev + 0.5)), z = lerp(lerp(1.0, 1.12, ease.out(prog(t, 0, pa))), 0.86, pull), cx = lerp(W * 0.55, W * 0.42, pull);
+  let sh = 0; if (t > pa && t < pa + 0.3) sh = (1 - (t - pa) / 0.3) * 18; g.save(); g.translate(Math.sin(t * 80) * sh, Math.cos(t * 60) * sh); cam(g, z, cx, H * 0.52);
+  // office: wood wall, hanging lamp, PAYOUTS board, floor
+  g.fillStyle = '#2a1810'; g.fillRect(-W, -H, W * 3, H * 3); woodPanel(g, -W * 0.5, 0, W * 2, H * 0.62, '#6a3e22', 5); g.fillStyle = grad(g, 0, H * 0.62, 0, H * 1.2, [[0, '#4a2a18'], [1, '#1a0e08']]); g.fillRect(-W * 0.5, H * 0.62, W * 2, H);
+  
+  // spotlight on Ponzi (dims the rest until "pays")
+  const spot = 1 - prog(t, pa, pa + 0.4); glow(g, W * 0.68, H * 0.5, 700, 'rgba(255,220,150,.5)', 0.8);
+  // Ponzi behind the counter
+  const P = keys(t, [[0, { expr: 'smug', legs: 'none', armL: [0.1, 0.12], armR: [0.1, 0.12], lean: 0 }], [cr - 0.1, { expr: 'charming', lean: -0.12, armR: [1.2, -1.4], handR: 'point' }, 0.3], [pa - 0.25, { expr: 'determined', lean: 0, armL: [2.4, 0.2], armR: [2.4, 0.2], handL: 'grip', handR: 'grip' }, 0.15], [pa, { expr: 'laughing', armL: [1.5, -0.3], armR: [1.5, -0.3], handL: 'open', handR: 'open' }, 0.12], [ev, { expr: 'proud', armL: [0.3, 0.2], armR: [2.0, 0.4], handR: 'wave' }, 0.3]]);
+  litChar(g, W * 0.7, H * 0.66, 1.2, B.ponzi, P, { light: -1 });
+  // counter
+  rect(g, W * 0.46, H * 0.63, W * 0.46, H * 0.21, grad(g, 0, H * 0.63, 0, H * 0.84, [[0, '#8a5a2e'], [1, '#5a3418']]), 7); rect(g, W * 0.44, H * 0.615, W * 0.5, 34, '#a8723a', 6);
+  // cash stack slams on the counter at "pays" + bills burst
+  const sl = prog(t, pa - 0.12, pa); if (sl > 0) { const y = lerp(H * 0.3, H * 0.61, ease.in(sl)); for (let k = 0; k < 6; k++) note(g, W * 0.52 + (k % 2) * 8, y - k * 16, 0.75, 0.02 * (k % 3), '100'); }
+  if (t > pa) { const R = rng(3); for (let i = 0; i < 14; i++) { const u = clamp((t - pa) / 0.9), a = -Math.PI / 2 + (R() - 0.5) * 2.6, d = 500 * ease.out(u) * (0.4 + R() * 0.6); g.save(); g.globalAlpha = 1 - u; note(g, W * 0.52 + Math.cos(a) * d, H * 0.58 + Math.sin(a) * d + u * u * 300, 0.5, u * 6 + i, '100'); g.restore(); } }
+  // first investor at the counter: worried -> jaw drop -> cheering with the cash
+  const I = keys(t, [[0, { expr: 'worried', legs: 'stand', armL: [0.1, -1.2], armR: [0.1, -1.2] }], [pa, { expr: 'shocked', armL: [0.6, -0.4], armR: [0.6, -0.4], handL: 'open', handR: 'open' }, 0.15], [pa + 0.45, { expr: 'laughing', armL: [2.6, 0.3], armR: [2.6, 0.3], handL: 'grip', handR: 'open', bob: -0.03 }, 0.25]]);
+  litChar(g, W * 0.3, H * 0.82, 1.15, B.common, I, { light: 1 }); if (t > pa + 0.45) { const hp = [W * 0.3 - 150, H * 0.42]; note(g, hp[0], hp[1] - Math.abs(Math.sin(t * 6)) * 12, 0.6, -0.4, '150'); }
+  // the queue revealed on the pull-back: each early investor gets a PAID stamp in turn
+  const Q = [[B.rich, W * 0.05], [B.clerk, -W * 0.18], [B.stranger, -W * 0.4]]; Q.forEach(([c, x], i) => { const ti = ev + 0.15 + i * 0.32, got = t > ti; litChar(g, x, H * 0.82, 1.05, c, { expr: got ? 'laughing' : 'curious', legs: 'stand', armL: [0.1, 0.12], armR: got ? [2.5, 0.3] : [0.1, 0.12], handR: got ? 'grip' : 'relaxed', t, bob: got ? -Math.abs(Math.sin(t * 6 + i)) * 0.03 : 0 }, { light: 1 }); if (got) note(g, x + 135, H * 0.43, 0.55, 0.4, '150'); stamp(g, 'PAID', x, H * 0.33, prog(t, ti, ti + 0.18), '#2a9a4a', -0.15 + i * 0.1, 60); });
+  stamp(g, 'PAID', W * 0.3, H * 0.33, prog(t, pa + 0.2, pa + 0.38), '#2a9a4a', -0.12, 60);
+  g.restore();
+  if (spot > 0) { g.save(); g.globalAlpha = 0.55 * spot; const v = g.createRadialGradient(W * 0.62, H * 0.5, H * 0.15, W * 0.62, H * 0.5, H * 0.6); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,1)'); g.fillStyle = v; g.fillRect(0, 0, W, H); g.restore(); }
+  vignette(g, 0.35);
+  // watch + ON TIME
+  const wa = ease.outBack(prog(t, on - 0.35, on - 0.05)); if (wa > 0) { g.save(); g.translate(W * 0.8, H * 0.24); g.scale(wa, wa); g.beginPath(); g.arc(0, 0, 110, 0, TAU); g.fillStyle = grad(g, -110, -110, 110, 110, [[0, '#fff0b0'], [1, '#c8962e']]); g.fill(); ink(g, 8); g.beginPath(); g.arc(0, 0, 88, 0, TAU); g.fillStyle = '#fbf6e6'; g.fill(); ink(g, 4); for (let k = 0; k < 12; k++) { const a = k / 12 * TAU; g.beginPath(); g.moveTo(Math.cos(a) * 72, Math.sin(a) * 72); g.lineTo(Math.cos(a) * 84, Math.sin(a) * 84); ink(g, 4); } g.rotate(-Math.PI / 2 + (t - on) * 8); g.beginPath(); g.moveTo(0, 0); g.lineTo(66, 0); ink(g, 6); g.restore(); }
+  stamp(g, 'ON TIME', W * 0.4, H * 0.24, prog(t, on, on + 0.2), '#c8202a', -0.12, 84);
+  const h1 = t < pa - 0.1; if (h1) headline(g, ["HERE'S THE", 'CRAZY PART'], W / 2, H * 0.08, 104, 0.05, t, { col: { 'CRAZY PART': '#ffd23a' } }); else headline(g, ['HE PAYS.'], W / 2, H * 0.08, 124, pa - 0.1, t, { fill: '#8ae07a' });
+} });
