@@ -76,6 +76,7 @@ for para in re.split(r'\n\s*\n', raw):
         # group short sentences of the same speaker so the model keeps a natural flow (max ~220 chars per call)
         buf = ''
         for s in sents:
+            if s.startswith('{') and buf: items.append((buf, 0.2, who)); buf = ''
             if len(buf) + len(s) > 220 and buf: items.append((buf, 0.2, who)); buf = s
             else: buf = (buf + ' ' + s).strip()
         if buf: items.append((buf, 0.25 if who != 'NARRATOR' else 0.2, who))
@@ -126,7 +127,14 @@ def tighten(w, cap=0.22):
 for k, (text, gap, who) in enumerate(items):
     if text and (a.tight or VOICES.get(SPK[who]['preset'], P).get('tight')): gap = min(gap, VOICES.get(SPK[who]['preset'], P).get('paragraphGap', 0.14))
     if text:
-        sp = SPK[who]; pr = VOICES.get(sp['preset'], P)
+        sp = SPK[who]; pr = dict(VOICES.get(sp['preset'], P))
+        mo = re.match(r'^\{([^}]*)\}\s*', text)  # per-line direction: {ex=0.9 cfg=0.3 temp=0.8 gap=0.6}
+        if mo:
+            ov = dict(re.findall(r'(\w+)=([\d.]+)', mo.group(1))); text = text[mo.end():]
+            if 'ex' in ov: pr['exaggeration'] = float(ov['ex'])
+            if 'cfg' in ov: pr['cfg'] = float(ov['cfg'])
+            if 'temp' in ov: pr['temperature'] = float(ov['temp'])
+            if 'gap' in ov: gap = float(ov['gap'])
         best, bs = None, -1
         # run-on guard: Chatterbox sometimes keeps babbling after short lines. Expected length ~ 14 chars/s
         # (Devanagari ~ 11); a take longer than 1.7x + 1 s is re-rolled (up to 4 tries), then hard-trimmed.

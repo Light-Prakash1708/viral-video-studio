@@ -15,3 +15,15 @@ Reference grammar (learn, never copy characters): Toon-style character libraries
 - Pad world fills beyond the frame (zoom-outs and shakes must never show black).
 - A lying character: rotate −90° about the feet and offset the origin by the body length so the head lands on the pillow.
 - Use an impact reaction card (`impactBg` + giant face + one word) at the turn of every story beat; 0.5–0.7 s.
+
+## Text-safe layout (v4 rule, from user feedback "text covers the characters")
+Three bands on every 9:16 frame: **top 0–0.2 H** = pop words, chips, step headers; **middle 0.2–0.8 H** = characters + action; **bottom 0.8–0.9 H** = captions (`captionStyle.y` ≈ 1600). No character pixel may enter the caption band: seat characters behind desks/benches/dashboards (`legs: 'none'`) or end close-ups at the shoulders. Labels pin to parts in empty background, never on a face.
+
+## Story beats that must be SHOWN, not implied
+- A crash "into a ditch": draw a real trench (`ditchBack` → car → `ditchFront`), nose-dive tilt ~0.55 rad, rear wheels still spinning, dirt chunks + steam.
+- "Every carmaker laughed": a montage of distinct offices (fictional company names), pitch cuts, then stacked close-up panels laughing together, then a door slam with him outside.
+- "How it works": numbered steps in the top band (1 sensor spark → 2 pellets ignite → 3 nitrogen gas → 4 bag fills in 0.03 s → 5 faster than a blink), side cutaway with arrows and pinned labels.
+- A sketch: the page must be the hero (≥ 45 % of the frame, nothing on it but the drawing); the pencil follows the stroke being drawn.
+
+## Sound
+Hero SFX from ElevenLabs (`eleven_text_to_sound_v2`, 50 credits each, one clear sound per prompt) saved to `audio/sfxlib/<name>/el_<name>.wav`: screech, ditchcrash, officelaugh, pencil, airbagpop, crashtest, ballmagnet, torpedo, nightroom, ignite, toycrash. Narration: `voice.py` per-line direction `{ex=0.9 cfg=0.3 gap=0.4}` at the start of a line, `--takes 3`, no post time-stretch (it makes the voice robotic).
