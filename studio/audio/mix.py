@@ -59,7 +59,7 @@ def main():
             mus = MUSIC.render_score(plan, total, mcfg.get("seed", 1), mcfg.get("key")); write_wav(path, mus)
         mus = as_stereo(mus)[:n]; mus = np.concatenate([mus, np.zeros((n - len(mus), 2), np.float32)])
         mus *= db(v_rms + mcfg.get("gainDb", -17) - rms_db(mus))
-        mus *= db(-9 * env)[:, None]
+        mus *= db(mcfg.get("duckDb", -9) * env)[:, None]
         mix += mus
     # ---- sfx + ambience
     scfg = cfg.get("sfx", {}) or {}
@@ -81,7 +81,7 @@ def main():
             if re.search(r"\.(wav|mp3|ogg|flac|m4a)$", nm, re.I): snd = load_any(os.path.join(P, nm))
             else: snd = SFX.make(nm, dur=c.get("dur"), seed=c.get("seed"), pitch=c.get("pitch"))
             place(hits, snd, secs(c["t"]), db(c.get("gain", -8)))
-        bed *= db(-5 * env)[:, None]
+        bed *= db(-5 * env)[:, None]; hits *= db(scfg.get("duckDb", 0) * env)[:, None]   # optional: keep hits under the narrator
         g = db(scfg.get("gainDb", -6) + (v_rms + 18))   # SFX levels are relative to the voice level
         mix += (hits + bed) * g
         print(f"sfx: {len(cues)} cue(s), ambience on {sum(1 for s in story['shots'] if s.get('amb'))} shot(s)")
