@@ -1,0 +1,21 @@
+@voice PONZI british pitch=+1 speed=1.0
+{ex=0.7 gap=0.15} In 1920, one man promised to make you rich in forty-five days.
+{ex=0.85 gap=0.5} And for eight months... he actually did.
+{ex=0.6 gap=0.1} He stepped off the boat in Boston with two dollars and fifty cents.
+{ex=0.75 gap=0.1} Then he found a loophole. A postal coupon. Buy it cheap in Italy, trade it for stamps worth more in America.
+{ex=0.8 gap=0.3} Free money.
+{ex=0.65 gap=0.15} So he opened a company, and made one promise.
+PONZI: {ex=0.95 gap=0.4} Fifty percent profit... in forty-five days!
+{ex=0.7 gap=0.1} His first investors got paid. Exactly on time.
+{ex=0.8 gap=0.1} They told their friends. Their friends told everyone.
+{ex=0.85 gap=0.1} Soon, lines wrapped around the block. He was taking in a million dollars a week, stuffing cash into closets, drawers, even wastebaskets.
+{ex=0.8 gap=0.4} He bought a mansion. Then he bought a bank.
+{ex=0.6 gap=0.1} But one reporter did the math.
+{ex=0.75 gap=0.1} To pay everyone, he'd need one hundred and sixty million coupons.
+{ex=0.9 gap=0.5} There were only about twenty-seven thousand in the entire world.
+{ex=0.8 gap=0.4} There was no loophole. He was paying old investors... with new investors' money.
+{ex=0.9 gap=0.1} The headlines hit. The crowds turned. Banks collapsed.
+{ex=0.7 gap=0.5} Forty thousand people lost twenty million dollars.
+{ex=0.5 gap=0.6} He died broke, in a charity hospital in Brazil.
+{ex=0.6 gap=0.1} But his name never died.
+{ex=0.75 gap=0.3} Because every scam that pays you with someone else's money... is still called a Ponzi scheme.
