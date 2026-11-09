@@ -1,0 +1,2 @@
+{"title": "The Rock That Invented the Airbag", "aspect": "9:16", "resolution": "1080p", "fps": 24, "style": "flat", "voiceover": "input/voiceover.wav", "script": "input/script.txt", "duration": 63.383854, "captions": true, "bars": "none", "fadeIn": 0.1, "fadeOut": 0.5,
+ "music": {"enabled": true, "gainDb": -9, "file": "input/music.wav"}, "sfx": {"enabled": true, "gainDb": -7}, "loudness": -14, "captionStyle": {"y": 1600, "size": 92, "max": 1}}

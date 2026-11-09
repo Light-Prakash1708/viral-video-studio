@@ -1,0 +1,96 @@
+{
+ "key": "E",
+ "bpm": 96,
+ "seed": 21,
+ "sections": [
+  {
+   "start": 0,
+   "end": 4.260000000000001,
+   "mood": "warm",
+   "energy": 0.45
+  },
+  {
+   "start": 4.260000000000001,
+   "end": 12.620000000000001,
+   "mood": "chase",
+   "energy": 0.85
+  },
+  {
+   "start": 12.620000000000001,
+   "end": 16.779999999999998,
+   "mood": "sad",
+   "energy": 0.35
+  },
+  {
+   "start": 16.779999999999998,
+   "end": 29.2,
+   "mood": "curious",
+   "energy": 0.6
+  },
+  {
+   "start": 29.2,
+   "end": 39.76,
+   "mood": "tension",
+   "energy": 0.6
+  },
+  {
+   "start": 39.76,
+   "end": 54.92,
+   "mood": "wonder",
+   "energy": 0.75
+  },
+  {
+   "start": 54.92,
+   "end": 59.96,
+   "mood": "sad",
+   "energy": 0.35
+  },
+  {
+   "start": 59.96,
+   "end": 63.383854,
+   "mood": "triumph",
+   "energy": 0.8
+  }
+ ],
+ "events": [
+  {
+   "t": 6.16,
+   "type": "drop",
+   "dur": 0.6
+  },
+  {
+   "t": 6.260000000000001,
+   "type": "hit"
+  },
+  {
+   "t": 27.499999999999996,
+   "type": "stinger"
+  },
+  {
+   "t": 35.06,
+   "type": "stinger"
+  },
+  {
+   "t": 44.16,
+   "type": "hit"
+  },
+  {
+   "t": 50.6,
+   "type": "riser",
+   "dur": 0.4
+  },
+  {
+   "t": 51.0,
+   "type": "boom"
+  },
+  {
+   "t": 59.660000000000004,
+   "type": "drop",
+   "dur": 0.3
+  },
+  {
+   "t": 60.86,
+   "type": "hit"
+  }
+ ]
+}

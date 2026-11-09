@@ -1,0 +1,21 @@
+{ex=0.6 gap=0.12} He was driving his wife and daughter home...
+{ex=0.85 gap=0.35} when a huge rock appeared in the middle of the road!
+{ex=0.95 cfg=0.25 gap=0.1} He slams the brakes, yanks the wheel, and the car plunges nose first into a ditch!
+{ex=0.8 gap=0.1} Without thinking, he throws his arm across his little girl.
+{ex=0.55 gap=0.45} So does his wife.
+{ex=0.6 gap=0.3} Everyone's okay.
+{ex=0.5 gap=0.2} But that night... he can't sleep.
+{ex=0.75 gap=0.45} Because what if their arms hadn't been fast enough?
+{ex=0.65 gap=0.1} He'd spent years in the Navy fixing torpedoes, and he remembers how they were driven by a blast of compressed air.
+{ex=0.85 gap=0.35} So he sketches a bag, folded inside the steering wheel, that bursts open the moment you crash!
+{ex=0.75 gap=0.12} He patents it in 1953 and takes it to every carmaker in America.
+{ex=0.9 gap=0.4} They laugh him out of the room.
+{ex=0.7 gap=0.1} A crash is over in a tenth of a second. His air tank is way too slow.
+{ex=0.8 gap=0.4} And nobody can build a sensor that knows a crash... from a pothole.
+{ex=0.7 gap=0.1} Then an engineer named Allen Breed drops a tiny steel ball into a tube, held back by a magnet.
+{ex=0.9 gap=0.35} Hit a wall, and the ball flies forward and closes the circuit!
+{ex=0.75 gap=0.1} Swap the air for a pellet that burns into a cloud of nitrogen, and the bag fills in thirty milliseconds.
+{ex=0.95 gap=0.5} Faster than you can blink!
+{ex=0.5 gap=0.15} But by the time cars finally got them, his patent had expired...
+{ex=0.45 gap=0.7} and he never made a cent.
+{ex=0.6 gap=0.2} And that's how the airbag was invented.
