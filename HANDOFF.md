@@ -14,6 +14,8 @@ they are regenerated).
    bash ~/.claude/skills/viral-video-studio/tools/setup_kit.sh ~/growkaz-stickman-studio
    WITH_SAO=1 bash ~/.claude/skills/viral-video-studio/tools/setup_kit.sh ~/growkaz-stickman-studio   # AI music/SFX (needs HF token)
    ```
+   # Shorts front door: /youtube-shorts-studio picks ONE engine (viral-video-studio or lemo-opuscar) per video.
+   # lemo-opuscar downloads its 66-style library on first use: sh ~/.claude/skills/lemo-opuscar/scripts/setup.sh && sh ~/.claude/skills/lemo-opuscar/scripts/setup.sh deps   (needs ffmpeg 7+)
 3. Hugging Face token (for Stable Audio Open): add a network secret in the new environment's settings:
    host `huggingface.co`, header `Authorization`, value `Bearer hf_...` (licence already accepted on account Prakash1604).
 4. Save the setup as the environment's setup script so later sessions start ready.
