@@ -2,6 +2,7 @@
 // shadow side), stick limbs, adults ~3.5 heads tall, no blush. Same pose API as flat.js drawChar so cards can swap renderers.
 //   drawBean(g, x, feetY, s, cast, {expr, armL:[a1,a2], armR, legs:'stand'|'walk'|'none', step, tilt, lean, look, lookY, blink, t})
 import { clamp, lerp, rng } from '/engine/core.js';
+import { handOnArm } from './hands.js';
 export const PLUM = '#241726';
 const TAU = Math.PI * 2;
 const ell = (g, x, y, rx, ry, r = 0) => { g.beginPath(); g.ellipse(x, y, Math.abs(rx), Math.abs(ry), r, 0, TAU); };
@@ -86,7 +87,7 @@ export function drawBean(g, x, y, s, o, p = {}) {
     const L = [[-B * 0.18, hipY], [-B * 0.2 + Math.sin(sw) * B * 0.8, -B * 0.8], [-B * 0.22 + Math.sin(sw) * B * 1.5, -B * 0.05]], Rr = [[B * 0.18, hipY], [B * 0.2 - Math.sin(sw) * B * 0.8, -B * 0.8], [B * 0.22 - Math.sin(sw) * B * 1.5, -B * 0.05]];
     for (const P of [L, Rr]) { limb(g, P, B * 0.2, pants, ink); const f = P[2], d = Math.sign(f[0]) || 1; ell(g, f[0] + d * B * 0.1, f[1], B * 0.22, B * 0.1); inked(g, o.shoes || '#2a1e1a', ink); } }
   const aL = p.armL || [0.1, 0.12], aR = p.armR || [0.1, 0.12], AL = arm2(-B * 0.42, shY + B * 0.12, -1, aL[0], aL[1], B * 0.82, B * 0.78), AR = arm2(B * 0.42, shY + B * 0.12, 1, aR[0], aR[1], B * 0.82, B * 0.78);
-  const arm = (A) => { limb(g, A, B * 0.16, o.coat || o.longSleeve ? top : skin, ink); if (!o.coat && !o.longSleeve) limb(g, [A[0], [lerp(A[0][0], A[1][0], 0.6), lerp(A[0][1], A[1][1], 0.6)]], B * 0.22, top, ink); ell(g, A[2][0], A[2][1], B * 0.13, B * 0.13); inked(g, o.gloves || skin, ink * 0.8); };
+  const arm = (A) => { limb(g, A, B * 0.16, o.coat || o.longSleeve ? top : skin, ink); if (!o.coat && !o.longSleeve) limb(g, [A[0], [lerp(A[0][0], A[1][0], 0.6), lerp(A[0][1], A[1][1], 0.6)]], B * 0.22, top, ink); handOnArm(g, A[1], A[2], B * 0.5, (A === AL ? p.handL : p.handR) || ((A === AL ? aL : aR)[0] > 1.2 ? 'open' : 'relaxed'), { skin: o.gloves || skin, ink: ink * 0.8, side: A === AL ? 1 : -1 }); };
   if (p.armsBehind) { arm(AL); arm(AR); }
   // torso: tapered, coat lapels / vest / tie
   g.beginPath(); g.moveTo(-B * 0.46, shY + B * 0.04); g.quadraticCurveTo(-B * 0.5, shY - B * 0.12, -B * 0.24, shY - B * 0.14); g.lineTo(B * 0.24, shY - B * 0.14); g.quadraticCurveTo(B * 0.5, shY - B * 0.12, B * 0.46, shY + B * 0.04); g.lineTo(B * 0.38, hipY + B * 0.08); g.lineTo(-B * 0.38, hipY + B * 0.08); g.closePath(); inked(g, top, ink);
