@@ -207,3 +207,54 @@ registerShot('q07', { draw(g, t, info) {
   stamp(g, 'ON TIME', W * 0.4, H * 0.24, prog(t, on, on + 0.2), '#c8202a', -0.12, 84);
   const h1 = t < pa - 0.1; if (h1) headline(g, ["HERE'S THE", 'CRAZY PART'], W / 2, H * 0.08, 104, 0.05, t, { col: { 'CRAZY PART': '#ffd23a' } }); else headline(g, ['HE PAYS.'], W / 2, H * 0.08, 124, pa - 0.1, t, { fill: '#8ae07a' });
 } });
+
+// ---------------------------------------------------------------- q03 BOSTON, 1920: painted brick street with parallax (trolley, Model T,
+// awnings, gas lamps, steam), Ponzi strolls full-body; on "broke" he stops and turns out empty pockets; a paper flutters in on "finds"
+function rowhouses(g, ox, base, seed) { const R = rng(seed); const cols = ['#9a4a34', '#7a3a2a', '#b0624a', '#6a3a30', '#8a5040']; const bw = 300; const start = Math.floor(ox / bw) - 1;
+  for (let k = start; k < start + 6; k++) { const R2 = rng(seed * 100 + k + 1000), x = k * bw - ox, h = 520 + R2() * 260, c = cols[Math.abs(k) % cols.length], top = base - h;
+    rect(g, x, top, bw, h, c, 5); g.save(); g.beginPath(); g.rect(x, top, bw, h); g.clip(); g.strokeStyle = 'rgba(40,14,8,.22)'; g.lineWidth = 2; for (let yy = top; yy < base; yy += 16) { g.beginPath(); g.moveTo(x, yy); g.lineTo(x + bw, yy); g.stroke(); } g.restore();
+    rect(g, x - 8, top - 20, bw + 16, 26, '#e8dcc4', 4);
+    for (let r = 0; r < 3; r++) for (let i = 0; i < 2; i++) { const wx = x + 50 + i * 130, wy = top + 50 + r * 120; if (wy > base - 260) continue; rect(g, wx, wy, 70, 90, R2() > 0.4 ? '#ffe2a0' : '#3a4a5a', 4); rect(g, wx - 8, wy + 88, 86, 12, '#e8dcc4', 3); }
+    // shopfront with striped awning
+    const aw = ['#c8302a', '#2a6a4a', '#2a4a8a', '#c88a2a'][Math.abs(k) % 4]; rect(g, x + 20, base - 220, bw - 40, 200, '#3a2a20', 4); rect(g, x + 40, base - 200, bw - 80, 130, '#f0d8a0', 4);
+    g.beginPath(); g.moveTo(x + 10, base - 230); g.lineTo(x + bw - 10, base - 230); g.lineTo(x + bw + 10, base - 170); g.lineTo(x - 10, base - 170); g.closePath(); g.fillStyle = aw; g.fill(); ink(g, 4); g.save(); g.clip(); g.fillStyle = 'rgba(255,255,255,.75)'; for (let s2 = x - 20; s2 < x + bw + 20; s2 += 40) g.fillRect(s2, base - 240, 20, 80); g.restore(); g.beginPath(); g.moveTo(x + 10, base - 230); g.lineTo(x + bw - 10, base - 230); g.lineTo(x + bw + 10, base - 170); g.lineTo(x - 10, base - 170); g.closePath(); ink(g, 4);
+    const nm = ['BAKERY', 'BARBER', 'TAILOR', 'GROCER', 'DINER', 'HATS'][Math.abs(k) % 6]; rect(g, x + 60, base - 290, bw - 120, 50, '#1e1a14', 3); text(g, nm, x + bw / 2, base - 264, { size: 30, font: 'Playfair Display', weight: 900, color: '#ffd890' }); } }
+function trolley(g, x, y) { rect(g, x - 260, y - 190, 520, 160, '#2a6a4a', 6); rect(g, x - 260, y - 40, 520, 30, '#c8a040', 5); for (let i = 0; i < 6; i++) rect(g, x - 230 + i * 80, y - 170, 56, 70, '#ffe8b0', 3); g.beginPath(); g.moveTo(x - 200, y - 190); g.quadraticCurveTo(x, y - 230, x + 200, y - 190); g.fillStyle = '#1e4a34'; g.fill(); ink(g, 5); g.beginPath(); g.moveTo(x, y - 215); g.lineTo(x + 120, y - 330); ink(g, 4); text(g, 'BOSTON ELEVATED', x, y - 26, { size: 22, font: 'Playfair Display', weight: 900, color: '#2a1a08' }); for (const d of [-170, 170]) { g.beginPath(); g.arc(x + d, y - 6, 26, 0, TAU); g.fillStyle = '#1a1a1a'; g.fill(); ink(g, 4); } }
+function modelT(g, x, y, t, col = '#141418', dir = 1, sc = 1) { const b = Math.sin(t * 30) * 3; g.save(); g.translate(x, y + b); g.scale(dir * sc, sc); rect(g, -170, -150, 200, 100, col, 5); rect(g, -150, -135, 70, 60, '#a8c8d8', 3); rect(g, -170, -60, 340, 50, col, 5); rect(g, 30, -100, 140, 50, col, 5); g.beginPath(); g.arc(160, -70, 14, 0, TAU); g.fillStyle = '#fff2b0'; g.fill(); ink(g, 3); for (const d of [-110, 110]) { g.save(); g.translate(d, -6); g.rotate(t * 18); g.beginPath(); g.arc(0, 0, 44, 0, TAU); g.fillStyle = '#1a1a1a'; g.fill(); ink(g, 5); for (let k = 0; k < 6; k++) { g.beginPath(); g.moveTo(0, 0); g.lineTo(Math.cos(k) * 34, Math.sin(k) * 34); g.strokeStyle = '#c8c0a8'; g.lineWidth = 4; g.stroke(); } g.restore(); } g.restore(); }
+registerShot('q03', { draw(g, t, info) {
+  const bo = atc(info, t, 'boston', 0.08), ch = atc(info, t, 'charles', 1.56), br = atc(info, t, 'broke', 2.36), fi = atc(info, t, 'finds', 3.42);
+  const walking = t < br - 0.1, walkT = Math.min(t, br - 0.1), ox = walkT * 260 + Math.max(0, t - br + 0.1) * 20; // camera tracks him, eases to a stop
+  // sky: hazy warm morning with chimney steam
+  sky(g, [[0, '#7a9ab8'], [0.55, '#e8c8a0'], [1, '#f8e0b8']], { sun: [W * 0.8, H * 0.18, 380], clouds: 6, cloudCol: '#fff4e4', t, seed: 51, h: H * 0.6 });
+  g.save(); g.translate(-ox * 0.15, 0); skyline(g, H * 0.5, '#a89aa0', { seed: 23, scale: 1.0 }); dome(g, W * 0.75, H * 0.5, 0.9, '#9a8c90', '#d8b050'); g.restore();
+  // elevated trolley wire + trolley gliding the other way
+  g.strokeStyle = '#2a2420'; g.lineWidth = 3; g.beginPath(); g.moveTo(0, H * 0.33); g.lineTo(W, H * 0.33); g.stroke();
+  g.save(); g.translate(-ox * 0.4, 0); rowhouses(g, ox * 0.4 - ox * 0.4, H * 0.56, 3); g.restore();
+  // near row: big brick facades scroll at walking speed
+  rowhouses(g, ox, H * 0.6, 7);
+  // road behind the sidewalk: cobbles + tram rails, traffic both ways
+  g.fillStyle = grad(g, 0, H * 0.6, 0, H * 0.72, [[0, '#5a4c44'], [1, '#6e5e52']]); g.fillRect(0, H * 0.6, W, H * 0.12); g.strokeStyle = '#2a2420'; g.lineWidth = 4; for (const ry of [H * 0.655, H * 0.67]) { g.beginPath(); g.moveTo(0, ry); g.lineTo(W, ry); g.stroke(); }
+  for (const [t0, d, col, dir, y, sc] of [[-0.6, 1.8, '#5a1a1a', -1, H * 0.655, 0.5], [0.6, 1.6, '#1a3a5a', 1, H * 0.71, 0.62], [1.2, 1.8, '#2a4a2a', -1, H * 0.655, 0.5], [-0.2, 1.5, '#3a2a1a', 1, H * 0.71, 0.62], [2.0, 1.6, '#6a5a1a', -1, H * 0.655, 0.5], [2.5, 1.5, '#141418', 1, H * 0.71, 0.62]]) { const u = (t - t0) / d; if (u > 0 && u < 1) modelT(g, dir > 0 ? lerp(-300, W + 300, u) : lerp(W + 300, -300, u), y, t + t0, col, dir, sc); }
+  // sidewalk + cobbles
+  g.fillStyle = grad(g, 0, H * 0.72, 0, H * 0.8, [[0, '#c8b8a0'], [1, '#a8987e']]); g.fillRect(0, H * 0.72, W, H * 0.08); g.fillStyle = '#8a7a66'; g.fillRect(0, H * 0.72, W, 8); g.fillStyle = grad(g, 0, H * 0.8, 0, H, [[0, '#6a5a50'], [1, '#3a2e28']]); g.fillRect(0, H * 0.8, W, H);
+  g.strokeStyle = 'rgba(20,14,10,.35)'; g.lineWidth = 2; for (let r = 0; r < 10; r++) { const yy = H * 0.8 + r * 26; g.beginPath(); g.moveTo(0, yy); g.lineTo(W, yy); g.stroke(); for (let xx = -((ox * 1.3) % 60) + (r % 2) * 30; xx < W; xx += 60) { g.beginPath(); g.moveTo(xx, yy); g.lineTo(xx, yy + 26); g.stroke(); } }
+  // gas lamps on the kerb
+  for (let k = Math.floor(ox / 700) - 1; k < Math.floor(ox / 700) + 3; k++) { const lx = k * 700 - ox + 120; g.fillStyle = '#1a1612'; g.fillRect(lx - 8, H * 0.4, 16, H * 0.36); rect(g, lx - 30, H * 0.36, 60, 70, '#ffe8a0', 4); g.beginPath(); g.moveTo(lx - 40, H * 0.36); g.lineTo(lx, H * 0.33); g.lineTo(lx + 40, H * 0.36); g.closePath(); g.fillStyle = '#1a1612'; g.fill(); }
+  // passersby stroll the other way behind him
+  for (const [c, x0, sp, ph] of [[B.common, W * 1.1, 330, 0], [B.clerk, W * 1.9, 330, 2], [B.rich, W * 0.15, 330, 4], [B.stranger, W * 2.6, 300, 1], [B.reporter, -W * 0.1, 140, 3]]) { const x = x0 - t * sp - (x0 > W * 1.5 ? 0 : 0) + (walking ? 0 : 0); if (x > -200 && x < W + 200) litChar(g, x, H * 0.75, 0.85, c, { expr: 'neutral', legs: 'walk', step: t * 9 + ph, armL: [0.3 + Math.sin(t * 9 + ph) * 0.3, 0.1], armR: [0.3 - Math.sin(t * 9 + ph) * 0.3, 0.1], look: -0.8, t, bob: -Math.abs(Math.sin(t * 9 + ph)) * 0.03 }, { light: 1 }); }
+  // Model T putters across the foreground (the "ahooga" moment)
+  // one big Model T putters across the foreground (the "ahooga" moment)
+  { const u = (t - 0.2) / 2.0; if (u > 0 && u < 1) modelT(g, lerp(-300, W + 300, u), H * 0.99, t, '#141418', 1, 1); }
+  // Ponzi: full-body stroll, tips hat on his name, stops and turns out empty pockets on "broke"
+  const px = W * 0.5, py = H * 0.79; const P = keys(t, [[0, { expr: 'charming', legs: 'walk', armL: [0.3, 0.1], armR: [0.3, 0.1] }], [ch, { expr: 'proud', armR: [1.9, 0.3], handR: 'wave' }, 0.25], [br - 0.1, { expr: 'worried', legs: 'stand', armL: [0.5, -0.1], armR: [0.5, -0.1], handL: 'open', handR: 'open' }, 0.2], [fi - 0.1, { expr: 'surprised', look: 1, lookY: -0.5, armR: [2.4, 0.2], handR: 'open' }, 0.2]]);
+  if (walking) { P.step = t * 9; P.bob = -Math.abs(Math.sin(t * 9)) * 0.03; P.armL = [0.3 + Math.sin(t * 9) * 0.35, 0.1]; if (t < ch) P.armR = [0.3 - Math.sin(t * 9) * 0.35, 0.1]; }
+  litChar(g, px, py, 1.25, B.ponzi, P, { light: 1 });
+  const pk = ease.outBack(prog(t, br, br + 0.25)); if (pk > 0) { for (const d of [-1, 1]) { g.save(); g.translate(px + d * 58, py - 205); g.scale(pk * 1.6, pk * 1.6); g.beginPath(); g.moveTo(-26, 0); g.lineTo(26, 0); g.lineTo(d * 10, 62); g.closePath(); g.fillStyle = '#f4f0e6'; g.fill(); ink(g, 4); g.restore(); } const mo = clamp((t - br - 0.1) / 0.8); if (mo > 0 && mo < 1) { g.save(); g.translate(px - 60 + mo * 40, py - 200 - mo * 260); g.fillStyle = '#8a7a6a'; g.beginPath(); g.ellipse(0, 0, 14, 8, 0, 0, TAU); g.fill(); for (const d of [-1, 1]) { g.beginPath(); g.ellipse(d * 14, -6, 16, 9 * Math.abs(Math.sin(t * 40)), d * 0.5, 0, TAU); g.fillStyle = '#b8aa98'; g.fill(); } g.restore(); }
+    const ca = prog(t, br, br + 0.2); g.save(); g.globalAlpha = ca; text(g, '$0.00', px, H * 0.32, { size: 110, font: 'Nunito', weight: 900, color: '#ff5a4a' }); g.restore(); }
+  // the paper that changes everything flutters in on "finds"
+  const pf = prog(t, fi - 0.4, fi + 0.3); if (pf > 0) { g.save(); g.translate(lerp(W + 120, px + 170, ease.out(pf)), lerp(H * 0.25, H * 0.44, ease.out(pf)) + Math.sin(t * 9) * 12); g.rotate(Math.sin(t * 7) * 0.4); rect(g, -70, -40, 140, 80, '#f2e2b8', 4); g.strokeStyle = '#a07a3a'; g.lineWidth = 2; for (let k = 0; k < 4; k++) { g.beginPath(); g.moveTo(-50, -20 + k * 14); g.lineTo(50, -20 + k * 14); g.stroke(); } g.restore(); glow(g, px + 170, H * 0.44, 160, 'rgba(255,230,150,.6)', pf); }
+  vignette(g, 0.35);
+  // vintage title card
+  const tc = ease.out(prog(t, bo, bo + 0.35)) * (1 - prog(t, br - 0.3, br)); if (tc > 0) { g.save(); g.globalAlpha = tc; g.translate(W / 2, H * 0.1); rect(g, -330, -70, 660, 140, '#1e1a14', 6); g.strokeStyle = '#c8962e'; g.lineWidth = 3; g.strokeRect(-314, -54, 628, 108); text(g, 'BOSTON · 1920', 0, 4, { size: 76, font: 'Playfair Display', weight: 900, color: '#ffd890' }); g.restore(); }
+  if (t > br - 0.05) headline(g, ['BROKE.'], W / 2, H * 0.09, 130, br, t, { fill: '#ff6a5a' });
+} });
