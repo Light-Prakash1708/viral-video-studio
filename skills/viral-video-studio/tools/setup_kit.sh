@@ -40,3 +40,10 @@ if [ -n "${WITH_SAO:-}" ]; then
   uv pip install -q --python "$HOME/sao/.venv/bin/python" einops einops-exts alias-free-torch safetensors huggingface_hub sentencepiece "transformers<4.50" soundfile numpy scipy PyWavelets
   echo "Stable Audio Open venv ready: ~/sao/.venv/bin/python <skill>/tools/sao.py \"prompt\" out.wav --secs 4"
 fi
+
+# ---- optional: Lemo-Opuscar style library + mastering/QC tools (MIT / CC BY 4.0)
+if [ -n "${WITH_OPUSCAR:-}" ]; then
+  [ -d "$HOME/lemo-opuscar/.git" ] || GIT_LFS_SKIP_SMUDGE=1 git clone -q --depth 1 https://github.com/lemomo-ai/lemo-opuscar "$HOME/lemo-opuscar"
+  (cd "$HOME/lemo-opuscar" && sh plugin/skills/lemo-opuscar/scripts/setup.sh deps >/dev/null 2>&1 || echo "opuscar deps: run 'sh plugin/skills/lemo-opuscar/scripts/setup.sh deps' in ~/lemo-opuscar")
+  echo "Lemo-Opuscar ready at ~/lemo-opuscar (styles/, DIRECTOR.md, core/render/mux.sh)"
+fi

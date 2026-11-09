@@ -158,4 +158,5 @@ export const STYLES = {
     },
   },
 };
+STYLES.flat = { ...STYLES.cinema, name: "Flat Vector", desc: "Clean flat-vector cartoon: true whites, no tint, faint vignette, no grain or bloom.", grade: { contrast: 1.02, sat: 1.06, lift: [0, 0, 0], gamma: [1, 1, 1], gain: [1, 1, 1], vignette: 0.12, grain: 0, bloom: 0 } };
 export const STYLE_IDS = Object.keys(STYLES);
