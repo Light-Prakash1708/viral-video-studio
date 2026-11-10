@@ -87,3 +87,13 @@ Finding: the hook works (high stayed-to-watch) but viewers leave in the 10-25 s 
 4. **Pace**: at most about 2.3 words/s, visual change every 1.5-2.5 s in the 10-25 s window, no static infographic longer than 3 s. Shorten to 30-40 s when the idea allows; shorter Shorts finish more often.
 5. **Hold the biggest reveal for the last 5 s but tease it at about 15 s.** End on a line that loops back to the first line to lift replays.
 6. **Check once published**: read the retention graph in YouTube Studio, find the exact second of the dip and rewrite that line for the next Short.
+
+## Free audio and b-roll sources (standard for every video)
+Use `studio/tools/free_media.py` (stdlib only):
+- Music/ambience: `python tools/free_media.py audio "ambient piano" --n 8 --min-sec 40` then `audio-get <id> --out assets/`. Openverse, licence filter cc0/pdm/by only (no NC/ND). Default `--source jamendo` because freesound CDN returns 403 and Wikimedia 429 from this container. Anonymous Openverse rate-limits (429): the tool retries; space calls out.
+- B-roll: `python tools/free_media.py footage "city night" --n 8` then `footage-get <identifier> --out assets/ --trim 12:20 --size 1920x1080`. archive.org movies, public-domain/CC0 only (`--allow-by` adds CC-BY). Output is silent, cropped H.264.
+- Every download appends a credit line to `<out>/ATTRIBUTION.txt`. CC-BY credits MUST go in the video description. Mix music at gain -16 dB under voice; check word-match QC. PD footage can still get Content ID claims: keep source URLs to dispute.
+- Prefer this over generating or scraping; archive.org footage suits documentary/newsreel mood (grade it, add grain) and can be used as HyperFrames `<video muted>` layers.
+
+## Huashu Art Motion (installed at ~/.claude/skills/huashu-art-motion, MIT, github.com/alchaincyf/huashu-art-motion)
+Art-style/explainer animation toolkit (36 art styles, 9 explainer grammars, storyboard lint, QA, delivery gate). Invoke via the `huashu-art-motion` skill when the user wants painterly/artist-style or grammar-driven explainer shots, or a storyboard lint pass. Reinstall: `git clone --depth 1 https://github.com/alchaincyf/huashu-art-motion ~/.claude/skills/huashu-art-motion`. Its SKILL.md is Chinese; follow its shot-table workflow (镜头表 -> storyboard_lint.py -> per-shot render -> qa.py -> deliver.py).
