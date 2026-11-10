@@ -4,7 +4,8 @@
 //   node render.mjs --project P --sheet                               one still per shot -> build/sheets/*.png
 //   node render.mjs --project P --stills 3.5,12,40                    stills at times -> build/stills
 //   node render.mjs --project P --styles emerald,ember,arctic,sakura,retro --at 3.5,12,40   style comparison grid
-// Options: --workers N  --scale K  --style ID  --debug  --format png|jpeg  --crf 18  --gl auto|gpu|swiftshader  --out FILE
+// Options: --workers N  --scale K  --style ID  --debug  --format png|jpeg  --crf 18  --preset ultrafast..slow  --tune animation  --gl auto|gpu|swiftshader  --out FILE
+// Fast/cheap/quality presets + shot-level re-render: python tools/fastrender.py (see that file)
 import http from 'node:http';
 import fs from 'node:fs';
 import os from 'node:os';
@@ -63,7 +64,7 @@ async function renderVideo() {
     const a = f0 + k * chunk, b = Math.min(f1, a + chunk); if (a >= b) return null;
     const browser = await chromium.launch(LAUNCH); const page = await openPlayer(browser);
     const out = path.join(partsDir, `part_${String(k).padStart(3, '0')}.mp4`);
-    const ff = spawn('ffmpeg', ['-y', '-v', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-i', '-', '-c:v', 'libx264', '-preset', args.preset || 'medium', '-crf', String(args.crf || 18), '-pix_fmt', 'yuv420p', '-r', String(fps), out], { stdio: ['pipe', 'inherit', 'inherit'] });
+    const ff = spawn('ffmpeg', ['-y', '-v', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-i', '-', '-c:v', 'libx264', '-preset', args.preset || 'medium', '-crf', String(args.crf || 18), ...(args.tune ? ['-tune', String(args.tune)] : []), '-pix_fmt', 'yuv420p', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-r', String(fps), out], { stdio: ['pipe', 'inherit', 'inherit'] });
     for (let f = a; f < b; f++) {
       const img = await shot(page, f); if (!ff.stdin.write(img)) await new Promise(r => ff.stdin.once('drain', r)); done++;
       if (done % 48 === 0) { const el = (Date.now() - t0) / 1000, eta = (el / done) * (f1 - f0 - done); process.stdout.write(`  ${done}/${f1 - f0} frames  ${(done / el).toFixed(2)} fps  elapsed ${fmtT(el)}  eta ${fmtT(eta)}\n`); }

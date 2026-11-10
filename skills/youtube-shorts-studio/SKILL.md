@@ -1,13 +1,13 @@
 ---
 name: youtube-shorts-studio
-description: "Your one entry point for making YouTube Shorts (and Reels/TikTok) videos. Combines two toolkits and lets the user pick whichever fits the script/topic: (A) viral-video-studio (stickman, explainroo explainer, Vox paper-collage, 3D cartoon, map explainer, what-if life sim) and (B) lemo-opuscar (66 code-rendered film styles: watercolor, ukiyo-e, newsreel, data storytelling, teardown, pixel RPG, etc.). Use when the user says \"make a Short\", \"YouTube Shorts\", \"video for my channel\", \"create a video about <topic>\", \"here's my script\", or asks which video style/engine to use."
+description: "Your one entry point for making YouTube Shorts (and Reels/TikTok) videos. Combines three toolkits and lets the user pick whichever fits the script/topic: (A) viral-video-studio (stickman, explainroo explainer, Vox paper-collage, 3D cartoon, map explainer, what-if life sim), (B) lemo-opuscar (66 code-rendered film styles: watercolor, ukiyo-e, newsreel, data storytelling, teardown, pixel RPG, etc.) and (C) HyperFrames (HTML/CSS/GSAP to MP4: kinetic type, data viz, captions, UI/promo, about 8x faster rendering). Use when the user says \"make a Short\", \"YouTube Shorts\", \"video for my channel\", \"create a video about <topic>\", \"here's my script\", or asks which video style/engine to use."
 ---
 
 # YouTube Shorts Studio (merged video skill)
 
 Usage: `/youtube-shorts-studio <topic or script> [--engine viral|lemo|auto] [--style <name>] [--length 30s|45s|60s]`
 
-Two toolkits, one front door. Always make Shorts vertical **9:16 (1080×1920)**, ≤ 60 s unless asked otherwise.
+Three toolkits, one front door (A viral, B lemo, C HyperFrames). Always make Shorts vertical **9:16 (1080×1920)**, ≤ 60 s unless asked otherwise.
 
 | | A. Viral Video Studio | B. Lemo-Opuscar |
 |---|---|---|
@@ -26,6 +26,20 @@ Recommend **B (lemo)** when the script is: visually driven or aesthetic (history
 When both fit, name your pick and why, and let the user choose. **Render with exactly ONE engine per video. Never render the same script in both** (wastes tokens and credits); only do a second render if the user explicitly asks later.
 
 Quick topic → style hints for B (full list: `~/lemo-opuscar/AGENTS.md`, gallery https://lemomo-ai.github.io/lemo-opuscar/): news/current events → Caption News, Broadcast News Package; history → 1920s Newsreel, Woodcut, Ukiyo-e; science/how-it-works → Whiteboard Explainer, Microscope Story, Exploded Teardown; numbers/finance → Data Storytelling, Isometric Infographic; tech → Dark Tech Keynote, Sci-fi Hologram HUD; kids/story → Crayon Picture Book, Mid-century Cartoon; gaming/fun → 16-bit Pixel RPG, Game Show Flat.
+
+## Engine C: HyperFrames (installed; fastest renderer)
+Skills: `/hyperframes` (read first), `/hyperframes-cli`, `/hyperframes-registry` (about 450 ready blocks: transitions, titles, kinetic type, captions, charts, maps), `/media-use`, `/reverse-any-video`, `/style-sampling`. Source cloned at `/home/user/heygen-com/hyperframes`; CLI via `npx hyperframes@latest` (v0.9.30, Node 22+, uses system Chrome and ffmpeg). Free and local, deterministic.
+- Pick C for typography-, data-, chart-, caption- or UI-led Shorts and any video that is mostly motion graphics. Pick A/GrowKaz for character-driven storytelling (busts, rigs, expressions).
+- Flow: `npx hyperframes init <name>` -> set `data-width=1080 data-height=1920` -> write HTML + paused GSAP timeline -> `npx hyperframes check` -> `npx hyperframes render . --quality draft|looks|delivery --fps 30 --workers auto --resolution portrait -o out.mp4`. Partial: `--start S --end E`. `looks` (default, CRF 16) is the quality default; `delivery` is higher; `draft` for iteration.
+- Measured here (4 CPUs, 1080x1920, 300 frames with 60 blurred animated particles + glow text): about 12 s capture, ~25 fps, `looks` 1.7 MB. The GrowKaz canvas engine does about 3 fps on the same box. Needs no GPU. `hyperframes doctor` lists optional extras (whisper-cpp, Kokoro TTS).
+
+## Speed, cost and quality rules (all engines)
+1. **Iterate cheap, render once.** Contact sheet first (`node render.mjs --project P --sheet --scale 0.4`), fix, then ONE full render. Half-res draft (`fastrender.py --preset draft`, ~7.4 fps vs 2.8) only when motion/timing needs checking.
+2. **Never re-render everything for a fix.** `python tools/fastrender.py --project projects/P --shots s01,s04 --preset balanced --mix` re-renders only those shots (from story/shots.json), splices them into build/video_silent.mp4 frame-exactly (frame count is verified; the previous base is kept as build/video_silent.prev.mp4), then mixes. Caption/number/word fixes touch words.json; the affected shots must be re-rendered, not the whole video.
+3. **Audio-only change (music, SFX, levels) = `python audio/mix.py --project P` alone, no video render.**
+4. **Quality presets** (`tools/fastrender.py`): `draft` half-res ultrafast; `balanced` jpeg q94 crf 18 (default for iterations); `final` lossless PNG frames, crf 15, preset slow, `-tune animation`, bt709 colour tags (about 40% slower than balanced, crisper edges on text/vector art; use for the delivered file). Workers default to cpu_count-1 (3 beat 4 on 4 cores).
+5. **Credits.** ElevenLabs speech costs about 18-20 credits per second of audio (927 credits for 50 s): write the script tight (45-55 s), generate ONE take (`generations_count: 1`), use `estimate_only` first when unsure, reuse the SFX library in `audio/` and only generate new SFX when a sound is signature (about 17 credits each). vidIQ: transcript 5, short-form watch 10, long watch 25 credits each: pull transcripts first, watch only the best 1-2 references. Never regenerate voice to fix a caption or visual.
+6. **Check once at the end:** duration, -14 LUFS, word-match of the final audio against the script (faster-whisper; flags music masking the voice; fix by lowering music gainDb in config, audio only), contact sheet for text overlap.
 
 ## Step 2: Shared Shorts script pass (both engines, before any rendering)
 
@@ -51,3 +65,16 @@ Contact sheet / sample frames, audio level (≈ −14 LUFS, voice clearly above 
 
 ## Persistence note
 These skills live in `~/.claude/skills/` and `~/lemo-opuscar` of this container, which is temporary. To keep them, copy `~/.claude/skills/{youtube-shorts-studio,lemo-opuscar}` into a repo or your local `~/.claude/skills/`. `viral-video-studio` is a synced plugin and is left untouched; this skill only calls it.
+
+## Preferred music for anime videos
+The user supplied a preferred anime-opening bed: `/root/growkaz-stickman-studio/audio/library/anime_opening_emotional_journey.mp3` (104 s, about 70 BPM, -9.5 LUFS). Use it as `config.music.file` for anime videos when it suits the mood (cut a window with `ffmpeg -ss <start> -t <dur> -af afade=...` so its build lands on the climax, then `mix.py` with music gainDb -13). If it doesn't suit, use `audio/anime_music.py`. The user supplied the track, so remind them to keep its licence/credit for uploads. Audio-only changes never need a video re-render: run `mix.py` alone.
+
+## No-copyright music sources (verified reachable from the container)
+- incompetech.com (Kevin MacLeod, CC BY 4.0, needs the credit line). Direct URL: `https://incompetech.com/music/royalty-free/mp3-royaltyfree/<Title%20With%20Spaces>.mp3`. Saved: `audio/library/volatile_reaction_kevin_macleod_CC-BY-4.0.mp3` (about 152 BPM, tense, big hit near 28-30 s: use for tense/hype math Shorts; credit "Volatile Reaction by Kevin MacLeod (incompetech.com), CC BY 4.0").
+- pixabay.com returns 403 to scripted downloads. Wikimedia is rate-limited (retry with a generic User-Agent).
+- Pick a track by measuring tempo and the biggest energy rise, then cut so the rise lands on the video's climax.
+
+## Music lessons (Hakari video)
+- User-supplied `audio/library/sub_clair_no_copyright_music.mp3` (about 123 BPM, quiet intro, break at 40-46 s then a big drop at 47.25 s). Cut at 19.05 s so the drop lands on the climax at 28.2 s; it opens loud (hook from frame 0) and dips during suspense. Use music gainDb -16 for this track (it is -9.9 LUFS raw); -13 made the narration word-match drop from 98.2% to 95.5%.
+- stocktune.com blocks scripted access (Cloudflare). Ask the user to download a track and upload it.
+- Partial re-render: `render.mjs --from A --to B` writes `build/preview.mp4` (not video_silent.mp4); splice with ffmpeg trim+concat at frame-aligned times, then run `mix.py` alone.
