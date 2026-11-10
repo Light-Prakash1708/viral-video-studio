@@ -21,8 +21,8 @@ def getj(url):
     import time
     for i in range(5):
         try: return json.loads(get(url))
-        except urllib.error.HTTPError as e:
-            if e.code != 429 or i == 4: raise
+        except urllib.error.URLError as e:
+            if (isinstance(e, urllib.error.HTTPError) and e.code != 429) or i == 4: raise
             time.sleep(8 * (i + 1))  # anonymous Openverse is rate limited
 def dl(url, path):
     req = urllib.request.Request(url, headers=UA)
@@ -54,7 +54,7 @@ def footage_search(q, n, allow_by):
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["audio", "audio-get", "footage", "footage-get"]); ap.add_argument("arg")
     ap.add_argument("--n", type=int, default=10); ap.add_argument("--min-sec", type=float, default=20); ap.add_argument("--licenses", default="cc0,pdm,by")
-    ap.add_argument("--allow-by", action="store_true"); ap.add_argument("--out", default="assets"); ap.add_argument("--trim"); ap.add_argument("--source", default="jamendo", help="openverse source; jamendo downloads reliably here (freesound CDN 403, wikimedia 429); '' = all"); ap.add_argument("--size", default="1920x1080"); a = ap.parse_args()
+    ap.add_argument("--allow-by", action="store_true"); ap.add_argument("--out", default="assets"); ap.add_argument("--trim"); ap.add_argument("--source", default="jamendo", help="openverse source; jamendo downloads reliably here (freesound CDN 403, wikimedia 429); '' = all"); ap.add_argument("--size", default="src", help="WxH to scale+crop, or src to keep the source resolution (archive.org is often 320x240-640x480)"); a = ap.parse_args()
     if a.cmd == "audio":
         for r, sec in audio_search(a.arg, a.n, a.min_sec, a.licenses, a.source or None):
             print(f"{r['id']}  {sec:6.1f}s  {r['license'].upper():4s} {r.get('creator') or '?':22.22s}  {r['title'][:60]}  [{r.get('source')}]")
@@ -72,8 +72,9 @@ def main():
         files.sort(key=lambda f: (0 if f["name"].lower().endswith(".mp4") else 1, int(f.get("size", 0) or 10**12)))
         f = files[0]; os.makedirs(a.out, exist_ok=True); raw = os.path.join(a.out, f"{a.arg}_src{os.path.splitext(f['name'])[1]}")
         dl(f"https://archive.org/download/{a.arg}/{urllib.parse.quote(f['name'])}", raw)
-        outp = os.path.join(a.out, f"{a.arg}.mp4"); w, h = a.size.split("x")
-        cmd = ["ffmpeg", "-y", "-v", "error", "-i", raw] + (["-ss", a.trim.split(":")[0], "-to", a.trim.split(":")[1]] if a.trim else []) + ["-vf", f"scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h}", "-an", "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", outp]
+        outp = os.path.join(a.out, f"{a.arg}.mp4")
+        vf = [] if a.size == "src" else ["-vf", "scale={0}:{1}:force_original_aspect_ratio=increase,crop={0}:{1}".format(*a.size.split("x"))]
+        cmd = ["ffmpeg", "-y", "-v", "error", "-i", raw] + (["-ss", a.trim.split(":")[0], "-to", a.trim.split(":")[1]] if a.trim else []) + vf + ["-an", "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", outp]
         subprocess.run(cmd, check=True); os.remove(raw)
         lic = m.get("metadata", {}).get("licenseurl", "public domain"); credit(a.out, f"Footage: \"{m.get('metadata', {}).get('title', a.arg)}\" via archive.org/details/{a.arg} ({lic})"); print(outp, lic)
 
