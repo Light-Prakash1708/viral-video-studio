@@ -78,3 +78,12 @@ The user supplied a preferred anime-opening bed: `/root/growkaz-stickman-studio/
 - User-supplied `audio/library/sub_clair_no_copyright_music.mp3` (about 123 BPM, quiet intro, break at 40-46 s then a big drop at 47.25 s). Cut at 19.05 s so the drop lands on the climax at 28.2 s; it opens loud (hook from frame 0) and dips during suspense. Use music gainDb -16 for this track (it is -9.9 LUFS raw); -13 made the narration word-match drop from 98.2% to 95.5%.
 - stocktune.com blocks scripted access (Cloudflare). Ask the user to download a track and upload it.
 - Partial re-render: `render.mjs --from A --to B` writes `build/preview.mp4` (not video_silent.mp4); splice with ffmpeg trim+concat at frame-aligned times, then run `mix.py` alone.
+
+## Retention rules for Shorts (from the user's channel analytics)
+Finding: the hook works (high stayed-to-watch) but viewers leave in the 10-25 s zone, so watch percentage drops to 21-40% against a 54%+ average, and YouTube then limits distribution. Target: 55%+ average watch. Write and cut every Short with these rules:
+1. **Plant the payoff by 6-8 s** ("by the end you'll see X") and keep that loop open. Give a partial answer around 15 s, then raise the stakes instead of explaining more.
+2. **Pattern interrupt at 10-12 s**: a turn line ("But here's the catch"), a hard SFX hit and a visual change (zoom, new location, colour flip). Never run exposition through this window.
+3. **A new curiosity gap every 6-8 s** (a question, a number, a "wait"). Every sentence must add new information or a higher stake; cut definitions, setup and second examples.
+4. **Pace**: at most about 2.3 words/s, visual change every 1.5-2.5 s in the 10-25 s window, no static infographic longer than 3 s. Shorten to 30-40 s when the idea allows; shorter Shorts finish more often.
+5. **Hold the biggest reveal for the last 5 s but tease it at about 15 s.** End on a line that loops back to the first line to lift replays.
+6. **Check once published**: read the retention graph in YouTube Studio, find the exact second of the dip and rewrite that line for the next Short.
