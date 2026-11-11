@@ -1,0 +1,10 @@
+asset_id,description,type,source,creator,original_url,licence,licence_url,attribution_text,commercial_ok,modification_ok,sharealike,status,notes
+O-ALL,Characters/props/diagrams/type/score,original,Toon Theory,Toon Theory,n/a,owned,n/a,none,yes,yes,no,approved,Generated in code from approved designs
+V-PRIYA,Priya voice (Sarah),TTS,ElevenLabs,ElevenLabs,https://elevenlabs.io,ElevenLabs ToS (paid plan),https://elevenlabs.io/terms-of-use,"Voices: ElevenLabs",yes (paid plan),yes,no,approved,Confirm plan allows commercial use
+V-ANK,Ankush voice (Liam),TTS,ElevenLabs,ElevenLabs,https://elevenlabs.io,ElevenLabs ToS (paid plan),https://elevenlabs.io/terms-of-use,"Voices: ElevenLabs",yes (paid plan),yes,no,approved,
+SFX,Earshot SFX bank,sfx,earshot,earshot,bundled,MIT,https://opensource.org/license/mit,"SFX: earshot (MIT)",yes,yes,no,approved,
+X1,Cereal bowl photo (optional prop texture),image,Openverse,rawpixel,TBD-landing-page,CC0,https://creativecommons.org/publicdomain/zero/1.0/,none required,yes,yes,no,candidate-verify,Verify on landing page
+X2,Students laughing in library (optional bg plate),image,Openverse/Flickr,TBD,TBD,CC BY 2.0,https://creativecommons.org/licenses/by/2.0/,credit creator + licence,yes,yes,no,candidate-verify,Identifiable people: prefer NOT to use
+X3,Brain diagram (optional science card),image,Wikimedia Commons,Patrick J. Lynch,TBD,CC BY 2.5,https://creativecommons.org/licenses/by/2.5/,"Patrick J. Lynch, CC BY 2.5",yes,yes,no,candidate-verify,
+X4,Graduation footage,video,Internet Archive,snafuinfinitybhs,https://archive.org/details/snafuinfinitybhs-graduation_060323-edit,CC0 (per IA metadata),https://creativecommons.org/publicdomain/zero/1.0/,none required,yes,yes,no,rejected,Identifiable private individuals; not needed
+X5,1950s classroom guidance film,video,Internet Archive,unknown studio,https://archive.org/details/AreYouRe1950,PD (per IA metadata),TBD,none,TBD,TBD,no,candidate-verify,IA metadata is not proof; check copyright renewal before use
