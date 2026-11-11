@@ -9,3 +9,5 @@ Repo: studio/shorts_gen/{common.py (Proj, imgpanel, fullbleed), flo.py, mth.py (
 6. Audio: `python3 audio_short.py <name>` (music -29 dB rms, sfx gain .17, duck, -14 LUFS) -> mux `ffmpeg -i silent -i mix -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -movflags +faststart -shortest out.mp4`.
 7. QC: tools/static_gaps.py, word-match, loudness, frame count. Deliver with SendUserFile + the notes file (titles, description, credits, fact-check).
 Gotchas: monitors that grep "error" fire early (logs contain 'browserVersion'); stop-hook "unpushed commits" is a shallow-clone false positive (verify with git ls-remote); freesound CDN 403 and wikimedia 429 from this container - use Jamendo audio and flickr images with retries.
+
+SFX policy (any channel): earshot bank first (free; `bank:<id>` events in audio_short.py; see skills/earshot/OUR_WORKFLOW.md), ElevenLabs SFX only for special sounds, earshot `measure`/`timeline` for audio QC. Bootstrap: `bash skills/earshot/bootstrap.sh`.

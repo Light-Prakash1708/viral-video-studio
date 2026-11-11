@@ -70,6 +70,16 @@ def real(path, maxd=None, fade=.05):
     n = int(fade * SR); x = x.copy(); x[-n:] *= np.linspace(1, 0, n)
     return x / (np.max(np.abs(x)) + 1e-6)
 
+def bank(sid, dur=None):
+    """render a sound from the earshot bank (free, code-made) into sfx/bank/ and load it; kind syntax 'bank:impact/deep'"""
+    import os
+    d = '/root/hf-shorts/sfx/bank'; os.makedirs(d, exist_ok=True)
+    f = os.path.join(d, sid.replace('/', '_') + '.wav')
+    if not os.path.exists(f):
+        subprocess.run(['earshot', 'sfx', 'render', sid, '-o', f], check=True, capture_output=True)
+    x = load(f)
+    return x / (np.max(np.abs(x)) + 1e-6)
+
 def lufs_gain(x, target):
     # crude: RMS-based gain to target dBFS rms over active samples
     r = np.sqrt(np.mean(x[np.abs(x) > 1e-4] ** 2)) + 1e-9
@@ -92,6 +102,8 @@ def build(name, voice_mp3, dur, music, mstart, events, out, mgain_db=-29, duck_d
     fx = np.zeros(n)
     for ev in events:
         t, kind = ev[0], ev[1]; g = ev[2] if len(ev) > 2 else 1.0
+        if isinstance(kind, str) and kind.startswith('bank:'):
+            place(fx, bank(kind[5:]), t, g * .17); continue
         k = {
             'whoosh': lambda: whoosh(.6, True), 'whoosh_d': lambda: whoosh(.6, False), 'whoosh_s': lambda: whoosh(.35, True),
             'hit': lambda: hit(), 'hit_s': lambda: hit(220, 70, .3), 'tick': lambda: tick(), 'tickh': lambda: tick(2600), 'pop': lambda: pop(),

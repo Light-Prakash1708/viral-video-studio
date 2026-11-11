@@ -109,3 +109,7 @@ Pack `youtube-agent` (MIT, github.com/jakeschincariol/youtube-agent-skill) is in
 
 ## Channel growth workflow (any channel)
 Skill `yt-channel-studio` (repo: skills/yt-channel-studio) is the channel-agnostic growth workflow: channel profiles (`tools/channel.py new|use|list|export`), niche playbooks, open-loop hook scoring, fact-check list, title/thumbnail linter with claim-safety, auto credits, static-gap retention audit, description/pinned-comment/post templates. Use it for every new channel and every video's packaging + QC. Profiles in skills/yt-channel-studio/profiles/.
+
+
+## Sound effects: earshot (installed, vendored at third_party/earshot)
+Skills `earshot` (ears + a free bank of 252 code-made SFX) and `real-sound` (premium real-recording soundtracks) are installed. SFX order: earshot bank first (`bank:<id>` events in studio/shorts_gen/audio_short.py, free) -> ElevenLabs SFX only for what the bank cannot do (~17 credits) -> earshot forge. Setup in a new session: `bash skills/earshot/bootstrap.sh` (light) or `--models` (full listening features). Details: skills/earshot/OUR_WORKFLOW.md.
