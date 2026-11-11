@@ -49,7 +49,7 @@ for spk, lines in LINES.items():
         s, e = bounds[lid]
         prev_e = bounds[ids[k-1]][1] if k else 0.0
         next_s = bounds[ids[k+1]][0] if k+1 < len(ids) else len(full)/sr0
-        s0 = max(prev_e + (s - prev_e)/2, s - .12) if k else max(0, s - .12)
+        s0 = max(prev_e + (s - prev_e)/2, s - .12) if k else 0.0   # first line of a take: start at 0 (Whisper can miss the first word)
         e0 = min(e + (next_s - e)/2, e + .22)
         clip = full[int(s0*sr0):int(e0*sr0)]
         if sr0 != 44100: clip = resample_poly(clip, 44100, sr0)

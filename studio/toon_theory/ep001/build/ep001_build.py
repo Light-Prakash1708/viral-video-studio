@@ -31,6 +31,11 @@ def scene(sid, t0, t1, body, z=5):
     P.st('#' + sid, {'opacity': 1}, t0); P.st('#' + sid, {'opacity': 0}, t1)
 def cam(sid, t0, t1, s0=1.0, s1=1.06, x0=0, x1=0, y0=0, y1=0):
     P.frm(f'#{sid}_cam', {'scale': s0, 'x': x0, 'y': y0}, {'scale': s1, 'x': x1, 'y': y1, 'duration': max(.1, t1 - t0), 'ease': 'none'}, t0)
+def close(sid, side, line, s=1.35):
+    """hard cut to a close-up on the speaker for one line (applied to the scene frame, so the slow camera push keeps running inside)"""
+    X = 260 if side == 'L' else 790; a, b = T[line]
+    P.st('#' + sid, {'scale': s, 'x': round((540 - X) * s), 'y': round((960 - 1110) * s)}, round(a - .03, 3))
+    P.st('#' + sid, {'scale': 1, 'x': 0, 'y': 0}, round(b + .15, 3))
 def pop(sel, t, d=.28, s0=.6):
     P.frm(sel, {'opacity': 0, 'scale': s0}, {'opacity': 1, 'scale': 1, 'duration': d, 'ease': 'back.out(2)'}, t)
 def show(sel, t0, t1, d=.18):
@@ -60,7 +65,7 @@ def chat_head(name, col, sub='online'):
 CSS = rig.CSS + """
 *{margin:0;box-sizing:border-box}html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
 #root{position:relative;width:1080px;height:1920px;overflow:hidden;background:#0b0d18;font-family:Inter,Arial,sans-serif}
-.sc{position:absolute;left:0;top:0;width:1080px;height:1920px;opacity:0;overflow:hidden}.abs{position:absolute}
+.sc{position:absolute;left:0;top:0;width:1080px;height:1920px;opacity:0;overflow:visible}.abs{position:absolute}
 .ph{border-radius:70px;background:#0e0f16;border:10px solid #2b2c38;box-shadow:0 30px 80px rgba(0,0,0,.65),0 0 90px rgba(70,130,255,.25);overflow:hidden}
 .scr{position:relative;background:#0f1119;overflow:hidden;border-radius:58px}
 .bub{position:absolute;padding:20px 30px;border-radius:34px;font:600 40px Inter;color:#fff;background:#2a2d3f;white-space:nowrap}
@@ -117,7 +122,7 @@ tt = vis0('S1_title')
 body += ('<div id="ttl" class="abs" style="left:0;right:0;top:330px;width:1080px;text-align:center;font:900 200px/1 Inter;color:#fff3e6;letter-spacing:.02em;z-index:40;opacity:0;text-shadow:0 0 60px rgba(255,140,60,.7),0 8px 0 #000">THE<br>MAYBE</div>'
          '<div id="ttlf" class="abs" style="left:-420px;top:-100px;width:1920px;height:2120px;background:#fff3e6;z-index:41;opacity:0"></div>')
 scene('S1b', MK['S1b'], s1b_end, body); cam('S1b', MK['S1b'], s1b_end, 1.0, 1.05)
-say('k01', 's1b_k'); say('a03', 's1b_a'); say('k02', 's1b_k')
+say('k01', 's1b_k'); say('a03', 's1b_a'); say('k02', 's1b_k'); close('S1b', 'L', 'k02')
 ex('s1b_k', 'neutral', T['k01'][0]); ex('s1b_a', 'smirk', T['a03'][0]); ex('s1b_k', 'smirk', T['k02'][0])
 P.frm('#ttl', {'opacity': 0, 'scale': 1.7}, {'opacity': 1, 'scale': 1, 'duration': .22, 'ease': 'power4.in'}, tt)
 P.st('#ttlf', {'opacity': 0}, 0); P.st('#ttlf', {'opacity': .85}, tt + .02); P.to('#ttlf', {'opacity': 0, 'duration': .35}, tt + .2); P.to('#ttl', {'opacity': 0, 'duration': .18}, s1b_end - .2)
@@ -278,7 +283,7 @@ s4c0, s4c1 = vis0('S4_back'), MK['S5']
 chips = ''.join(f'<div id="chip{i}" class="chip" style="left:{60 + i * 8}px;top:{470 + i * 78}px;opacity:0">{t}</div>' for i, t in enumerate(['SMALL STUDY', 'COLLEGE STUDENTS', 'NOT PROOF']))
 body = cafe('c6') + char('s4c_k', 'krish', 20, 830, 480, s4c0, s4c1, z=9, start='deadpan') + char('s4c_a', 'ankush', 540, 800, 500, s4c0, s4c1, z=9, start='smirk') + table() + chips + vignette()
 scene('S4c', s4c0, s4c1, body); cam('S4c', s4c0, s4c1, 1.0, 1.06)
-say('a04', 's4c_a'); say('k03', 's4c_k'); say('k04', 's4c_k'); say('a05', 's4c_a'); say('k05', 's4c_k'); say('a06', 's4c_a')
+close('S4c', 'L', 'k04'); close('S4c', 'R', 'a05'); say('a04', 's4c_a'); say('k03', 's4c_k'); say('k04', 's4c_k'); say('a05', 's4c_a'); say('k05', 's4c_k'); say('a06', 's4c_a')
 ex('s4c_a', 'smirk', T['a04'][0]); ex('s4c_k', 'smirk', T['k03'][0]); ex('s4c_k', 'neutral', T['k04'][0]); ex('s4c_a', 'smirk', T['a05'][0]); ex('s4c_k', 'worried', T['k05'][0]); ex('s4c_a', 'laugh', T['a06'][0])
 for i in range(3):
     pop(f'#chip{i}', T['k04'][0] + 1.2 + i * 1.1, .25, .7); P.to(f'#chip{i}', {'opacity': 0, 'duration': .2}, T['k04'][1] + .5); fx(T['k04'][0] + 1.2 + i * 1.1, 'ui_pop/blip', .6)
@@ -325,6 +330,7 @@ P.to('#nbk', {'boxShadow': '0 0 120px rgba(255,170,80,.7)', 'duration': 1.0}, T[
 s5b0, s5b1 = s5a1, MK['S6']
 body = cafe('c7') + char('s5b_k', 'krish', 20, 830, 480, s5b0, s5b1, z=9, start='neutral') + char('s5b_a', 'ankush', 540, 800, 500, s5b0, s5b1, z=9, start='smirk') + table() + vignette()
 scene('S5b', s5b0, s5b1, body); cam('S5b', s5b0, s5b1, 1.0, 1.06)
+close('S5b', 'R', 'a08'); close('S5b', 'L', 'k09')
 for l, i in (('k06', 'k'), ('a07', 'a'), ('k07', 'k'), ('k08', 'k'), ('a08', 'a'), ('k09', 'k')): say(l, 's5b_' + i)
 ex('s5b_a', 'smirk', T['a07'][0]); ex('s5b_k', 'smirk', T['k07'][0]); ex('s5b_k', 'smile', T['k08'][0]); ex('s5b_a', 'worried', T['a08'][0]); ex('s5b_k', 'deadpan', T['k09'][0]); ex('s5b_a', 'neutral', T['k09'][0] + 1.0)
 
@@ -334,7 +340,7 @@ body = (cafe('c8') + char('s6_p', 'priya', 360, 330, 360, s6a, s6b, z=6, start='
         '<div class="abs" style="left:440px;top:650px;width:200px;height:130px;border-radius:18px;background:linear-gradient(160deg,#ff9a4d,#5a8dff);opacity:.5;filter:blur(18px);z-index:7"></div>' +
         char('s6_k', 'krish', 20, 830, 480, s6a, s6b, z=9, start='neutral') + char('s6_a', 'ankush', 540, 800, 500, s6a, s6b, z=9, start='neutral') + table() + vignette())
 scene('S6', s6a, s6b, body); cam('S6', s6a, s6b, 1.02, 1.1, 0, 20, 0, 0)
-say('k10', 's6_k'); say('a09', 's6_a'); say('k11', 's6_k')
+say('k10', 's6_k'); say('a09', 's6_a'); say('k11', 's6_k'); close('S6', 'L', 'k10')
 ex('s6_a', 'smirk', T['a09'][0]); ex('s6_k', 'smile', T['k11'][0]); ex('s6_a', 'neutral', T['k11'][0] + .2)
 
 # ------------------------------------------------------------------ SCENE 7: the realisation
@@ -353,7 +359,7 @@ def page(pid, bub, tilt):
 pages = page('pgA', 'how did it go?', -2) + page('pgB', 'tell me everything', 2) + page('pgC', 'how’d it go?', -1)
 msgs_bg = '<div class="abs" style="left:-420px;top:-100px;width:1920px;height:2120px;background:linear-gradient(180deg,#101830,#18122a 60%,#0d0a14)"></div><div class="abs" style="left:620px;top:80px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(255,150,60,.35),transparent 65%)"></div><div class="abs" style="left:-100px;top:1000px;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(255,140,60,.2),transparent 65%)"></div>'
 sofa = '<div class="abs" style="left:560px;top:1230px;width:540px;height:330px;border-radius:60px 60px 0 0;background:#3a2a52;z-index:5"></div>'
-fphone = ('<div id="fph" class="abs" style="left:380px;top:1450px;width:300px;height:520px;z-index:25;opacity:0;perspective:900px"><div id="fphi" class="abs" style="left:0;top:0;width:300px;height:520px;border-radius:44px;background:linear-gradient(160deg,#ff9a4d,#5a8dff);border:8px solid #2b2c38;transform-style:preserve-3d"></div></div>')
+fphone = ('<div id="fph" class="abs" style="left:430px;top:1520px;width:220px;height:380px;z-index:25;opacity:0;perspective:900px"><div id="fphi" class="abs" style="left:0;top:0;width:220px;height:380px;border-radius:36px;background:linear-gradient(160deg,#ff9a4d,#5a8dff);border:8px solid #2b2c38;transform-style:preserve-3d"></div></div>')
 tx = ('<div id="tb1" class="bub bout" style="left:130px;top:260px;font-size:50px;z-index:30;opacity:0">It went well. Coffee?</div><div id="tb2" class="bub" style="left:150px;top:420px;font-size:50px;z-index:30;opacity:0;background:#2f3f66">Yes. Tell me how it went.</div>')
 body = (msgs_bg + msgcards + pages + tx + sofa + char('s7_m', 'meera', 640, 1040, 380, s7a, s7b, z=6, start='deadpan') + char('s7_p', 'priya', 40, 900, 540, s7a, s7b, z=9, pose='hug', start='neutral') +
         '<div class="abs" style="left:-420px;top:1500px;width:1920px;height:520px;background:linear-gradient(180deg,#2a1f33,#120d18);z-index:11"></div>' + fphone +
@@ -407,7 +413,7 @@ P.frm('#bk_p,#bk_m,#bk_a', {'x': -520, 'opacity': 0}, {'x': 0, 'opacity': 1, 'du
 for inst in ('bk_p', 'bk_m', 'bk_a'): P.to(f'#{inst}', {'y': 6, 'duration': .3, 'yoyo': True, 'repeat': 5}, s8a + .2)
 fx(s8a + .3, 'whoosh_fast/crisp', .5)
 ex('bk_p', 'laugh', s8a + 1.6); ex('bk_m', 'smirk', s8a + 1.6); ex('bk_a', 'smile', s8a + 1.8)
-say('a10', 's8_a'); say('k12', 's8_k'); say('a11', 's8_a'); say('k13', 's8_k'); say('a12', 's8_a'); say('k14', 's8_k'); say('a13', 's8_a'); say('k15', 's8_k'); say('a14', 's8_a')
+close('S8', 'L', 'k12'); close('S8', 'L', 'k15'); close('S8', 'R', 'a14'); say('a10', 's8_a'); say('k12', 's8_k'); say('a11', 's8_a'); say('k13', 's8_k'); say('a12', 's8_a'); say('k14', 's8_k'); say('a13', 's8_a'); say('k15', 's8_k'); say('a14', 's8_a')
 ex('s8_a', 'smile', T['a10'][0]); ex('s8_k', 'neutral', T['k12'][0]); ex('s8_a', 'smirk', T['a11'][0]); ex('s8_k', 'smirk', T['k13'][0])
 tp = vis0('S8_phone')
 ex('s8_k', 'worried', tp); ex('s8_a', 'neutral', tp + .2); ex('s8_a', 'smirk', T['a12'][0]); ex('s8_k', 'deadpan', T['k14'][0]); ex('s8_a', 'smirk', T['a13'][0]); ex('s8_k', 'hurt', T['k15'][0]); ex('s8_a', 'smile', T['a14'][0]); ex('s8_k', 'neutral', T['a14'][1] + .2)
