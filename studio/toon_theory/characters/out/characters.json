@@ -1,0 +1,80 @@
+{
+ "priya": {
+  "label": "PRIYA",
+  "role": "Episode 001 lead",
+  "age": "22",
+  "cm": 165,
+  "skin": "#c28a60",
+  "hair": "#2a1a17",
+  "top": "#e0a526",
+  "over": "#efe2c8",
+  "bottom": "#2f3f66",
+  "shoe": "#f2f0ea",
+  "accent": "#2a8f93"
+ },
+ "meera": {
+  "label": "MEERA",
+  "role": "Episode 001 friend",
+  "age": "22",
+  "cm": 160,
+  "skin": "#dcb08a",
+  "hair": "#16121a",
+  "top": "#8a2a3d",
+  "over": "#4f79a8",
+  "bottom": "#33343d",
+  "shoe": "#222126",
+  "accent": "#d7a63b"
+ },
+ "rohan": {
+  "label": "ROHAN",
+  "role": "Episode 001",
+  "age": "23-24",
+  "cm": 187,
+  "skin": "#b98559",
+  "hair": "#1c130f",
+  "top": "#1d1c22",
+  "over": "#c4955f",
+  "bottom": "#2b2f3b",
+  "shoe": "#e9e4d8",
+  "accent": "#b8bcc6"
+ },
+ "krish": {
+  "label": "KRISH",
+  "role": "Permanent recurring",
+  "age": "21-23",
+  "cm": 178,
+  "skin": "#d3a077",
+  "hair": "#17110e",
+  "top": "#3b3f48",
+  "over": "#7d9a7b",
+  "bottom": "#18181d",
+  "shoe": "#8c8f98",
+  "accent": "#3d8fcf"
+ },
+ "ankush": {
+  "label": "ANKUSH",
+  "role": "Permanent recurring",
+  "age": "21-23",
+  "cm": 182,
+  "skin": "#a8714a",
+  "hair": "#120d0b",
+  "top": "#f1eee8",
+  "over": "#b23a2e",
+  "bottom": "#7a93b5",
+  "shoe": "#f4f4f4",
+  "accent": "#e9d9b5"
+ },
+ "aman": {
+  "label": "AMAN",
+  "role": "Supporting (text and visuals only)",
+  "age": "22-24",
+  "cm": 176,
+  "skin": "#c99a72",
+  "hair": "#241812",
+  "top": "#a9c6df",
+  "over": "#2b3a5c",
+  "bottom": "#b9a98a",
+  "shoe": "#6b4b34",
+  "accent": "#f1d34a"
+ }
+}
