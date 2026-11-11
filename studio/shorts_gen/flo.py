@@ -122,8 +122,13 @@ for i in (1, 2, 3, 4):
           f'<svg width="450" height="450" viewBox="0 0 240 240" style="position:absolute;left:0;top:0">{inner}</svg>'
           f'<div class="big" style="position:absolute;left:18px;top:10px;font-size:90px;text-align:left;color:{CORAL if i==4 else AMBER}">{i}</div></div>')
     P.frm(f'#k{i}', {'opacity': 0, 'scale': .6, 'rotation': -6}, {'opacity': 1, 'scale': 1, 'rotation': 0, 'duration': .35, 'ease': 'back.out(2)'}, 8.4 + (i - 1) * .22)
-P.to('#k4', {'scale': 1.05, 'boxShadow': f'0 0 60px {CORAL}', 'duration': .25, 'yoyo': True, 'repeat': 5, 'ease': 'sine.inOut'}, 11.6)
-P.add(f'<div class="tag" id="wb" style="left:520px;top:1240px;opacity:0;background:{CORAL};color:#fff;font-size:34px">you won\'t believe</div>')
+# GTA VI art takes over the stage on "GTA in real life": tiles dim, art pops, tiles return
+P.to('#k1,#k2,#k3,#k4', {'opacity': .12, 'duration': .2}, 9.4)
+imgpanel(P, 'g1', 'duo.jpg', 9.45, 11.55, x=60, top=470, w=960, h=540, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.14))
+P.to('#k1,#k2,#k3', {'opacity': 1, 'duration': .25}, 11.55)
+P.frm('#k4', {'opacity': .12}, {'opacity': 1, 'duration': .25}, 11.55)
+P.to('#k4', {'scale': 1.05, 'boxShadow': f'0 0 60px {CORAL}', 'duration': .25, 'yoyo': True, 'repeat': 5, 'ease': 'sine.inOut'}, 11.8)
+P.add(f'<div class="tag" id="wb" style="left:560px;top:1230px;opacity:0;background:{CORAL};color:#fff;font-size:34px">you won\'t believe</div>')
 P.frm('#wb', {'opacity': 0, 'rotation': 8, 'scale': 1.6}, {'opacity': 1, 'rotation': -3, 'scale': 1, 'duration': .25, 'ease': 'power4.in'}, 12.7)
 shake(12.95, 10)
 c()
@@ -132,11 +137,14 @@ c()
 c = P.scene('s2', 14.5, 25.3)
 label('l1', 'story 1 / 4', 14.6, 25.2)
 stamp('y79', '1979', 15.9, 20, size=230)
-panel('p2', 'police', 17.0, 25.2, top=340, tag='archival footage · illustrative', zoom=(1.05, 1.25))
+P.add(f'<div class="sub" id="lt1" style="top:520px;font-size:54px;opacity:0">Dadeland mall · Miami</div>')
+P.frm('#lt1', {'opacity': 0, 'y': 30}, {'opacity': 1, 'y': 0, 'duration': .3}, 16.35)
+P.to('#lt1', {'opacity': 0, 'duration': .15}, 17.0)
+panel('p2', 'police', 17.0, 25.2, top=400, tag='archival footage · illustrative', zoom=(1.05, 1.25))
 P.add(f'<div id="flash" class="abs" style="inset:0;background:#fff;opacity:0"></div>')
 P.frm('#flash', {'opacity': .0}, {'opacity': .7, 'duration': .06, 'yoyo': True, 'repeat': 1}, 21.0)
 shake(21.0, 18)
-P.add(f'<div id="dd" class="abs" style="left:60px;right:60px;top:1090px;height:120px;background:{CREAM};border-radius:10px;opacity:0;transform:rotate(-2deg);box-shadow:0 14px 40px rgba(0,0,0,.6)">'
+P.add(f'<div id="dd" class="abs" style="left:60px;right:60px;top:1150px;height:120px;background:{CREAM};border-radius:10px;opacity:0;transform:rotate(-2deg);box-shadow:0 14px 40px rgba(0,0,0,.6)">'
       f'<div class="big" style="font-size:78px;color:#1a0a1c;padding-top:16px;letter-spacing:.04em">DADELAND MASSACRE</div></div>')
 P.frm('#dd', {'opacity': 0, 'y': 120}, {'opacity': 1, 'y': 0, 'duration': .3, 'ease': 'power3.out'}, 23.6)
 c()
@@ -145,14 +153,17 @@ c()
 c = P.scene('s3', 25.2, 35.1)
 label('l2', 'story 2 / 4', 25.3, 35.0)
 stamp('y80', '1980', 26.1, 20, size=230)
-panel('p3', 'speed2', 27.4, 35.0, top=340, tag='archival footage · illustrative', zoom=(1.0, 1.3))
-P.add(f'<div class="stat" id="mar" style="top:1080px;font-size:140px;color:{AMBER};opacity:0">0</div>'
-      f'<div class="sub" id="marl" style="top:1235px;opacity:0;font-size:36px">people · 5 months · by boat</div>')
+P.add(f'<div class="sub" id="lt2" style="top:520px;font-size:54px;opacity:0">Cuba → Florida</div>')
+P.frm('#lt2', {'opacity': 0, 'y': 30}, {'opacity': 1, 'y': 0, 'duration': .3}, 26.6)
+P.to('#lt2', {'opacity': 0, 'duration': .15}, 27.4)
+panel('p3', 'speed2', 27.4, 35.0, top=400, tag='archival footage · illustrative', zoom=(1.0, 1.3))
+P.add(f'<div class="stat" id="mar" style="top:1150px;font-size:130px;color:{AMBER};opacity:0">0</div>'
+      f'<div class="sub" id="marl" style="top:1290px;opacity:0;font-size:36px">people · 5 months · by boat</div>')
 P.frm('#mar', {'opacity': 0, 'scale': .7}, {'opacity': 1, 'scale': 1, 'duration': .25}, 30.3)
 P.frm('#marl', {'opacity': 0}, {'opacity': 1, 'duration': .3}, 31.2)
 P.counter('#mar', 0, 125000, 30.45, 1.7, 'function(v){return Math.round(v).toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g,",")}', 'power2.out')
 for i in range(5):
-    P.add(svg_boat(f'bt{i}', -150, 1290 + (i % 2) * 18, .7 + .08 * (i % 3)))
+    P.add(svg_boat(f'bt{i}', -150, 1340 + (i % 2) * 14, .7 + .08 * (i % 3)))
     P.frm(f'#bt{i}', {'opacity': 0, 'x': 0}, {'opacity': 1, 'x': 1300 + i * 20, 'duration': 3.6 - i * .15, 'ease': 'none'}, 31.3 + i * .3)
 c()
 
@@ -160,50 +171,55 @@ c()
 c = P.scene('s4', 35.0, 44.3)
 label('l3', 'story 3 / 4', 35.1, 44.2)
 stamp('y3', 'THE KEYS', 35.2, 80, size=150, color=TEAL, rot=-3)
-P.add(f'<svg class="abs" width="1080" height="500" viewBox="0 0 1080 500" style="left:0;top:560px">'
-      f'<defs><linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2fe6d0" stop-opacity=".9"/><stop offset="1" stop-color="#0a5a66" stop-opacity=".95"/></linearGradient></defs>'
-      f'<rect x="0" y="120" width="1080" height="380" fill="url(#sea)"/><path d="M820 120C900 60 1000 70 1080 110V120z" fill="#f3d7a3"/>'
-      f'<g id="waves" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="6"><path d="M0 150q60-30 120 0t120 0t120 0t120 0t120 0t120 0t120 0t120 0t120 0"/><path d="M-60 200q60-30 120 0t120 0t120 0t120 0t120 0t120 0t120 0t120 0t120 0" /></g></svg>')
+panel('p4', 'miami_boat', 35.9, 44.2, top=330, tag='archival footage · illustrative', zoom=(1.0, 1.3))
+P.add(f'<svg class="abs" width="1080" height="330" viewBox="0 0 1080 330" style="left:0;top:1070px">'
+      f'<defs><linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2fe6d0" stop-opacity=".95"/><stop offset="1" stop-color="#0a5a66" stop-opacity=".95"/></linearGradient></defs>'
+      f'<rect x="0" y="60" width="1080" height="270" fill="url(#sea)"/><path d="M780 60C860 14 980 22 1080 54V60z" fill="#f3d7a3"/>'
+      f'<g id="waves" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="6"><path d="M-120 100q60-30 120 0t120 0t120 0t120 0t120 0t120 0t120 0t120 0t120 0t120 0t120 0"/><path d="M-180 160q60-30 120 0t120 0t120 0t120 0t120 0t120 0t120 0t120 0t120 0t120 0t120 0" /></g></svg>')
 P.to('#waves', {'x': 120, 'duration': 9, 'ease': 'none'}, 35)
 for i in range(5):
-    P.add(f'<div id="bale{i}" class="abs" style="left:{-140}px;top:{680 + (i%3)*40}px;width:120px;height:104px;background:#caa86a;border:7px solid #5a3d12;border-radius:10px;opacity:0;'
+    P.add(f'<div id="bale{i}" class="abs" style="left:-140px;top:{1110 + (i%3)*34}px;width:104px;height:90px;background:#caa86a;border:7px solid #5a3d12;border-radius:10px;opacity:0;'
           f'background-image:linear-gradient(90deg,transparent 46%,#5a3d12 46% 54%,transparent 54%),linear-gradient(0deg,transparent 46%,#5a3d12 46% 54%,transparent 54%)"></div>')
-    P.frm(f'#bale{i}', {'opacity': 0, 'x': 0, 'rotation': -8}, {'opacity': 1, 'x': 760 + i * 70, 'rotation': 8, 'duration': 3.2 + i * .1, 'ease': 'power1.out'}, 39.4 + i * .28)
-    P.to(f'#bale{i}', {'y': -14, 'duration': .45, 'yoyo': True, 'repeat': 5, 'ease': 'sine.inOut'}, 39.5 + i * .28)
-P.add(f'<div id="fish" class="abs" style="left:-420px;top:1000px;opacity:0"><svg width="380" height="220" viewBox="0 0 380 220">'
+    P.frm(f'#bale{i}', {'opacity': 0, 'x': 0, 'rotation': -8}, {'opacity': 1, 'x': 740 + i * 60, 'rotation': 8, 'duration': 3.2 + i * .1, 'ease': 'power1.out'}, 39.4 + i * .28)
+    P.to(f'#bale{i}', {'y': -12, 'duration': .45, 'yoyo': True, 'repeat': 5, 'ease': 'sine.inOut'}, 39.5 + i * .28)
+P.add(f'<div id="fish" class="abs" style="left:-420px;top:1210px;opacity:0"><svg width="300" height="174" viewBox="0 0 380 220">'
       f'<rect x="40" y="50" width="240" height="120" rx="14" fill="#caa86a" stroke="#5a3d12" stroke-width="8"/><path d="M280 110l80-60v120z" fill="#caa86a" stroke="#5a3d12" stroke-width="8" stroke-linejoin="round"/>'
       f'<circle cx="90" cy="95" r="12" fill="#1a0a1c"/><path d="M50 140q30 20 60 0" stroke="#5a3d12" stroke-width="7" fill="none"/></svg></div>')
-P.frm('#fish', {'opacity': 0, 'x': 0}, {'opacity': 1, 'x': 700, 'duration': .5, 'ease': 'back.out(1.6)'}, 42.8)
-stamp('sg', 'SQUARE GROUPER', 42.85, 1260, cls='year', size=118, color=AMBER, rot=-3)
+P.frm('#fish', {'opacity': 0, 'x': 0}, {'opacity': 1, 'x': 600, 'duration': .5, 'ease': 'back.out(1.6)'}, 42.8)
+P.add(f'<div class="year" id="sg" style="top:600px;font-size:116px;color:{AMBER};opacity:0;background:rgba(18,7,18,.78);padding:14px 0">SQUARE GROUPER</div>')
+P.frm('#sg', {'opacity': 0, 'scale': 2.6, 'rotation': -9}, {'opacity': 1, 'scale': 1, 'rotation': -3, 'duration': .22, 'ease': 'power4.in'}, 42.85)
+shake(43.07)
 c()
 
 # ---- 5. story 4: Griselda ----------------------------------------------------------------
 c = P.scene('s5', 44.2, 58.5)
-P.add(f'<div id="spot" class="abs" style="left:140px;top:240px;width:800px;height:1000px;background:radial-gradient(ellipse at 50% 38%,rgba(255,243,230,.30),rgba(255,243,230,0) 62%);opacity:0"></div>')
-P.frm('#spot', {'opacity': 0}, {'opacity': 1, 'duration': .8}, 44.4)
 label('l4', 'story 4 / 4', 44.3, 58.4, color=CORAL)
-stamp('y4', '#4', 44.45, 60, size=300, color=CORAL, rot=-3)
-P.add(f'<svg id="sil" class="abs" width="620" height="640" viewBox="0 0 620 640" style="left:230px;top:440px;opacity:0">'
-      f'<g fill="#0a0408" stroke="{CREAM}" stroke-width="4" stroke-opacity=".45"><circle cx="310" cy="190" r="150"/><circle cx="200" cy="230" r="80"/><circle cx="420" cy="230" r="80"/><circle cx="250" cy="110" r="70"/><circle cx="370" cy="110" r="70"/>'
-      f'<path d="M110 640c0-100 60-130 130-160l70-40l70 40c70 30 130 60 130 160z"/></g>'
-      f'<ellipse cx="310" cy="250" rx="72" ry="92" fill="#1c0c15"/><rect x="236" y="226" width="148" height="34" rx="12" fill="#05020a"/></svg>')
-P.frm('#sil', {'opacity': 0, 'y': 80}, {'opacity': 1, 'y': 0, 'duration': .6, 'ease': 'power3.out'}, 45.2)
-P.add(f'<div class="big" id="gb" style="position:absolute;left:0;right:0;top:1090px;font-size:112px;opacity:0;color:{CREAM}">GRISELDA BLANCO</div>'
-      f'<div class="sub" id="gg" style="top:1215px;opacity:0;color:{CORAL};font-size:44px">"the cocaine godmother"</div>')
-P.frm('#gb', {'opacity': 0, 'scale': 1.4}, {'opacity': 1, 'scale': 1, 'duration': .25, 'ease': 'power4.in'}, 47.1)
-shake(47.35, 10)
-P.frm('#gg', {'opacity': 0, 'y': 24}, {'opacity': 1, 'y': 0, 'duration': .3}, 48.7)
-# motorcycle drive-by #1 (52.8) and #2 (57.0)
-for k, (t0, text) in enumerate([(52.7, 'THE MOTORCYCLE DRIVE-BY'), (57.0, '')]):
-    P.add(svg_moto(f'mo{k}', -400, 560, 1.15))
-    P.frm(f'#mo{k}', {'opacity': 1, 'x': 0}, {'opacity': 1, 'x': 1560, 'duration': .85, 'ease': 'power2.in'}, t0)
-    P.to(f'#mo{k}', {'opacity': 0, 'duration': .05}, t0 + .9)
-P.add(f'<div class="tag" id="dbt" style="left:230px;top:1010px;background:{CORAL};color:#fff;opacity:0;font-size:34px;white-space:nowrap">motorcycle drive-by</div>')
-P.frm('#dbt', {'opacity': 0, 'x': -50}, {'opacity': 1, 'x': 0, 'duration': .25}, 53.2)
-P.to('#dbt', {'opacity': 0, 'duration': .15}, 56.3)
-P.to('#gb', {'opacity': 0, 'duration': .12}, 54.3); P.to('#gg', {'opacity': 0, 'duration': .12}, 54.3)
-stamp('y12', '2012', 54.4, 1060, size=210, color=CORAL, rot=-2)
-P.to('#y12', {'opacity': 0, 'duration': .15}, 56.8)
+stamp('y4', '#4', 44.45, 40, size=260, color=CORAL, rot=-3)
+# case-file folder (no likeness): slides in, shrinks left when the bike art arrives
+P.add(f'''<div id="fld" class="abs" style="left:90px;top:330px;width:900px;height:720px;opacity:0;transform-origin:0 0">
+<div class="abs" style="left:0;top:-54px;width:300px;height:70px;background:#d9c9a8;border-radius:16px 16px 0 0;font-family:Oswald;font-weight:700;letter-spacing:.2em;font-size:30px;color:#3a2a14;padding:16px 24px">CASE FILE</div>
+<div class="abs" style="left:0;top:0;width:900px;height:720px;background:#e8dcc0;border-radius:0 24px 24px 24px;box-shadow:0 30px 80px rgba(0,0,0,.7)">
+<div class="abs" style="left:50px;top:60px;font-family:Anton;font-size:100px;color:#241606;line-height:1" id="fn">GRISELDA<br>BLANCO</div>
+<div class="abs" id="fs" style="left:50px;top:290px;font-family:Oswald;font-weight:700;letter-spacing:.22em;font-size:38px;color:{CORAL}">"THE COCAINE GODMOTHER"</div>
+<div class="abs" style="left:50px;top:380px;width:560px;height:26px;background:#241606"></div><div class="abs" style="left:50px;top:430px;width:700px;height:26px;background:#241606"></div><div class="abs" style="left:50px;top:480px;width:430px;height:26px;background:#241606"></div>
+<div class="abs" id="fd" style="left:400px;top:550px;width:470px;height:100px;border:8px solid {CORAL};border-radius:10px;white-space:nowrap;font-family:Anton;font-size:50px;line-height:86px;text-align:center;color:{CORAL};transform:rotate(-7deg);opacity:0">DOZENS OF MURDERS</div>
+</div></div>''')
+P.frm('#fld', {'opacity': 0, 'y': 90, 'rotation': -3}, {'opacity': 1, 'y': 0, 'rotation': 0, 'duration': .5, 'ease': 'power3.out'}, 44.9)
+for sel, tt in (('#fn', 47.1), ('#fs', 48.7)):
+    P.frm(sel, {'opacity': 0, 'x': -30}, {'opacity': 1, 'x': 0, 'duration': .25, 'ease': 'power3.out'}, tt)
+P.st('#fn', {'opacity': 0}, 44.9); P.st('#fs', {'opacity': 0}, 44.9)
+shake(47.3, 10)
+P.frm('#fd', {'opacity': 0, 'scale': 2.4}, {'opacity': 1, 'scale': 1, 'duration': .2, 'ease': 'power4.in'}, 50.7)
+shake(50.9, 12)
+P.to('#fld', {'x': -50, 'y': 90, 'scale': .55, 'duration': .45, 'ease': 'power3.inOut'}, 52.55)
+imgpanel(P, 'g2', 'bike.jpg', 52.6, 58.3, x=600, top=330, w=400, h=711, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.2))
+P.add(f'<div class="tag" id="dbt" style="left:100px;top:1090px;background:{CORAL};color:#fff;opacity:0;font-size:34px;white-space:nowrap">motorcycle drive-by</div>')
+P.frm('#dbt', {'opacity': 0, 'x': -50}, {'opacity': 1, 'x': 0, 'duration': .25}, 53.0)
+P.to('#dbt', {'opacity': 0, 'duration': .15}, 54.35)
+stamp('y12', '2012', 54.4, 1080, size=200, color=CORAL, rot=-2)
+P.to('#y12', {'opacity': 0, 'duration': .15}, 56.9)
+shake(57.0, 14)
+P.to('#g2', {'scale': 1.06, 'duration': .12, 'yoyo': True, 'repeat': 1}, 57.0)
 P.add(f'<div class="neon" id="same" style="position:absolute;left:0;right:0;top:1090px;font-size:120px;opacity:0">SAME WAY.</div>')
 P.frm('#same', {'opacity': 0, 'scale': 1.8}, {'opacity': 1, 'scale': 1, 'duration': .2, 'ease': 'power4.in'}, 57.55)
 shake(57.75, 16)
@@ -211,23 +227,19 @@ c()
 
 # ---- 6. outro ----------------------------------------------------------------------------------
 c = P.scene('s6', 58.4, 67.0)
-P.add(f'<svg class="abs" width="1080" height="560" viewBox="0 0 1080 560" style="left:0;top:700px">'
-      + ''.join(f'<rect x="{x}" y="{560-h}" width="{w}" height="{h}" fill="#07030a"/>' + ''.join(
-          f'<rect x="{x+10+j*22}" y="{560-h+14+i*34}" width="9" height="14" fill="{AMBER}" opacity=".7"/>' for i in range(max(0, h // 34 - 1)) for j in range(max(0, w // 22 - 1)) if (i * 7 + j * 3 + x) % 5 < 2)
-          for x, w, h in [(40, 140, 300), (200, 110, 420), (330, 160, 340), (520, 120, 470), (660, 150, 360), (830, 110, 440), (950, 120, 300)])
-      + '</svg>')
-P.add(svg_palm(-60, 760, 1.0) + svg_palm(830, 790, .9))
-P.add(f'<div class="neon" id="o1" style="position:absolute;left:30px;right:30px;top:230px;font-size:150px;line-height:1.02;opacity:0">GTA DIDN\'T<br>INVENT<br>FLORIDA</div>')
+imgpanel(P, 'g3', 'duo.jpg', 58.45, 65.3, x=60, top=600, w=960, h=620, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.18), pos='50% 40%')
+imgpanel(P, 'g4', 'vice.jpg', 65.25, 67.0, x=60, top=600, w=960, h=620, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.1), pos='50% 50%')
+P.add(f'<div class="neon" id="o1" style="position:absolute;left:30px;right:30px;top:120px;font-size:126px;line-height:1.02;opacity:0">GTA DIDN\'T<br>INVENT<br>FLORIDA</div>')
 P.frm('#o1', {'opacity': 0, 'scale': 1.3}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'power3.out'}, 58.6)
 P.to('#o1', {'opacity': 0, 'duration': .15}, 61.0)
-P.add(f'<div class="big" id="o2" style="position:absolute;left:30px;right:30px;top:260px;font-size:130px;color:{AMBER};opacity:0">IT JUST<br>TURNED THE<br>VOLUME<br>DOWN</div>')
+P.add(f'<div class="big" id="o2" style="position:absolute;left:30px;right:30px;top:150px;font-size:112px;color:{AMBER};opacity:0">IT JUST<br>TURNED THE<br>VOLUME DOWN</div>')
 P.frm('#o2', {'opacity': 0, 'y': 40}, {'opacity': 1, 'y': 0, 'duration': .3, 'ease': 'power3.out'}, 61.1)
 P.to('#o2', {'opacity': 0, 'duration': .15}, 62.55)
-P.add(f'<div class="neon" id="o3" style="position:absolute;left:0;right:0;top:230px;font-size:170px;line-height:1;opacity:0">GTA VI<div style="font-size:130px;color:{AMBER};text-shadow:0 0 30px {AMBER}">NOV 19</div></div>')
+P.add(f'<div class="neon" id="o3" style="position:absolute;left:0;right:0;top:130px;font-size:170px;line-height:1;opacity:0">GTA VI<div style="font-size:120px;color:{AMBER};text-shadow:0 0 30px {AMBER}">NOV 19</div></div>')
 P.frm('#o3', {'opacity': 0, 'scale': 1.5}, {'opacity': 1, 'scale': 1, 'duration': .25, 'ease': 'power4.in'}, 62.6)
 shake(62.85, 14)
 P.to('#o3', {'opacity': 0, 'duration': .15}, 65.25)
-P.add(f'<div class="neon" id="o4" style="position:absolute;left:30px;right:30px;top:300px;font-size:150px;line-height:1.05;opacity:0">WELCOME<br>TO<br><span style="color:{TEAL};text-shadow:0 0 14px {TEAL},0 0 50px {TEAL}">LEONIDA</span></div>')
+P.add(f'<div class="neon" id="o4" style="position:absolute;left:30px;right:30px;top:130px;font-size:130px;line-height:1.05;opacity:0">WELCOME TO<br><span style="color:{TEAL};text-shadow:0 0 14px {TEAL},0 0 50px {TEAL}">LEONIDA</span></div>')
 P.frm('#o4', {'opacity': 0}, {'opacity': 1, 'duration': .08, 'yoyo': True, 'repeat': 5}, 65.3)
 P.to('#o4', {'opacity': 1, 'duration': .01}, 65.8)
 c()

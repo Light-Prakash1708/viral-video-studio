@@ -53,7 +53,7 @@ def slam(eid, html, t0, t1, top, size, color=CORAL, rot=-3, cls='stat'):
     shake(t0 + .22)
 
 # ---- analyst character (original) ---------------------------------------------------------
-P.add(f'''<svg id="an" class="abs" width="184" height="240" viewBox="0 0 230 300" style="left:862px;top:1215px;z-index:20">
+P.add(f'''<svg id="an" class="abs" width="184" height="240" viewBox="0 0 230 300" style="left:862px;top:1175px;z-index:20;opacity:0">
 <g stroke="{CREAM}" stroke-width="9" stroke-linecap="round" fill="none"><path d="M115 130v90M115 160L70 200M115 160l45 38M115 220l-34 70M115 220l34 70"/></g>
 <path d="M115 134l-14 20l14 50l14-50z" fill="{CORAL}"/>
 <circle cx="115" cy="78" r="52" fill="#2a1820" stroke="{CREAM}" stroke-width="8"/>
@@ -66,22 +66,25 @@ P.add(f'''<svg id="an" class="abs" width="184" height="240" viewBox="0 0 230 300
 <path id="sw" d="M170 40q10 18 0 26q-10-8 0-26z" fill="{TEAL}" opacity="0"/>
 </svg>''')
 P.st('#an', {'opacity': 0}, 0)
-P.frm('#an', {'opacity': 0, 'y': 60}, {'opacity': 1, 'y': 0, 'duration': .4, 'ease': 'back.out(1.6)'}, 1.0)
 P.to('#an', {'y': -8, 'duration': .5, 'yoyo': True, 'repeat': 90, 'ease': 'sine.inOut'}, 1.5)
+for a_, b_ in [(5.5, 13.5), (31.9, 44.8), (46.1, 51.0)]:
+    P.frm('#an', {'opacity': 0, 'x': 80}, {'opacity': 1, 'x': 0, 'duration': .35, 'ease': 'back.out(1.6)'}, a_)
+    P.to('#an', {'opacity': 0, 'x': 80, 'duration': .2}, b_ - .2)
 def mood(m, t):
     for k in 'NOSW':
         P.st(f'#m{k}', {'opacity': 1 if k == m else 0}, t)
     P.st('#sw', {'opacity': 1 if m == 'W' else 0}, t)
+P.st('#an', {'opacity': 0}, 0.01)
 for m, t in [('N', 0), ('O', 2.5), ('N', 5.5), ('O', 21.4), ('N', 24.5), ('O', 28.8), ('N', 31.0), ('W', 32.2), ('N', 36.0), ('W', 38.0), ('S', 42.4), ('S', 44.8), ('N', 47.0), ('S', 49.4)]:
     mood(m, t)
 
 # ---- 0 hook -------------------------------------------------------------------------------
 c = P.scene('m0', 0, 5.3)
-P.add(f'<div class="neon" id="hh" style="position:absolute;left:0;right:0;top:70px;font-size:160px;opacity:0">GTA VI</div>'
-      f'<div class="lab sub" id="hl" style="top:250px;font-size:36px;opacity:0">every minute you play costs</div>')
+P.add(f'<div class="neon" id="hh" style="position:absolute;left:0;right:0;top:30px;font-size:160px;opacity:0">GTA VI</div>'
+      f'<div class="lab sub" id="hl" style="top:262px;font-size:36px;opacity:0">every minute you play costs</div>')
 P.frm('#hh', {'opacity': 0, 'scale': 1.6}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'power4.in'}, 1.15)
 P.frm('#hl', {'opacity': 0}, {'opacity': 1, 'duration': .3}, .3)
-panel('p0', 'adding', 0.0, 5.3, top=330, tag='archival footage · illustrative', zoom=(1.0, 1.3))
+imgpanel(P, 'g0', 'vault.jpg', 0.0, 5.3, x=60, top=350, w=960, h=640, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.2))
 P.add(f'<div class="stat" id="big" style="top:1060px;font-size:200px;color:{AMBER};opacity:0;text-shadow:0 0 50px rgba(255,179,71,.6),0 8px 0 rgba(0,0,0,.7)">$0</div>')
 P.frm('#big', {'opacity': 0, 'scale': .6}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'back.out(2)'}, 2.3)
 P.counter('#big', 0, 333000, 2.5, 1.6, MONEY, 'power2.out')
@@ -89,7 +92,7 @@ shake(4.15, 16)
 c()
 
 # ---- 1 estimate ------------------------------------------------------------------------------
-c = P.scene('m1', 5.2, 15.3)
+c = P.scene('m1', 5.2, 15.3, dy=100)
 slam('hm', "HERE'S THE MATH", 5.3, 6.9, 250, 150, color=TEAL)
 P.add(f'<div class="abs" id="bar" style="left:80px;top:700px;width:920px;height:60px;border-radius:30px;background:rgba(255,243,230,.12);opacity:0"></div>'
       f'<div class="abs" id="rng" style="left:540px;top:700px;width:0;height:60px;border-radius:30px;background:linear-gradient(90deg,{AMBER},{CORAL});box-shadow:0 0 40px {CORAL}"></div>'
@@ -106,7 +109,8 @@ P.add(f'<div class="stat" id="r1" style="top:900px;font-size:150px;color:{AMBER}
 P.frm('#r1', {'opacity': 0, 'scale': .6}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'back.out(2)'}, 9.7)
 P.to('#r1', {'opacity': 0, 'duration': .15}, 10.9)
 P.to('#bar,#rng,#b0,#b1,#b2,#est', {'opacity': 0, 'duration': .2}, 10.9)
-slam('me', 'MOST<br>EXPENSIVE<br>GAME EVER', 11.1, 13.5, 420, 150, color=CORAL, rot=-2)
+slam('me', 'MOST EXPENSIVE<br>GAME EVER', 11.1, 13.5, 150, 130, color=CORAL, rot=-2)
+imgpanel(P, 'g1', 'vice.jpg', 11.2, 13.5, x=60, top=520, w=960, h=540, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.15))
 txt('lu', 'LET\'S USE', 13.6, 15.2, 360, 90, cls='sub', color=AMBER)
 P.add(f'<div class="stat" id="two" style="top:480px;font-size:130px;color:{AMBER};opacity:0">$0</div>')
 P.frm('#two', {'opacity': 0, 'scale': .6}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'back.out(2)'}, 14.0)
@@ -115,27 +119,29 @@ P.to('#two', {'opacity': 0, 'duration': .15}, 15.15)
 c()
 
 # ---- 2 per-minute -----------------------------------------------------------------------------
-c = P.scene('m2', 15.2, 25.8)
-txt('h100', '100 HOURS', 15.3, 16.7, 300, 170, color=TEAL)
+c = P.scene('m2', 15.2, 25.8, dy=110)
+imgpanel(P, 'g2', 'bike.jpg', 15.25, 16.6, x=60, top=330, w=420, h=748, tag='GTA VI · 100 hrs', zoom=(1.0, 1.15))
+P.add(f'<div class="stat" id="h100" style="left:520px;right:20px;top:540px;font-size:140px;color:{TEAL};opacity:0;text-align:left">100<br>HOURS</div>')
+P.frm('#h100', {'opacity': 0, 'x': 60}, {'opacity': 1, 'x': 0, 'duration': .3, 'ease': 'power3.out'}, 15.35)
+P.to('#h100', {'opacity': 0, 'duration': .15}, 16.5)
 P.add(f'<div class="stat" id="m6" style="top:300px;font-size:170px;color:{AMBER};opacity:0">6,000 MIN</div>')
 P.frm('#m6', {'opacity': 0, 'scale': .6}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'back.out(2)'}, 16.65)
-# 60 blocks = 100 min each
 blocks = ''.join(f'<div id="bk{i}" style="width:130px;height:62px;border-radius:8px;background:{AMBER};opacity:0"></div>' for i in range(60))
-P.add(f'<div class="abs" id="bks" style="left:60px;top:560px;width:960px;display:grid;grid-template-columns:repeat(6,1fr);gap:14px;width:900px;left:90px;opacity:1">{blocks}</div>')
+P.add(f'<div class="abs" id="bks" style="left:90px;top:560px;width:900px;display:grid;grid-template-columns:repeat(6,1fr);gap:14px;opacity:1">{blocks}</div>')
 for i in range(60):
-    P.frm(f'#bk{i}', {'opacity': 0, 'scale': .3}, {'opacity': 1, 'scale': 1, 'duration': .16, 'ease': 'back.out(2)'}, 15.5 + i * .028 if i < 30 else 16.6 + (i - 30) * .03)
+    P.frm(f'#bk{i}', {'opacity': 0, 'scale': .3}, {'opacity': 1, 'scale': 1, 'duration': .16, 'ease': 'back.out(2)'}, 16.7 + i * .02)
 P.to('#bks', {'opacity': 0, 'duration': .2}, 17.95)
-P.to('#h100,#m6', {'opacity': 0, 'duration': .15}, 17.95)
+P.to('#m6', {'opacity': 0, 'duration': .15}, 17.95)
 P.add(f'<div class="stat" id="eq" style="top:330px;font-size:120px;opacity:0;color:{CREAM}">$2,000,000,000<br><span style="color:{TEAL};font-size:150px">÷ 6,000</span></div>')
 P.frm('#eq', {'opacity': 0, 'y': 60}, {'opacity': 1, 'y': 0, 'duration': .35, 'ease': 'power3.out'}, 18.3)
 P.to('#eq', {'opacity': 0, 'duration': .15}, 21.3)
 slam('res', '$333,333', 21.45, 25.7, 400, 230, color=CORAL, rot=-2)
 txt('pm', 'PER MINUTE', 22.0, 25.7, 680, 64, cls='sub', color=CREAM)
-panel('p2', 'teller', 23.4, 25.8, top=760, zoom=(1.0, 1.15), fs=.58)
+panel('p2', 'teller', 23.4, 25.8, top=800, zoom=(1.0, 1.15), fs=.5)
 c()
 
 # ---- 3 per-developer ----------------------------------------------------------------------------
-c = P.scene('m3', 25.7, 31.9)
+c = P.scene('m3', 25.7, 31.9, dy=90)
 txt('h2k', '2,000 DEVELOPERS', 25.9, 31.8, 300, 120, color=TEAL, ease='power3.out')
 dots = f'background-image:radial-gradient(circle,{CREAM} 0 3px,transparent 3.6px);background-size:14px 14px;'
 P.add(f'<div class="abs" id="dots" style="left:90px;top:500px;width:900px;height:420px;{dots}clip-path:inset(0 100% 0 0)"></div>')
@@ -151,8 +157,8 @@ shake(28.85, 12)
 c()
 
 # ---- 4 can it fail ---------------------------------------------------------------------------------
-c = P.scene('m4', 31.9, 39.1)
-slam('cf', 'CAN IT<br>FAIL?', 32.0, 33.6, 330, 230, color=CORAL, rot=-2)
+c = P.scene('m4', 31.9, 39.1, dy=110)
+slam('cf', 'CAN IT<br>FAIL?', 32.0, 34.55, 330, 230, color=CORAL, rot=-2)
 txt('pr', '$70', 34.6, 36.2, 300, 260, color=GREEN)
 P.add(f'<div class="sub" id="prl" style="top:600px;font-size:44px;opacity:0">per copy</div>')
 P.frm('#prl', {'opacity': 0}, {'opacity': 1, 'duration': .3}, 35.1)
@@ -169,11 +175,12 @@ P.frm('#cpl', {'opacity': 0}, {'opacity': 1, 'duration': .3}, 37.5)
 c()
 
 # ---- 5 GTA V compare ------------------------------------------------------------------------------------
-c = P.scene('m5', 39.0, 44.85)
+c = P.scene('m5', 39.0, 44.85, dy=60)
 txt('g5', 'GTA V', 39.1, 44.7, 250, 150, color=AMBER, ease='power3.out')
 P.add(f'<div class="abs" id="t3" style="left:0;right:0;top:420px;text-align:center;font-family:Anton;font-size:96px;color:{GREEN};opacity:0;text-shadow:0 0 30px rgba(67,224,138,.5)">$1,000,000,000<br><span style="font-size:48px;color:{CREAM};letter-spacing:.2em">IN 3 DAYS</span></div>')
 P.frm('#t3', {'opacity': 0, 'scale': .7}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'back.out(2)'}, 39.15)
 P.to('#t3', {'opacity': 0, 'duration': .15}, 42.4)
+imgpanel(P, 'g5', 'vault.jpg', 39.9, 42.45, x=90, top=735, w=760, h=400, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.15))
 # bars: 29M vs 200M+
 P.add(f'<div class="abs" id="bA" style="left:230px;bottom:820px;width:240px;height:0;background:{GREEN};border-radius:12px 12px 0 0"></div>'
       f'<div class="abs" id="bB" style="left:610px;bottom:820px;width:240px;height:0;background:{CORAL};border-radius:12px 12px 0 0"></div>'
@@ -191,11 +198,13 @@ c()
 # ---- 6 can't fail + risk ----------------------------------------------------------------------------------------
 c = P.scene('m6', 44.7, 51.0)
 slam('cff', "IT CAN'T<br>FAIL", 44.75, 46.0, 330, 220, color=GREEN, rot=-2)
-txt('rk', 'THE ONLY THING AT RISK', 46.1, 49.1, 300, 60, cls='sub', color=CORAL, ease='power3.out')
-P.add(f'<div class="stat" id="hrs" style="top:420px;font-size:230px;opacity:0;color:{CREAM}">100</div><div class="sub" id="hrl" style="top:690px;font-size:56px;opacity:0">hours of your life</div>')
+txt('rk', 'THE ONLY THING AT RISK', 46.1, 49.1, 130, 56, cls='sub', color=CORAL, ease='power3.out')
+imgpanel(P, 'g3', 'duo.jpg', 46.05, 51.0, x=60, top=230, w=960, h=540, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.18), pos='50% 40%')
+P.add(f'<div class="stat" id="hrs" style="top:800px;font-size:200px;opacity:0;color:{CREAM}">100</div><div class="sub" id="hrl" style="top:1010px;font-size:48px;opacity:0">hours of your life</div>')
 P.frm('#hrs', {'opacity': 0, 'scale': .6}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'back.out(2)'}, 47.4)
 P.frm('#hrl', {'opacity': 0}, {'opacity': 1, 'duration': .3}, 47.9)
-P.add(f'<div class="neon" id="nov" style="position:absolute;left:0;right:0;top:880px;font-size:150px;opacity:0;line-height:1">NOV 19<div style="font-size:60px;letter-spacing:.3em;color:{TEAL};text-shadow:0 0 20px {TEAL}">SEE YOU THERE</div></div>')
+P.to('#hrs,#hrl', {'opacity': 0, 'duration': .15}, 49.1)
+P.add(f'<div class="neon" id="nov" style="position:absolute;left:0;right:0;top:820px;font-size:170px;opacity:0;line-height:1">NOV 19<div style="font-size:56px;letter-spacing:.3em;color:{TEAL};text-shadow:0 0 20px {TEAL};margin-top:10px">SEE YOU THERE</div></div>')
 P.frm('#nov', {'opacity': 0, 'scale': 1.6}, {'opacity': 1, 'scale': 1, 'duration': .25, 'ease': 'power4.in'}, 49.2)
 shake(49.45, 14)
 c()

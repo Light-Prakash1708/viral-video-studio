@@ -31,9 +31,9 @@ class Proj:
         self.n += 1
         return f'{p}{self.n}'
 
-    def scene(self, sid, t0, t1, z=5):
+    def scene(self, sid, t0, t1, z=5, dy=0):
         """open a scene group visible only between t0 and t1; returns closer"""
-        self.add(f'<div class="sc" id="{sid}" style="z-index:{z}">')
+        self.add(f'<div class="sc" id="{sid}" style="z-index:{z};transform:translateY({dy}px)">')
         self.st('#' + sid, {'opacity': 1}, t0)
         self.st('#' + sid, {'opacity': 0}, t1)
         return lambda: self.add('</div>')
@@ -130,3 +130,21 @@ def W_(words, text, nth=0):
             if k == nth:
                 return w['s']
     raise KeyError(text)
+
+
+def imgpanel(P, pid, src, t0, t1, x=60, top=300, w=960, h=640, tag=None, zoom=(1.0, 1.12), pos='50% 50%', z=6, fs=1.0, enter='up'):
+    """full-colour image card with ken-burns, shine sweep, soft pop in/out"""
+    if not getattr(P, '_ip', False):
+        P._ip = True
+        P.css.append(f""".ip{{position:absolute;border-radius:24px;overflow:hidden;opacity:0;box-shadow:0 0 0 4px rgba(255,243,230,.92),0 28px 70px rgba(0,0,0,.75)}}
+.ip img{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.06) saturate(1.1)}}
+.ip .shine{{position:absolute;top:-20%;bottom:-20%;left:-40%;width:30%;background:linear-gradient(100deg,rgba(255,255,255,0),rgba(255,255,255,.34),rgba(255,255,255,0));transform:skewX(-18deg)}}
+.ip .itag{{position:absolute;left:18px;bottom:16px;font-family:Oswald;font-weight:700;letter-spacing:.18em;font-size:22px;padding:6px 14px;border-radius:6px;background:rgba(18,7,18,.82);color:#fff3e6;text-transform:uppercase;white-space:nowrap}}""")
+    P.add(f'<div class="ip" id="{pid}" style="left:{x}px;top:{top}px;width:{w}px;height:{h}px;z-index:{z};transform-origin:50% 50%">'
+          f'<img id="{pid}i" src="assets/gta/{src}" style="object-position:{pos}"/><div class="shine" id="{pid}s"></div>'
+          + (f'<div class="itag">{tag}</div>' if tag else '') + '</div>')
+    dy = 70 if enter == 'up' else 0
+    P.frm(f'#{pid}', {'opacity': 0, 'y': dy, 'scale': .9}, {'opacity': 1, 'y': 0, 'scale': fs, 'duration': .38, 'ease': 'power3.out'}, t0)
+    P.frm(f'#{pid}i', {'scale': zoom[0]}, {'scale': zoom[1], 'duration': max(.5, t1 - t0), 'ease': 'none'}, t0)
+    P.frm(f'#{pid}s', {'x': 0}, {'x': w * 4.2, 'duration': .75, 'ease': 'power2.inOut'}, t0 + .12)
+    P.to(f'#{pid}', {'opacity': 0, 'scale': .96, 'duration': .2}, t1 - .2)

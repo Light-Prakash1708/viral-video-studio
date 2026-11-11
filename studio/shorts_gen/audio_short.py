@@ -75,7 +75,7 @@ def lufs_gain(x, target):
     r = np.sqrt(np.mean(x[np.abs(x) > 1e-4] ** 2)) + 1e-9
     return 10 ** (target / 20) / r
 
-def build(name, voice_mp3, dur, music, mstart, events, out, mgain_db=-21, duck_db=-5):
+def build(name, voice_mp3, dur, music, mstart, events, out, mgain_db=-29, duck_db=-7):
     n = int(dur * SR)
     v = load(voice_mp3); v = v[:n]; v = np.pad(v, (0, n - len(v)))
     v *= lufs_gain(v, -17)
@@ -100,9 +100,13 @@ def build(name, voice_mp3, dur, music, mstart, events, out, mgain_db=-21, duck_d
             'swell': lambda: real('/root/hf-shorts/sfx/swell.wav') * .6, 'paper': lambda: real('/root/hf-shorts/sfx/paper.wav'),
             'cash': lambda: real('/root/hf-shorts/sfx/cash.wav', 2.2, .3), 'moto': lambda: real('/root/hf-shorts/sfx/moto.wav') * 1.1,
         }[kind]()
-        place(fx, k, t, g * .55)
+        place(fx, k, t, g * .17)
     # sfx are mono; gentle duck of sfx under voice so words stay clear
-    fx *= (1 - .35 * act)
+    fx *= (1 - .65 * act)
+    spk = act > .5
+    bed = np.sqrt(np.mean(((m[0] + fx)[spk]) ** 2)) + 1e-9; vv = np.sqrt(np.mean(v[spk] ** 2)) + 1e-9
+    mu = np.sqrt(np.mean((m[0][spk]) ** 2)) + 1e-9; fr = np.sqrt(np.mean((fx[spk]) ** 2)) + 1e-9
+    print(name, 'voice vs bed %.1f dB | vs music %.1f dB | vs sfx %.1f dB' % (20 * np.log10(vv / bed), 20 * np.log10(vv / mu), 20 * np.log10(vv / fr)))
     L = v + m[0] + fx; R = v + m[1] + fx
     st = np.stack([L, R], 1)
     st /= max(1.0, np.max(np.abs(st)) / .95)
@@ -127,7 +131,7 @@ if __name__ == '__main__':
               (25.2, 'whoosh', .7), (26.1, 'impact', .9), (27.4, 'whoosh', .6), (30.35, 'riser', .5)] + ticks(30.45, 32.1, .06, 'tickh', .3) + [(32.1, 'ding', .5),
               (35.0, 'whoosh', .7), (35.2, 'impact', .85), (39.4, 'whoosh_d', .5), (42.8, 'pop', .8), (42.85, 'hit', .8), (44.2, 'whoosh_d', .8), (44.45, 'impact', 1.0), (44.5, 'swell', .8),
               (47.1, 'hit', .9), (47.0, 'whoosh_s', .5), (48.7, 'whoosh', .4), (52.65, 'moto', 1.0), (54.4, 'impact', 1.0), (56.95, 'moto', 1.0), (57.55, 'boom', 1.0), (57.58, 'impact', .8),
-              (58.4, 'whoosh', .7), (58.6, 'hit', .7), (61.1, 'whoosh', .6), (62.6, 'impact', .9), (65.25, 'buzz', .6), (65.38, 'buzz', .6), (65.5, 'buzz', .6), (65.62, 'buzz', .6), (65.8, 'swell', 1.0)]
+              (58.4, 'whoosh', .7), (58.6, 'hit', .7), (61.1, 'whoosh', .6), (62.6, 'impact', .9), (65.25, 'buzz', .6), (65.38, 'buzz', .6), (65.5, 'buzz', .6), (65.62, 'buzz', .6), (65.8, 'swell', 1.0), (9.45, 'whoosh_s', .7), (9.5, 'hit_s', .6), (44.9, 'paper', .7), (50.7, 'impact', .8), (52.6, 'whoosh', .8), (65.25, 'whoosh_s', .7)]
         build('flo', '/root/hf-shorts/fl.mp3', 67.0, '/root/hf-shorts/assets/ba4dc18e-b8e2-4302-b404-787d4a036ff4.mp3', 28, ev, '/root/hf-shorts/out/flo_mix.wav')
     else:
         ev = [(.1, 'whoosh_s', .6), (1.15, 'impact', .9), (2.3, 'riser', .5)] + ticks(2.5, 4.1, .05, 'tickh', .3) + [(4.15, 'cash', 1.0), (4.17, 'hit', .7),
@@ -135,6 +139,6 @@ if __name__ == '__main__':
               (14.0, 'pop', .6)] + ticks(14.1, 15.1, .06, 'tick', .3) + [(15.3, 'hit_s', .6), (18.3, 'whoosh', .7), (21.45, 'impact', 1.0), (21.5, 'cash', 1.0),
               (23.4, 'whoosh', .6), (25.7, 'whoosh', .7), (26.35, 'riser', .5), (28.7, 'pop', .9), (28.85, 'ding2', .6), (28.9, 'hit_s', .6)] + ticks(28.9, 29.8, .05, 'tickh', .3) + [(32.0, 'impact', 1.0),
               (31.9, 'whoosh', .7), (34.6, 'ding', .6), (34.65, 'hit_s', .5), (36.25, 'riser', .5)] + ticks(36.6, 38.4, .05, 'tick', .3) + [(38.4, 'ding2', .5), (39.0, 'whoosh', .7), (39.15, 'pop', .7),
-              (42.5, 'whoosh', .6), (43.95, 'impact', .9), (44.75, 'impact', 1.0), (46.1, 'whoosh_s', .5), (47.4, 'hit_s', .7), (49.2, 'impact', 1.0), (49.25, 'swell', .6)]
+              (42.5, 'whoosh', .6), (43.95, 'impact', .9), (44.75, 'impact', 1.0), (46.1, 'whoosh_s', .5), (47.4, 'hit_s', .7), (49.2, 'impact', 1.0), (49.25, 'swell', .6), (15.25, 'whoosh_s', .7), (39.9, 'whoosh_s', .6), (46.05, 'whoosh_s', .7)]
         ev += [(15.5 + i * .056 if i < 30 else 16.6 + (i - 30) * .06, 'tickh', .25) for i in range(0, 60, 2)]
         build('mth', '/root/hf-shorts/math.mp3', 51.0, '/root/hf-shorts/assets/ac0bba39-4aab-4a31-bb3f-53e5e62d91d2.mp3', 90, ev, '/root/hf-shorts/out/mth_mix.wav')
