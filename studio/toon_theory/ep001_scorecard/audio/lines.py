@@ -1,0 +1,16 @@
+LINES = {
+ 'ankush': [('a01',"Smart girls fall for dumb boys. Explain that."),('a02',"Second of all... you're still here."),('a03',"Unfair. I haven't studied."),
+  ('a04',"Add handsome."),('a05',"Science has eyes."),('a06',"CAUGHT!"),('a07',"Your nose disagrees."),('a08',"So comedy is intelligence?"),
+  ('a09',"Like me."),('a10',"I'm LITERALLY the data!"),('a11',"Speaking of terrible jokes..."),
+  ('a12',"I'd tell you a chemistry joke, but I wouldn't get a reaction."),('a13',"There are more."),('a14',"PRIYA?!"),
+  ('a15',"So you're not that different from me."),('a16',"Then why am I still winning?"),('a17',"Science has eyes."),('a18',"Finally. Academic recognition.")],
+ 'priya': [('p01',"First of all, you're not helping your case."),('p02',"Let's look at the evidence. Academics?"),('p03',"That's the problem."),
+  ('p04',"This is a scientific evaluation."),('p05',"I'm trying to finish an assignment. He sends me THIS."),('p06',"It wasn't funny."),('p07',"Shut up."),
+  ('p08',"Annoyingly, there's some science here. In a study of four hundred students, higher verbal and general intelligence went along with writing funnier cartoon captions."),
+  ('p09',"Not automatically. But a good joke takes timing, language, and unexpected connections."),
+  ('p10',"You are the unexpected twist. Not necessarily the punchline."),
+  ('p11',"Another experiment found that women preferred funny men as potential partners."),('p12',"You're one very noisy data point."),
+  ('p13',"Here's the thing. Being academically smart and being funny aren't the same skill. And apparently... I have a weakness for terrible jokes."),
+  ('p14',"Give it back!"),('p15',"Don't push your luck."),('p16',"I did NOT add that."),('p17',"Maybe he's not as dumb as the report card says."),
+  ('p18',"Don't celebrate. You still can't spell Wednesday.")],
+}

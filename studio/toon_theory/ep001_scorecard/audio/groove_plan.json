@@ -1,0 +1,68 @@
+{
+ "key": "D",
+ "seed": 11,
+ "sections": [
+  {
+   "start": 0,
+   "end": 30.11,
+   "style": "pop",
+   "energy": 0.7,
+   "bpm": 112
+  },
+  {
+   "start": 30.11,
+   "end": 59.55,
+   "style": "lofi",
+   "energy": 0.4
+  },
+  {
+   "start": 59.55,
+   "end": 76.99,
+   "style": "pop",
+   "energy": 0.6,
+   "bpm": 112
+  },
+  {
+   "start": 76.99,
+   "end": 95.68,
+   "style": "pop",
+   "energy": 0.75,
+   "bpm": 112
+  }
+ ],
+ "events": [
+  {
+   "t": 7.78,
+   "type": "stop",
+   "dur": 0.6000000000000002
+  },
+  {
+   "t": 8.23,
+   "type": "impact"
+  },
+  {
+   "t": 23.79,
+   "type": "stop",
+   "dur": 1.5
+  },
+  {
+   "t": 58.55,
+   "type": "riser",
+   "dur": 1.0
+  },
+  {
+   "t": 73.2,
+   "type": "stop",
+   "dur": 1.05
+  },
+  {
+   "t": 82.15,
+   "type": "stop",
+   "dur": 0.8
+  },
+  {
+   "t": 93.48,
+   "type": "impact"
+  }
+ ]
+}
