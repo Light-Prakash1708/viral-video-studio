@@ -105,3 +105,7 @@ Free images: `python tools/free_media.py images "<query>"` / `image-get <id>` (O
 
 ## YouTube growth skills (installed, use on request)
 Pack `youtube-agent` (MIT, github.com/jakeschincariol/youtube-agent-skill) is installed globally and mirrored in the repo at skills/youtube-agent: /yt-script (hooks scored with hookscore.py), /yt-package (title+thumbnail lint), /yt-retention (needs a Studio retention CSV), /yt-shorts, /yt-seo, /yt-chapters, /yt-audit, /yt-plan, /yt-comment, /yt-viral, /yt-edit. The channel voice profile is at ~/.claude/youtube/voice.md (Toon Theory). Use them only when the user asks; they never publish. Note: hookscore is a heuristic (it rated our hooks 'WEAK' mostly for low CURIOSITY, i.e. openers that answer themselves; open a question instead).
+
+
+## Channel growth workflow (any channel)
+Skill `yt-channel-studio` (repo: skills/yt-channel-studio) is the channel-agnostic growth workflow: channel profiles (`tools/channel.py new|use|list|export`), niche playbooks, open-loop hook scoring, fact-check list, title/thumbnail linter with claim-safety, auto credits, static-gap retention audit, description/pinned-comment/post templates. Use it for every new channel and every video's packaging + QC. Profiles in skills/yt-channel-studio/profiles/.

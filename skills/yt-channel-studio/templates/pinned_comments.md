@@ -1,0 +1,4 @@
+- Curiosity: "Which of the 4 stories shocked you most? #4 is real - look it up."
+- Hedge + engage (money/estimates): "Not an official figure - these are analyst estimates plus my assumptions. What would YOU have guessed?"
+- Funnel: "Full 4-minute film is on the channel: INACTION - what dies first when you wait?"
+- Loop: end with the question the first line asked, so rewatchers comment.
