@@ -4,6 +4,8 @@
   python tools/free_media.py audio "ambient piano" [--n 10] [--min-sec 30] [--licenses cc0,pdm,by]
   python tools/free_media.py audio-get <openverse_id> --out assets/                 # download + ATTRIBUTION.txt line
   python tools/free_media.py footage "city night timelapse" [--n 10] [--allow-by]
+  python tools/free_media.py images "miami skyline" [--n 10]            # Openverse photos (cc0/pdm/by); thumbnails: api.openverse.org/v1/images/<id>/thumb/
+  python tools/free_media.py image-get <openverse_id> --out assets/     # downloads + credit line (flickr may 429: retry)
   python tools/free_media.py footage-get <archive_identifier> --out assets/ [--trim 12:20] [--size 1920x1080]
 
 Defaults only return commercial-safe licences: CC0 / public-domain (pdm) / CC-BY for audio; public domain / CC0 for footage
@@ -52,7 +54,7 @@ def footage_search(q, n, allow_by):
     return getj("https://archive.org/advancedsearch.php?" + q2)["response"]["docs"]
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["audio", "audio-get", "footage", "footage-get"]); ap.add_argument("arg")
+    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["audio", "audio-get", "footage", "footage-get", "images", "image-get"]); ap.add_argument("arg")
     ap.add_argument("--n", type=int, default=10); ap.add_argument("--min-sec", type=float, default=20); ap.add_argument("--licenses", default="cc0,pdm,by")
     ap.add_argument("--allow-by", action="store_true"); ap.add_argument("--out", default="assets"); ap.add_argument("--trim"); ap.add_argument("--source", default="jamendo", help="openverse source; jamendo downloads reliably here (freesound CDN 403, wikimedia 429); '' = all"); ap.add_argument("--size", default="src", help="WxH to scale+crop, or src to keep the source resolution (archive.org is often 320x240-640x480)"); a = ap.parse_args()
     if a.cmd == "audio":
@@ -66,6 +68,14 @@ def main():
     elif a.cmd == "footage":
         for d in footage_search(a.arg, a.n, a.allow_by):
             print(f"{d['identifier']:34.34s} {str(d.get('runtime') or '?'):>8s}  {d.get('licenseurl','').split('/')[-3] if d.get('licenseurl') else '?':14.14s} {d.get('title','')[:60]}")
+    elif a.cmd == "images":
+        p = {"q": a.arg, "license": a.licenses, "page_size": min(20, a.n), "fields": "id,title,creator,license,source,width,height"}
+        for r in getj("https://api.openverse.org/v1/images/?" + urllib.parse.urlencode(p)).get("results", []):
+            print(f"{r['id']}  {r['license'].upper():4s} {r.get('source','?'):9.9s} {r.get('width')}x{r.get('height')}  {(r.get('title') or '')[:55]}")
+    elif a.cmd == "image-get":
+        r = getj(f"https://api.openverse.org/v1/images/{a.arg}/"); os.makedirs(a.out, exist_ok=True)
+        path = os.path.join(a.out, f"{a.arg}.jpg"); dl(r["url"], path)
+        credit(a.out, f"Image \"{(r.get('title') or '').strip()}\" by {r.get('creator') or 'unknown'} ({r['license'].upper()}) {r.get('foreign_landing_url') or r['url']}"); print(path, r["license"])
     else:
         m = getj(f"https://archive.org/metadata/{a.arg}"); files = [f for f in m.get("files", []) if f.get("name", "").lower().endswith((".mp4", ".ogv", ".mpeg", ".mov", ".avi"))]
         if not files: sys.exit("no video files in item")

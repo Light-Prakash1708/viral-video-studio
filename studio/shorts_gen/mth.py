@@ -52,31 +52,49 @@ def slam(eid, html, t0, t1, top, size, color=CORAL, rot=-3, cls='stat'):
     P.to(f'#{eid}', {'opacity': 0, 'duration': .15}, t1 - .15)
     shake(t0 + .22)
 
-# ---- analyst character (original) ---------------------------------------------------------
-P.add(f'''<svg id="an" class="abs" width="184" height="240" viewBox="0 0 230 300" style="left:862px;top:1175px;z-index:20;opacity:0">
-<g stroke="{CREAM}" stroke-width="9" stroke-linecap="round" fill="none"><path d="M115 130v90M115 160L70 200M115 160l45 38M115 220l-34 70M115 220l34 70"/></g>
-<path d="M115 134l-14 20l14 50l14-50z" fill="{CORAL}"/>
-<circle cx="115" cy="78" r="52" fill="#2a1820" stroke="{CREAM}" stroke-width="8"/>
-<g stroke="{CREAM}" stroke-width="6" fill="none"><rect x="64" y="64" width="40" height="30" rx="8"/><rect x="126" y="64" width="40" height="30" rx="8"/><path d="M104 78h22"/></g>
-<circle cx="84" cy="79" r="6" fill="{CREAM}" id="eyeL"/><circle cx="146" cy="79" r="6" fill="{CREAM}" id="eyeR"/>
-<path id="mN" d="M92 108h46" stroke="{CREAM}" stroke-width="7" stroke-linecap="round"/>
-<ellipse id="mO" cx="115" cy="112" rx="14" ry="18" fill="{CREAM}" opacity="0"/>
-<path id="mS" d="M88 104q27 26 54 0" stroke="{CREAM}" stroke-width="7" fill="none" stroke-linecap="round" opacity="0"/>
-<path id="mW" d="M90 114q12-12 24 0t24 0" stroke="{CREAM}" stroke-width="7" fill="none" stroke-linecap="round" opacity="0"/>
-<path id="sw" d="M170 40q10 18 0 26q-10-8 0-26z" fill="{TEAL}" opacity="0"/>
-</svg>''')
-P.st('#an', {'opacity': 0}, 0)
-P.to('#an', {'y': -8, 'duration': .5, 'yoyo': True, 'repeat': 90, 'ease': 'sine.inOut'}, 1.5)
-for a_, b_ in [(5.5, 13.5), (31.9, 44.8), (46.1, 51.0)]:
-    P.frm('#an', {'opacity': 0, 'x': 80}, {'opacity': 1, 'x': 0, 'duration': .35, 'ease': 'back.out(1.6)'}, a_)
-    P.to('#an', {'opacity': 0, 'x': 80, 'duration': .2}, b_ - .2)
-def mood(m, t):
-    for k in 'NOSW':
-        P.st(f'#m{k}', {'opacity': 1 if k == m else 0}, t)
-    P.st('#sw', {'opacity': 1 if m == 'W' else 0}, t)
-P.st('#an', {'opacity': 0}, 0.01)
-for m, t in [('N', 0), ('O', 2.5), ('N', 5.5), ('O', 21.4), ('N', 24.5), ('O', 28.8), ('N', 31.0), ('W', 32.2), ('N', 36.0), ('W', 38.0), ('S', 42.4), ('S', 44.8), ('N', 47.0), ('S', 49.4)]:
-    mood(m, t)
+def fullbleed(fid, src, t0, t1, op=.85, zoom=(1.0, 1.12), pos='50% 50%'):
+    P.add(f'<div id="{fid}" class="abs" style="inset:0;z-index:2;overflow:hidden;opacity:0"><img id="{fid}i" src="assets/gta/{src}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{pos};filter:saturate(1.1) brightness(.8)"/>'
+          f'<div class="abs" style="inset:0;background:linear-gradient(180deg,rgba(18,7,18,.55),rgba(18,7,18,.2) 40%,rgba(18,7,18,.7))"></div></div>')
+    P.frm(f'#{fid}', {'opacity': 0}, {'opacity': op, 'duration': .3}, t0)
+    P.frm(f'#{fid}i', {'scale': zoom[0]}, {'scale': zoom[1], 'duration': t1 - t0, 'ease': 'none'}, t0)
+    P.to(f'#{fid}', {'opacity': 0, 'duration': .25}, t1 - .25)
+
+def flash(t, op=.4):
+    P.add(f'<div id="fl{int(t*100)}" class="abs" style="inset:0;background:#fff;opacity:0;z-index:9"></div>')
+    P.frm(f'#fl{int(t*100)}', {'opacity': 0}, {'opacity': op, 'duration': .05, 'yoyo': True, 'repeat': 1}, t)
+
+def punch(t, k=1.05):
+    P.to('#cam', {'scale': k, 'duration': .07, 'ease': 'power2.out', 'transformOrigin': '50% 50%'}, t)
+    P.to('#cam', {'scale': 1, 'duration': .28, 'ease': 'power2.out'}, t + .07)
+
+# ---- GTA character reactor (bottom-right) -------------------------------------------------
+FACES = {'F': ('face_franklin.jpg', GREEN), 'M': ('face_michael.jpg', TEAL), 'T': ('face_trevor.jpg', CORAL)}
+P.add('<div id="rxb" class="abs" style="left:858px;top:1238px;width:176px;height:176px;z-index:20"><div id="rxc" class="abs" style="inset:0;opacity:0">'
+      f'<div id="ring" class="abs" style="inset:-6px;border-radius:50%;border:7px solid {TEAL};box-shadow:0 0 30px {TEAL}"></div>'
+      '<div class="abs" style="inset:0;border-radius:50%;overflow:hidden;background:#000">'
+      + ''.join(f'<img id="face{k}" src="assets/gta/{v[0]}" class="abs" style="inset:0;width:100%;height:100%;object-fit:cover;opacity:0"/>' for k, v in FACES.items())
+      + '</div></div></div>')
+REACT = [(2.4, 'T', '$333K?!'), (5.5, 'M', "LET'S SEE…"), (11.1, 'T', 'MOST EXPENSIVE?!'), (14.0, 'M', 'OK. $2 BILLION.'), (21.4, 'T', 'PER MINUTE?!'),
+         (24.9, 'M', ''), (28.8, 'F', '$1M EACH?!'), (31.0, 'M', 'BUT CAN IT FAIL?'), (36.6, 'T', '29 MILLION?!'), (39.5, 'F', 'GTA V DID $1B'),
+         (42.4, 'F', 'EASY MONEY.'), (44.8, 'M', "IT CAN'T FAIL."), (47.4, 'T', '100 HOURS…'), (49.4, 'F', 'SEE YOU THERE')]
+P.frm('#rxc', {'opacity': 0, 'scale': .3, 'rotation': -20}, {'opacity': 1, 'scale': 1, 'rotation': 0, 'duration': .5, 'ease': 'back.out(2.2)'}, 1.1)
+P.to('#rxb', {'y': -8, 'rotation': 3, 'duration': .55, 'yoyo': True, 'repeat': 100, 'ease': 'sine.inOut'}, 1.6)
+for i, (t0, who, text) in enumerate(REACT):
+    fk, col = FACES[who]
+    for k in FACES:
+        P.st(f'#face{k}', {'opacity': 1 if k == who else 0}, t0)
+    P.st('#ring', {'borderColor': col, 'boxShadow': f'0 0 34px {col}'}, t0)
+    P.frm('#rxc', {'scale': .72, 'rotation': -10}, {'scale': 1, 'rotation': 0, 'duration': .32, 'ease': 'back.out(2.6)'}, t0)
+    if who == 'T':
+        for j, dx in enumerate([9, -9, 7, -7, 4, 0]):
+            P.to('#rxc', {'x': dx, 'duration': .04, 'ease': 'none'}, t0 + .32 + j * .04)
+    if text:
+        nxt = REACT[i + 1][0] if i + 1 < len(REACT) else 50.9
+        t_end = min(nxt, t0 + 2.4)
+        P.add(f'<div id="bub{i}" class="abs" style="right:244px;top:1350px;z-index:21;font-family:Anton;font-size:38px;color:#fff;background:{col};padding:8px 20px;border-radius:18px 18px 4px 18px;opacity:0;white-space:nowrap;letter-spacing:.02em;box-shadow:0 10px 24px rgba(0,0,0,.5);transform-origin:100% 100%">{text}</div>')
+        P.frm(f'#bub{i}', {'opacity': 0, 'scale': .5, 'x': 40}, {'opacity': 1, 'scale': 1, 'x': 0, 'duration': .26, 'ease': 'back.out(2.4)'}, t0 + .08)
+        P.to(f'#bub{i}', {'opacity': 0, 'scale': .8, 'duration': .15}, t_end - .12)
+P.to('#rxc', {'opacity': 0, 'scale': .6, 'duration': .3}, 50.7)
 
 # ---- 0 hook -------------------------------------------------------------------------------
 c = P.scene('m0', 0, 5.3)
@@ -84,16 +102,23 @@ P.add(f'<div class="neon" id="hh" style="position:absolute;left:0;right:0;top:30
       f'<div class="lab sub" id="hl" style="top:262px;font-size:36px;opacity:0">every minute you play costs</div>')
 P.frm('#hh', {'opacity': 0, 'scale': 1.6}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'power4.in'}, 1.15)
 P.frm('#hl', {'opacity': 0}, {'opacity': 1, 'duration': .3}, .3)
-imgpanel(P, 'g0', 'vault.jpg', 0.0, 5.3, x=60, top=350, w=960, h=640, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.2))
+imgpanel(P, 'g0', 'vault.jpg', 0.0, 1.75, x=60, top=350, w=960, h=640, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.2))
+imgpanel(P, 'g0b', 'duo.jpg', 1.7, 3.5, x=60, top=350, w=960, h=640, tag='GTA VI · Rockstar Games', zoom=(1.25, 1.0), pos='50% 40%', enter='none')
+imgpanel(P, 'g0c', 'vice.jpg', 3.45, 5.3, x=60, top=350, w=960, h=640, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.2), enter='none')
+flash(1.7, .5); flash(3.45, .5); shake(1.72, 12); shake(3.47, 12)
 P.add(f'<div class="stat" id="big" style="top:1060px;font-size:200px;color:{AMBER};opacity:0;text-shadow:0 0 50px rgba(255,179,71,.6),0 8px 0 rgba(0,0,0,.7)">$0</div>')
 P.frm('#big', {'opacity': 0, 'scale': .6}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'back.out(2)'}, 2.3)
 P.counter('#big', 0, 333000, 2.5, 1.6, MONEY, 'power2.out')
 shake(4.15, 16)
+punch(2.54); punch(4.08, 1.07); flash(4.1, .35)
 c()
 
 # ---- 1 estimate ------------------------------------------------------------------------------
+fullbleed('fb0', 'vault.jpg', 6.8, 11.0, op=.5, pos='60% 50%')
 c = P.scene('m1', 5.2, 15.3, dy=100)
 slam('hm', "HERE'S THE MATH", 5.3, 6.9, 250, 150, color=TEAL)
+imgpanel(P, 'c1', 'cash_bw.jpg', 5.35, 6.85, x=140, top=520, w=800, h=500, tag='crunching the numbers', zoom=(1.0, 1.2))
+flash(5.3, .4)
 P.add(f'<div class="abs" id="bar" style="left:80px;top:700px;width:920px;height:60px;border-radius:30px;background:rgba(255,243,230,.12);opacity:0"></div>'
       f'<div class="abs" id="rng" style="left:540px;top:700px;width:0;height:60px;border-radius:30px;background:linear-gradient(90deg,{AMBER},{CORAL});box-shadow:0 0 40px {CORAL}"></div>'
       f'<div class="lab abs" id="b0" style="left:60px;top:780px;font-size:32px;color:{CREAM};opacity:0">$0</div>'
@@ -110,8 +135,11 @@ P.frm('#r1', {'opacity': 0, 'scale': .6}, {'opacity': 1, 'scale': 1, 'duration':
 P.to('#r1', {'opacity': 0, 'duration': .15}, 10.9)
 P.to('#bar,#rng,#b0,#b1,#b2,#est', {'opacity': 0, 'duration': .2}, 10.9)
 slam('me', 'MOST EXPENSIVE<br>GAME EVER', 11.1, 13.5, 150, 130, color=CORAL, rot=-2)
+flash(11.1, .45); punch(11.5)
 imgpanel(P, 'g1', 'vice.jpg', 11.2, 13.5, x=60, top=520, w=960, h=540, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.15))
 txt('lu', 'LET\'S USE', 13.6, 15.2, 360, 90, cls='sub', color=AMBER)
+imgpanel(P, 'v1', 'vault_old.jpg', 13.7, 15.2, x=350, top=730, w=380, h=540, tag='the vault', zoom=(1.0, 1.2), pos='50% 40%')
+punch(14.36)
 P.add(f'<div class="stat" id="two" style="top:480px;font-size:130px;color:{AMBER};opacity:0">$0</div>')
 P.frm('#two', {'opacity': 0, 'scale': .6}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'back.out(2)'}, 14.0)
 P.counter('#two', 0, 2000000000, 14.1, 1.0, MONEY, 'power2.out')
@@ -119,6 +147,8 @@ P.to('#two', {'opacity': 0, 'duration': .15}, 15.15)
 c()
 
 # ---- 2 per-minute -----------------------------------------------------------------------------
+fullbleed('fb5', 'vice.jpg', 21.4, 25.8, op=.7, pos='45% 50%')
+fullbleed('fb6', 'cash_bw.jpg', 18.3, 21.3, op=.6, pos='50% 50%')
 c = P.scene('m2', 15.2, 25.8, dy=110)
 imgpanel(P, 'g2', 'bike.jpg', 15.25, 16.6, x=60, top=330, w=420, h=748, tag='GTA VI · 100 hrs', zoom=(1.0, 1.15))
 P.add(f'<div class="stat" id="h100" style="left:520px;right:20px;top:540px;font-size:140px;color:{TEAL};opacity:0;text-align:left">100<br>HOURS</div>')
@@ -135,13 +165,17 @@ P.to('#m6', {'opacity': 0, 'duration': .15}, 17.95)
 P.add(f'<div class="stat" id="eq" style="top:330px;font-size:120px;opacity:0;color:{CREAM}">$2,000,000,000<br><span style="color:{TEAL};font-size:150px">÷ 6,000</span></div>')
 P.frm('#eq', {'opacity': 0, 'y': 60}, {'opacity': 1, 'y': 0, 'duration': .35, 'ease': 'power3.out'}, 18.3)
 P.to('#eq', {'opacity': 0, 'duration': .15}, 21.3)
+panel('p2b', 'desk', 18.4, 21.3, top=760, tag='the accountant', zoom=(1.0, 1.2), fs=.55)
 slam('res', '$333,333', 21.45, 25.7, 400, 230, color=CORAL, rot=-2)
 txt('pm', 'PER MINUTE', 22.0, 25.7, 680, 64, cls='sub', color=CREAM)
+flash(21.45, .5); punch(21.5, 1.08)
 panel('p2', 'teller', 23.4, 25.8, top=800, zoom=(1.0, 1.15), fs=.5)
 c()
 
 # ---- 3 per-developer ----------------------------------------------------------------------------
-c = P.scene('m3', 25.7, 31.9, dy=90)
+fullbleed('fb7', 'devs1.jpg', 25.8, 28.6, op=.32, pos='50% 50%')
+fullbleed('fb8', 'devs2.jpg', 28.5, 31.9, op=.3, pos='50% 50%')
+c = P.scene('m3', 25.7, 31.9, dy=30)
 txt('h2k', '2,000 DEVELOPERS', 25.9, 31.8, 300, 120, color=TEAL, ease='power3.out')
 dots = f'background-image:radial-gradient(circle,{CREAM} 0 3px,transparent 3.6px);background-size:14px 14px;'
 P.add(f'<div class="abs" id="dots" style="left:90px;top:500px;width:900px;height:420px;{dots}clip-path:inset(0 100% 0 0)"></div>')
@@ -149,17 +183,22 @@ P.frm('#dots', {'clipPath': 'inset(0 100% 0 0)'}, {'clipPath': 'inset(0 0% 0 0)'
 P.add(f'<div class="abs" id="you" style="left:{90+14*30+4}px;top:{500+14*14+4}px;width:14px;height:14px;border-radius:50%;background:{CORAL};box-shadow:0 0 0 8px rgba(255,79,109,.35),0 0 40px {CORAL};opacity:0"></div>')
 P.frm('#you', {'opacity': 0, 'scale': 4}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'back.out(2)'}, 28.7)
 P.add(f'<div class="stat" id="mil" style="top:980px;font-size:190px;color:{GREEN};opacity:0;text-shadow:0 0 40px rgba(67,224,138,.5),0 8px 0 rgba(0,0,0,.7)">$0</div>'
-      f'<div class="sub" id="eachl" style="top:1180px;font-size:44px;opacity:0">each · for one game</div>')
+      f'<div class="sub" id="eachl" style="top:1180px;font-size:34px;opacity:0">each · for one game</div>')
 P.frm('#mil', {'opacity': 0, 'scale': .6}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'back.out(2)'}, 28.85)
 P.counter('#mil', 0, 1000000, 28.9, .9, MONEY, 'power2.out')
 P.frm('#eachl', {'opacity': 0}, {'opacity': 1, 'duration': .3}, 29.9)
 shake(28.85, 12)
+flash(28.85, .35); punch(28.9)
 c()
 
 # ---- 4 can it fail ---------------------------------------------------------------------------------
+fullbleed('fb1', 'duo.jpg', 32.0, 34.6, op=.75, pos='50% 45%')
+fullbleed('fb2', 'vice.jpg', 34.6, 36.3, op=.5, pos='40% 50%')
+fullbleed('fb3', 'bike.jpg', 36.3, 39.1, op=.55)
 c = P.scene('m4', 31.9, 39.1, dy=110)
 slam('cf', 'CAN IT<br>FAIL?', 32.0, 34.55, 330, 230, color=CORAL, rot=-2)
 txt('pr', '$70', 34.6, 36.2, 300, 260, color=GREEN)
+flash(34.6, .4)
 P.add(f'<div class="sub" id="prl" style="top:600px;font-size:44px;opacity:0">per copy</div>')
 P.frm('#prl', {'opacity': 0}, {'opacity': 1, 'duration': .3}, 35.1)
 P.to('#prl', {'opacity': 0, 'duration': .15}, 36.1)
@@ -172,15 +211,18 @@ P.frm('#pf', {'width': 0}, {'width': 920, 'duration': 2.0, 'ease': 'power2.inOut
 P.frm('#cp', {'opacity': 0, 'scale': .6}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'back.out(2)'}, 36.5)
 P.counter('#cp', 0, 29000000, 36.6, 1.8, NUM, 'power2.out')
 P.frm('#cpl', {'opacity': 0}, {'opacity': 1, 'duration': .3}, 37.5)
+punch(36.82)
 c()
 
 # ---- 5 GTA V compare ------------------------------------------------------------------------------------
+fullbleed('fb4', 'trio.jpg', 42.5, 44.85, op=.55, pos='50% 30%')
 c = P.scene('m5', 39.0, 44.85, dy=60)
 txt('g5', 'GTA V', 39.1, 44.7, 250, 150, color=AMBER, ease='power3.out')
 P.add(f'<div class="abs" id="t3" style="left:0;right:0;top:420px;text-align:center;font-family:Anton;font-size:96px;color:{GREEN};opacity:0;text-shadow:0 0 30px rgba(67,224,138,.5)">$1,000,000,000<br><span style="font-size:48px;color:{CREAM};letter-spacing:.2em">IN 3 DAYS</span></div>')
 P.frm('#t3', {'opacity': 0, 'scale': .7}, {'opacity': 1, 'scale': 1, 'duration': .3, 'ease': 'back.out(2)'}, 39.15)
 P.to('#t3', {'opacity': 0, 'duration': .15}, 42.4)
-imgpanel(P, 'g5', 'vault.jpg', 39.9, 42.45, x=90, top=735, w=760, h=400, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.15))
+imgpanel(P, 'g5', 'gta5cover.jpg', 39.6, 42.45, x=300, top=740, w=480, h=480, tag='GTA V · $1B in 3 days', zoom=(1.0, 1.1))
+flash(39.15, .4); punch(39.15, 1.06)
 # bars: 29M vs 200M+
 P.add(f'<div class="abs" id="bA" style="left:230px;bottom:820px;width:240px;height:0;background:{GREEN};border-radius:12px 12px 0 0"></div>'
       f'<div class="abs" id="bB" style="left:610px;bottom:820px;width:240px;height:0;background:{CORAL};border-radius:12px 12px 0 0"></div>'
@@ -193,11 +235,13 @@ P.frm('#bB', {'height': 0}, {'height': 430, 'duration': .7, 'ease': 'power3.out'
 for k in ('nA', 'nB', 'nAl', 'nBl'):
     P.frm('#' + k, {'opacity': 0}, {'opacity': 1, 'duration': .3}, 42.9)
 slam('re', 'ROUNDING ERROR', 43.95, 44.8, 440, 108, color=AMBER, rot=-5)
+flash(43.95, .45); punch(44.0, 1.07)
 c()
 
 # ---- 6 can't fail + risk ----------------------------------------------------------------------------------------
 c = P.scene('m6', 44.7, 51.0)
 slam('cff', "IT CAN'T<br>FAIL", 44.75, 46.0, 330, 220, color=GREEN, rot=-2)
+flash(44.75, .5)
 txt('rk', 'THE ONLY THING AT RISK', 46.1, 49.1, 130, 56, cls='sub', color=CORAL, ease='power3.out')
 imgpanel(P, 'g3', 'duo.jpg', 46.05, 51.0, x=60, top=230, w=960, h=540, tag='GTA VI · Rockstar Games', zoom=(1.0, 1.18), pos='50% 40%')
 P.add(f'<div class="stat" id="hrs" style="top:800px;font-size:200px;opacity:0;color:{CREAM}">100</div><div class="sub" id="hrl" style="top:1010px;font-size:48px;opacity:0">hours of your life</div>')
@@ -207,6 +251,7 @@ P.to('#hrs,#hrl', {'opacity': 0, 'duration': .15}, 49.1)
 P.add(f'<div class="neon" id="nov" style="position:absolute;left:0;right:0;top:820px;font-size:170px;opacity:0;line-height:1">NOV 19<div style="font-size:56px;letter-spacing:.3em;color:{TEAL};text-shadow:0 0 20px {TEAL};margin-top:10px">SEE YOU THERE</div></div>')
 P.frm('#nov', {'opacity': 0, 'scale': 1.6}, {'opacity': 1, 'scale': 1, 'duration': .25, 'ease': 'power4.in'}, 49.2)
 shake(49.45, 14)
+flash(49.2, .5); punch(49.2, 1.07)
 c()
 
 P.add('</div>')

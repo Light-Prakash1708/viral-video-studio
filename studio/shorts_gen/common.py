@@ -148,3 +148,11 @@ def imgpanel(P, pid, src, t0, t1, x=60, top=300, w=960, h=640, tag=None, zoom=(1
     P.frm(f'#{pid}i', {'scale': zoom[0]}, {'scale': zoom[1], 'duration': max(.5, t1 - t0), 'ease': 'none'}, t0)
     P.frm(f'#{pid}s', {'x': 0}, {'x': w * 4.2, 'duration': .75, 'ease': 'power2.inOut'}, t0 + .12)
     P.to(f'#{pid}', {'opacity': 0, 'scale': .96, 'duration': .2}, t1 - .2)
+
+
+def fullbleed(P, fid, src, t0, t1, op=.85, zoom=(1.0, 1.12), pos='50% 50%', z=2):
+    P.add(f'<div id="{fid}" class="abs" style="inset:0;z-index:{z};overflow:hidden;opacity:0"><img id="{fid}i" src="assets/gta/{src}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{pos};filter:saturate(1.1) brightness(.8)"/>'
+          '<div class="abs" style="inset:0;background:linear-gradient(180deg,rgba(18,7,18,.55),rgba(18,7,18,.2) 40%,rgba(18,7,18,.7))"></div></div>')
+    P.frm(f'#{fid}', {'opacity': 0}, {'opacity': op, 'duration': .3}, t0)
+    P.frm(f'#{fid}i', {'scale': zoom[0]}, {'scale': zoom[1], 'duration': t1 - t0, 'ease': 'none'}, t0)
+    P.to(f'#{fid}', {'opacity': 0, 'duration': .25}, t1 - .25)
