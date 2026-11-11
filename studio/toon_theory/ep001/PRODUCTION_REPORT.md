@@ -39,3 +39,24 @@ ffmpeg -i <silent.mp4> -i audio/ep001_mix.wav -c:v copy -c:a aac -b:a 192k -shor
 - **Body animation is limited.** Characters are busts with expressive faces, lip-sync, head and breathing motion. They have no hands or full-body acting, which is the approved flat 2D style taken to its practical limit in this toolchain.
 - **The café two-shot recurs.** Close-up cuts and five other distinct sets break it up, but it remains the most repeated composition.
 - **The score is synthesised** (pads, plucks, music-box). It is functional and mood-matched by design, but simpler than a composed or licensed track.
+
+## Quality control (2 of the 3 allowed critique cycles used)
+Final file checks: 1080×1920, 30 fps H.264, AAC 192k, 174.2 s, full decode passes. Integrated loudness −14.7 LUFS, true peak −0.8 dBFS, voice 15.8 dB above the music/SFX bed, 0 clicks found in the bed. The Whisper transcript of the final video matches the script at 98.7%. Every scripted word is present; the remaining differences are transcription spellings ("canceled", "a m", a quoted 'hey'), plus one possible mishearing ("is" for "has") that was not confirmed by ear. SRT has 81 cues.
+
+| Category | Cycle 1 | Final | Note |
+|---|---|---|---|
+| Hook | 8 | 8 | |
+| Storytelling / emotional progression | 8 | 8 | |
+| Character consistency | 9 | 9 | |
+| Facial expressions / body language | 6 | 6 | **Below 8: tool/style limit** (faces and lip-sync yes, no hand/body acting) |
+| Environments | 7 | 7 | **Below 8:** flat layered sets by design |
+| Animation smoothness | 8 | 8 | |
+| Camera composition | 6 | 7 | Close-up cuts added; the two-shot still recurs |
+| Lighting / colour | 8 | 8 | |
+| Typography / captions | 8 | 8 | |
+| Audio quality / sync | 7 | 8* | *Measured only: missing word fixed; not verified by ear |
+| Editing rhythm | 7 | 7 | |
+| Originality | 7 | 7 | |
+
+Fixed between cycles: a missing first word in Meera's "Cancelled again?" (a dialogue-split bug), a white flash over the opening café shot, the title overlapping a character, the slot reels not landing on "hey hey hey", the voice-note card colliding with subtitles, a set edge revealed in the final pull-back, and a dark strip during close-ups. Added speaker close-up cuts; made the face-down phone smaller.
+I stopped after cycle 2 because the categories still below 8 are limits of the approved 2D-bust style and toolchain, which another cycle would not change.
