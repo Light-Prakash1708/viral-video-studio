@@ -18,7 +18,10 @@ for f in a.files:
         elif " by " in l and "CC" in l.upper() and "visit" in l: music.append(l.split(" To view")[0].rstrip("."))
         else: other.append(l)
 out = ["CREDITS"]
-for m in music: out.append(f"Music: {m} (creativecommons.org/licenses/by/3.0/)")
+import re
+for m in music:
+    v = re.search(r"CC BY(?:-SA)?\s*([0-9.]+)", m)
+    out.append(f"Music: {m}" + (f" (creativecommons.org/licenses/by/{v.group(1)}/)" if v else ""))
 if footage: out.append("Footage (public domain, Internet Archive; illustrative): " + "; ".join(footage))
 if images: out.append("Photos (Openverse, CC licences):"); out += [f"  - {i}" for i in images]
 for x in a.art: out.append(x + " - shown for commentary.")
