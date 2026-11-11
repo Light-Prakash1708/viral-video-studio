@@ -1,0 +1,5 @@
+# regenerable large audio (rebuild with build/ep001_audio.py)
+voice_track.wav
+music_track.wav
+ep001_mix*.wav
+*.mp4
