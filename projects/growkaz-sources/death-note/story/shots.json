@@ -1,0 +1,623 @@
+{
+ "title": "Death Note Ceiling",
+ "duration": 48.19,
+ "shots": [
+  {
+   "id": "c00",
+   "start": 0,
+   "end": 1.5,
+   "line": "Light Yagami",
+   "scene": "Light Yagami",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "whip",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "audio/hit.wav",
+     "gain": -8
+    },
+    {
+     "at": 0.1,
+     "name": "whoosh",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c01",
+   "start": 1.5,
+   "end": 3.9,
+   "line": "Light Yagami could out-kill every murderer on Earth in just one year.",
+   "scene": "Light Yagami could out-kill every murderer on Earth in just one year.",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "whip",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "audio/zap.wav",
+     "gain": -18
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c01b",
+   "start": 3.9,
+   "end": 5.0,
+   "line": "one year",
+   "scene": "one year",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "whip",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "stinger",
+     "gain": -10
+    },
+    {
+     "at": 0.05,
+     "name": "audio/stamp.wav",
+     "gain": -8
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c02",
+   "start": 5.0,
+   "end": 10.0,
+   "line": "And the math proves it. About 450,000 murders a year, the UN's number.",
+   "scene": "And the math proves it. About 450,000 murders a year, the UN's number.",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "audio/ping.wav",
+     "gain": -16
+    },
+    {
+     "at": 3.0,
+     "name": "counter",
+     "gain": -14
+    },
+    {
+     "at": 4.7,
+     "name": "audio/ding.wav",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c02b",
+   "start": 10.0,
+   "end": 11.7,
+   "line": "UN figure",
+   "scene": "UN figure",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "whip",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "audio/stamp.wav",
+     "gain": -9
+    },
+    {
+     "at": 0.05,
+     "name": "impact",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c03",
+   "start": 11.7,
+   "end": 13.4,
+   "line": "Now give Kira a notebook. One name, one minute.",
+   "scene": "Now give Kira a notebook. One name, one minute.",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.5,
+     "name": "audio/gulp.wav",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c03c",
+   "start": 13.4,
+   "end": 14.6,
+   "line": "one name one minute",
+   "scene": "one name one minute",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "whip",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "audio/scribble.wav",
+     "gain": -12
+    },
+    {
+     "at": 0.9,
+     "name": "audio/ding.wav",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c03b",
+   "start": 14.6,
+   "end": 15.4,
+   "line": "one minute",
+   "scene": "one minute",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "tick",
+     "gain": -12
+    },
+    {
+     "at": 0.4,
+     "name": "tick",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c04",
+   "start": 15.4,
+   "end": 22.4,
+   "line": "60 an hour, 1,440 a day, 525,600 a year.",
+   "scene": "60 an hour, 1,440 a day, 525,600 a year.",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.15,
+     "name": "counter",
+     "gain": -14
+    },
+    {
+     "at": 1.7,
+     "name": "counter",
+     "gain": -13
+    },
+    {
+     "at": 3.8,
+     "name": "counter",
+     "gain": -12
+    },
+    {
+     "at": 5.9,
+     "name": "audio/stamp.wav",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c04b",
+   "start": 22.4,
+   "end": 23.1,
+   "line": "525,600",
+   "scene": "525,600",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "whip",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "audio/hit.wav",
+     "gain": -7
+    },
+    {
+     "at": 0,
+     "name": "impact",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c05",
+   "start": 23.1,
+   "end": 27.0,
+   "line": "75,000 more than every murderer alive.",
+   "scene": "75,000 more than every murderer alive.",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "audio/hit.wav",
+     "gain": -8
+    },
+    {
+     "at": 1.2,
+     "name": "audio/stamp.wav",
+     "gain": -10
+    },
+    {
+     "at": 2.6,
+     "name": "audio/ding.wav",
+     "gain": -13
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c06",
+   "start": 27.0,
+   "end": 29.6,
+   "line": "But wait. Light has to sleep. Eight hours a night?",
+   "scene": "But wait. Light has to sleep. Eight hours a night?",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "audio/crickets.wav",
+     "gain": -20
+    },
+    {
+     "at": 1.6,
+     "name": "audio/sigh.wav",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c06b",
+   "start": 29.6,
+   "end": 30.4,
+   "line": "eight hours",
+   "scene": "eight hours",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0,
+     "name": "tick",
+     "gain": -14
+    },
+    {
+     "at": 0.3,
+     "name": "audio/sigh.wav",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c07",
+   "start": 30.4,
+   "end": 33.3,
+   "line": "He still writes 350,000 names.",
+   "scene": "He still writes 350,000 names.",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "counter",
+     "gain": -14
+    },
+    {
+     "at": 1.4,
+     "name": "riser",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c08",
+   "start": 33.3,
+   "end": 36.0,
+   "line": "78% of all murders on Earth, from one desk.",
+   "scene": "78% of all murders on Earth, from one desk.",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "impact",
+     "gain": -5
+    },
+    {
+     "at": 0.05,
+     "name": "audio/hit.wav",
+     "gain": -6
+    },
+    {
+     "at": 1.0,
+     "name": "stinger",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c08b",
+   "start": 36.0,
+   "end": 37.5,
+   "line": "one desk",
+   "scene": "one desk",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "audio/zap.wav",
+     "gain": -12
+    },
+    {
+     "at": 0.9,
+     "name": "audio/heart.wav",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c09",
+   "start": 37.5,
+   "end": 38.9,
+   "line": "In the story, a name takes seconds, not a minute.",
+   "scene": "In the story, a name takes seconds, not a minute.",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "audio/scribble.wav",
+     "gain": -10
+    },
+    {
+     "at": 0.2,
+     "name": "whoosh",
+     "gain": -16
+    },
+    {
+     "at": 1.0,
+     "name": "audio/zap.wav",
+     "gain": -13
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c09b",
+   "start": 38.9,
+   "end": 40.9,
+   "line": "seconds",
+   "scene": "seconds",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "whip",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.05,
+     "name": "audio/stamp.wav",
+     "gain": -10
+    },
+    {
+     "at": 1.2,
+     "name": "audio/ding.wav",
+     "gain": -15
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c10",
+   "start": 40.9,
+   "end": 43.1,
+   "line": "The real limit was never the notebook. It was whether anyone could stop him.",
+   "scene": "The real limit was never the notebook. It was whether anyone could stop him.",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "audio/drone.wav",
+     "gain": -20
+    },
+    {
+     "at": 1.6,
+     "name": "audio/hit.wav",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c10b",
+   "start": 43.1,
+   "end": 45.3,
+   "line": "who could stop him",
+   "scene": "who could stop him",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "audio/heart.wav",
+     "gain": -12
+    },
+    {
+     "at": 0.9,
+     "name": "audio/hit.wav",
+     "gain": -9
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c11",
+   "start": 45.3,
+   "end": 46.9,
+   "line": "So... would you have written the first name?",
+   "scene": "So... would you have written the first name?",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "audio/heart.wav",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c11b",
+   "start": 46.9,
+   "end": 48.19,
+   "line": "would you write",
+   "scene": "would you write",
+   "set": "room",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "audio/ping.wav",
+     "gain": -14
+    },
+    {
+     "at": 0.5,
+     "name": "audio/chime.wav",
+     "gain": -16
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 46.51,
+   "mood": "epic",
+   "intensity": 0.5
+  }
+ ]
+}

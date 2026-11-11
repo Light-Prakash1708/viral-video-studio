@@ -1,0 +1,6 @@
+# RESUME HERE (new tab / new account)
+1. Clone: `git clone https://github.com/Light-Prakash1708/viral-video-studio && cd viral-video-studio && git checkout add-youtube-shorts-studio` (everything lives on this branch; merge it to main to make it the default).
+2. Install skills for Claude Code: `mkdir -p ~/.claude/skills && cp -r skills/* ~/.claude/skills/ && mkdir -p ~/.claude/youtube && python3 skills/yt-channel-studio/tools/channel.py use toon-theory` (activates the Toon Theory profile; create more with `channel.py new`).
+3. Sound: `bash skills/earshot/bootstrap.sh` (light) or `--models`. Video engines: `cd studio && npm install`; HyperFrames via `npx hyperframes@latest`.
+4. Connectors are per-account: ElevenLabs (voice ids differ per workspace), vidIQ, Google Drive etc. must be connected again; huashu-art-motion full skill: `git clone --depth 1 https://github.com/alchaincyf/huashu-art-motion ~/.claude/skills/huashu-art-motion` (repo holds a docs-only mirror).
+5. Start with skills/youtube-shorts-studio/SKILL.md (engines, rules, free sources, retention rules) and skills/yt-channel-studio/SKILL.md (channel workflow). Past video sources: projects/.

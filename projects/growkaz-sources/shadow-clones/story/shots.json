@@ -1,0 +1,421 @@
+{
+ "title": "Shadow Clones Would Break Your Brain",
+ "duration": 46.51,
+ "shots": [
+  {
+   "id": "c01",
+   "start": 0,
+   "end": 5.5,
+   "line": "Naruto's shadow clones sound like a cheat code, but a thousand clones would break your brain.",
+   "scene": "Naruto's shadow clones sound like a cheat code, but a thousand clones would break your brain.",
+   "set": "dojo",
+   "bars": "scope",
+   "in": {
+    "type": "whip",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "audio/hit.wav",
+     "gain": -10
+    },
+    {
+     "at": 1.35,
+     "name": "audio/poof.wav",
+     "gain": -12
+    },
+    {
+     "at": 1.5,
+     "name": "audio/poof.wav",
+     "gain": -12
+    },
+    {
+     "at": 1.65,
+     "name": "audio/poof.wav",
+     "gain": -12
+    },
+    {
+     "at": 1.8,
+     "name": "audio/poof.wav",
+     "gain": -12
+    },
+    {
+     "at": 3.4,
+     "name": "audio/ding.wav",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c02",
+   "start": 5.5,
+   "end": 11.4,
+   "line": "Here's the catch. When a clone vanishes, everything it learned rushes back into you.",
+   "scene": "Here's the catch. When a clone vanishes, everything it learned rushes back into you.",
+   "set": "dojo",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 2.4,
+     "name": "audio/poof.wav",
+     "gain": -12
+    },
+    {
+     "at": 3.0,
+     "name": "audio/flutter.wav",
+     "gain": -14
+    },
+    {
+     "at": 3.3,
+     "name": "audio/chime.wav",
+     "gain": -14
+    },
+    {
+     "at": 4.0,
+     "name": "audio/zap.wav",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c03",
+   "start": 11.4,
+   "end": 14.0,
+   "line": "One clone training for an hour? Easy!",
+   "scene": "One clone training for an hour? Easy!",
+   "set": "dojo",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "pop",
+     "gain": -14
+    },
+    {
+     "at": 1.6,
+     "name": "audio/chime.wav",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c04",
+   "start": 14.0,
+   "end": 18.4,
+   "line": "A thousand clones? A thousand hours of memories, hitting you at once.",
+   "scene": "A thousand clones? A thousand hours of memories, hitting you at once.",
+   "set": "dojo",
+   "bars": "scope",
+   "in": {
+    "type": "whip",
+    "dur": 0.25
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "counter",
+     "gain": -15
+    },
+    {
+     "at": 1.0,
+     "name": "audio/flutter.wav",
+     "gain": -14
+    },
+    {
+     "at": 3.0,
+     "name": "audio/gasp.wav",
+     "gain": -13
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c05",
+   "start": 18.4,
+   "end": 22.0,
+   "line": "Over 40 days of experience in a single second.",
+   "scene": "Over 40 days of experience in a single second.",
+   "set": "dojo",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "tick",
+     "gain": -16
+    },
+    {
+     "at": 0.6,
+     "name": "tick",
+     "gain": -16
+    },
+    {
+     "at": 1.0,
+     "name": "tick",
+     "gain": -16
+    },
+    {
+     "at": 1.4,
+     "name": "tick",
+     "gain": -16
+    },
+    {
+     "at": 1.8,
+     "name": "tick",
+     "gain": -16
+    },
+    {
+     "at": 2.3,
+     "name": "audio/stamp.wav",
+     "gain": -9
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c06",
+   "start": 22.0,
+   "end": 26.6,
+   "line": "Your brain isn't built for that. Working memory holds about four things at a time.",
+   "scene": "Your brain isn't built for that. Working memory holds about four things at a time.",
+   "set": "dojo",
+   "bars": "scope",
+   "in": {
+    "type": "dip",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 1.0,
+     "name": "audio/zap.wav",
+     "gain": -14
+    },
+    {
+     "at": 1.0,
+     "name": "pop",
+     "gain": -15
+    },
+    {
+     "at": 1.25,
+     "name": "pop",
+     "gain": -15
+    },
+    {
+     "at": 1.5,
+     "name": "pop",
+     "gain": -15
+    },
+    {
+     "at": 1.75,
+     "name": "pop",
+     "gain": -15
+    },
+    {
+     "at": 3.0,
+     "name": "audio/ding.wav",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c07",
+   "start": 26.6,
+   "end": 29.2,
+   "line": "Four, not four hundred.",
+   "scene": "Four, not four hundred.",
+   "set": "dojo",
+   "bars": "scope",
+   "in": {
+    "type": "flash",
+    "dur": 0.15
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "audio/hit.wav",
+     "gain": -9
+    },
+    {
+     "at": 1.4,
+     "name": "stinger",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c08",
+   "start": 29.2,
+   "end": 34.4,
+   "line": "Your senses collect around a billion bits every second. Your conscious mind handles about 10.",
+   "scene": "Your senses collect around a billion bits every second. Your conscious mind handles about 10.",
+   "set": "dojo",
+   "bars": "scope",
+   "in": {
+    "type": "whip",
+    "dur": 0.25
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "audio/ping.wav",
+     "gain": -14
+    },
+    {
+     "at": 3.2,
+     "name": "pop",
+     "gain": -14
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c09",
+   "start": 34.4,
+   "end": 39.6,
+   "line": "So a thousand clones isn't a thousand times stronger. It's a flood through a straw.",
+   "scene": "So a thousand clones isn't a thousand times stronger. It's a flood through a straw.",
+   "set": "dojo",
+   "bars": "scope",
+   "in": {
+    "type": "cut",
+    "dur": 0.1
+   },
+   "sfx": [
+    {
+     "at": 0.4,
+     "name": "riser",
+     "gain": -14
+    },
+    {
+     "at": 3.93,
+     "name": "impact",
+     "gain": -5
+    },
+    {
+     "at": 3.93,
+     "name": "audio/hit.wav",
+     "gain": -8
+    },
+    {
+     "at": 3.95,
+     "name": "audio/flutter.wav",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c10",
+   "start": 39.6,
+   "end": 42.9,
+   "line": "The real limit isn't chakra. It's attention.",
+   "scene": "The real limit isn't chakra. It's attention.",
+   "set": "dojo",
+   "bars": "scope",
+   "in": {
+    "type": "flash",
+    "dur": 0.2
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "stinger",
+     "gain": -14
+    },
+    {
+     "at": 2.5,
+     "name": "audio/sparkle.wav",
+     "gain": -12
+    },
+    {
+     "at": 2.6,
+     "name": "audio/chime.wav",
+     "gain": -12
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  },
+  {
+   "id": "c11",
+   "start": 42.9,
+   "end": 46.51,
+   "line": "So how many clones could your brain handle?",
+   "scene": "So how many clones could your brain handle?",
+   "set": "dojo",
+   "bars": "scope",
+   "in": {
+    "type": "dip",
+    "dur": 0.3
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "audio/chime.wav",
+     "gain": -13
+    },
+    {
+     "at": 0.5,
+     "name": "audio/poof.wav",
+     "gain": -14
+    },
+    {
+     "at": 0.62,
+     "name": "audio/poof.wav",
+     "gain": -14
+    },
+    {
+     "at": 0.74,
+     "name": "audio/poof.wav",
+     "gain": -14
+    },
+    {
+     "at": 0.86,
+     "name": "audio/poof.wav",
+     "gain": -14
+    },
+    {
+     "at": 3.2,
+     "name": "audio/hit.wav",
+     "gain": -10
+    }
+   ],
+   "captions": true,
+   "notes": ""
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 46.51,
+   "mood": "epic",
+   "intensity": 0.5
+  }
+ ]
+}
