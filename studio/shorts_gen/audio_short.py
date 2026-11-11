@@ -58,11 +58,24 @@ def buzz(d=.12):
     n = int(d * SR); t = np.arange(n) / SR
     return (np.sign(np.sin(2 * np.pi * 100 * t)) * .25 + lp(rng.standard_normal(n), 900) * .3) * np.minimum(1, (d - t) * 60)
 
+def declick(sig, fin=.006, fout=.02):
+    """remove DC and force the sound to start/end at zero (hard starts/ends are what make clicks)"""
+    sig = np.asarray(sig, dtype=np.float64).copy()
+    sig -= np.mean(sig)
+    a, b = min(len(sig) // 2, int(fin * SR)), min(len(sig) // 2, int(fout * SR))
+    if a > 0: sig[:a] *= np.linspace(0, 1, a) ** 2
+    if b > 0: sig[-b:] *= np.linspace(1, 0, b) ** 2
+    return sig
+
 def place(buf, sig, t, g=1.0):
     i = int(t * SR)
     if i < 0 or i >= len(buf): return
-    sig = sig[:len(buf) - i]
-    buf[i:i + len(sig)] += sig * g
+    sig = declick(sig)
+    n = min(len(sig), len(buf) - i)
+    sig = sig[:n]
+    b = min(n // 2, int(.02 * SR))      # if the buffer end truncates the sound, fade there too
+    if b > 0 and n < len(sig): sig[-b:] *= np.linspace(1, 0, b)
+    buf[i:i + n] += sig * g
 
 def real(path, maxd=None, fade=.05):
     x = load(path)
@@ -85,14 +98,37 @@ def lufs_gain(x, target):
     r = np.sqrt(np.mean(x[np.abs(x) > 1e-4] ** 2)) + 1e-9
     return 10 ** (target / 20) / r
 
+def duck_envelope(v, n):
+    from scipy.ndimage import gaussian_filter1d, maximum_filter1d
+    hop = SR // 100
+    e = np.sqrt(np.convolve(v ** 2, np.ones(hop * 5) / (hop * 5), 'same'))[::hop]
+    e = np.clip(e / (np.percentile(e, 90) + 1e-9), 0, 1)
+    e = maximum_filter1d(e, 12)                 # hold 120 ms so gaps between words do not pump
+    e = gaussian_filter1d(e, 14)                # ~140 ms attack / release
+    return np.interp(np.arange(n) / SR, np.arange(len(e)) / 100, e)
+
+def click_scan(sig, label='bed', thr=9.0, quiet=False):
+    """find sample-level discontinuities (clicks) in a mono signal; returns [(time, severity)]"""
+    d2 = np.abs(sig[2:] - 2 * sig[1:-1] + sig[:-2])
+    win = int(SR * .05); rms = np.sqrt(np.convolve(sig ** 2, np.ones(win) / win, 'same')) + 1e-4
+    r = d2 / np.maximum(rms[1:-1], .02); out = []
+    for i in np.where(r > thr)[0]:
+        t = i / SR
+        if not out or t - out[-1][0] > .08: out.append([t, float(r[i])])
+        else: out[-1][1] = max(out[-1][1], float(r[i]))
+    if not quiet: print(label, 'click scan: %d suspicious spots' % len(out), [(round(t, 2), round(v_, 1)) for t, v_ in out[:12]])
+    return out
+
+def soft_limit(x, knee=.8):
+    a = np.abs(x); y = np.where(a < knee, x, np.sign(x) * (knee + (1 - knee) * np.tanh((a - knee) / (1 - knee))))
+    return y
+
 def build(name, voice_mp3, dur, music, mstart, events, out, mgain_db=-29, duck_db=-7):
     n = int(dur * SR)
     v = load(voice_mp3); v = v[:n]; v = np.pad(v, (0, n - len(v)))
     v *= lufs_gain(v, -17)
     # voice activity envelope for ducking
-    win = int(.12 * SR); act = np.convolve(np.abs(v), np.ones(win) / win, 'same')
-    act = np.clip(act / (np.percentile(act, 90) + 1e-9), 0, 1)
-    act = np.convolve(act, np.ones(int(.25 * SR)) / int(.25 * SR), 'same')
+    act = duck_envelope(v, n)
     m = load(music, 2)[:, int(mstart * SR):int(mstart * SR) + n]
     m = np.pad(m, ((0, 0), (0, n - m.shape[1])))
     m *= lufs_gain(m, mgain_db)
@@ -120,10 +156,10 @@ def build(name, voice_mp3, dur, music, mstart, events, out, mgain_db=-29, duck_d
     mu = np.sqrt(np.mean((m[0][spk]) ** 2)) + 1e-9; fr = np.sqrt(np.mean((fx[spk]) ** 2)) + 1e-9
     print(name, 'voice vs bed %.1f dB | vs music %.1f dB | vs sfx %.1f dB' % (20 * np.log10(vv / bed), 20 * np.log10(vv / mu), 20 * np.log10(vv / fr)))
     L = v + m[0] + fx; R = v + m[1] + fx
-    st = np.stack([L, R], 1)
-    st /= max(1.0, np.max(np.abs(st)) / .95)
+    click_scan(m[0] + fx, 'music+sfx bed')
+    st = np.stack([soft_limit(L), soft_limit(R)], 1)
     wavfile.write(out + '_pre.wav', SR, (st * 32767).astype(np.int16))
-    subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', out + '_pre.wav', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=9', '-ar', '44100', out], check=True)
+    subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', out + '_pre.wav', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=9', '-ar', '44100', '-c:a', 'pcm_s16le', out], check=True)
     print(name, 'audio ok')
 
 
