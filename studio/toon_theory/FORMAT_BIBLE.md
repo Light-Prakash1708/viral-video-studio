@@ -46,3 +46,6 @@ Every external asset gets a row in `<episode>/asset_ledger.csv` (template in `te
 
 ## Reusable production parts
 `characters/generate_characters.py` (designs), `ep001/build/rig.py` (puppet rig: expressions, audio-driven lip-sync, blinks), `ep001/audio/align_split.py` (take → per-line clips), `ep001/build/timeline.py` pattern (measured-audio timeline), `studio/shorts_gen/audio_short.py` (mix), HyperFrames for render.
+
+## Separate series: anime science (NOT this duo format)
+Anime / manga "real science" Shorts (Death Note, Zoro, Kaneki, ...) are their own series: **never use Priya or Ankush in them**. Format: one narrator voice, real anime/manga clips as short muted "evidence" shots (2-4 s, source credited on screen), original animation, diagrams and kinetic type in the style of the Light Yagami video, licensed music fitted to the script. 45-60 s.
