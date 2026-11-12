@@ -1,0 +1,8 @@
+asset_id,description,type,source,creator,original_url,licence,commercial_ok,modification_ok,status,notes
+YN-STILLS,15 film stills cropped from the official story collage (story_scene.jpg),image,kiminona.com (official site),"CoMix Wave Films / ""Your Name."" Production Committee",https://www.kiminona.com/images/top/story_scene.jpg,"Copyrighted; used briefly as commentary/evidence (fair-use argument, not a licence)",not licensed,cropped/framed,used,Credit on screen; a rights holder can claim or remove
+YN-KEY,Key visual (Taki and Mitsuha with the comet),image,kiminona.com,"""Your Name."" Production Committee",https://www.kiminona.com/images/top/main_vsl01.jpg,Copyrighted; commentary use,not licensed,framed,used,Hook and end card
+YN-SKY,Twilight sky visual,image,kiminona.com,"""Your Name."" Production Committee",https://www.kiminona.com/images/top/intro_vsl.png,Copyrighted; commentary use,not licensed,framed,used,
+MUSIC,"""Anime Opening – Emotional Journey"" by Alex Morgan",music,Pixabay (uploaded by the owner),Alex Morgan,pixabay.com/music,Pixabay Content License,yes,yes,used,"Credit in description; some Pixabay tracks are registered with Content ID; keep the track page URL to dispute"
+VOICE,Narration (Titan voice),TTS,ElevenLabs,ElevenLabs,https://elevenlabs.io,ElevenLabs Terms (paid plan),yes on paid plan,yes,used,Disclose AI voice on upload
+SFX,Studio SFX library (code-synthesised),sfx,growkaz studio,original,n/a,owned,yes,yes,used,
+ART,Stickman animation and diagrams,original,this project,original,n/a,owned,yes,yes,used,

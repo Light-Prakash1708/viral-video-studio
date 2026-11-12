@@ -1,0 +1,11 @@
+# Your Name body swap: sources (checked)
+- Petkova, V. I. & Ehrsson, H. H. (2008). If I were you: perceptual illusion of body swapping. PLoS ONE 3(12): e3832. https://doi.org/10.1371/journal.pone.0003832 (full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC2585011)
+  - Head-mounted displays fed by cameras on another person's (or a mannequin's) head, plus synchronous touch, make people feel the other body is their own.
+  - Handshake version: participants saw themselves shaking their own hand and still felt the experimenter's arm as their own.
+  - Knife threat: a larger skin-conductance (stress) response when the knife threatened the "new" body / the camera wearer's arm than when it threatened their own arm. Asynchronous touch broke the illusion. A spoon (harmless object) had no effect.
+  - Non-body objects (a chair, a block) could not be "owned".
+  - Small samples, which the video says ("Small study").
+- Botvinick, M. & Cohen, J. (1998). Rubber hands 'feel' touch that eyes see. Nature 391, 756. https://doi.org/10.1038/35784
+- Dream forgetting: most dreams are forgotten soon after waking (a general, well-established sleep-research finding; stated as "most dreams fade within minutes").
+- Coverage: Karolinska Institutet press release (news.ki.se, 2008-12-04); National Geographic / Discover "The Quantum Leap effect".
+- Your Name (Kimi no Na wa, 2016), dir. Makoto Shinkai, CoMix Wave Films. Clips/panels are the owner's, used briefly as commentary evidence; credit on screen.
