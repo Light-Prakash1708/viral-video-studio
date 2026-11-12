@@ -17,7 +17,7 @@ chunks the fix touched, join the film again (stream copy, no re-encode) and keep
   versions.json. Output: <out> (always the newest), <out stem>_vN.mp4 (every version), <out stem>_v{N}_changes.mp4 (only
   the re-rendered chunks, to check the fix quickly) and <out stem>_v{N}_compare.png (before | after at each --at time).
 - Audio is laid under the joined picture at the end (--audio), so a sound-only change never needs a render: run
-  `mux` alone.
+  `mux` alone. --audio can be a WAV (encoded to AAC) or an earlier MP4/M4A whose sound is copied unchanged.
 - Every chunk is checked for its exact frame count; a bad chunk is rendered again once, then the run stops.
 """
 import argparse, hashlib, json, os, re, shutil, subprocess, sys, time
@@ -103,7 +103,9 @@ def join_and_mux(st, n, audio, out):
     silent = os.path.join(st.dir, 'video_silent.mp4')
     sh(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', silent])
     os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
-    if audio:
+    if audio and audio.lower().endswith(('.mp4', '.mov', '.m4a')):   # keep an existing video's sound bit-for-bit (no re-encode)
+        sh(['ffmpeg', '-v', 'error', '-y', '-i', silent, '-i', audio, '-map', '0:v', '-map', '1:a', '-c', 'copy', '-movflags', '+faststart', out])
+    elif audio:
         sh(['ffmpeg', '-v', 'error', '-y', '-i', silent, '-i', audio, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', out])
     else: shutil.copy(silent, out)
     sh(['ffmpeg', '-v', 'error', '-i', out, '-f', 'null', '-'])   # full decode check
