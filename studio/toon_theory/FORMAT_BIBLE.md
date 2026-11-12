@@ -33,7 +33,8 @@ Peer-reviewed primary studies and meta-analyses first; read the abstract/paper i
 
 ## Asset & copyright standard
 Every external asset gets a row in `<episode>/asset_ledger.csv` (template in `templates/asset_ledger.csv`): creator, original URL, licence + licence URL, attribution text, commercial-use OK, modification OK, ShareAlike, status, notes.
-- Accept: CC0, Public Domain Mark (verified), CC BY. **Avoid CC BY-SA** in composites (ShareAlike may attach to the whole video) unless the owner approves. Never NC/ND.
+- Sources: Openverse, Internet Archive, Pixabay (Pixabay Content License: commercial OK, no credit required, but credit anyway; no unaltered resale, no implied endorsement by people/brands in shot).
+- Accept: CC0, Public Domain Mark (verified), CC BY, Pixabay Content License. **Avoid CC BY-SA** in composites (ShareAlike may attach to the whole video) unless the owner approves. Never NC/ND.
 - Internet Archive: use only items whose metadata states PD/CC0 *and* note that IA metadata is not a legal guarantee; keep the item URL. Never assume archival = public domain.
 - No identifiable private people (especially minors) from found footage.
 - Prefer original characters, graphics and diagrams; external media only where it adds something originals can't.

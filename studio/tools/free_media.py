@@ -7,6 +7,14 @@
   python tools/free_media.py images "miami skyline" [--n 10]            # Openverse photos (cc0/pdm/by); thumbnails: api.openverse.org/v1/images/<id>/thumb/
   python tools/free_media.py image-get <openverse_id> --out assets/     # downloads + credit line (flickr may 429: retry)
   python tools/free_media.py footage-get <archive_identifier> --out assets/ [--trim 12:20] [--size 1920x1080]
+  python tools/free_media.py px-images "laughing cat" [--n 10] [--orientation vertical]   # Pixabay photos/illustrations
+  python tools/free_media.py px-videos "city night" [--n 10]                              # Pixabay stock video
+  python tools/free_media.py px-image-get <pixabay_id> --out assets/   |   px-video-get <pixabay_id> --out assets/ [--trim 2:8] [--size 1080x1920]
+Pixabay needs a free API key in the environment variable PIXABAY_API_KEY (https://pixabay.com/api/docs/). Pixabay Content
+License: free for commercial use, credit not required (we add one anyway). Not allowed: selling it unaltered, implying an
+identifiable person/brand endorses something, or showing a person in an offensive way; trademarks/logos in shots still need
+care. Pixabay MUSIC has no API: download a track by hand from pixabay.com/music and give it to
+`pick_music.py --file <track>` (some Pixabay tracks are registered with Content ID; keep the track page URL to dispute).
 
 Defaults only return commercial-safe licences: CC0 / public-domain (pdm) / CC-BY for audio; public domain / CC0 for footage
 (--allow-by adds CC-BY footage; credit then goes in the description). NC (non-commercial) and ND are never returned.
@@ -54,9 +62,9 @@ def footage_search(q, n, allow_by):
     return getj("https://archive.org/advancedsearch.php?" + q2)["response"]["docs"]
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["audio", "audio-get", "footage", "footage-get", "images", "image-get"]); ap.add_argument("arg")
+    ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["audio", "audio-get", "footage", "footage-get", "images", "image-get", "px-images", "px-videos", "px-image-get", "px-video-get"]); ap.add_argument("arg")
     ap.add_argument("--n", type=int, default=10); ap.add_argument("--min-sec", type=float, default=20); ap.add_argument("--licenses", default="cc0,pdm,by")
-    ap.add_argument("--allow-by", action="store_true"); ap.add_argument("--out", default="assets"); ap.add_argument("--trim"); ap.add_argument("--source", default="jamendo", help="openverse source; jamendo downloads reliably here (freesound CDN 403, wikimedia 429); '' = all"); ap.add_argument("--size", default="src", help="WxH to scale+crop, or src to keep the source resolution (archive.org is often 320x240-640x480)"); a = ap.parse_args()
+    ap.add_argument("--allow-by", action="store_true"); ap.add_argument("--out", default="assets"); ap.add_argument("--trim"); ap.add_argument("--source", default="jamendo", help="openverse source; jamendo downloads reliably here (freesound CDN 403, wikimedia 429); '' = all"); ap.add_argument("--orientation", default="all"); ap.add_argument("--size", default="src", help="WxH to scale+crop, or src to keep the source resolution (archive.org is often 320x240-640x480)"); a = ap.parse_args()
     if a.cmd == "audio":
         for r, sec in audio_search(a.arg, a.n, a.min_sec, a.licenses, a.source or None):
             print(f"{r['id']}  {sec:6.1f}s  {r['license'].upper():4s} {r.get('creator') or '?':22.22s}  {r['title'][:60]}  [{r.get('source')}]")
@@ -72,6 +80,8 @@ def main():
         p = {"q": a.arg, "license": a.licenses, "page_size": min(20, a.n), "fields": "id,title,creator,license,source,width,height"}
         for r in getj("https://api.openverse.org/v1/images/?" + urllib.parse.urlencode(p)).get("results", []):
             print(f"{r['id']}  {r['license'].upper():4s} {r.get('source','?'):9.9s} {r.get('width')}x{r.get('height')}  {(r.get('title') or '')[:55]}")
+    elif a.cmd.startswith("px-"):
+        return pixabay(a)
     elif a.cmd == "image-get":
         r = getj(f"https://api.openverse.org/v1/images/{a.arg}/"); os.makedirs(a.out, exist_ok=True)
         path = os.path.join(a.out, f"{a.arg}.jpg"); dl(r["url"], path)
@@ -87,5 +97,29 @@ def main():
         cmd = ["ffmpeg", "-y", "-v", "error", "-i", raw] + (["-ss", a.trim.split(":")[0], "-to", a.trim.split(":")[1]] if a.trim else []) + vf + ["-an", "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", outp]
         subprocess.run(cmd, check=True); os.remove(raw)
         lic = m.get("metadata", {}).get("licenseurl", "public domain"); credit(a.out, f"Footage: \"{m.get('metadata', {}).get('title', a.arg)}\" via archive.org/details/{a.arg} ({lic})"); print(outp, lic)
+
+def pixabay(a):
+    key = os.environ.get("PIXABAY_API_KEY")
+    if not key: sys.exit("PIXABAY_API_KEY is not set: add your free Pixabay API key as that environment variable (environment settings), then start a new session.")
+    kind = "videos" if "video" in a.cmd else ""
+    base = f"https://pixabay.com/api/{kind + '/' if kind else ''}"
+    if a.cmd in ("px-images", "px-videos"):
+        p = {"key": key, "q": a.arg[:100], "per_page": max(3, min(200, a.n)), "safesearch": "true"}
+        if not kind: p.update(image_type="all", orientation=a.orientation)
+        for h in getj(base + "?" + urllib.parse.urlencode(p)).get("hits", [])[:a.n]:
+            if kind: v = h["videos"].get("large") or h["videos"]["medium"]; print(f"{h['id']}  {h['duration']:4d}s  {v['width']}x{v['height']}  by {h.get('user')}  tags: {h.get('tags','')[:60]}")
+            else: print(f"{h['id']}  {h.get('type','photo'):12.12s} {h['imageWidth']}x{h['imageHeight']}  by {h.get('user')}  tags: {h.get('tags','')[:60]}")
+        return
+    h = (getj(base + "?" + urllib.parse.urlencode({"key": key, "id": a.arg})).get("hits") or [None])[0]
+    if not h: sys.exit("no such Pixabay id")
+    os.makedirs(a.out, exist_ok=True); page = h.get("pageURL", f"https://pixabay.com/ (id {a.arg})")
+    if kind:
+        v = h["videos"].get("large") if h["videos"].get("large", {}).get("url") else h["videos"]["medium"]
+        raw = os.path.join(a.out, f"px_{a.arg}_src.mp4"); dl(v["url"], raw); outp = os.path.join(a.out, f"px_{a.arg}.mp4")
+        vf = [] if a.size == "src" else ["-vf", "scale={0}:{1}:force_original_aspect_ratio=increase,crop={0}:{1}".format(*a.size.split("x"))]
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", raw] + (["-ss", a.trim.split(":")[0], "-to", a.trim.split(":")[1]] if a.trim else []) + vf + ["-an", "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", outp], check=True); os.remove(raw)
+    else:
+        outp = os.path.join(a.out, f"px_{a.arg}.jpg"); dl(h.get("largeImageURL") or h["webformatURL"], outp)
+    credit(a.out, f"{'Video' if kind else 'Image'} by {h.get('user')} from Pixabay (Pixabay Content License) {page}"); print(outp, "Pixabay Content License", page)
 
 if __name__ == "__main__": main()

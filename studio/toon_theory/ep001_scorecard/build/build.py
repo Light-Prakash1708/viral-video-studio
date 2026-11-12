@@ -70,9 +70,7 @@ halftone = ('<div class="abs" style="left:-600px;top:-400px;width:2280px;height:
 setbg = (f'<div class="abs" style="left:-600px;top:-400px;width:2280px;height:2800px;background:linear-gradient(180deg,#2b1a55 0%,#3d1f63 40%,#5a2462 70%,#2a1236 100%)"></div>' + halftone +
          '<div class="abs" style="left:-200px;top:300px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(255,140,60,.45),transparent 65%)"></div>'
          '<div class="abs" style="left:600px;top:250px;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(70,130,255,.45),transparent 65%)"></div>'
-         # neon sign
-         f'<div id="neon" class="abs" style="left:150px;top:230px;width:780px;text-align:center;font:900 92px Inter;letter-spacing:.04em;color:#ffd9f0;text-shadow:0 0 12px {PINK},0 0 34px {PINK},0 0 70px {PINK};opacity:.55">TOON THEORY</div>'
-         f'<div class="abs" style="left:300px;top:345px;width:480px;text-align:center;font:800 30px Inter;letter-spacing:.35em;color:#c9f9ff;text-shadow:0 0 10px {TEAL},0 0 26px {TEAL};opacity:.5">PEOPLE ARE WEIRD</div>')
+         '')   # v2: the background "TOON THEORY" neon sign was removed; branding stays on the end card only
 desk = (f'<div class="abs" style="left:-600px;top:1520px;width:2280px;height:900px;background:linear-gradient(180deg,#e9b27a 0,#c98a55 26px,#9c6538 27px,#6b3f22 100%);z-index:20"></div>'
         f'<div class="abs" style="left:-600px;top:1520px;width:2280px;height:10px;background:#ffd8a8;z-index:21"></div>')
 PL, PT, PW = -40, 610, 640
@@ -97,52 +95,61 @@ P.body[-1] = P.body[-1].replace('<div id="SET"', '<div id="SETW" class="abs" sty
 
 # ================================================================= HOOK
 h0 = 0.0; a01s, a01e = T['a01']
-# --- montage A: Priya, class topper (0 -> ~1.3)
-burst = ''.join(f'<div class="abs" style="left:540px;top:900px;width:1400px;height:70px;background:{YEL if i%2 else "#ffb000"};transform-origin:0 50%;transform:rotate({i*22.5}deg);opacity:.9"></div>' for i in range(16))
-medal = (f'<svg viewBox="0 0 200 300" width="170" height="255"><path d="M60 0 L100 120 L140 0 Z" fill="{PINK}" stroke="#000" stroke-width="6"/><path d="M100 0 L80 120 L120 120 Z" fill="{TEAL}" stroke="#000" stroke-width="5"/>'
+# --- REVISED OPENING (v2): one clear idea per shot, cuts land on the existing SFX (audio untouched).
+# 0.00-1.45 Priya, class topper | 1.45-2.82 spelling-test insert (X on the buzzer 1.95, zoom on the whip 2.4)
+# 2.82 cut to the set on the kick | matched medium shots (same scale for both) | reaction cut | freeze on the scratch
+# --- shot 1: Priya, class topper: Priya is the focal point, one label, gentle push-in, a little slow confetti
+rays = ''.join(f'<div class="abs" style="left:540px;top:1000px;width:1500px;height:120px;background:linear-gradient(90deg,rgba(255,240,180,.55),rgba(255,240,180,0));transform-origin:0 50%;transform:rotate({i*30+8}deg)"></div>' for i in range(12))
+medal = (f'<svg viewBox="0 0 200 300" width="120" height="180"><path d="M60 0 L100 120 L140 0 Z" fill="{PINK}" stroke="#000" stroke-width="6"/><path d="M100 0 L80 120 L120 120 Z" fill="{TEAL}" stroke="#000" stroke-width="5"/>'
          f'<circle cx="100" cy="190" r="80" fill="{YEL}" stroke="#000" stroke-width="8"/><circle cx="100" cy="190" r="56" fill="#ffb000" stroke="#000" stroke-width="5"/><text x="100" y="214" text-anchor="middle" font-family="Inter" font-weight="900" font-size="72" fill="#000">1</text></svg>')
-conf = ''.join(f'<div class="abs cf" style="left:{random.randint(0,1040)}px;top:{random.randint(-300,0)}px;width:{random.randint(14,26)}px;height:{random.randint(26,44)}px;background:{random.choice([PINK,TEAL,YEL,"#fff",ORG])};transform:rotate({random.randint(0,180)}deg)"></div>' for _ in range(60))
-mA = (f'<div class="abs" style="inset:0;background:#ff9f1c;overflow:hidden">{burst}</div>' + char('pT', 'priya', 170, 560, 760, 0, 1.5, z=3, start='smile') +
-      f'<div id="medal" class="abs" style="left:445px;top:1320px;z-index:5;transform-origin:50% 0">{medal}</div>{conf}'
-      f'<div id="mAt" class="abs lbl" style="left:120px;top:200px;font-size:96px;color:#000;background:#fff;transform:rotate(-4deg);z-index:6">CLASS TOPPER</div>'
-      f'<div id="mAt2" class="abs lbl" style="left:300px;top:340px;font-size:54px;color:#fff;background:#000;transform:rotate(3deg);z-index:6">PRIYA · RANK #1</div>')
+conf_all = [f'<div class="abs cf" style="left:{random.randint(0,1040)}px;top:{random.randint(-300,0)}px;width:{random.randint(14,26)}px;height:{random.randint(26,44)}px;background:{random.choice([PINK,TEAL,YEL,"#fff",ORG])};transform:rotate({random.randint(0,180)}deg)"></div>' for _ in range(60)]
+conf = ''.join(conf_all[:14])   # all 60 are still drawn from the RNG so every later random value (blinks etc.) stays identical
+mA = (f'<div class="abs" style="inset:0;background:radial-gradient(ellipse at 50% 52%,#ffc56b 0%,#ff9f1c 45%,#e86a10 100%);overflow:hidden">{rays}</div>'
+      + char('pT', 'priya', 170, 560, 760, 0, 1.5, z=3, start='smile') +
+      f'<div id="medal" class="abs" style="left:480px;top:1440px;z-index:5;transform-origin:50% 0">{medal}</div>{conf}'
+      f'<div id="mAt" class="abs lbl" style="left:0;right:0;margin:auto;width:max-content;top:250px;font-size:80px;line-height:1;color:#000;background:#fff;text-align:center;z-index:6">CLASS TOPPER<br><span style="font-size:46px;color:#d0306a">PRIYA · RANK #1</span></div>')
 layer('MA', 40, mA, h0, 1.45)
-pop('#mAt', .05, .25); pop('#mAt2', .3, .25); pop('#medal', .15, .3, .2)
-P.frm('#MA .cf', {'y': 0}, {'y': 2300, 'rotation': 540, 'duration': 2.2, 'ease': 'none', 'stagger': .01}, 0)
-P.frm('#pT', {'scale': 1.0}, {'scale': 1.08, 'duration': 1.5, 'ease': 'none'}, 0)
+pop('#mAt', .05, .3, .7); pop('#medal', .15, .3, .4)
+P.frm('#MA .cf', {'y': 0}, {'y': 1500, 'rotation': 220, 'duration': 3.0, 'ease': 'none', 'stagger': .06}, 0)
+P.frm('#pT', {'scale': 1.0}, {'scale': 1.06, 'duration': 1.5, 'ease': 'power1.out'}, 0)
 fx(0.0, 'impact/punch', 1.2); fx(0.02, 'pro_shimmer/m2', .8)
-# --- montage B: Ankush spelling test (1.45 -> a01 end - 1.0)
+# --- shot 2: the spelling test: ONE insert; slow push to "Wensday", the X on the buzzer, a controlled zoom on the whip
 tB0, tB1 = 1.45, a01e - .9
-paper = (f'<div id="ppr" class="abs" style="left:90px;top:260px;width:900px;height:1180px;background:#fdfdf6;border-radius:10px;transform:rotate(-2deg);box-shadow:0 30px 60px rgba(0,0,0,.5);'
+tCut = tB1 + .25                       # cut to the set on the existing kick (2.82 s)
+paper = (f'<div id="ppr" class="abs" style="left:90px;top:300px;width:900px;height:1180px;background:#fdfdf6;border-radius:10px;box-shadow:0 30px 60px rgba(0,0,0,.5);transform-origin:420px 600px;'
          f'background-image:repeating-linear-gradient(180deg,transparent 0 78px,#9cc3ff 78px 81px);">'
          f'<div class="abs" style="left:70px;top:0;width:4px;height:1180px;background:#ff8a8a"></div>'
          f'<div class="abs hand" style="left:110px;top:60px;font-size:54px;color:#223">SPELLING TEST</div>'
          f'<div class="abs hand" style="left:560px;top:66px;font-size:44px;color:#223">Name: Ankush</div>'
          f'<div class="abs hand" style="left:110px;top:230px;font-size:48px;color:#556">5. Tuesday ✓</div>'
          f'<div class="abs hand" style="left:110px;top:390px;font-size:48px;color:#556">6. Monday ✓</div>'
-         f'<div id="wens" class="abs hand" style="left:110px;top:540px;font-size:92px;color:#1b2a6b;transform-origin:30% 50%">7. Wensday</div>'
-         f'<div id="xmark" class="abs" style="left:470px;top:470px;font:900 260px Inter;color:{RED};opacity:0;transform:rotate(-8deg)">✗</div>'
-         f'<div id="grade" class="abs" style="left:660px;top:820px;width:200px;height:200px;border-radius:50%;border:12px solid {RED};font:900 140px/176px Inter;text-align:center;color:{RED};opacity:0;transform:rotate(12deg)">F</div></div>')
+         f'<div id="wens" class="abs hand" style="left:110px;top:540px;font-size:92px;color:#1b2a6b">7. Wensday</div>'
+         f'<div id="xmark" class="abs" style="left:450px;top:470px;font:900 240px Inter;color:{RED};opacity:0;transform:rotate(-8deg)">✗</div></div>')
 mB = f'<div class="abs" style="inset:0;background:#20283a"></div>{paper}'
-layer('MB', 41, mB, tB0, tB1)
-P.frm('#ppr', {'scale': 1.0, 'rotation': -2}, {'scale': 1.05, 'rotation': -1, 'duration': tB1 - tB0, 'ease': 'none'}, tB0)
-P.frm('#xmark', {'opacity': 0, 'scale': 2.5}, {'opacity': 1, 'scale': 1, 'duration': .18, 'ease': 'power4.in'}, tB0 + .35); fx(tB0 + .5, 'impact/punch', 1.0); sfx(tB0 + .5, 'buzzer', .9)
-P.to('#ppr', {'scale': 2.2, 'x': 330, 'y': 280, 'rotation': 0, 'duration': .25, 'ease': 'power4.out'}, tB0 + .95); fx(tB0 + .95, 'whoosh_fast/whip', 1)
-pop('#grade', tB0 + 1.0, .2, 2.5, 'power4.in'); fx(tB0 + 1.2, 'cut_hit/punch', 1)
-lid, html = lab('SPELLED WEDNESDAY "WENSDAY"', 90, 1500, 54, '#000', YEL, -3, 'mBt'); P.add(f'<div id="MBt" class="abs" style="inset:0;z-index:42;opacity:0">{html}</div>'); show('#MBt', tB0 + .3, tB1); pop('#mBt', tB0 + .3, .25)
-# --- then the set: Ankush close-up on "Explain that."
-cam(0, 'A', 1.55, 1060); cam(tB1, 'A', 1.55, 1060); ex('ankush', 'smirk', 0)
-lid, html = lab('EXPLAIN THAT.', 250, 330, 110, '#fff', RED, -4, 'expl'); P.add(f'<div id="EXPL" class="abs" style="inset:0;z-index:30">{html}</div>')
-pop('#expl', tB1 + .2, .22, 1.8, 'power4.in'); out('#expl', e('a01') + .1); fx(tB1 + .25, 'cut_hit/kick', 1)
-# hook question (stays during p01/a02)
-lid, html = lab('WHY DOES SHE LIKE HIM?!', 110, 200, 74, '#000', '#fff', -2, 'hq'); P.add(f'<div id="HQ" class="abs" style="inset:0;z-index:30">{html}</div>')
-pop('#hq', s('p01') - .05, .25); out('#hq', v0('title'))
-# p01: Priya deadpan close-up, a02: Ankush smirk close-up
-cam(s('p01') - .05, 'P', 1.5, 1080); ex('priya', 'deadpan', s('p01')); fx(s('p01') - .05, 'whoosh_fast/tight', .7)
-cam(s('a02') - .03, 'A', 1.5, 1060); ex('ankush', 'smirk', s('a02')); punch(s('a02') + .9)
-# record scratch + freeze on Priya
+layer('MB', 41, mB, tB0, tCut)
+P.frm('#MB', {'x': 1080}, {'x': 0, 'duration': .22, 'ease': 'power3.out', 'immediateRender': False}, tB0)          # slide in from Priya's shot
+P.frm('#MA', {'x': 0}, {'x': -1080, 'duration': .22, 'ease': 'power3.out', 'immediateRender': False}, tB0)
+P.frm('#ppr', {'scale': 1.0}, {'scale': 1.18, 'duration': .5, 'ease': 'power1.inOut', 'immediateRender': False}, tB0 + .05)
+P.frm('#xmark', {'opacity': 0, 'scale': 2.4}, {'opacity': 1, 'scale': 1, 'duration': .16, 'ease': 'power4.in', 'immediateRender': False}, tB0 + .34); fx(tB0 + .5, 'impact/punch', 1.0); sfx(tB0 + .5, 'buzzer', .9)
+P.to('#ppr', {'scale': 1.75, 'duration': .3, 'ease': 'power3.out'}, tB0 + .95); fx(tB0 + .95, 'whoosh_fast/whip', 1)
+P.to('#ppr', {'keyframes': [{'x': -8, 'duration': .04}, {'x': 7, 'duration': .04}, {'x': -4, 'duration': .04}, {'x': 0, 'duration': .05}]}, tB0 + 1.2); fx(tB0 + 1.2, 'cut_hit/punch', 1)
+# --- shots 3+: the conversation on the set, matched medium shots (scale 1.3, faces at the same height)
+MS = 1.3
+cam(0, 'A', MS, 1080); cam(tCut, 'A', MS, 1080); ex('ankush', 'smirk', 0)
+punch(tCut, 1.06); fx(tB1 + .25, 'cut_hit/kick', 1)
+# one hook question for the whole exchange (top, mobile-safe), nothing else on screen with it
+lid, html = lab('WHY DOES SHE LIKE HIM?', 0, 210, 66, '#000', '#fff', -2, 'hq'); P.add(f'<div id="HQ" class="abs" style="inset:0;z-index:30;display:flex;justify-content:center">{html.replace("left:0px;", "")}</div>')
+pop('#hq', tCut + .05, .25, .7); out('#hq', v0('scratch') - .05)
+# p01: Priya medium shot; mid-line reaction cut to the two-shot (Ankush's face falls); back to Priya
+cam(s('p01') - .05, 'P', MS, 1080); ex('priya', 'deadpan', s('p01')); fx(s('p01') - .05, 'whoosh_fast/tight', .7)
+tr = s('p01') + 1.25
+cam(tr, None); ex('ankush', 'hurt', tr)
+cam(tr + .75, 'P', MS, 1080)
+# a02: Ankush medium shot, smirk; small punch-in on "you're still here"
+cam(s('a02') - .03, 'A', MS, 1080); ex('ankush', 'smirk', s('a02')); punch(s('a02') + .9)
+# record scratch: freeze on Priya (same framing, slight push), the only label is the punchline
 ts = v0('scratch')
-cam(ts - .05, 'P', 1.8, 1100); ex('priya', 'stunned', ts - .05); sfx(ts - .05, 'scratch', 1.2)
+cam(ts - .05, 'P', 1.45, 1100); ex('priya', 'stunned', ts - .05); sfx(ts - .05, 'scratch', 1.2)
 P.add(f'<div id="FRZ" class="abs" style="inset:0;z-index:31;opacity:0;background:rgba(0,0,0,.25);backdrop-filter:saturate(.2)"></div>')
 show('#FRZ', ts, v1('scratch'))
 lid, html = lab('...SHE IS STILL HERE.', 160, 1360, 62, '#fff', '#000', 2, 'frzt'); P.add(f'<div id="FRZT" class="abs" style="inset:0;z-index:32">{html}</div>'); pop('#frzt', ts + .02, .18); out('#frzt', v1('scratch'))
@@ -530,7 +537,7 @@ for lid, (a, b) in sorted(T.items(), key=lambda kv: kv[1][0]):
         P.st('#' + sid, {'opacity': 1}, round(i0 - .02, 3)); P.st('#' + sid, {'opacity': 0}, round(i1 + (.1 if j == len(cs) - 1 else -.01), 3))
         srt.append(f'{k}\n{fmt(max(0, i0 - .02))} --> {fmt(i1 + .06)}\n{"PRIYA: " if j == 0 and lid.startswith("p") else ("ANKUSH: " if j == 0 else "")}{c}\n'); k += 1
 P.add(f'<div class="abs" style="left:0;top:0;width:1080px;height:1920px;z-index:90;pointer-events:none">{subs}</div>')
-P.add('<div id="flash"></div><div id="vig"></div><div id="grain"></div><div id="brand">TOON THEORY</div>')
+P.add('<div id="flash"></div><div id="vig"></div><div id="grain"></div>')   # v2: bottom "TOON THEORY" footer removed
 P.to('#grain', {'backgroundPosition': '-9000px -6000px', 'duration': DUR, 'ease': f'steps({int(DUR * 24)})'}, 0)
 os.makedirs(HERE + '/../final', exist_ok=True)
 open(HERE + '/../final/ToonTheory_EP001_SmartGirlsDumbBoys.srt', 'w').write('\n'.join(srt))

@@ -12,6 +12,7 @@ still swap the pick by ear: all candidates are kept in <out>/music_candidates/ w
   python3 studio/tools/pick_music.py --mood hype --dur 95 --out <project>/audio
   python3 studio/tools/pick_music.py --query "dark phonk" --query "trap beat" --dur 48 --out ... --bpm 120-160
   python3 studio/tools/pick_music.py --use <openverse_id> --dur 95 --out ...      # skip ranking, use a known track
+  python3 studio/tools/pick_music.py --file a.mp3 --file b.mp3 --mood comedy --dur 95 --out ... --credit "Music by X from Pixabay (Pixabay Content License) <url>"
   python3 studio/tools/pick_music.py --sections "0-31:comedy,31-60:quirky,60-96:emotional" --out ...
       # one track per section, joined with 1.2 s crossfades at the section borders (mood changes with the story)
 
@@ -132,8 +133,19 @@ def main():
     ap.add_argument('--sections', help='"start-end:mood,..." in seconds, covering the whole video')
     ap.add_argument('--out', required=True); ap.add_argument('--n', type=int, default=8); ap.add_argument('--bpm'); ap.add_argument('--use')
     ap.add_argument('--licenses', default='cc0,pdm,by')
+    ap.add_argument('--file', action='append', help='local track(s), e.g. downloaded from pixabay.com/music: measured and cut the same way; credit line from --credit')
+    ap.add_argument('--credit', default='')
     a = ap.parse_args(); os.makedirs(a.out, exist_ok=True)
     out_wav = os.path.join(a.out, 'music_pick.wav')
+    if a.file:   # local tracks (Pixabay music etc.): rank by the same measurements, cut the best window
+        if not a.dur: sys.exit('--dur is required with --file')
+        lo, hi = map(float, a.bpm.split('-')) if a.bpm else BPM_DEFAULT.get(a.mood, (90, 150)); rows = []
+        for f in a.file:
+            an = analyse(decode(f), a.dur); an['score'] = score(an, lo, hi, a.dur, a.mood, os.path.basename(f)); rows.append(dict(path=f, title=os.path.basename(f), **an))
+            print(f"[{a.mood}] {an['score']:6.1f}  {an['tempo']:6.1f}bpm beat {an['beat']:.2f} steady {an['steady']:.2f}  {os.path.basename(f)}")
+        best = max(rows, key=lambda r: r['score']); ws = best['start'] if best['track_sec'] > a.dur else 0
+        cut(best['path'], out_wav, ws, a.dur); json.dump(dict(best, window_start=ws, window_dur=a.dur, credit=a.credit), open(os.path.join(a.out, 'music_pick.json'), 'w'), indent=1)
+        credit(a.out, a.credit or f"Music: {best['title']} (local file; add its source and licence)"); print('->', out_wav, 'from', best['title']); return
     if not a.sections:
         if not a.dur: sys.exit('--dur or --sections is required')
         best = pick(a.mood, a.query, a.dur, a.out, a.n, a.bpm, a.licenses, a.use)
