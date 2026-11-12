@@ -5,4 +5,11 @@ YN-SKY,Twilight sky visual,image,kiminona.com,"""Your Name."" Production Committ
 MUSIC,"""Anime Opening – Emotional Journey"" by Alex Morgan",music,Pixabay (uploaded by the owner),Alex Morgan,pixabay.com/music,Pixabay Content License,yes,yes,used,"Credit in description; some Pixabay tracks are registered with Content ID; keep the track page URL to dispute"
 VOICE,Narration (Titan voice),TTS,ElevenLabs,ElevenLabs,https://elevenlabs.io,ElevenLabs Terms (paid plan),yes on paid plan,yes,used,Disclose AI voice on upload
 SFX,Studio SFX library (code-synthesised),sfx,growkaz studio,original,n/a,owned,yes,yes,used,
-ART,Stickman animation and diagrams,original,this project,original,n/a,owned,yes,yes,used,
+ART,Text and data graphics (no stick figures in v2),original,this project,original,n/a,owned,yes,yes,used,
+PLOS-FIGS,"Figures 1, 6, 7, 9 of the 2008 paper (setup photo, handshake photo, stress data, knife photo)",image,PLoS ONE,Petkova & Ehrsson,https://doi.org/10.1371/journal.pone.0003832,CC BY 4.0,yes,yes,used,"Credit on screen and in description; people in the photos appear in the published, openly licensed paper"
+OV-RUBBER,Rubber hand illusion diagram,image,Wikimedia Commons via Openverse,Downey et al.,https://commons.wikimedia.org/w/index.php?curid=149337823,CC BY,yes,yes,used,
+OV-BRAIN,The Human Brain Model 01,image,Wikimedia Commons via Openverse,Edeh Sophia,https://commons.wikimedia.org/w/index.php?curid=142150326,CC0,yes,yes,used,
+OV-EYE,Eye close-up 1,image,Flickr via Openverse,Sheep purple,https://www.flickr.com/photos/27418987@N03/3023757540,CC BY,yes,yes,used,
+OV-CHAIR,Simple antique wooden chair painted white,image,Flickr via Openverse,Horia Varlan,https://www.flickr.com/photos/10361931@N06/4273253021,CC BY,yes,yes,used,
+OV-SLEEP,Man sleeping in bed,image,Flickr via Openverse,simpleinsomnia,https://www.flickr.com/photos/95329455@N02/25208888064,CC BY,yes,yes,used,
+OV-MANNEQUIN,Mannequin,image,Flickr via Openverse,zigazou76,https://www.flickr.com/photos/38712296@N07/6026204353,CC BY,yes,yes,used,
