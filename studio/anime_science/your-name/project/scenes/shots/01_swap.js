@@ -127,10 +127,10 @@ registerShot('guess', { zoom: 0.02, draw(g, t, info) { const sAt = local(info, t
 registerShot('match', { zoom: 0.03, draw(g, t, info) { const m = still(g, 'handshake', t, info.dur, { fx: 0.5, fy: 0.38, z0: 1.05, z1: 1.12, gray: true, credit: PAPER });
   const k = ease.inOut(clamp((t - local(info, t, 'moves', 0.9)) / 0.6, 0, 1)), a = m.map(0.25, 0.35), b = m.map(0.8, 0.35), p = [lerp(a[0], b[0], k), lerp(a[1], b[1], k)];
   g.save(); g.globalCompositeOperation = 'screen'; glow(g, p[0], p[1], 300, k > 0.5 ? PINK : CYAN, 0.6); g.restore();
-  L(g, t, local(info, t, 'Match', 0.1), 'SEE + FEEL MATCH', { y: E.H * 0.13, size: 64 }); L(g, t, local(info, t, 'moves', 0.9), '"YOU" MOVES', { y: E.H * 0.75, size: 76, color: GOLD }); } });
+  L(g, t, local(info, t, 'Match', 0.1), 'SEE + FEEL MATCH', { y: E.H * 0.13, size: 64 }); L(g, t, local(info, t, 'moves', 0.9), '"YOU" MOVES', { y: E.H * 0.6, size: 76, color: GOLD }); } });
 registerShot('rubber', { zoom: 0.03, draw(g, t, info) { card(g, 'rubber', t, { w: 0.9, cy: E.H * 0.45, credit: 'Rubber hand illusion: Downey et al., CC BY (Wikimedia Commons)' });
   L(g, t, local(info, t, 'rubber', 0.6), 'EVEN A RUBBER HAND', { y: E.H * 0.14, size: 66 }); L(g, t, 0.4, 'Botvinick & Cohen · 1998 · Nature', { y: E.H * 0.76, size: 34, color: CYAN }); } });
-registerShot('chair', { zoom: 0.04, draw(g, t, info) { still(g, 'chair', t, info.dur, { fx: 0.5, fy: 0.5, z0: 1.0, z1: 1.1, gray: true, credit: 'Chair: Horia Varlan, CC BY (Flickr)' }); const k = pop(t, local(info, t, 'chair', 0.6), 0.25);
+registerShot('chair', { zoom: 0.04, draw(g, t, info) { card(g, 'chair', t, { w: 0.78, cy: E.H * 0.46, rot: 0.02, gray: true, credit: 'Chair: Horia Varlan, CC BY (Flickr)' }); const k = pop(t, local(info, t, 'chair', 0.6), 0.25);
   if (k > 0) { g.save(); g.translate(E.W / 2, E.H * 0.45); g.scale(k, k); text(g, '✕', 0, 0, { size: 420, font: 'Nunito', weight: 900, color: '#ff4a6a', glow: 40, glowColor: 'rgba(255,60,90,.8)' }); g.restore(); }
   L(g, t, local(info, t, 'chair', 0.6), 'NOT A CHAIR', { y: E.H * 0.14, size: 80, color: GOLD }); } });
 registerShot('shape', { zoom: 0.03, draw(g, t, info) { still(g, 'mannequin', t, info.dur, { fx: 0.5, fy: 0.4, z0: 1.0, z1: 1.1, gray: true, credit: 'Mannequin photo: CC BY (Flickr, via Openverse)' }); const k = pop(t, local(info, t, 'body', 1.6), 0.3);
