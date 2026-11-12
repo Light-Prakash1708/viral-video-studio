@@ -26,7 +26,7 @@ Krish, Meera, Rohan, Aman remain in the universe as cameo/guest characters.
 - Subtitles always on: Inter 900, white + black stroke, max 2 lines, centred lower third; on-screen text never collides with subtitles.
 - Research cards: `Author et al., Year · design (survey / experiment / correlation / meta-analysis) · sample` — small, top-left, 2–3 s.
 - Reaction imagery = ORIGINAL character cutouts from the expression library (8 expressions per character). No copyrighted meme templates.
-- Music: original score or CC0/CC BY tracks only; ducked under dialogue; voice ≥ 14 dB above bed; loudness −14 LUFS, true peak ≤ −1 dBFS.
+- Music: a licensed Openverse track chosen to fit the script's mood per section (`studio/tools/pick_music.py --sections ...`); synthesised score only as fallback. Ducked under dialogue; voice ≥ 15 dB above bed; loudness −14 LUFS, true peak ≤ −1 dBFS; credits in the description.
 
 ## Research standard
 Peer-reviewed primary studies and meta-analyses first; read the abstract/paper itself, not snippets; label each claim as **experiment / correlation / survey (stated preference) / meta-analysis / hypothesis / creative interpretation**; never invent numbers; say limitations in plain words ("one study", "on average", "people said, not did"); no gender-stereotype generalisations. Keep notes in `<episode>/RESEARCH.md`.
