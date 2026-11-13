@@ -19,3 +19,5 @@ Your Name. © 2016 "Your Name." Production Committee (dir. Makoto Shinkai, CoMix
 Music: "Anime Opening – Emotional Journey" by Alex Morgan (Pixabay). Narration: AI voice (ElevenLabs). Animation: original.
 
 #Shorts #YourName #KiminoNawa #Anime #Psychology #Science #BodySwap #MakotoShinkai
+
+Sound effects: Mixkit (Mixkit Free License), earshot (MIT). Full list in project/audio/SOURCES_SFX.txt

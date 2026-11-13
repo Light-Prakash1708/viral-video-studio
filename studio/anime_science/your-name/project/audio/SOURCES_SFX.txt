@@ -1,0 +1,3 @@
+Sound effects: Mixkit (mixkit.co), Mixkit Sound Effects Free License: free for commercial use, no attribution required.
+ids: alarm 988, gasp_m 966, gasp_f 968, shutter 1438, power_on 2529, autofocus 1437, cloth 1898, heart1 490, energy 2589, blade 1506, heart_fast 493, heart_slow 494, epop 2365, eglitch 2595, lock: earshot bank toggle/latch (MIT), rubber 1009, scribble 2369, chair 337, plastic 3204, pencil 2376, rocket 1714, impact_far 2782, wind 1471
+stamp, boing: ElevenLabs sound effects (generated for this channel, paid plan).

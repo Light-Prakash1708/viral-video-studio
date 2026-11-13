@@ -17,13 +17,13 @@
    "sfx": [
     {
      "at": 0,
-     "name": "hit",
-     "gain": -6
+     "name": "audio/alarm.wav",
+     "gain": -8
     },
     {
-     "at": 0,
-     "name": "whoosh",
-     "gain": -14
+     "at": 0.1,
+     "name": "audio/gasp_m.wav",
+     "gain": -10
     }
    ],
    "captions": true,
@@ -44,8 +44,8 @@
    "sfx": [
     {
      "at": 0,
-     "name": "hit",
-     "gain": -6
+     "name": "audio/gasp_f.wav",
+     "gain": -10
     }
    ],
    "captions": true,
@@ -65,8 +65,8 @@
    },
    "sfx": [
     {
-     "at": 0,
-     "name": "shimmer",
+     "at": 0.1,
+     "name": "audio/rocket.wav",
      "gain": -12
     }
    ],
@@ -87,14 +87,9 @@
    },
    "sfx": [
     {
-     "at": 0,
-     "name": "impact",
+     "at": 0.4,
+     "name": "audio/shutter.wav",
      "gain": -8
-    },
-    {
-     "at": 0,
-     "name": "flash",
-     "gain": -12
     }
    ],
    "captions": true,
@@ -116,7 +111,7 @@
     {
      "at": 0,
      "name": "whoosh",
-     "gain": -14
+     "gain": -16
     }
    ],
    "captions": true,
@@ -136,8 +131,8 @@
    },
    "sfx": [
     {
-     "at": 0.8,
-     "name": "glitch",
+     "at": 0.6,
+     "name": "audio/eglitch.wav",
      "gain": -14
     }
    ],
@@ -160,7 +155,7 @@
     {
      "at": 0,
      "name": "swish",
-     "gain": -12
+     "gain": -14
     }
    ],
    "captions": true,
@@ -178,7 +173,23 @@
     "type": "cut",
     "dur": 0.2
    },
-   "sfx": [],
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "footstep",
+     "gain": -14
+    },
+    {
+     "at": 0.45,
+     "name": "footstep",
+     "gain": -14
+    },
+    {
+     "at": 0.8,
+     "name": "footstep",
+     "gain": -14
+    }
+   ],
    "captions": true,
    "notes": ""
   },
@@ -196,14 +207,14 @@
    },
    "sfx": [
     {
-     "at": 0.3,
-     "name": "blip",
-     "gain": -14
+     "at": 0.4,
+     "name": "audio/power_on.wav",
+     "gain": -10
     },
     {
-     "at": 1.4,
-     "name": "blip",
-     "gain": -14
+     "at": 1.6,
+     "name": "audio/autofocus.wav",
+     "gain": -10
     }
    ],
    "captions": true,
@@ -223,9 +234,9 @@
    },
    "sfx": [
     {
-     "at": 0.15,
+     "at": 0.1,
      "name": "pop",
-     "gain": -12
+     "gain": -14
     }
    ],
    "captions": true,
@@ -245,19 +256,19 @@
    },
    "sfx": [
     {
-     "at": 0,
-     "name": "whoosh",
-     "gain": -14
+     "at": 0.1,
+     "name": "audio/cloth.wav",
+     "gain": -12
     },
     {
      "at": 0.9,
-     "name": "kick",
-     "gain": -10
+     "name": "audio/heart1.wav",
+     "gain": -8
     },
     {
      "at": 1.8,
-     "name": "kick",
-     "gain": -10
+     "name": "audio/heart1.wav",
+     "gain": -8
     }
    ],
    "captions": true,
@@ -278,8 +289,8 @@
    "sfx": [
     {
      "at": 0.6,
-     "name": "shimmer",
-     "gain": -14
+     "name": "audio/energy.wav",
+     "gain": -10
     }
    ],
    "captions": true,
@@ -301,7 +312,7 @@
     {
      "at": 0,
      "name": "hit",
-     "gain": -10
+     "gain": -14
     }
    ],
    "captions": true,
@@ -321,9 +332,9 @@
    },
    "sfx": [
     {
-     "at": 0,
-     "name": "freeze",
-     "gain": -10
+     "at": 1.5,
+     "name": "audio/shutter.wav",
+     "gain": -12
     }
    ],
    "captions": true,
@@ -343,9 +354,9 @@
    },
    "sfx": [
     {
-     "at": 0,
-     "name": "stinger",
-     "gain": -8
+     "at": 0.2,
+     "name": "audio/blade.wav",
+     "gain": -6
     }
    ],
    "captions": true,
@@ -366,7 +377,12 @@
    "sfx": [
     {
      "at": 0.9,
-     "name": "heartbeat",
+     "name": "audio/heart_fast.wav",
+     "gain": -6
+    },
+    {
+     "at": 1.5,
+     "name": "audio/heart_fast.wav",
      "gain": -8
     }
    ],
@@ -388,8 +404,13 @@
    "sfx": [
     {
      "at": 0.4,
-     "name": "tick",
-     "gain": -16
+     "name": "audio/heart_slow.wav",
+     "gain": -8
+    },
+    {
+     "at": 1.3,
+     "name": "audio/heart_slow.wav",
+     "gain": -10
     }
    ],
    "captions": true,
@@ -409,14 +430,9 @@
    },
    "sfx": [
     {
-     "at": 0.05,
-     "name": "pop",
-     "gain": -12
-    },
-    {
      "at": 1.2,
-     "name": "ding",
-     "gain": -14
+     "name": "audio/stamp.wav",
+     "gain": -8
     }
    ],
    "captions": true,
@@ -438,7 +454,7 @@
     {
      "at": 0,
      "name": "hit",
-     "gain": -10
+     "gain": -12
     }
    ],
    "captions": true,
@@ -458,14 +474,19 @@
    },
    "sfx": [
     {
-     "at": 1.0,
-     "name": "blip",
-     "gain": -14
+     "at": 1.2,
+     "name": "audio/epop.wav",
+     "gain": -12
     },
     {
      "at": 1.8,
-     "name": "blip",
-     "gain": -14
+     "name": "audio/epop.wav",
+     "gain": -12
+    },
+    {
+     "at": 2.4,
+     "name": "audio/lock.wav",
+     "gain": -8
     }
    ],
    "captions": true,
@@ -485,9 +506,9 @@
    },
    "sfx": [
     {
-     "at": 0.6,
-     "name": "powerup",
-     "gain": -14
+     "at": 0.9,
+     "name": "audio/lock.wav",
+     "gain": -8
     }
    ],
    "captions": true,
@@ -507,8 +528,13 @@
    },
    "sfx": [
     {
-     "at": 0,
-     "name": "swish",
+     "at": 0.2,
+     "name": "audio/scribble.wav",
+     "gain": -14
+    },
+    {
+     "at": 1.0,
+     "name": "audio/rubber.wav",
      "gain": -12
     }
    ],
@@ -529,9 +555,14 @@
    },
    "sfx": [
     {
+     "at": 0.3,
+     "name": "audio/chair.wav",
+     "gain": -10
+    },
+    {
      "at": 0.6,
-     "name": "glitch",
-     "gain": -12
+     "name": "audio/boing.wav",
+     "gain": -10
     }
    ],
    "captions": true,
@@ -551,19 +582,9 @@
    },
    "sfx": [
     {
-     "at": 0.3,
-     "name": "pop",
-     "gain": -14
-    },
-    {
-     "at": 0.6,
-     "name": "pop",
-     "gain": -14
-    },
-    {
-     "at": 1.6,
-     "name": "ding",
-     "gain": -14
+     "at": 1.2,
+     "name": "audio/plastic.wav",
+     "gain": -10
     }
    ],
    "captions": true,
@@ -584,8 +605,8 @@
    "sfx": [
     {
      "at": 0,
-     "name": "shimmer",
-     "gain": -14
+     "name": "audio/pencil.wav",
+     "gain": -12
     }
    ],
    "captions": true,
@@ -606,8 +627,8 @@
    "sfx": [
     {
      "at": 0,
-     "name": "whoosh",
-     "gain": -16
+     "name": "audio/rocket.wav",
+     "gain": -14
     }
    ],
    "captions": true,
@@ -628,13 +649,8 @@
    "sfx": [
     {
      "at": 0,
-     "name": "flash",
+     "name": "audio/impact_far.wav",
      "gain": -10
-    },
-    {
-     "at": 0,
-     "name": "impact",
-     "gain": -12
     }
    ],
    "captions": true,
@@ -654,9 +670,9 @@
    },
    "sfx": [
     {
-     "at": 0.9,
-     "name": "shimmer",
-     "gain": -14
+     "at": 0.8,
+     "name": "audio/wind.wav",
+     "gain": -12
     }
    ],
    "captions": true,
@@ -690,13 +706,7 @@
     "type": "cut",
     "dur": 0.2
    },
-   "sfx": [
-    {
-     "at": 0.15,
-     "name": "ding",
-     "gain": -14
-    }
-   ],
+   "sfx": [],
    "captions": true,
    "notes": ""
   }
