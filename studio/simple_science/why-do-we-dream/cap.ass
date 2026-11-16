@@ -1,0 +1,76 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter Black,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,1,0,0,0,100,100,0,0,1,8,4,5,60,60,0,1
+Style: Hook,Inter Black,90,&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,1,0,0,0,100,100,0,0,1,9,5,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.05,0:00:02.90,Hook,,0,0,0,,{\pos(540,250)\fad(80,200)\fscx60\fscy60\t(0,140,\fscx100\fscy100)}WHY DO WE{\c&H00D7FF&} DREAM?
+Dialogue: 0,0:00:00.00,0:00:00.96,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}EVERY NIGHT YOUR
+Dialogue: 0,0:00:00.96,0:00:02.10,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}BODY LIES PERFECTLY
+Dialogue: 0,0:00:02.10,0:00:02.72,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}{\c&H00D7FF&}STILL,{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.72,0:00:03.68,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}WHILE YOUR {\c&H00D7FF&}BRAIN{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.68,0:00:04.98,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}GOES {\c&H00D7FF&}WILD.{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.06,0:00:05.90,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}YOU {\c&H00D7FF&}FLY,{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.90,0:00:06.76,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}YOU {\c&H00D7FF&}FALL.{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.76,0:00:07.26,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}YOU SHOW UP
+Dialogue: 0,0:00:07.26,0:00:07.84,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}TO AN {\c&H00D7FF&}EXAM{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.84,0:00:08.66,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}YOU NEVER STUDIED
+Dialogue: 0,0:00:08.66,0:00:09.38,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}FOR.
+Dialogue: 0,0:00:09.38,0:00:10.10,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}SO WHY DOES
+Dialogue: 0,0:00:10.10,0:00:11.00,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}YOUR {\c&H00D7FF&}BRAIN{\c&HFFFFFF&} BOTHER
+Dialogue: 0,0:00:11.00,0:00:12.06,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}MAKING {\c&H00D7FF&}MOVIES{\c&HFFFFFF&} IN
+Dialogue: 0,0:00:12.06,0:00:12.98,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}THE {\c&H00D7FF&}DARK?{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.98,0:00:14.50,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}IN {\c&H00D7FF&}1953,{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.50,0:00:15.38,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}TWO SCIENTISTS
+Dialogue: 0,0:00:15.38,0:00:16.32,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}WATCHED PEOPLE
+Dialogue: 0,0:00:16.32,0:00:17.14,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}SLEEP.
+Dialogue: 0,0:00:17.14,0:00:18.04,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}THEIR EYES DARTED
+Dialogue: 0,0:00:18.04,0:00:19.22,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}UNDER CLOSED LIDS,
+Dialogue: 0,0:00:19.22,0:00:20.54,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}AGAIN AND AGAIN.
+Dialogue: 0,0:00:20.54,0:00:21.18,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}THEY CALLED IT
+Dialogue: 0,0:00:21.18,0:00:22.76,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}{\c&H00D7FF&}REM{\c&HFFFFFF&} SLEEP.
+Dialogue: 0,0:00:22.76,0:00:23.60,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}WAKE PEOPLE DURING
+Dialogue: 0,0:00:23.60,0:00:24.68,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}{\c&H00D7FF&}REM,{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.68,0:00:25.34,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}AND {\c&H00D7FF&}MOST{\c&HFFFFFF&} SAY
+Dialogue: 0,0:00:25.34,0:00:25.98,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}THEY WERE {\c&H00D7FF&}DREAMING.{\c&HFFFFFF&}
+Dialogue: 0,0:00:25.98,0:00:27.12,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}FOR YEARS ONE
+Dialogue: 0,0:00:27.12,0:00:28.30,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}ANSWER WAS,
+Dialogue: 0,0:00:28.30,0:00:29.06,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}DREAMS ARE JUST
+Dialogue: 0,0:00:29.06,0:00:30.30,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}{\c&H00D7FF&}RANDOM{\c&HFFFFFF&} {\c&H00D7FF&}NOISE.{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.30,0:00:31.40,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}{\c&H00D7FF&}BRAIN{\c&HFFFFFF&} CELLS FIRE
+Dialogue: 0,0:00:31.40,0:00:32.46,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}AT {\c&H00D7FF&}RANDOM,{\c&HFFFFFF&}
+Dialogue: 0,0:00:32.46,0:00:33.08,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}AND YOUR MIND
+Dialogue: 0,0:00:33.08,0:00:33.98,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}SPINS A STORY
+Dialogue: 0,0:00:33.98,0:00:35.24,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}TO EXPLAIN THEM.
+Dialogue: 0,0:00:35.24,0:00:35.80,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}BUT THEN A
+Dialogue: 0,0:00:35.80,0:00:36.60,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}{\c&H00D7FF&}CLUE.{\c&HFFFFFF&}
+Dialogue: 0,0:00:36.68,0:00:38.20,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}IN {\c&H00D7FF&}2010,{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.20,0:00:39.20,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}{\c&H00D7FF&}HARVARD{\c&HFFFFFF&} RESEARCHERS
+Dialogue: 0,0:00:39.20,0:00:40.12,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}HAD PEOPLE LEARN
+Dialogue: 0,0:00:40.12,0:00:41.08,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}A {\c&H00D7FF&}MAZE,{\c&HFFFFFF&}
+Dialogue: 0,0:00:41.08,0:00:41.66,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}THEN TAKE A
+Dialogue: 0,0:00:41.66,0:00:42.30,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}{\c&H00D7FF&}NAP.{\c&HFFFFFF&}
+Dialogue: 0,0:00:42.30,0:00:42.94,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}THE NAPPERS WHO
+Dialogue: 0,0:00:42.94,0:00:43.64,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}DREAMED ABOUT THE
+Dialogue: 0,0:00:43.64,0:00:44.96,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}{\c&H00D7FF&}MAZE{\c&HFFFFFF&} {\c&H00D7FF&}IMPROVED{\c&HFFFFFF&} THE
+Dialogue: 0,0:00:44.96,0:00:45.78,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}{\c&H00D7FF&}MOST.{\c&HFFFFFF&}
+Dialogue: 0,0:00:45.78,0:00:46.50,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}SO DREAMS MAY
+Dialogue: 0,0:00:46.50,0:00:47.88,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}HELP SORT {\c&H00D7FF&}MEMORIES,{\c&HFFFFFF&}
+Dialogue: 0,0:00:47.88,0:00:49.00,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}CALM {\c&H00D7FF&}EMOTIONS,{\c&HFFFFFF&}
+Dialogue: 0,0:00:49.00,0:00:49.68,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}AND REHEARSE FOR
+Dialogue: 0,0:00:49.68,0:00:50.46,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}{\c&H00D7FF&}DANGER.{\c&HFFFFFF&}
+Dialogue: 0,0:00:50.46,0:00:51.30,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}THE {\c&H00D7FF&}TRUTH,{\c&HFFFFFF&}
+Dialogue: 0,0:00:51.30,0:00:52.06,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}SCIENTISTS {\c&H00D7FF&}STILL{\c&HFFFFFF&}
+Dialogue: 0,0:00:52.06,0:00:52.96,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}DON'T FULLY AGREE.
+Dialogue: 0,0:00:52.96,0:00:54.06,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}BUT {\c&H00D7FF&}TONIGHT{\c&HFFFFFF&} WHEN
+Dialogue: 0,0:00:54.06,0:00:54.64,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}YOU CLOSE YOUR
+Dialogue: 0,0:00:54.64,0:00:55.36,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}EYES,
+Dialogue: 0,0:00:55.36,0:00:56.28,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}YOUR {\c&H00D7FF&}BRAIN{\c&HFFFFFF&} GETS
+Dialogue: 0,0:00:56.28,0:00:57.62,Cap,,0,0,0,,{\pos(540,1560)\fscx72\fscy72\t(0,90,\fscx108\fscy108)\t(90,170,\fscx100\fscy100)}BACK TO {\c&H00D7FF&}WORK.{\c&HFFFFFF&}
